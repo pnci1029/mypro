@@ -1,11 +1,25 @@
 package com.example.pro.domain.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-@Entity
+import javax.persistence.*;
+import java.util.List;
+
+@Entity @Getter @NoArgsConstructor @AllArgsConstructor
 public class Member {
-    @Id
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private int age;
+
+    @OneToMany(mappedBy = "member")
+    private List<Article> article;
+    public Member(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
 }
