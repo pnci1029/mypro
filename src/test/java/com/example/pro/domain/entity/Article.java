@@ -1,15 +1,33 @@
 package com.example.pro.domain.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Entity
+@Entity @Getter @NoArgsConstructor @AllArgsConstructor
 public class Article {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Long viewCount;
+    private String content;
+    private int sq;
+    private int bc;
+    private int dl;
+    private Long visitCount;
+    @ManyToOne
+    @JoinColumn(referencedColumnName = "id")
+    private Member member;
+
+    public Article(String name, String content, int sq, int bc, int dl, Long visitCount, Member member) {
+        this.name = name;
+        this.content = content;
+        this.sq = sq;
+        this.bc = bc;
+        this.dl = dl;
+        this.visitCount = visitCount;
+        this.member = member;
+    }
 }
