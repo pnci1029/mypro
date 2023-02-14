@@ -5,6 +5,7 @@ import com.example.pro.domain.entity.Article;
 import com.example.pro.domain.entity.Member;
 import com.example.pro.domain.repository.ArticleRepository;
 import com.example.pro.domain.repository.MemberRepository;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,5 @@ public class ArticleControllerTest {
 
         Article article = new Article("title", "content", 80, 150, 140, 1L, save);
 
-        Article save1 = articleRepository.save(article);
     }
 }

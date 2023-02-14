@@ -11,10 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class ArticleController {
 
-    private ArticleService articleService;
+    private final ArticleService articleService;
 
-    @PostMapping("/post")
-    public void articlePost() {
+    @GetMapping("/post")
+    public String articlePost() {
         articleService.postArticle();
+        return "succoess";
     }
 }
