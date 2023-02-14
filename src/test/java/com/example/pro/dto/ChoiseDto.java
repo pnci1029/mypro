@@ -12,4 +12,6 @@ public class ChoiseDto {
     private int tired;
     private String mealTime;
     private int healthful;
+    private String lastMeal;
+    private String dislike;
 }

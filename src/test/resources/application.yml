@@ -12,9 +12,11 @@ spring:
     username: sar
     password:
 
+
   sql:
     init:
       mode=always:
+
   jpa:
     #    database-platform: org.hibernate.dialect.MySQL5Dialect
     database-platform: org.hibernate.dialect.H2Dialect
