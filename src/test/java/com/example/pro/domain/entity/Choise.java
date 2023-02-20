@@ -17,9 +17,10 @@ import javax.persistence.*;
 )
 public class Choise {
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CHOISE_SEQ_GENERATOR")
     private Long id;
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CHOISE_SEQ_GENERATOR")
     private Long participateCount;
     private int stress;
     private int anger;

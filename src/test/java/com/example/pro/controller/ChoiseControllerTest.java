@@ -25,8 +25,7 @@ public class ChoiseControllerTest {
                 .lastMeal("Steak")
                 .build();
         Choise data = choiseRepository.save(target);
-        assertThat(target.getId()).isEqualTo(1L);
-        assertThat(data.getParticipateCount()).isEqualTo(1L);
+        assertThat(data.getId()).isEqualTo(1L);
     }
 
 }

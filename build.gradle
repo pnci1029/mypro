@@ -37,6 +37,12 @@ dependencies {
 
     //jasypt
     implementation group: 'com.github.ulisesbocchio', name: 'jasypt-spring-boot-starter', version: '3.0.4'
+
+    //websocket
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+
+    //springBatch
+    implementation 'org.springframework.boot:spring-boot-starter-batch'
 }
 
 tasks.named('test') {
