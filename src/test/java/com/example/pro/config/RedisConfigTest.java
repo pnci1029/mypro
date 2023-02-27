@@ -1,6 +1,8 @@
 package com.example.pro.config;
 
 import com.example.pro.dto.ChoiseDto;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -34,5 +36,15 @@ public class RedisConfigTest {
                 .tired(20)
                 .build();
         redis.set(key,dto);
+    }
+
+    @Test
+    void redisStep3() {
+        ValueOperations<String, Object> redis = redisConfig.redisTemplate().opsForValue();
+        ObjectMapper om = new ObjectMapper();
+        Object o = redis.get(key);
+        ChoiseDto result = om.convertValue(o, ChoiseDto.class);
+        Assertions.assertThat(result.getTired()).isEqualTo(20);
+
     }
 }

@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Builder @Getter
+@Builder @Getter @NoArgsConstructor @AllArgsConstructor
 public class ChoiseDto {
     private int stress;
     private int anger;
