@@ -12,10 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class ArticleController {
 
     private final ArticleService articleService;
+    @GetMapping("/articles")
+    public String getArticles() {
+        return "전체 조회";
+    }
 
-    @GetMapping("/post")
+    @PostMapping("/post")
     public String articlePost() {
         articleService.postArticle();
-        return "succoess";
+        return "postSuccess";
     }
 }
