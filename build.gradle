@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '2.7.8'
     id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id "com.gorylenko.gradle-git-properties" version "2.4.1" //git info
 }
 
 group = 'com.example'
@@ -43,8 +44,15 @@ dependencies {
 
     //springBatch
     implementation 'org.springframework.boot:spring-boot-starter-batch'
+
+    // actuator 추가
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
 }
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+// Spring Actuator 빌드정보 출력
+springBoot {
+    buildInfo()
 }
