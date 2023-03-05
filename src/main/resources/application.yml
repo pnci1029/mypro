@@ -55,3 +55,7 @@ info:
   app:
     name: chhong
     projectName : myPro
+# 로깅 레벨 수준설정
+logging:
+  level:
+    com.example.pro.controller: debug
