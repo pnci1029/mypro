@@ -20,7 +20,6 @@ public class HelloControllerTest {
     void helloTest() throws Exception {
         MockMvc build = MockMvcBuilders.standaloneSetup(hello).build();
 
-
         build.perform(
                         //get 요청
                         MockMvcRequestBuilders.get("/test")

@@ -16,8 +16,8 @@ public class Member {
     private int age;
     private String joinPath;
 
-    @OneToMany(mappedBy = "member")
-    private List<Article> article;
+//    @OneToMany(mappedBy = "member")
+//    private List<Article> article;
 
     public Member(String name, int age) {
         this.name = name;
