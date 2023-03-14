@@ -5,7 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @Slf4j
@@ -15,6 +17,9 @@ public class TrafficController {
     public String cpuIssue() {
         log.error("log");
         long value = 0;
+        Map<String, String> map = new HashMap<>();
+        Map<String, String> maps = new HashMap<>();
+
 
         for (long i = 0; i < 10000000000L; i++) {
             value++;
