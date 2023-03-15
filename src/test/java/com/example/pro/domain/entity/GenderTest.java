@@ -1,7 +1,7 @@
 package com.example.pro.domain.entity;
 
 import com.example.pro.dto.MemberGenderRequestDto;
-import com.example.pro.enumPackage.Gender;
+import com.example.pro.pracPackage.enumPackage.Gender;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
