@@ -1,4 +1,4 @@
-package com.example.pro.enumPackage;
+package com.example.pro.pracPackage.enumPackage;
 public enum Gender {
     MALE("1", "3"),
     FEMALE("2", "4");
