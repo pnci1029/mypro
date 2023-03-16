@@ -29,6 +29,7 @@ public class LoginCheckFilter implements Filter {
                 if (session == null) {
                     log.info("미인증 사용자 요청 {}", requestURI);
                     response1.sendRedirect("/login?redirectURL=" + requestURI);
+                    return;
                 }
             }
             chain.doFilter(request1, response1);
