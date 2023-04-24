@@ -1,6 +1,7 @@
 package com.example.pro.config;
 
 import com.example.pro.dto.ChoiseDto;
+import com.example.pro.dto.ChoiseDtoTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -8,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.ValueOperations;
 
-import java.util.Objects;
 import java.util.UUID;
 
 @SpringBootTest
