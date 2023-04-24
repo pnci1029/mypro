@@ -6,6 +6,8 @@ import com.example.pro.domain.repository.ArticleRepository;
 import com.example.pro.domain.repository.MemberRepository;
 import com.example.pro.dto.article.articleRequestDto.ArticleRequestDto;
 import lombok.RequiredArgsConstructor;
+import org.apache.coyote.Response;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import javax.validation.Valid;
@@ -16,23 +18,17 @@ import java.util.Optional;
 public class ArticleService {
     private final ArticleRepository articleRepository;
     private final MemberRepository memberRepository;
+
     public Article postArticle(@Valid ArticleRequestDto articleRequestDto) {
-//        Member member = null;
-//        if (memberRepository.findById(memberId).isPresent()) {
-//            member = memberRepository.findById(memberId).get();
-//        } else {
-//            throw new NullPointerException("nullPoint Error");
-//        }
+
         Article data = Article.builder()
                 .title(articleRequestDto.getTitle())
                 .content(articleRequestDto.getContent())
                 .sq(articleRequestDto.getSq())
                 .bc(articleRequestDto.getBc())
                 .dl(articleRequestDto.getDl())
-//                .member(member)
                 .build();
         return articleRepository.save(data);
-
     }
 
     public List<Article> getAllArticles() {

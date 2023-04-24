@@ -26,17 +26,17 @@ public class ArticleRequestDtoTest {
                 .visitCount(1L)
                 .build();
 
-//        Assertions.assertThrows(MethodArgumentNotValidException.class,
-//                () -> {
-//                    ArticleRequestDto.builder()
-//                            .title(null)
-//                            .content("content")
-//                            .bc(100)
-//                            .sq(100)
-//                            .dl(100)
-//                            .visitCount(1L)
-//                            .build();
-//                });
+        Assertions.assertThrows(MethodArgumentNotValidException.class,
+                () -> {
+                    ArticleRequestDto.builder()
+                            .title(null)
+                            .content("content")
+                            .bc(100)
+                            .sq(100)
+                            .dl(100)
+                            .visitCount(1L)
+                            .build();
+                });
     }
 
 }
