@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="05. 02 websocket Basic">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/config/WebSocketTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springDbPrac">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pro" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pro" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pro" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="226b2176-37c7-415c-8727-cd06563b6dd8" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LSSFQrnKiQpYZw7BfBKBf0X0bE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "/Users/song-wonjae/popcornplanet/sfsfsf/pro",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.12699747",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "spring.configuration.checksum": "37c98d6b2e3738cc21b872cb4f0f71f6"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/pro" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/pro/domain" />
+      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/example/pro" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/mypro" />
+      <recent name="$PROJECT_DIR$/spring_db_prac" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.pro.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.pro.dto.article.articleRequestDto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProApplication">
+    <configuration name="ArticleControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.pro.controller.ArticleControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="pro [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="pro [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pro/pro.test/app/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="ProApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="pro.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.pro.ProApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringDbPracApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring_db_prac.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.spring_db_prac.SpringDbPracApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringDbPracApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springDbPrac.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springdbprac.SpringDbPracApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringDbPracApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="pro.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.spring_db_prac.SpringDbPracApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.spring_db_prac.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringDbPracApplication" />
+        <item itemvalue="Gradle.pro [build]" />
+        <item itemvalue="Gradle.pro [clean]" />
+        <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="Gradle.ArticleControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="" />
+      <created>1675862887130</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675862887130</updated>
+      <workItem from="1675862888340" duration="5837000" />
+      <workItem from="1675955288295" duration="2364000" />
+      <workItem from="1676081996678" duration="7000" />
+      <workItem from="1676205047086" duration="1472000" />
+      <workItem from="1676271121782" duration="597000" />
+      <workItem from="1676293048205" duration="6737000" />
+      <workItem from="1676332436950" duration="602000" />
+      <workItem from="1676376521529" duration="9117000" />
+      <workItem from="1676560082558" duration="1636000" />
+      <workItem from="1676902381135" duration="3170000" />
+      <workItem from="1677073685560" duration="1209000" />
+      <workItem from="1677247634871" duration="2119000" />
+      <workItem from="1677508585324" duration="1462000" />
+      <workItem from="1677905987633" duration="1792000" />
+      <workItem from="1677932006550" duration="21594000" />
+      <workItem from="1678007264520" duration="2408000" />
+      <workItem from="1678108726573" duration="3035000" />
+      <workItem from="1678112780599" duration="1166000" />
+      <workItem from="1678184212324" duration="7000" />
+      <workItem from="1678198003020" duration="2019000" />
+      <workItem from="1678286021468" duration="4614000" />
+      <workItem from="1678454228215" duration="627000" />
+      <workItem from="1678717902746" duration="3335000" />
+      <workItem from="1678802502553" duration="1122000" />
+      <workItem from="1678804750320" duration="2598000" />
+      <workItem from="1678889892771" duration="2849000" />
+      <workItem from="1678963638918" duration="23000" />
+      <workItem from="1678963699183" duration="1406000" />
+      <workItem from="1679137536054" duration="41000" />
+      <workItem from="1679817082786" duration="1873000" />
+      <workItem from="1680100409757" duration="929000" />
+      <workItem from="1680134174742" duration="19000" />
+      <workItem from="1680322550919" duration="5351000" />
+      <workItem from="1680333580308" duration="721000" />
+      <workItem from="1680334317259" duration="2081000" />
+      <workItem from="1680479285018" duration="598000" />
+      <workItem from="1680506743399" duration="598000" />
+      <workItem from="1682341371670" duration="1534000" />
+      <workItem from="1682500768181" duration="1277000" />
+      <workItem from="1682823236928" duration="8841000" />
+      <workItem from="1683032395017" duration="2092000" />
+      <workItem from="1683260656111" duration="602000" />
+      <workItem from="1683348460194" duration="598000" />
+      <workItem from="1684032504702" duration="3434000" />
+      <workItem from="1685535253596" duration="610000" />
+      <workItem from="1685773913609" duration="5077000" />
+      <workItem from="1685962844831" duration="1312000" />
+    </task>
+    <task id="LOCAL-00001" summary="a">
+      <created>1675868899369</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675868899369</updated>
+    </task>
+    <task id="LOCAL-00002" summary="a">
+      <created>1675868958285</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675868958285</updated>
+    </task>
+    <task id="LOCAL-00003" summary="02.10">
+      <created>1676018432413</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676018432413</updated>
+    </task>
+    <task id="LOCAL-00004" summary="02.12">
+      <created>1676294514813</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676294514814</updated>
+    </task>
+    <task id="LOCAL-00005" summary="02.13">
+      <created>1676297956948</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676297956948</updated>
+    </task>
+    <task id="LOCAL-00006" summary="02.14">
+      <created>1676378493252</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676378493252</updated>
+    </task>
+    <task id="LOCAL-00007" summary="02.14">
+      <created>1676384097202</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676384097202</updated>
+    </task>
+    <task id="LOCAL-00008" summary="02.17">
+      <created>1676561012950</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676561012950</updated>
+    </task>
+    <task id="LOCAL-00009" summary="02.20">
+      <created>1676904520450</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676904520450</updated>
+    </task>
+    <task id="LOCAL-00010" summary="02.23">
+      <created>1677247939065</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677247939065</updated>
+    </task>
+    <task id="LOCAL-00011" summary="02.28">
+      <created>1677510043356</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677510043356</updated>
+    </task>
+    <task id="LOCAL-00012" summary="03.04 actuator 추가">
+      <created>1677938429240</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677938429240</updated>
+    </task>
+    <task id="LOCAL-00013" summary="03.05 actuator 끝">
+      <created>1677988738755</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677988738755</updated>
+    </task>
+    <task id="LOCAL-00014" summary="03.06 테스트코드">
+      <created>1678099277182</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1678099277182</updated>
+    </task>
+    <task id="LOCAL-00015" summary="03.06 테스트코드">
+      <created>1678099323424</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678099323424</updated>
+    </task>
+    <task id="LOCAL-00016" summary="03.06 프로메테우스 기본">
+      <created>1678111460663</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1678111460663</updated>
+    </task>
+    <task id="LOCAL-00017" summary="03.10 cpu,메모리 이슈 발생">
+      <created>1678454252179</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1678454252179</updated>
+    </task>
+    <task id="LOCAL-00018" summary="03.14 테스트 추가">
+      <created>1678803338879</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1678803338879</updated>
+    </task>
+    <task id="LOCAL-00019" summary="03.15 enum 추가">
+      <created>1678889955699</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1678889955699</updated>
+    </task>
+    <task id="LOCAL-00020" summary="03.15 필터 추가">
+      <created>1678891399049</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1678891399049</updated>
+    </task>
+    <task id="LOCAL-00021" summary="03.15 필터 추가">
+      <created>1678891441177</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1678891441177</updated>
+    </task>
+    <task id="LOCAL-00022" summary="03.16 필터 추가">
+      <created>1678963650558</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1678963650558</updated>
+    </task>
+    <task id="LOCAL-00023" summary="04.01 comment">
+      <created>1680326404333</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1680326404333</updated>
+    </task>
+    <task id="LOCAL-00024" summary="04.01 Interceptor">
+      <created>1680333121369</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1680333121369</updated>
+    </task>
+    <task id="LOCAL-00025" summary="04.24 api1">
+      <created>1682341403802</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1682341403802</updated>
+    </task>
+    <task id="LOCAL-00026" summary="04.26 api2">
+      <created>1682500841052</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1682500841052</updated>
+    </task>
+    <task id="LOCAL-00027" summary="04.30 websocket basic">
+      <created>1682828592704</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1682828592704</updated>
+    </task>
+    <task id="LOCAL-00028" summary="04.30 websocket basic2">
+      <created>1682837039016</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1682837039016</updated>
+    </task>
+    <task id="LOCAL-00029" summary="05. 02 websocket Basic">
+      <created>1683033874831</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1683033874831</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <MESSAGE value="02.10" />
+    <MESSAGE value="02.12" />
+    <MESSAGE value="02.13" />
+    <MESSAGE value="02.14" />
+    <MESSAGE value="02.17" />
+    <MESSAGE value="02.20" />
+    <MESSAGE value="02.23" />
+    <MESSAGE value="02.28" />
+    <MESSAGE value="03.04 actuator 추가" />
+    <MESSAGE value="03.05 actuator 끝" />
+    <MESSAGE value="03.06 테스트코드" />
+    <MESSAGE value="03.06 프로메테우스 기본" />
+    <MESSAGE value="03.10 cpu,메모리 이슈 발생" />
+    <MESSAGE value="03.14 테스트 추가" />
+    <MESSAGE value="03.15 enum 추가" />
+    <MESSAGE value="03.15 필터 추가" />
+    <MESSAGE value="03.16 필터 추가" />
+    <MESSAGE value="04.01 comment" />
+    <MESSAGE value="04.01 Interceptor" />
+    <MESSAGE value="04.24 api1" />
+    <MESSAGE value="04.26 api2" />
+    <MESSAGE value="04.30 websocket basic" />
+    <MESSAGE value="04.30 websocket basic2" />
+    <MESSAGE value="05. 02 websocket Basic" />
+    <option name="LAST_COMMIT_MESSAGE" value="05. 02 websocket Basic" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
