@@ -19,7 +19,7 @@
 
     stompClient.connect({}, function (frame) {
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/sub/hello', function (message) {
+        stompClient.subscribe('/sub/success', function (message) {
             console.log('Received1: ' + message.body);
         });
         // stompClient.subscribe('/sub/my-channel', function (message) {
@@ -32,8 +32,9 @@
             // stompClient.send("/pub/success", {}, JSON.stringify({ 'text': 'Hello, world!' }));
             // stompClient.send("/pub/channel", {}, JSON.stringify({ 'text': 'Hello, world!' }));
         console.log(document.getElementById('inputBox').value);
-                stompClient.send("/pub/success", {}, JSON.stringify({ 'value': document.getElementById('inputBox').value }));
-        toast('toast1', document.getElementById('inputBox').value, '감지');
+        stompClient.send("/sub/hello", {}, JSON.stringify({ 'value': document.getElementById('inputBox').value }));
+        console.log('send success!');
+        // toast('toast1', document.getElementById('inputBox').value, '감지');
         });
 
 
