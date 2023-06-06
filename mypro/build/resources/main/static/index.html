@@ -32,7 +32,10 @@
             // stompClient.send("/pub/success", {}, JSON.stringify({ 'text': 'Hello, world!' }));
             // stompClient.send("/pub/channel", {}, JSON.stringify({ 'text': 'Hello, world!' }));
         console.log(document.getElementById('inputBox').value);
-        stompClient.send("/sub/hello", {}, JSON.stringify({ 'value': document.getElementById('inputBox').value }));
+        stompClient.send("/pub/hello", {}, JSON.stringify({
+            'value': document.getElementById('inputBox').value,
+            'test' : 'myTest'
+        }));
         console.log('send success!');
         // toast('toast1', document.getElementById('inputBox').value, '감지');
         });
