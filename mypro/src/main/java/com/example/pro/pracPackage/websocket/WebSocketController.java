@@ -17,15 +17,16 @@ public class WebSocketController {
     private  final WebSocketRepository webSocketRepository;
     @MessageMapping("/hello")
 //    @SendTo("/hello")
-    public String handleSuccess(@RequestParam(name = "value")String value) {
+    public String handleSuccess(@Payload WebSocketRequestDto value) {
         log.info("arrive!");
-        log.error(value);
+        log.warn(value.toString());
         ObjectMapper ob = new ObjectMapper();
         WebSocketRequestDto result = ob.convertValue(value, WebSocketRequestDto.class);
+//        log.info("result : {}",result.toString());
         WebSocket webSocket = new WebSocket(result.getValue());
         log.info(result.getValue());
         webSocketRepository.save(webSocket);
-        return value;
+        return value.toString();
     }
 
 //    @MessageMapping("/channel")
