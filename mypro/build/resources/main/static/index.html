@@ -19,7 +19,7 @@
 
     stompClient.connect({}, function (frame) {
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/sub/hello', function (message) {
+        stompClient.subscribe('/sub/success', function (message) {
             console.log('Received1: ' + message.body);
         });
         // stompClient.subscribe('/sub/my-channel', function (message) {
@@ -32,74 +32,74 @@
             // stompClient.send("/pub/success", {}, JSON.stringify({ 'text': 'Hello, world!' }));
             // stompClient.send("/pub/channel", {}, JSON.stringify({ 'text': 'Hello, world!' }));
         console.log(document.getElementById('inputBox').value);
-                stompClient.send("/pub/success", {}, JSON.stringify({ 'value': document.getElementById('inputBox').value }));
+        stompClient.send("/sub/hello", {}, JSON.stringify({ 'value': document.getElementById('inputBox').value }));
+        console.log('send success!');
         // toast('toast1', document.getElementById('inputBox').value, '감지');
         });
 
 
-            // /**
-            //  * 토스트 알림
-            //  */
-            // function toast(_id, message, option) {
-            //     let mother = document.getElementById(_id);
-            //     if (mother.children.length && mother.children.length > 0) mother.removeChild(mother.firstChild);  //초기화
-            //     let doc = document.createElement('div');
-            //     mother.appendChild(doc);
-            //     doc.innerText = message;
-            //
-            //     let motherStyle = {
-            //         // background: 'rgba(192, 192, 192, 0.2)',
-            //         display: 'flex',
-            //         position: 'fixed',
-            //         bottom: '34rem',
-            //         justifyContent: 'center',
-            //         width: 'auto',
-            //         zIndex: 99999999,
-            //         left: '50%', // 중앙에 위치하도록 왼쪽 여백을 50%로 설정합니다.
-            //         transform: 'translateX(-50%)', // 왼쪽으로 50%만큼 이동하여 중앙에 정렬합니다.
-            //         textAlign: 'center'
-            //     };
-            //
-            //     for (key in motherStyle) {
-            //         mother.style[key] = motherStyle[key];
-            //     }
-            //
-            //     let style = {
-            //         opacity: 0,
-            //         background: 'none',
-            //         color: '#424242',
-            //         padding: '1rem 3.5rem 1rem 3.5rem',
-            //         borderRadius: '1rem',
-            //         width: 'fit-content',
-            //         fontSize: '15px'
-            //     };
-            //
-            //     if (option) style = {...style, option};
-            //
-            //     for (key in style) {
-            //         doc.style[key] = style[key];
-            //     }
-            //
-            //     let max = false; // 작업 완료 여부를 판별하는 변수입니다.
-            //     let inter = setInterval(() => { // 이벤트
-            //         let number = parseFloat(doc.style.opacity) + 0.01;
-            //         if (max) number = parseFloat(doc.style.opacity) - 0.02;
-            //         if (number >= 1) {
-            //             setTimeout(() => {
-            //                 max = true;
-            //                 setTimeout(() => {
-            //                     mother.style.display = 'none'; // 다른 영역 선택 가능하도록 none 처리
-            //                     clearInterval(inter); // 이벤트 종료!
-            //                 }, 3000);
-            //             }, 700);
-            //         }
-            //         let adjustedOpacity = number < 1 ? number : 1;
-            //         let adjustedBackgroundOpacity = adjustedOpacity * 0.2;
-            //         doc.style.background = `rgba(192, 192, 192, ${adjustedBackgroundOpacity})`; // 배경 투명도와 함께 텍스트와 함께 사라지도록 수정
-            //         doc.style.opacity = adjustedOpacity;
-            //     }, 10);
-            // }
+            /**
+             * 토스트 알림
+             */
+            function toast(_id, message, option) {
+                let mother = document.getElementById(_id);
+                if (mother.children.length && mother.children.length > 0) mother.removeChild(mother.firstChild);  //초기화
+                let doc = document.createElement('div');
+                mother.appendChild(doc);
+                doc.innerText = message;
 
+                let motherStyle = {
+                    // background: 'rgba(192, 192, 192, 0.2)',
+                    display: 'flex',
+                    position: 'fixed',
+                    bottom: '34rem',
+                    justifyContent: 'center',
+                    width: 'auto',
+                    zIndex: 99999999,
+                    left: '50%', // 중앙에 위치하도록 왼쪽 여백을 50%로 설정합니다.
+                    transform: 'translateX(-50%)', // 왼쪽으로 50%만큼 이동하여 중앙에 정렬합니다.
+                    textAlign: 'center'
+                };
+
+                for (key in motherStyle) {
+                    mother.style[key] = motherStyle[key];
+                }
+
+                let style = {
+                    opacity: 0,
+                    background: 'none',
+                    color: '#424242',
+                    padding: '1rem 3.5rem 1rem 3.5rem',
+                    borderRadius: '1rem',
+                    width: 'fit-content',
+                    fontSize: '15px'
+                };
+
+                if (option) style = {...style, option};
+
+                for (key in style) {
+                    doc.style[key] = style[key];
+                }
+
+                let max = false; // 작업 완료 여부를 판별하는 변수입니다.
+                let inter = setInterval(() => { // 이벤트
+                    let number = parseFloat(doc.style.opacity) + 0.01;
+                    if (max) number = parseFloat(doc.style.opacity) - 0.02;
+                    if (number >= 1) {
+                        setTimeout(() => {
+                            max = true;
+                            setTimeout(() => {
+                                mother.style.display = 'none'; // 다른 영역 선택 가능하도록 none 처리
+                                clearInterval(inter); // 이벤트 종료!
+                            }, 3000);
+                        }, 700);
+                    }
+                    let adjustedOpacity = number < 1 ? number : 1;
+                    let adjustedBackgroundOpacity = adjustedOpacity * 0.2;
+                    doc.style.background = `rgba(192, 192, 192, ${adjustedBackgroundOpacity})`; // 배경 투명도와 함께 텍스트와 함께 사라지도록 수정
+                    doc.style.opacity = adjustedOpacity;
+                }, 10);
+            }
     });
 
 </script>
