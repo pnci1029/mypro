@@ -5,138 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="06_05 new pro">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mypro/.idea/libraries/gradle_wrapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mypro/src/main/main1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mypro/src/test/test1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/ProApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/config/RedisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/config/WebSocketConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/controller/ArticleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/controller/CommentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/controller/TrafficController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/domain/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/domain/entity/Article$ArticleBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/domain/entity/Article.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/domain/entity/Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/domain/entity/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/domain/repository/ArticleRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/domain/repository/MemberRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/dto/ChoiseDto$ChoiseDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/dto/ChoiseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/dto/MemberGenderRequestDto$MemberGender$MemberGenderBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/dto/MemberGenderRequestDto$MemberGender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/dto/MemberGenderRequestDto$MemberGenderRequestDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/dto/MemberGenderRequestDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/dto/article/articleRequestDto/ArticleRequestDto$ArticleRequestDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/dto/article/articleRequestDto/ArticleRequestDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/dto/article/articleResponseDto/ArticleResponseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/pracPackage/Exception/ApiExceptionController$MemberDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/pracPackage/Exception/ApiExceptionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/pracPackage/enumPackage/Gender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/pracPackage/filterPackage/LogInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/pracPackage/filterPackage/LoginCheckFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/pracPackage/filterPackage/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/pracPackage/websocket/WebSocketController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/pro/service/ArticleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/ProApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/config/JasyptConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/config/RedisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/config/RedisConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/config/WebSocketConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/controller/ArticleControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/controller/ChoiseControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/domain/ChoiseRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/domain/HelloControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/domain/entity/Article$ArticleBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/domain/entity/Article.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/domain/entity/Choise$ChoiseBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/domain/entity/Choise.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/domain/entity/GenderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/domain/entity/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/dto/ChoiseDtoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/dto/article/articleRequestDto/ArticleRequestDtoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/dto/article/articleResponseDto/ArticleResponseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/pro/service/ArticleServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.pro.controller.ArticleControllerTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.example.pro.controller.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/build-info.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/git.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/test.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/indexes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/app/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.pro.controller.ArticleControllerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/WebSocketController.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/WebSocketTest$WebSocketTestHandler.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/WebSocketTest.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/ProApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/config/RedisConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/config/WebSocketConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/controller/ArticleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/controller/CommentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/controller/TrafficController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/domain/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/domain/entity/Article.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/domain/entity/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/domain/entity/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/domain/repository/ArticleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/domain/repository/MemberRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/dto/ChoiseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/dto/MemberGenderRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/dto/article/articleRequestDto/ArticleRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/dto/article/articleResponseDto/ArticleResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/pracPackage/Exception/ApiExceptionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/pracPackage/enumPackage/Gender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/pracPackage/filterPackage/LogInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/pracPackage/filterPackage/LoginCheckFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/pracPackage/filterPackage/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/pracPackage/websocket/WebSocketController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pro/service/ArticleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/test.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/indexes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/ProApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/config/JasyptConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/config/RedisConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/config/RedisConfigTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/config/WebSocketConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/controller/ArticleControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/controller/ChoiseControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/domain/ChoiseRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/domain/HelloControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/domain/entity/Article.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/domain/entity/Choise.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/domain/entity/GenderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/domain/entity/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/dto/ChoiseDtoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/dto/article/articleRequestDto/ArticleRequestDtoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/dto/article/articleResponseDto/ArticleResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pro/service/ArticleServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/app/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -455,6 +332,8 @@
       <workItem from="1686025352847" duration="48000" />
       <workItem from="1686025412135" duration="138000" />
       <workItem from="1686025596373" duration="46000" />
+      <workItem from="1686141182350" duration="114000" />
+      <workItem from="1686458122249" duration="647000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1675868899369</created>
