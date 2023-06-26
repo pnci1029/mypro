@@ -1,13 +1,15 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.7.8'
+//    id 'org.springframework.boot' version '2.7.8'
+    id 'org.springframework.boot' version '2.5.5'
     id 'io.spring.dependency-management' version '1.0.15.RELEASE'
     id "com.gorylenko.gradle-git-properties" version "2.4.1" //git info
 }
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+//sourceCompatibility = '11'
+sourceCompatibility = '1.8'
 
 configurations {
     compileOnly {
@@ -62,7 +64,7 @@ dependencies {
 
     //elasticSearch
     implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
-    implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.15.0'
+    implementation 'org.springframework.data:spring-data-elasticsearch:4.2.2'
 
 }
 
