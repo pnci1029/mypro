@@ -61,8 +61,8 @@ dependencies {
     implementation 'org.webjars:stomp-websocket:2.3.3'
 
     //elasticSearch
-//    implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
-//    implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.15.0'
+    implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
+    implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.15.0'
 
 }
 
