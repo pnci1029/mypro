@@ -11,7 +11,8 @@ spring:
     driver-class-name: org.h2.Driver
     username: sar
     password:
-
+#  main:
+#    allow-bean-definition-overriding: true
   sql:
     init:
       mode=always:
