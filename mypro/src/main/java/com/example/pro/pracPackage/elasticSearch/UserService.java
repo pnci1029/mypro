@@ -22,13 +22,32 @@ public class UserService {
 
     private final UserRepository userRepository;
     private final UserSearchRepository userSearchRepository;
+    private static Long userId = 1L;
+    private static int value;
 
     @Transactional
     public Long save(UserRequestDto userRequestDto) {
-        User user = new User(userRequestDto.getName(), userRequestDto.getDescription());
+        BasicProfile build = BasicProfile.builder()
+                .name(userRequestDto.getName())
+                .description(userRequestDto.getDescription())
+                .build();
+        for (int i = 0; i <= 300; i++) {
+        User user = User.builder()
+                .id(userId)
+                .name(String.valueOf(value))
+                .description(String.valueOf(value+value))
+                .basicProfile(build)
+                .build();
+
         User savedUser = userRepository.save(user);
+        userId++;
+            value++;
+        }
+
+//        User user = new User(userId,userRequestDto.getName(), userRequestDto.getDescription());
+//        User savedUser = userRepository.save(user);
 //        userSearchRepository.save(user);
-        return savedUser.getId();
+        return null;
     }
 
     public List<UserResponseDto> searchByName(String name, Pageable pageable) {
