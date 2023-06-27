@@ -12,10 +12,10 @@ import javax.persistence.*;
  * Document 어노테이션을 통해 Es DB에 매핑하는것을 명시
  */
 @Document(indexName = "users")
-@Entity(name = "USERS") @Data
+@Entity(name = "USERS") @Data  @AllArgsConstructor @Builder @NoArgsConstructor
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "name", insertable = false, updatable = false)
     private String name;
@@ -25,16 +25,16 @@ public class User {
     @Embedded
     private BasicProfile basicProfile;
 
-    protected User() {
-    }
+//    protected User() {
+//    }
 
-    public User(String name) {
-        this(name, null);
-    }
-
-    public User(String name, String description) {
-        this(null, new BasicProfile(name, description));
-    }
+//    public User(String name) {
+//        this(name, null);
+//    }
+//
+//    public User(String name, String description) {
+//        this(null, new BasicProfile(name, description));
+//    }
 
     @PersistenceConstructor
     public User(Long id, BasicProfile basicProfile) {
