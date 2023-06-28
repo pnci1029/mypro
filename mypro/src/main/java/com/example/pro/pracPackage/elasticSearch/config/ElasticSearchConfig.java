@@ -7,7 +7,7 @@ import org.springframework.data.elasticsearch.client.ClientConfiguration;
 import org.springframework.data.elasticsearch.client.RestClients;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 
-@EnableElasticsearchRepositories(basePackageClasses = {UserSearchRepository.class})
+@EnableElasticsearchRepositories(basePackageClasses = UserSearchRepository.class)
 @Configuration
 public class ElasticSearchConfig extends AbstractElasticsearchConfiguration {
 

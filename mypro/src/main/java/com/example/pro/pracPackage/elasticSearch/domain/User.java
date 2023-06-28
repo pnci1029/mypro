@@ -1,6 +1,4 @@
 package com.example.pro.pracPackage.elasticSearch.domain;
-
-import com.example.pro.pracPackage.elasticSearch.BasicProfile;
 import lombok.*;
 import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.elasticsearch.annotations.Document;
