@@ -3,6 +3,7 @@ package com.example.pro.pracPackage.elasticSearch;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.example.pro.pracPackage.elasticSearch.domain.BasicProfile;
 import com.example.pro.pracPackage.elasticSearch.domain.User;
 import com.example.pro.pracPackage.elasticSearch.domain.UserRepository;
 import com.example.pro.pracPackage.elasticSearch.dto.UserRequestDto;
@@ -32,15 +33,15 @@ public class UserService {
                 .description(userRequestDto.getDescription())
                 .build();
         for (int i = 0; i <= 300; i++) {
-        User user = User.builder()
-                .id(userId)
-                .name(String.valueOf(value))
-                .description(String.valueOf(value+value))
-                .basicProfile(build)
-                .build();
+            User user = User.builder()
+                    .id(userId)
+                    .name(String.valueOf(value))
+                    .description(String.valueOf(value+value))
+                    .basicProfile(build)
+                    .build();
 
-        User savedUser = userRepository.save(user);
-        userId++;
+            User savedUser = userRepository.save(user);
+            userId++;
             value++;
         }
 

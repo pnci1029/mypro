@@ -15,4 +15,3 @@ public class UserResponseDto {
         return new UserResponseDto(user.getId(), user.getName(), user.getDescription());
     }
 }
-

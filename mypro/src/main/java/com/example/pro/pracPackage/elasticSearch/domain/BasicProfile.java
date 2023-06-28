@@ -1,5 +1,4 @@
-package com.example.pro.pracPackage.elasticSearch;
-
+package com.example.pro.pracPackage.elasticSearch.domain;
 import lombok.Builder;
 import lombok.Data;
 
