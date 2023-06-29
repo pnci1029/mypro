@@ -4,6 +4,7 @@ import com.study.elasticsearchprac.domain.search.Member;
 import com.study.elasticsearchprac.domain.search.MemberSearchRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +13,8 @@ import java.util.List;
 public class MemberService {
     private final MemberSearchRepository memberSearchRepository;
     public List<Member> findByUserName(String userName) {
-        return memberSearchRepository.findMemberByName(userName);
+//        return memberSearchRepository.findMemberByName(userName);
+        return memberSearchRepository.searchByMemberName(userName);
     }
 
     public void save(Member member) {
