@@ -42,4 +42,9 @@ public class MemberController {
     public void insertMember(@RequestBody Member member) {
         memberService.save(member);
     }
+
+    @PostMapping("/insert/data")
+    public void insertMillionData() {
+        memberService.saveSave();
+    }
 }
