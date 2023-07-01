@@ -5,5 +5,23 @@
         "type": "nori"
       }
     }
+  },
+  "properties": {
+    "id": {
+      "type": "keyword"
+    },
+    "title": {
+      "type": "text",
+      "analyzer": "korean"
+    },
+    "length": {
+      "type": "keyword"
+    },
+    "imageLink": {
+      "type": "text"
+    },
+    "performanceType": {
+      "type": "text"
+    }
   }
 }

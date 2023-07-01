@@ -11,26 +11,31 @@ import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilde
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
 @RestController @Slf4j @RequiredArgsConstructor
 @RequestMapping("/search")
 public class MemberController {
     private final MemberService memberService;
-    private final MemberSearchRepository memberSearchRepository;
-    private final ElasticsearchOperations elasticsearchOperations;
 
-    @GetMapping("/{userName}")
-    public List<Member> findByUserName(@PathVariable(name = "userName") String userName) {
-        return memberService.findByUserName(userName);
+    @GetMapping("/name/{memberName}")
+    public List<Member> findByMemberName(@PathVariable(name = "memberName") String memberName) {
+        return memberService.findByMemberName(memberName);
+    }
+
+    @GetMapping("/home/{memberHome}")
+    public List<Member> findByMemberHome(@PathVariable(name = "memberHome") String memberHome) {
+        return memberService.findByMemberHome(memberHome);
+    }
+
+    @GetMapping("/nameHome")
+    public List<Member> findByMemberNameAndHome(@RequestParam(name = "memberName")String memberName,
+                                                @RequestParam(name = "memberHome")String memberHome) {
+        return memberService.findNameAndHome(memberName,memberHome);
     }
 
     @GetMapping("/all")
     public List<Member> getAllMember() {
-        Iterable<Member> documents = memberSearchRepository.findAll();
-        return StreamSupport.stream(documents.spliterator(), false)
-                .collect(Collectors.toList());
+        return memberService.findAll();
     }
 
     @PostMapping("/insert")

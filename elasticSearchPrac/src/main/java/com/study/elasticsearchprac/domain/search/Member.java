@@ -7,7 +7,7 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import javax.persistence.Id;
 
-@Document(indexName = "elastic")
+@Document(indexName = "member")
 @Getter @Data @Builder @NoArgsConstructor @AllArgsConstructor
 public class Member {
     @Id @Field(type = FieldType.Keyword)
