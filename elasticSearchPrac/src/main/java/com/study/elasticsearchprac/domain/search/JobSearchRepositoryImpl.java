@@ -21,6 +21,7 @@ public class JobSearchRepositoryImpl implements JobSearchRepositoryCustom {
         QueryBuilder query = QueryBuilders.queryStringQuery("*" + value + "*")
                 .field("name")
                 .field("home")
+                .field("age")
                 .field("money");
         NativeSearchQueryBuilder member = new NativeSearchQueryBuilder()
                 .withQuery(query)
