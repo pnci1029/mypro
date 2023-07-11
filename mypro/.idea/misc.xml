@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../elasticSearchPrac" />
+    <file type="web" url="file://$PROJECT_DIR$/../kafkaPrac" />
     <file type="web" url="file://$PROJECT_DIR$" />
     <file type="web" url="file://$PROJECT_DIR$/../springDbPrac" />
   </component>
