@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="06_05 new pro">
-      <change afterPath="$PROJECT_DIR$/mypro/.idea/libraries/gradle_wrapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mypro/src/main/main1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mypro/src/test/test1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/springDbPrac.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/springDbPrac.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/springDbPrac.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/springDbPrac.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/springDbPrac.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkaPrac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/KafkaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/KafkaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/KafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/KafkaProducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +28,15 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/elasticSearchPrac">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/kafkaPrac">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/security">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/springDbPrac">
@@ -101,13 +113,13 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/song-wonjae/popcornplanet/sfsfsf/pro&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/song-wonjae/Desktop/study/pro&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.12699747&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;37c98d6b2e3738cc21b872cb4f0f71f6&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;c5a40f5054a10316557028f0b5cd95bb&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -142,7 +154,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringDbPracApplication (2)">
+  <component name="RunManager" selected="Spring Boot.KafkaPracApplication">
     <configuration name="ArticleControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -224,9 +236,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ElasticSearchPracApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="elasticSearchPrac.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.elasticsearchprac.ElasticSearchPracApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaPracApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="kafkaPrac.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.kafkaprac.KafkaPracApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="pro.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.pro.ProApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="security.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.security.SecurityApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -334,6 +367,12 @@
       <workItem from="1686025596373" duration="46000" />
       <workItem from="1686141182350" duration="114000" />
       <workItem from="1686458122249" duration="647000" />
+      <workItem from="1692711817412" duration="410000" />
+      <workItem from="1692712252935" duration="90000" />
+      <workItem from="1692712354539" duration="2000" />
+      <workItem from="1693227923767" duration="370000" />
+      <workItem from="1693306102555" duration="710000" />
+      <workItem from="1693485259706" duration="2974000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1675868899369</created>
