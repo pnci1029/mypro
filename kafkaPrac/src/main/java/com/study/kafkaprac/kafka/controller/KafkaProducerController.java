@@ -1,11 +1,11 @@
-package com.study.kafkaprac;
+package com.study.kafkaprac.kafka.controller;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.ListTopicsOptions;
 import org.apache.kafka.clients.admin.ListTopicsResult;
 import org.apache.kafka.clients.admin.NewTopic;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaAdmin;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +16,7 @@ import java.util.concurrent.ExecutionException;
 
 @RestController @Slf4j
 @RequestMapping("/kafka") @RequiredArgsConstructor
-public class KafkaTopicController {
+public class KafkaProducerController {
 
     private final KafkaAdmin kafkaAdmin;
 

@@ -1,11 +1,11 @@
 package com.study.kafkaprac.kafka;
 
-import com.fasterxml.jackson.databind.deser.std.StringDeserializer;
-import com.fasterxml.jackson.databind.ser.std.StringSerializer;
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.serialization.StringDeserializer;
+import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -32,15 +32,15 @@ public class KafkaConfig {
     // ------------------------ Publish 설정 -------------------------------------
 
     // 테스트 Topic 생성 1
-    @Bean
-    public NewTopic myTopic1() {
-        return new NewTopic("my_test_topic_1", 1, (short) 1);
-    }
+//    @Bean
+//    public NewTopic myTopic1() {
+//        return new NewTopic("my_test_topic_1", 1, (short) 1);
+//    }
 
     // 테스트 Topic 생성 2
     @Bean
-    public NewTopic myTopic2() {
-        return new NewTopic("my_test_topic_2", 1, (short) 1);
+    public NewTopic testTopic() {
+        return new NewTopic("my-topic_test1", 1, (short) 1);
     }
 
     @Bean
