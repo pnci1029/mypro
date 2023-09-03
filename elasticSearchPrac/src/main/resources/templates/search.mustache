@@ -1,0 +1,31 @@
+<html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="goMain()">go back</button>
+<h2>{{memberSize}}</h2>
+{{#member}}
+    <li style="font-size: 20px;">{{name}}</li>
+    <div style="margin: auto; padding-bottom: 20px;">
+        <ul style="margin-top: 10px;">
+            <li>{{age}}</li>
+            <li>{{home}}</li>
+            <li>{{gender}}</li>
+        </ul>
+    </div>
+{{/member}}
+
+</body>
+<script>
+    function goMain() {
+        location.href = "/";
+    }
+
+</script>
+</html>
