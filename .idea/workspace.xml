@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="08.31 kafka fix">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="08.31 kafka produce / consunme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/KafkaTopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaProducerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/KafkaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/MemberController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/MemberSearchRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/MemberSearchRepositoryCustom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/MemberSearchRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/MemberService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +110,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/Users/song-wonjae/Desktop/study/pro",
+    "last_opened_file_path": "/Users/song-wonjae/Desktop/study/pro/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.12699747",
@@ -119,11 +121,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search" />
+      <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain" />
+      <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller" />
+      <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/pro" />
-      <recent name="$PROJECT_DIR$/src/test/resources" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/example/pro/domain" />
-      <recent name="$PROJECT_DIR$/src/test" />
-      <recent name="$PROJECT_DIR$/src/test/java/com/example/pro" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -139,6 +141,9 @@
       <recent name="com.example.pro.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.elasticsearchprac.service" />
+      <recent name="com.study.elasticsearchprac.domain.search" />
+      <recent name="com.study.elasticsearchprac.controller" />
       <recent name="com.example.pro.dto.article.articleRequestDto" />
     </key>
   </component>
@@ -149,7 +154,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.KafkaPracApplication">
+  <component name="RunManager" selected="Spring Boot.ElasticSearchPracApplication">
     <configuration name="ArticleControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -368,7 +373,8 @@
       <workItem from="1693227923767" duration="370000" />
       <workItem from="1693306102555" duration="710000" />
       <workItem from="1693485259706" duration="3195000" />
-      <workItem from="1693632534759" duration="3918000" />
+      <workItem from="1693632534759" duration="5267000" />
+      <workItem from="1693740370626" duration="423000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1675868899369</created>
@@ -587,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693489005296</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="08.31 kafka produce / consunme">
+      <created>1693636658704</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1693636658704</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +632,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="02.12" />
     <MESSAGE value="02.13" />
     <MESSAGE value="02.14" />
     <MESSAGE value="02.17" />
@@ -644,7 +656,8 @@
     <MESSAGE value="05. 02 websocket Basic" />
     <MESSAGE value="06_05 new pro" />
     <MESSAGE value="08.31 kafka fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="08.31 kafka fix" />
+    <MESSAGE value="08.31 kafka produce / consunme" />
+    <option name="LAST_COMMIT_MESSAGE" value="08.31 kafka produce / consunme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
