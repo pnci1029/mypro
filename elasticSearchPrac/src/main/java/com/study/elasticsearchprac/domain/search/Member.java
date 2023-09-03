@@ -18,4 +18,7 @@ public class Member {
     private String age;
     @Field(type = FieldType.Text)
     private String home;
+    @Field(type = FieldType.Keyword)
+    private String gender;
+
 }
