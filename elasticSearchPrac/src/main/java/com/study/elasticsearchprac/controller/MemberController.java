@@ -1,50 +1,73 @@
 package com.study.elasticsearchprac.controller;
 
 import com.study.elasticsearchprac.domain.search.Member;
-import com.study.elasticsearchprac.domain.search.MemberSearchRepository;
 import com.study.elasticsearchprac.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.elasticsearch.index.query.QueryBuilders;
-import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
-import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.Map;
 
-@RestController @Slf4j @RequiredArgsConstructor
-@RequestMapping("/search")
+@Controller
+@RequiredArgsConstructor
+@Slf4j
 public class MemberController {
+
     private final MemberService memberService;
 
-    @GetMapping("/name/{memberName}")
-    public List<Member> findByMemberName(@PathVariable(name = "memberName") String memberName) {
-        return memberService.findByMemberName(memberName);
+    @GetMapping("/")
+    public String getAllMember(Model model) {
+        model.addAttribute("member", memberService.getMember());
+        model.addAttribute("memberSize", memberService.getMember().size());
+        return "main";
     }
 
-    @GetMapping("/home/{memberHome}")
-    public List<Member> findByMemberHome(@PathVariable(name = "memberHome") String memberHome) {
-        return memberService.findByMemberHome(memberHome);
+
+    @GetMapping("/{memberName}")
+    public String getMemberName(@PathVariable(name = "memberName") String memberName,
+                                Model model) {
+//        return memberService.getMemberName(memberName);
+        System.out.println("memberName = " + memberName);
+
+        model.addAttribute("member", memberService.getMemberName(memberName));
+        model.addAttribute("memberSize", memberService.getMemberName(memberName).size());
+        return "main";
     }
 
-    @GetMapping("/nameHome")
-    public List<Member> findByMemberNameAndHome(@RequestParam(name = "memberName")String memberName,
-                                                @RequestParam(name = "memberHome")String memberHome) {
-        return memberService.findNameAndHome(memberName,memberHome);
+    @GetMapping("/age")
+    public String getMemberAgeRange(@RequestParam(name = "memberAge") String memberAge,
+                                    Model model) {
+        model.addAttribute("member", memberService.getMemberAge(memberAge));
+        model.addAttribute("memberSize", memberService.getMemberAge(memberAge).size());
+        return "main";
     }
 
-    @GetMapping("/all")
-    public List<Member> getAllMember() {
-        return memberService.findAll();
+
+    @PostMapping("/create/member")
+    public String postMember(@RequestBody Member member) {
+        return memberService.postMember(member);
     }
 
-    @PostMapping("/insert")
-    public void insertMember(@RequestBody Member member) {
-        memberService.save(member);
+    @PostMapping("/creates")
+    public String postMembers() {
+//        return memberService.postMembers();
+        memberService.postMembers();
+
+        return "redirect:/";
     }
 
-    @PostMapping("/insert/data")
-    public void insertMillionData() {
-        memberService.saveSave();
+    @GetMapping("/aggregate/gender")
+    public String aggregateByMemberGender(Model model) {
+
+        model.addAttribute("aggregate", memberService.aggregateMemberGender());
+        Map<String, String> map = memberService.aggregateMemberGender();
+        for (String s : map.keySet()) {
+            System.out.println("s = " + s);
+        }
+
+        return "aggregate";
     }
+
 }
