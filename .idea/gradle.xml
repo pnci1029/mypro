@@ -32,6 +32,15 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mypro" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/mypro" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/security" />
         <option name="modules">
           <set>
