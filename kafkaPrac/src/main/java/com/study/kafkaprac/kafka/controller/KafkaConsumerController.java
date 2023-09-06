@@ -14,6 +14,6 @@ public class KafkaConsumerController {
     public void kafkaListener(@Payload String message,
                               @Header(KafkaHeaders.RECEIVED_PARTITION_ID) int partition) {
         log.info("message : {}",message);
-
     }
+
 }
