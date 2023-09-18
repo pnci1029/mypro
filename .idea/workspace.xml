@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="09.05 docker build test">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="09.06 kafka setup">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/resources/main/META-INF/build-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/resources/main/META-INF/build-info.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/resources/main/git.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/resources/main/git.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/MemberService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,36 +96,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/Users/song-wonjae/Desktop/study/pro/security",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.12699747",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "spring.configuration.checksum": "1c154fecb7444521a3639b042ff69f68"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/song-wonjae/Desktop/study/pro/elasticSearchPrac/src/main/resources/templates&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.12699747&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1c154fecb7444521a3639b042ff69f68&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller" />
       <recent name="$PROJECT_DIR$/security" />
       <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search" />
       <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain" />
-      <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller" />
-      <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -145,8 +141,8 @@
       <recent name="com.example.pro.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.study.elasticsearchprac.service" />
       <recent name="com.study.elasticsearchprac.domain.search" />
+      <recent name="com.study.elasticsearchprac.service" />
       <recent name="com.study.elasticsearchprac.controller" />
       <recent name="com.example.pro.dto.article.articleRequestDto" />
     </key>
@@ -381,7 +377,13 @@
       <workItem from="1693740370626" duration="683000" />
       <workItem from="1693905288803" duration="103000" />
       <workItem from="1693917149707" duration="1111000" />
-      <workItem from="1694005329780" duration="366000" />
+      <workItem from="1694005329780" duration="411000" />
+      <workItem from="1694432730167" duration="179000" />
+      <workItem from="1694436790637" duration="231000" />
+      <workItem from="1694522270782" duration="603000" />
+      <workItem from="1694603008011" duration="1899000" />
+      <workItem from="1694928163348" duration="59000" />
+      <workItem from="1694937237194" duration="571000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1675868899369</created>
@@ -635,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693918259468</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="09.06 kafka setup">
+      <created>1694005733789</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1694005733789</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,7 +676,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="02.20" />
     <MESSAGE value="02.23" />
     <MESSAGE value="02.28" />
     <MESSAGE value="03.04 actuator 추가" />
@@ -692,7 +700,8 @@
     <MESSAGE value="09.03 elastic fix" />
     <MESSAGE value="09.03 elastic fix2" />
     <MESSAGE value="09.05 docker build test" />
-    <option name="LAST_COMMIT_MESSAGE" value="09.05 docker build test" />
+    <MESSAGE value="09.06 kafka setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="09.06 kafka setup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

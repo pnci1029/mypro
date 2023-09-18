@@ -91,7 +91,7 @@ public class MemberService {
             Collections.shuffle(home);
             Collections.shuffle(gender);
             memberSearchRepository.save(Member.builder().name(name.get(0))
-                    .age(String.valueOf(age.get(0)))
+                    .age(age.get(0))
                     .gender(gender.get(0))
                     .home(home.get(0))
                     .build());
