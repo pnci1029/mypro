@@ -12,11 +12,11 @@ import javax.persistence.Id;
 public class Member {
     @Id @Field(type = FieldType.Keyword)
     private String id;
-    @Field(type = FieldType.Text)
+    @Field(type = FieldType.Keyword)
     private String name;
-    @Field(type = FieldType.Text)
-    private String age;
-    @Field(type = FieldType.Text)
+    @Field(type = FieldType.Keyword)
+    private int age;
+    @Field(type = FieldType.Keyword)
     private String home;
     @Field(type = FieldType.Keyword)
     private String gender;
