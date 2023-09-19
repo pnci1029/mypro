@@ -1,0 +1,104 @@
+<html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="locationMove()">create</button>
+<button onclick="create100()">create 100</button>
+<input type="text" id="inputField">
+<button onclick="search()">submit</button>
+<select id="searchAge" name="searchAge">
+    <option value="0">0</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+    <option value="40">40</option>
+    <option value="50">50</option>
+    <option value="60">60</option>
+</select>
+<button onclick="goMain()">go home</button>
+<a href="/aggregate/gender">Aggregate Gender</a>
+
+{{#message}}
+    <div style="margin: auto; padding-bottom: 20px;">
+        <ul style="margin-top: 10px;">
+            <li>id: {{id}}</li>
+            <li>message : {{message}}</li>
+        </ul>
+    </div>
+{{/message}}
+
+</body>
+<script>
+    function locationMove() {
+        location.href = "/create";
+    }
+
+    function create100() {
+        $.ajax({
+            type: 'POST',
+            url: '/creates',
+            success: function (data) {
+                alert("create 100 success");
+                location.reload();
+            },
+            error: function (xhr, textStatus, errorThrown) {
+            },
+        });
+    }
+
+    function search() {
+
+        var inputValue = document.getElementById("inputField").value;
+
+        $.ajax({
+            type: 'GET',
+            url: '/' + inputValue,
+            // dataType: 'json',
+            data: {
+                memberName: inputValue,
+            },
+            success: function (data) {
+
+                location.href = inputValue;
+
+            },
+            error: function (xhr, textStatus, errorThrown) {
+            },
+        });
+    }
+
+    function goMain() {
+        location.href = "/";
+    }
+    const searchAges = document.getElementById("searchAge");
+
+    searchAges.addEventListener("change", function () {
+        const selectedValue = searchAges.value;
+        // 선택된 값을 사용하여 검색 또는 다른 동작 수행
+        searchAge(selectedValue);
+    });
+
+    function searchAge(selectedValue) {
+        $.ajax({
+            type: 'GET',
+            url: '/age',
+            // dataType: 'json',
+            data: {
+                memberAge: selectedValue,
+            },
+            success: function (data) {
+                location.href = '/age'+'?memberAge='+selectedValue;
+            },
+            error: function (xhr, textStatus, errorThrown) {
+            },
+        });
+    }
+
+</script>
+</html>
