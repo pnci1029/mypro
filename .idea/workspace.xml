@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="09.06 kafka setup">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/MemberService.java" afterDir="false" />
-    </list>
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="09.18 gradle fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -384,6 +378,7 @@
       <workItem from="1694603008011" duration="1899000" />
       <workItem from="1694928163348" duration="59000" />
       <workItem from="1694937237194" duration="571000" />
+      <workItem from="1695044808231" duration="65000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1675868899369</created>
@@ -644,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694005733789</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="09.18 gradle fix">
+      <created>1695044840187</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1695044840187</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,7 +678,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="02.23" />
     <MESSAGE value="02.28" />
     <MESSAGE value="03.04 actuator 추가" />
     <MESSAGE value="03.05 actuator 끝" />
@@ -701,7 +702,8 @@
     <MESSAGE value="09.03 elastic fix2" />
     <MESSAGE value="09.05 docker build test" />
     <MESSAGE value="09.06 kafka setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="09.06 kafka setup" />
+    <MESSAGE value="09.18 gradle fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="09.18 gradle fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
