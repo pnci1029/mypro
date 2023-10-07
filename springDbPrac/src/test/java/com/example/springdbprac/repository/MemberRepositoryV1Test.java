@@ -1,16 +1,15 @@
 package com.example.springdbprac.repository;
 
-import com.example.springdbprac.connection.ConnectionConst;
-import com.example.springdbprac.domain.Member;
+import com.example.springdbprac.inflearn.domain.Member;
+import com.example.springdbprac.inflearn.repository.MemberRepositoryV1;
 import com.zaxxer.hikari.HikariDataSource;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import java.sql.SQLException;
 import java.util.NoSuchElementException;
 
-import static com.example.springdbprac.connection.ConnectionConst.*;
+import static com.example.springdbprac.inflearn.connection.ConnectionConst.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 

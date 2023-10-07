@@ -1,12 +1,10 @@
-package com.example.springdbprac.connection;
+package com.example.springdbprac.inflearn.connection;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
-import static com.example.springdbprac.connection.ConnectionConst.PASSWORD;
 
 @Slf4j
 public class DBConnectionUtil {
@@ -19,7 +17,7 @@ public class DBConnectionUtil {
     //
     public static Connection getConnection() {
         try {
-            Connection connection = DriverManager.getConnection(ConnectionConst.URL, ConnectionConst.NAME, PASSWORD);
+            Connection connection = DriverManager.getConnection(ConnectionConst.URL, ConnectionConst.NAME, ConnectionConst.PASSWORD);
             log.info("get Connection = {}, class = {}", connection, connection.getClass());
             return connection;
         } catch (SQLException e) {

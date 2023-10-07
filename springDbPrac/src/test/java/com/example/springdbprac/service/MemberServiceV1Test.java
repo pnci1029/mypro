@@ -1,9 +1,8 @@
 package com.example.springdbprac.service;
 
-import com.example.springdbprac.connection.ConnectionConst;
-import com.example.springdbprac.domain.Member;
-import com.example.springdbprac.repository.MemberRepositoryV1;
-import lombok.RequiredArgsConstructor;
+import com.example.springdbprac.inflearn.domain.Member;
+import com.example.springdbprac.inflearn.repository.MemberRepositoryV1;
+import com.example.springdbprac.inflearn.service.MemberServiceV1;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -12,8 +11,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import java.sql.SQLException;
 
-import static com.example.springdbprac.connection.ConnectionConst.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static com.example.springdbprac.inflearn.connection.ConnectionConst.*;
 
 class MemberServiceV1Test {
     public static String memberA = "memberA";

@@ -1,4 +1,4 @@
-package com.example.springdbprac.domain;
+package com.example.springdbprac.inflearn.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

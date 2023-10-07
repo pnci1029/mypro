@@ -1,4 +1,4 @@
-package com.example.springdbprac.connection;
+package com.example.springdbprac.inflearn.connection;
 
 public abstract class ConnectionConst {
     public static final String URL = "jdbc:h2:tcp://localhost/~/testdb";
