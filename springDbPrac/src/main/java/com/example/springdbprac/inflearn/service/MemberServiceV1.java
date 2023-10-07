@@ -1,7 +1,7 @@
-package com.example.springdbprac.service;
+package com.example.springdbprac.inflearn.service;
 
-import com.example.springdbprac.domain.Member;
-import com.example.springdbprac.repository.MemberRepositoryV1;
+import com.example.springdbprac.inflearn.domain.Member;
+import com.example.springdbprac.inflearn.repository.MemberRepositoryV1;
 import lombok.RequiredArgsConstructor;
 
 import java.sql.SQLException;

@@ -1,7 +1,7 @@
 package com.example.springdbprac.repository;
 
-import com.example.springdbprac.domain.Member;
-import org.assertj.core.api.Assertions;
+import com.example.springdbprac.inflearn.domain.Member;
+import com.example.springdbprac.inflearn.repository.MemberRepositoryV0;
 import org.junit.jupiter.api.Test;
 
 import java.sql.SQLException;
@@ -9,7 +9,6 @@ import java.util.NoSuchElementException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 
 class MemberRepositoryV0Test {
 

@@ -1,24 +1,19 @@
-package com.example.springdbprac.repository;
+package com.example.springdbprac.inflearn.repository;
 
-import com.example.springdbprac.connection.DBConnectionUtil;
-import com.example.springdbprac.domain.Member;
-import lombok.RequiredArgsConstructor;
+import com.example.springdbprac.inflearn.connection.DBConnectionUtil;
+import com.example.springdbprac.inflearn.domain.Member;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.jdbc.support.JdbcUtils;
 
-import javax.sql.DataSource;
 import java.sql.*;
 import java.util.NoSuchElementException;
 
 
 /**
- * JDBC - DataSource 사용
+ * JDBC - DriverManager 사용
  */
 
-@Slf4j @RequiredArgsConstructor
-public class MemberRepositoryV1 {
-
-    private final DataSource dataSource;
+@Slf4j
+public class MemberRepositoryV0 {
 
     public Member save(Member member) throws SQLException {
         String sql = "insert into member(member_id, money) values(?,?)";
@@ -123,11 +118,33 @@ public class MemberRepositoryV1 {
     }
 
     private void close(Connection con, Statement preparedStatement, ResultSet rs) {
-        JdbcUtils.closeConnection(con);
-        JdbcUtils.closeStatement(preparedStatement);
-        JdbcUtils.closeResultSet(rs);
+        if (preparedStatement != null) {
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                log.error("error", e);
+            }
+        }
+
+        if (con != null) {
+            try {
+                con.close();
+            } catch (SQLException e) {
+                log.error("error", e);
+            }
+        }
+
+        if (rs != null) {
+            try {
+                rs.close();
+            } catch (SQLException e) {
+                log.error("error", e);
+            }
+
+        }
     }
-    private  Connection getConnection() throws SQLException {
-        return dataSource.getConnection();
+    // 커넥션을 꺼내는 메소드
+    private static Connection getConnection() {
+        return DBConnectionUtil.getConnection();
     }
 }
