@@ -16,27 +16,27 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @Slf4j
 @RequiredArgsConstructor
-@RequestMapping("/api/article")
+@RequestMapping("/api")
 public class ArticleController {
     private final ArticleService articleService;
 
-    @PostMapping("/create")
+    @PostMapping("/article/create")
     public ResponseEntity<?> createArticle(@RequestBody ArticleRequestDto dto) {
         articleService.create(dto);
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/{articleId}")
+    @GetMapping("/article/{articleId}")
     public ResponseEntity<Article> getArticle(@PathVariable(name = "articleId") Long articleId) {
         return ResponseEntity.ok(articleService.findArticle(articleId));
     }
 
-    @GetMapping("/")
+    @GetMapping("/article")
     public ResponseEntity<Slice<ArticleResponseDto>> getArticles(Pageable pageable) {
         return ResponseEntity.ok(articleService.findArticles(pageable));
     }
 
-    @GetMapping("/search")
+    @GetMapping("/article/search")
     public ResponseEntity<Slice<ArticleResponseDto>> searchArticle(@RequestParam(required = false)Long id,
                                        @RequestParam(required = false)String title,
                                        @RequestParam(required = false)String contents,
