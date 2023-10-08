@@ -29,6 +29,8 @@ public class ArticleService {
     public Article findArticle(Long articleId) {
         Optional<Article> article = articleRepository.findById(articleId);
         if (article.isPresent()) {
+            article.get().viewIncrease();
+            articleRepository.save(article.get());
             return article.get();
         } else {
             throw new NoSuchElementException("not found such article");

@@ -30,4 +30,8 @@ public class Article extends BaseEntity {
     @JsonBackReference
     private List<Comment> comments;
 
+    public void viewIncrease() {
+        this.view++;
+    }
+
 }

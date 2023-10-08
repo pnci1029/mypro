@@ -25,6 +25,9 @@ spring:
       hibernate:
         format_sql: true
         show_sql: true
+  config:
+    activate:
+      on-profile: dev
 
 # 로깅 레벨 수준설정
 logging:
