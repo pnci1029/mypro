@@ -1,10 +1,7 @@
 package com.example.springdbprac.study.domain.repository;
 
 import com.example.springdbprac.study.domain.entity.Article;
-import com.example.springdbprac.study.domain.entity.QArticle;
-import com.example.springdbprac.study.domain.entity.QComment;
 import com.example.springdbprac.study.dto.responseDto.ArticleResponseDto;
-import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -12,7 +9,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.SliceImpl;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

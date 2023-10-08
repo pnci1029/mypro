@@ -4,30 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.07 db prac project set up">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.08 basic article logic setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/reports/tests/test/classes/com.example.pro.controller.ArticleControllerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/reports/tests/test/classes/com.example.pro.controller.ArticleControllerTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/reports/tests/test/packages/com.example.pro.controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/reports/tests/test/packages/com.example.pro.controller.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/resources/main/META-INF/build-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/resources/main/META-INF/build-info.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/resources/main/git.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/resources/main/git.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/test-results/test/TEST-com.example.pro.controller.ArticleControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/test-results/test/TEST-com.example.pro.controller.ArticleControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/build/tmp/compileJava/compileTransaction/stash-dir/ElasticSearchConfig.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/SpringDbPracApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/SpringDbPracApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/entity/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/connection/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/inflearn/connection/ConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/connection/DBConnectionUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/inflearn/connection/DBConnectionUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/repository/MemberRepositoryV0Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/inflearn/repository/MemberRepositoryV0Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/repository/MemberRepositoryV1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/inflearn/repository/MemberRepositoryV1Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/service/MemberServiceV1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/inflearn/service/MemberServiceV1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/study/controller/ArticleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/study/controller/ArticleControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +55,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/mypro">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/springDbPrac">
           <activation />
         </task>
         <projects_view>
@@ -180,7 +174,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringDbPracApplication (2)">
-    <configuration name="ArticleControllerService.createArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ArticleControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/springDbPrac" />
@@ -193,7 +187,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.springdbprac.study.controller.ArticleControllerService.createArticle&quot;" />
+            <option value="&quot;com.example.springdbprac.study.controller.ArticleControllerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -217,6 +211,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.example.springdbprac.study.controller.ArticleControllerTest.createArticle&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ArticleControllerTest.findAllArticles" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springDbPrac" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.springdbprac.study.controller.ArticleControllerTest.findAllArticles&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -323,26 +340,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringDbPracApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="pro.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.spring_db_prac.SpringDbPracApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.spring_db_prac.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ArticleControllerTest" />
+        <item itemvalue="Gradle.ArticleControllerTest.findAllArticles" />
+        <item itemvalue="Gradle.ArticleControllerTest.createArticle" />
         <item itemvalue="Gradle.mypro [build]" />
         <item itemvalue="Gradle.mypro [clean]" />
-        <item itemvalue="Gradle.ArticleControllerTest.createArticle" />
-        <item itemvalue="Gradle.ArticleControllerService.createArticle" />
-        <item itemvalue="Spring Boot.SpringDbPracApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -436,7 +440,7 @@
       <workItem from="1695527743933" duration="1076000" />
       <workItem from="1695945362866" duration="10000" />
       <workItem from="1696652182887" duration="4275000" />
-      <workItem from="1696736384068" duration="4444000" />
+      <workItem from="1696736384068" duration="6808000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1675868899369</created>
@@ -725,7 +729,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696658142486</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="10.08 basic article logic setup">
+      <created>1696741037141</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1696741037141</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,7 +768,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="03.06 테스트코드" />
     <MESSAGE value="03.06 프로메테우스 기본" />
     <MESSAGE value="03.10 cpu,메모리 이슈 발생" />
     <MESSAGE value="03.14 테스트 추가" />
@@ -782,7 +792,8 @@
     <MESSAGE value="09.19 logstash basic" />
     <MESSAGE value="10.07 db prac project gradle queryDSL, web add" />
     <MESSAGE value="10.07 db prac project set up" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.07 db prac project set up" />
+    <MESSAGE value="10.08 basic article logic setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.08 basic article logic setup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
