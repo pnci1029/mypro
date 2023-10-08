@@ -1,6 +1,7 @@
 package com.example.springdbprac.study.domain.entity;
 
 import com.example.springdbprac.study.util.BaseEntity;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -21,7 +22,7 @@ public class Comment extends BaseEntity {
     private Long id;
     private String writer;
     private String contents;
-    @ManyToOne
+    @ManyToOne @JsonManagedReference
     @JoinColumn(name = "ARTICLE_ID")
     private Article article;
 }

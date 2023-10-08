@@ -1,6 +1,7 @@
 package com.example.springdbprac.study.domain.entity;
 
 import com.example.springdbprac.study.util.BaseEntity;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -26,6 +27,7 @@ public class Article extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private ArticleStatus articleStatus;
     @OneToMany(mappedBy = "article", fetch = FetchType.LAZY)
+    @JsonBackReference
     private List<Comment> comments;
 
 }
