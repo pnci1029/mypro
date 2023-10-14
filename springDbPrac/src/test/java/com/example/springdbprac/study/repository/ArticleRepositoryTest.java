@@ -18,6 +18,7 @@ import java.util.NoSuchElementException;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @DataJpaTest
@@ -31,7 +32,7 @@ public class ArticleRepositoryTest {
 
     @BeforeEach
     void beforeEach() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 1; i <= 10; i++) {
             articleRepository.save(Article.builder()
                     .title("title" + i + "test")
                     .contents("contents" + i + "test")
@@ -46,6 +47,11 @@ public class ArticleRepositoryTest {
     void findByArticleIdO() {
         Optional<Article> article = articleRepository.findById(1L);
         assertThat(article.get()).isNotNull();
+        assertAll("",
+                () -> assertThat(article.get().getTitle()).isEqualTo("title1test"),
+                () -> assertThat(article.get().getContents()).isEqualTo("contents1test"),
+                () -> assertThat(article.get().getArticleStatus()).isEqualTo(ArticleStatus.Health)
+        );
 
     }
 
