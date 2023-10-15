@@ -8,26 +8,20 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.messaging.handler.annotation.Header;
 import org.springframework.messaging.handler.annotation.Payload;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-@Component
-@Slf4j @RequiredArgsConstructor
+@Service
+@Slf4j
 public class KafkaConsumerController {
-    private final ChannelRepository channelRepository;
 
-    @KafkaListener(topics = {"my-topic_test"},groupId = "myKafka")
-    public void kafkaListener(@Payload String message,
-                              @Header(KafkaHeaders.RECEIVED_TOPIC) int topic,
-                              @Header(KafkaHeaders.RECEIVED_PARTITION_ID) int partition) {
-        log.info("message : {}",message);
-        log.info("topic : {}",topic);
-
-
-        channelRepository.save(Channel.builder()
-                .topicName("my-topic_test")
-                .message(message)
-                .build());
-        log.info(String.valueOf(channelRepository.findAll().size()));
+    @KafkaListener(topics = "my_topic_1", groupId = "foo")
+    public void consumeMyopic1(@Payload String message, @Header(KafkaHeaders.RECEIVED_PARTITION_ID) int partition){
+        System.out.println("success11");
+        log.info("[consume message]: {} from partition: {}", message, partition);
     }
 
+    @KafkaListener(topics = "#{myTopic2.name}", groupId = "group1")
+    public void consumeMyopic2(@Payload String message, @Header(KafkaHeaders.RECEIVED_PARTITION_ID) int partition){
+        System.out.println("success222");
+        log.info("[consume message]: {} from partition: {}", message, partition);
+    }
 }
