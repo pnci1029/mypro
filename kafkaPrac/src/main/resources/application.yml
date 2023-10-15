@@ -37,6 +37,7 @@ spring:
       bootstrap-servers: localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+# ver1
 setting:
   kafka-topic: my-topic
   kafka-group: my-group
@@ -44,6 +45,24 @@ setting:
   group: app-push-group
   commit: false
   earliest: earliest
+
+#ver2
+#  server.port=8081
+#  server.servlet.context-path=/
+#  server.servlet.encoding.charset=UTF-8
+#  server.servlet.encoding.enabled=true
+#  server.servlet.encoding.force=true
+
+#setting:
+#  bootstrapServers: 127.0.0.1:29092, 127.0.0.1:29093, 127.0.0.1:29094
+#  ksb:
+#    earliest: earliest
+#    topic: app-push-topic
+#    group: app-push-group
+#    enable:
+#      auto:
+#        commit: false
+
 logging:
   level:
     com.example.pro.controller: debug

@@ -28,6 +28,8 @@ dependencies {
 
     //
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
+//    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
 }
 
 tasks.named('test') {
