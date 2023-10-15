@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.08 basic article controller test">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.14 basic article test fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/study/service/ArticleServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/study/service/ArticleServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/kafkaMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/kafkaMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,9 +81,9 @@
         <option value="JUnit5 Test Class" />
         <option value="HTML File" />
         <option value="Enum" />
+        <option value="package.json" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -103,29 +102,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/Users/song-wonjae/Desktop/study/pro/springDbPrac/src/test/java/com/example/springdbprac/study",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.12699747",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "spring.configuration.checksum": "1c154fecb7444521a3639b042ff69f68"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/song-wonjae/Desktop/study/pro/springDbPrac/src/test/java/com/example/springdbprac/study&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.12699747&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1c154fecb7444521a3639b042ff69f68&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.springdbprac.study.domain.repository" />
@@ -166,7 +165,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ArticleRepositoryTest">
+  <component name="RunManager" selected="Spring Boot.KafkaPracApplication">
     <configuration name="ArticleControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -437,7 +436,10 @@
       <workItem from="1695527743933" duration="1076000" />
       <workItem from="1695945362866" duration="10000" />
       <workItem from="1696652182887" duration="4275000" />
-      <workItem from="1696736384068" duration="10323000" />
+      <workItem from="1696736384068" duration="10846000" />
+      <workItem from="1697025665732" duration="50000" />
+      <workItem from="1697256779943" duration="1599000" />
+      <workItem from="1697341815533" duration="5205000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1675868899369</created>
@@ -740,7 +742,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696743618349</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="10.08 basic article repository test">
+      <created>1696747153041</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1696747153041</updated>
+    </task>
+    <task id="LOCAL-00045" summary="10.14 basic article test fix">
+      <created>1697259843306</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1697259843306</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -772,8 +788,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="03.10 cpu,메모리 이슈 발생" />
-    <MESSAGE value="03.14 테스트 추가" />
     <MESSAGE value="03.15 enum 추가" />
     <MESSAGE value="03.15 필터 추가" />
     <MESSAGE value="03.16 필터 추가" />
@@ -797,7 +811,35 @@
     <MESSAGE value="10.07 db prac project set up" />
     <MESSAGE value="10.08 basic article logic setup" />
     <MESSAGE value="10.08 basic article controller test" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.08 basic article controller test" />
+    <MESSAGE value="10.08 basic article repository test" />
+    <MESSAGE value="10.14 basic article test fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.14 basic article test fix" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

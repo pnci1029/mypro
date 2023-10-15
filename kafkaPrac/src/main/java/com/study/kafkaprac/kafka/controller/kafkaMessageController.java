@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @RequestMapping("/kafka")
 public class kafkaMessageController {
-    private final KafkaConsumerController kafkaConsumerController;
     private final KafkaTemplate<String, String> kafkaTemplate;
 
     @PostMapping("/message")
@@ -18,6 +17,6 @@ public class kafkaMessageController {
                                 @RequestParam(name = "message") String message) {
 
         kafkaTemplate.send(topic, message);
-        log.info("topic : {}, message : {}", topic, message);
+//        log.info("topic : {}, message : {}", topic, message);
     }
 }
