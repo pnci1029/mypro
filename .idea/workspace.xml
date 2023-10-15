@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.14 basic article test fix">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.15 kafka fixing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/config/KafkaConsumerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/config/TaskExecutorConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaMessagePublisher.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/kafkaMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/kafkaMessageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -439,7 +443,7 @@
       <workItem from="1696736384068" duration="10846000" />
       <workItem from="1697025665732" duration="50000" />
       <workItem from="1697256779943" duration="1599000" />
-      <workItem from="1697341815533" duration="5205000" />
+      <workItem from="1697341815533" duration="9751000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1675868899369</created>
@@ -756,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697259843306</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="10.15 kafka fixing">
+      <created>1697347335734</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1697347335734</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -788,7 +799,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="03.15 enum 추가" />
     <MESSAGE value="03.15 필터 추가" />
     <MESSAGE value="03.16 필터 추가" />
     <MESSAGE value="04.01 comment" />
@@ -813,33 +823,8 @@
     <MESSAGE value="10.08 basic article controller test" />
     <MESSAGE value="10.08 basic article repository test" />
     <MESSAGE value="10.14 basic article test fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.14 basic article test fix" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaConsumerController.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="10.15 kafka fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.15 kafka fixing" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

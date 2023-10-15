@@ -15,11 +15,11 @@ import org.springframework.kafka.core.*;
 
 import java.util.*;
 
-@Configuration
 @EnableKafka
+@Configuration
 public class KafkaConfig {
 
-    @Value(value = "${spring.kafka.consumer.bootstrap-servers}")
+    @Value(value = "${setting.kafka-server}")
     private String bootstrapAddress;
 
     @Bean
@@ -32,15 +32,15 @@ public class KafkaConfig {
     // ------------------------ Publish 설정 -------------------------------------
 
     // 테스트 Topic 생성 1
-//    @Bean
-//    public NewTopic myTopic1() {
-//        return new NewTopic("my_test_topic_1", 1, (short) 1);
-//    }
+    @Bean
+    public NewTopic myTopic1() {
+        return new NewTopic("my_topic_1", 1, (short) 1);
+    }
 
     // 테스트 Topic 생성 2
     @Bean
-    public NewTopic testTopic() {
-        return new NewTopic("my-topic_test1", 1, (short) 1);
+    public NewTopic myTopic2() {
+        return new NewTopic("my_topic_2", 1, (short) 1);
     }
 
     @Bean
@@ -63,7 +63,7 @@ public class KafkaConfig {
     public ConsumerFactory<String, String> consumerFactory() {
         Map<String, Object> props = new HashMap<>();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapAddress);
-        props.put(ConsumerConfig.GROUP_ID_CONFIG, "myKafka");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "foo");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         return new DefaultKafkaConsumerFactory<>(props);

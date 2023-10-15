@@ -40,7 +40,7 @@ spring:
 setting:
   kafka-topic: my-topic
   kafka-group: my-group
-  kafka-server: localhost:9092'
+  kafka-server: localhost:9092
   group: app-push-group
   commit: false
   earliest: earliest
