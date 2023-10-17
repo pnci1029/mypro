@@ -17,6 +17,7 @@ import java.util.List;
         allocationSize = 30
 )
 @Getter @NoArgsConstructor @AllArgsConstructor @Builder
+@Table(name = "ARTICLE", indexes = {@Index(name = "IX_ARTICLE_ID", columnList = "ARTICLE_ID")})
 public class Article extends BaseEntity {
     @Id @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ARTICLE_SEQ")
     @Column(name = "ARTICLE_ID")

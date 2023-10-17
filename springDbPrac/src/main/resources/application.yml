@@ -28,8 +28,9 @@ spring:
   config:
     activate:
       on-profile: dev
-
 # 로깅 레벨 수준설정
 logging:
   level:
     com.example.pro.controller: debug
+server:
+  port: 8082
