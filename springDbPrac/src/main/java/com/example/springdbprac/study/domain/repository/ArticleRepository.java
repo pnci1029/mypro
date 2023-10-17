@@ -4,4 +4,6 @@ import com.example.springdbprac.study.domain.entity.Article;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ArticleRepository extends JpaRepository<Article, Long>, ArticleRepositoryCustom {
+    Article findByTitle(String title);
+
 }

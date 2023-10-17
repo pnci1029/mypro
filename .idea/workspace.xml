@@ -7,12 +7,13 @@
     <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.15 kafka fixing">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/KafkaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/KafkaPracApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/KafkaPracApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/KafkaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/java/com/study/kafkaprac/kafka/controller/KafkaMessageListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafkaPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafkaPrac/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springDbPrac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/entity/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepositoryCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springDbPrac/src/test/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/test/resources/application-test.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +170,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.KafkaPracApplication">
+  <component name="RunManager" selected="Spring Boot.SpringDbPracApplication (2)">
     <configuration name="ArticleControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -443,7 +444,8 @@
       <workItem from="1696736384068" duration="10846000" />
       <workItem from="1697025665732" duration="50000" />
       <workItem from="1697256779943" duration="1599000" />
-      <workItem from="1697341815533" duration="11379000" />
+      <workItem from="1697341815533" duration="11572000" />
+      <workItem from="1697541336604" duration="1540000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1675868899369</created>
@@ -774,7 +776,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697351885282</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="10.15 kafka fixing">
+      <created>1697353368239</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1697353368239</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -44,4 +44,8 @@ public class ArticleService {
     public Slice<ArticleResponseDto> searchArticles(Long id, String title, String contents, Pageable pageable) {
         return articleRepository.searchArticles(id, title, contents, pageable);
     }
+
+    public Article searchArticleTitle(String title) {
+        return articleRepository.findByTitle(title);
+    }
 }

@@ -1,6 +1,7 @@
 package com.example.springdbprac.study.controller;
 
 import com.example.springdbprac.study.domain.entity.Article;
+import com.example.springdbprac.study.domain.entity.ArticleStatus;
 import com.example.springdbprac.study.dto.requestDto.ArticleRequestDto;
 import com.example.springdbprac.study.dto.responseDto.ArticleResponseDto;
 import com.example.springdbprac.study.service.ArticleService;
@@ -24,6 +25,24 @@ public class ArticleController {
     public ResponseEntity<?> createArticle(@RequestBody ArticleRequestDto dto) {
         articleService.create(dto);
         return ResponseEntity.ok().build();
+    }
+    @PostMapping("/article/creates")
+    public ResponseEntity<?> createArticles() {
+        for (int i = 0; i < 10000; i++) {
+            ArticleRequestDto dto = ArticleRequestDto.builder()
+                    .articleStatus("Etc")
+                    .title("title" + i)
+                    .contents("contents" + i)
+                    .build();
+
+            articleService.create(dto);
+        }
+        return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/search/article")
+    public ResponseEntity<Article> searchArticle(@RequestParam(name = "title") String title) {
+        return ResponseEntity.ok(articleService.searchArticleTitle(title));
     }
 
     @GetMapping("/article/{articleId}")
