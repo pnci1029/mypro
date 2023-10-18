@@ -19,11 +19,12 @@ public class ArticleService {
     private final ArticleRepository articleRepository;
 
     public void create(ArticleRequestDto dto) {
-        articleRepository.save(Article.builder()
+        Article build = Article.builder()
                 .title(dto.getTitle())
                 .contents(dto.getContents())
                 .articleStatus(ArticleStatus.valueOf(dto.getArticleStatus()))
-                .build());
+                .build();
+        articleRepository.save(build);
     }
 
     public Article findArticle(Long articleId) {
