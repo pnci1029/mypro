@@ -12,6 +12,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+import org.springframework.boot.test.mock.mockito.MockBean;
+
+import java.util.Optional;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
@@ -23,10 +26,11 @@ public class ArticleServiceTest {
 
     @InjectMocks
     ArticleService articleService;
-    @Mock
+    @MockBean
     ArticleRepository articleRepository;
     @Mock
     Article article;
+
 
     @BeforeEach
     void beforeEach() {
@@ -56,21 +60,28 @@ public class ArticleServiceTest {
         Mockito.verify(articleRepository, times(1)).save(any());
     }
 
-    @DisplayName("게시글 ID로 조횟수 증가 O")
+
+    @DisplayName("게시글 조회")
     @Test
-    void findByArticleId() {
-
-        ArticleRequestDto article = ArticleRequestDto.builder()
-                .title("my title")
-                .contents("my contents")
-                .articleStatus(String.valueOf(ArticleStatus.Health))
-                .build();
-
-//        given(articleRepository.save(any(Article.class))).willReturn(mock(Article.class));
-//        articleService.findArticle(1L);
-
-//        given(articleService.findArticle(eq(1L))).willReturn(article);
+    void findArticleById() {
+        given(articleRepository.findById(1L)).willReturn(Optional.ofNullable(article));
 
 
     }
+    // TODO: 2023/10/17 이거부터 하고 다른테스트 ㄱ
+//    @DisplayName("게시글 ID로 조횟수 증가 O")
+//    @Test
+//    void findByArticleId() {
+//
+//        ArticleRequestDto article = ArticleRequestDto.builder()
+//                .title("my title")
+//                .contents("my contents")
+//                .articleStatus(String.valueOf(ArticleStatus.Health))
+//                .build();
+//
+////        given(articleRepository.save(any(Article.class))).willReturn(mock(Article.class));
+////        articleService.findArticle(1L);
+//
+////        given(articleService.findArticle(eq(1L))).willReturn(article);
+//    }
 }

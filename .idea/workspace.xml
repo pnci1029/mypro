@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.15 kafka fixing">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.17 db setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springDbPrac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/domain/repository/ArticleRepositoryCustom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/test/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/test/resources/application-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/study/service/ArticleServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/study/service/ArticleServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -446,6 +442,10 @@
       <workItem from="1697256779943" duration="1599000" />
       <workItem from="1697341815533" duration="11572000" />
       <workItem from="1697541336604" duration="1540000" />
+      <workItem from="1697543156162" duration="662000" />
+      <workItem from="1697544467092" duration="34000" />
+      <workItem from="1697544672961" duration="379000" />
+      <workItem from="1697545173107" duration="3480000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1675868899369</created>
@@ -783,7 +783,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697353368239</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="10.17 db setup">
+      <created>1697543366919</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1697543366919</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -815,7 +822,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="03.15 필터 추가" />
     <MESSAGE value="03.16 필터 추가" />
     <MESSAGE value="04.01 comment" />
     <MESSAGE value="04.01 Interceptor" />
@@ -840,7 +846,8 @@
     <MESSAGE value="10.08 basic article repository test" />
     <MESSAGE value="10.14 basic article test fix" />
     <MESSAGE value="10.15 kafka fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.15 kafka fixing" />
+    <MESSAGE value="10.17 db setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.17 db setup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
