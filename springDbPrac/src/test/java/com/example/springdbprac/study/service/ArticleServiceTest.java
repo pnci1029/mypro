@@ -5,6 +5,7 @@ import com.example.springdbprac.study.domain.entity.ArticleStatus;
 import com.example.springdbprac.study.domain.repository.ArticleRepository;
 import com.example.springdbprac.study.dto.requestDto.ArticleRequestDto;
 import lombok.extern.slf4j.Slf4j;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -16,25 +17,37 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.util.Optional;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.*;
 
 @Slf4j
 public class ArticleServiceTest {
 
     @InjectMocks
     ArticleService articleService;
-    @MockBean
+    @Mock
     ArticleRepository articleRepository;
     @Mock
+    Article mockArticle;
+
     Article article;
+
 
 
     @BeforeEach
     void beforeEach() {
         MockitoAnnotations.initMocks(this);
+        article = Article.builder()
+                .id(1L)
+                .articleStatus(ArticleStatus.Etc)
+                .view(0)
+                .title("testTitle")
+                .contents("testContents")
+                .build();
 //        articleRepository.save(Article.builder()
 //                .title("title")
 //                .contents("contents")
@@ -53,7 +66,7 @@ public class ArticleServiceTest {
                 .articleStatus(String.valueOf(ArticleStatus.Health))
                 .build();
 
-        given(articleRepository.save(any(Article.class))).willReturn(mock(Article.class));
+        given(articleRepository.save(any(Article.class))).willReturn(mockArticle);
 
         articleService.create(article);
 
@@ -64,24 +77,28 @@ public class ArticleServiceTest {
     @DisplayName("게시글 조회")
     @Test
     void findArticleById() {
-        given(articleRepository.findById(1L)).willReturn(Optional.ofNullable(article));
+        given(articleRepository.findById(1L)).willReturn(Optional.ofNullable(mockArticle));
 
+        Article article = articleService.findArticle(1L);
+
+        assertThat(article).isNotNull();
+    }
+    @DisplayName("게시글 ID로 조횟수 증가 O")
+    @Test
+    void findByArticleId() {
+        ArticleRequestDto article = ArticleRequestDto.builder()
+                .title("my title")
+                .contents("my contents")
+                .articleStatus(String.valueOf(ArticleStatus.Health))
+                .build();
+
+        given(articleRepository.save(any(Article.class))).willReturn(mockArticle);
+
+        articleService.create(article);
+
+        given(articleRepository.findById(1L)).willReturn(Optional.ofNullable(mockArticle));
+
+//        verify(articleRepository,times(1)).findById(1L);
 
     }
-    // TODO: 2023/10/17 이거부터 하고 다른테스트 ㄱ
-//    @DisplayName("게시글 ID로 조횟수 증가 O")
-//    @Test
-//    void findByArticleId() {
-//
-//        ArticleRequestDto article = ArticleRequestDto.builder()
-//                .title("my title")
-//                .contents("my contents")
-//                .articleStatus(String.valueOf(ArticleStatus.Health))
-//                .build();
-//
-////        given(articleRepository.save(any(Article.class))).willReturn(mock(Article.class));
-////        articleService.findArticle(1L);
-//
-////        given(articleService.findArticle(eq(1L))).willReturn(article);
-//    }
 }

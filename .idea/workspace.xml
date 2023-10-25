@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.17 db setup">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.18 db setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/java/com/example/springdbprac/study/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springDbPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/study/service/ArticleServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/study/service/ArticleServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +163,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringDbPracApplication (2)">
+  <component name="RunManager" selected="Gradle.ArticleServiceTest">
     <configuration name="ArticleControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -339,10 +336,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ArticleRepositoryTest" />
         <item itemvalue="Gradle.ArticleServiceTest" />
-        <item itemvalue="Gradle.ArticleServiceTest.findByArticleId" />
         <item itemvalue="Gradle.ArticleServiceTest.createArticle" />
+        <item itemvalue="Gradle.ArticleRepositoryTest" />
+        <item itemvalue="Gradle.ArticleServiceTest.findByArticleId" />
         <item itemvalue="Gradle.ArticleControllerTest" />
       </list>
     </recent_temporary>
@@ -446,13 +443,9 @@
       <workItem from="1697544467092" duration="34000" />
       <workItem from="1697544672961" duration="379000" />
       <workItem from="1697545173107" duration="3480000" />
-    </task>
-    <task id="LOCAL-00001" summary="a">
-      <created>1675868899369</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1675868899369</updated>
+      <workItem from="1697623205112" duration="654000" />
+      <workItem from="1698108888307" duration="611000" />
+      <workItem from="1698234375529" duration="1024000" />
     </task>
     <task id="LOCAL-00002" summary="a">
       <created>1675868958285</created>
@@ -790,7 +783,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697543366919</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="10.18 db setup">
+      <created>1697623257914</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1697623257914</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -822,7 +822,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="03.16 필터 추가" />
     <MESSAGE value="04.01 comment" />
     <MESSAGE value="04.01 Interceptor" />
     <MESSAGE value="04.24 api1" />
@@ -847,7 +846,8 @@
     <MESSAGE value="10.14 basic article test fix" />
     <MESSAGE value="10.15 kafka fixing" />
     <MESSAGE value="10.17 db setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.17 db setup" />
+    <MESSAGE value="10.18 db setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.18 db setup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
