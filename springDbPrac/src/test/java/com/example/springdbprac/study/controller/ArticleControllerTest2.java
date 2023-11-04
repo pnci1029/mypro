@@ -6,6 +6,7 @@ import com.example.springdbprac.study.domain.repository.ArticleRepository;
 import com.example.springdbprac.study.service.ArticleService;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,13 @@ public class ArticleControllerTest2 {
 
     @Autowired
     ArticleRepository articleRepository;
+
+    @BeforeEach
+    void beforeEach() {
+        for (int i = 0; i < 10; i++) {
+            articleRepository.save(new Article((long) i, "test + " + i, "contents + " + i, 0, ArticleStatus.Health, null));
+        }
+    }
 
     @Test
     @DisplayName("게시글 생성")
