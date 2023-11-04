@@ -18,11 +18,8 @@ public class ArticleRestController {
     @PostMapping(value = "/create/article", consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.MULTIPART_FORM_DATA_VALUE})
     public String createArticle(@RequestPart(required = false) ArticleRequestDto articleRequestDto,
                                 @RequestPart(required = false) List<MultipartFile> multipartFiles) {
-        if (!multipartFiles.isEmpty()) {
-            for (MultipartFile multipartFile : multipartFiles) {
-                System.out.println("multipartFile.getName() = " + multipartFile.getName());
-            }
-        }
+        multipartFiles.forEach(data -> log.info(data.getOriginalFilename()));
+//        articleService.create(articleService, multipartFiles);
         return "success";
     }
 
