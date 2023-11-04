@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="10.28 fix">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.03 comment create">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/PerformanceDocument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/PerformanceSearchRepositoryCustom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/PerformanceSearchRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/PerformanceSearchRepositoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +129,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.study.elasticsearchprac.service" />
       <recent name="com.example.springdbprac.study.domain.repository" />
       <recent name="com.example.springdbprac.study.service" />
     </key>
@@ -162,7 +168,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ArticleControllerTest2">
+  <component name="RunManager" selected="Spring Boot.ElasticSearchPracApplication">
     <configuration name="ArticleControllerTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -448,13 +454,8 @@
       <workItem from="1698454901864" duration="1248000" />
       <workItem from="1698490190219" duration="702000" />
       <workItem from="1698754462003" duration="199000" />
-    </task>
-    <task id="LOCAL-00004" summary="02.12">
-      <created>1676294514813</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1676294514814</updated>
+      <workItem from="1699008305242" duration="644000" />
+      <workItem from="1699068496397" duration="3362000" />
     </task>
     <task id="LOCAL-00005" summary="02.13">
       <created>1676297956948</created>
@@ -792,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698490651198</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="11.03 comment create">
+      <created>1699008942864</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1699008942864</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -824,7 +832,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="04.24 api1" />
     <MESSAGE value="04.26 api2" />
     <MESSAGE value="04.30 websocket basic" />
     <MESSAGE value="04.30 websocket basic2" />
@@ -849,7 +856,33 @@
     <MESSAGE value="10.18 db setup" />
     <MESSAGE value="10.2 fix" />
     <MESSAGE value="10.28 fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.28 fix" />
+    <MESSAGE value="11.03 comment create" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.03 comment create" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java</url>
+          <line>18</line>
+          <properties class="com.study.elasticsearchprac.controller.ArticleRestController" method="createArticle">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
