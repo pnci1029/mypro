@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.03 comment create">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.04 elastic article setup &amp; h2 fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/PerformanceDocument.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/PerformanceSearchRepositoryCustom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/PerformanceSearchRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/PerformanceSearchRepositoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/ArticleService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -455,14 +452,7 @@
       <workItem from="1698490190219" duration="702000" />
       <workItem from="1698754462003" duration="199000" />
       <workItem from="1699008305242" duration="644000" />
-      <workItem from="1699068496397" duration="3362000" />
-    </task>
-    <task id="LOCAL-00005" summary="02.13">
-      <created>1676297956948</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1676297956948</updated>
+      <workItem from="1699068496397" duration="9509000" />
     </task>
     <task id="LOCAL-00006" summary="02.14">
       <created>1676378493252</created>
@@ -800,7 +790,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699008942864</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="11.04 elastic article setup &amp; h2 fix">
+      <created>1699071921653</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1699071921653</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -832,7 +829,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="04.26 api2" />
     <MESSAGE value="04.30 websocket basic" />
     <MESSAGE value="04.30 websocket basic2" />
     <MESSAGE value="05. 02 websocket Basic" />
@@ -857,32 +853,8 @@
     <MESSAGE value="10.2 fix" />
     <MESSAGE value="10.28 fix" />
     <MESSAGE value="11.03 comment create" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.03 comment create" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java</url>
-          <line>18</line>
-          <properties class="com.study.elasticsearchprac.controller.ArticleRestController" method="createArticle">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="11.04 elastic article setup &amp; h2 fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.04 elastic article setup &amp; h2 fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
