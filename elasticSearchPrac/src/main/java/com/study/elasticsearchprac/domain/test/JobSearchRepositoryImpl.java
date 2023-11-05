@@ -1,5 +1,6 @@
-package com.study.elasticsearchprac.domain.search;
+package com.study.elasticsearchprac.domain.test;
 
+import com.study.elasticsearchprac.domain.search.Member;
 import com.study.elasticsearchprac.dto.MemberJobResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.elasticsearch.index.query.QueryBuilder;

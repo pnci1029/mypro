@@ -1,21 +1,26 @@
-package com.study.elasticsearchprac.domain.search;
+package com.study.elasticsearchprac.domain.test;
 
 import lombok.*;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Document(indexName = "logstash-2023.09.05-000001")
+@Document(indexName = "job")
 @Getter
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LogMessage {
-    @Id @Field(type = FieldType.Keyword)
+public class Job {
+    @Id
+    @Field(type = FieldType.Keyword)
     private String id;
     @Field(type = FieldType.Text)
-    private String message;
+    private String name;
+    @Field(type = FieldType.Text)
+    private String money;
 }

@@ -1,6 +1,6 @@
 package com.study.elasticsearchprac.controller;
 
-import com.study.elasticsearchprac.domain.search.LogMessage;
+import com.study.elasticsearchprac.domain.test.LogMessage;
 import com.study.elasticsearchprac.service.LogMessageService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
