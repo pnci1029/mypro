@@ -8,10 +8,10 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+// 인덱스 명 소문자로 해야함
 @Document(indexName = "article")
-@Getter
-public class Article {
+@Getter @Builder
+public class ArticleSearch {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Field(type = FieldType.Keyword)
     private Long id;
