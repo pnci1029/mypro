@@ -1,6 +1,6 @@
 package com.study.elasticsearchprac.dto;
 
-import com.study.elasticsearchprac.domain.PerformanceType;
+import com.study.elasticsearchprac.domain.test.PerformanceType;
 import lombok.Data;
 
 @Data

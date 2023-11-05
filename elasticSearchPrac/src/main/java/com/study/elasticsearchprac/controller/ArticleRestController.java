@@ -13,13 +13,13 @@ import java.util.List;
 @RequestMapping("/rest")
 @RestController @RequiredArgsConstructor @Slf4j
 public class ArticleRestController {
-    private ArticleService articleService;
+    private final ArticleService articleService;
 
     @PostMapping(value = "/create/article", consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.MULTIPART_FORM_DATA_VALUE})
     public String createArticle(@RequestPart(required = false) ArticleRequestDto articleRequestDto,
-                                @RequestPart(required = false) List<MultipartFile> multipartFiles) {
-        multipartFiles.forEach(data -> log.info(data.getOriginalFilename()));
-//        articleService.create(articleService, multipartFiles);
+                                @RequestPart(required = false) List<MultipartFile> multipartFiles
+    ) {
+        articleService.create(articleRequestDto, multipartFiles);
         return "success";
     }
 

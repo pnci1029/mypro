@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.04 elastic img base setup">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.05 test index move">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearchRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/ArticleRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/ArticleRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/CommonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/CommonRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/MemberJobResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/MemberJobResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/ArticleService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +87,8 @@
         <option value="HTML File" />
         <option value="Enum" />
         <option value="package.json" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -451,21 +458,8 @@
       <workItem from="1698490190219" duration="702000" />
       <workItem from="1698754462003" duration="199000" />
       <workItem from="1699008305242" duration="644000" />
-      <workItem from="1699068496397" duration="11430000" />
-    </task>
-    <task id="LOCAL-00007" summary="02.14">
-      <created>1676384097202</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1676384097202</updated>
-    </task>
-    <task id="LOCAL-00008" summary="02.17">
-      <created>1676561012950</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1676561012950</updated>
+      <workItem from="1699068496397" duration="11686000" />
+      <workItem from="1699161229871" duration="1498000" />
     </task>
     <task id="LOCAL-00009" summary="02.20">
       <created>1676904520450</created>
@@ -796,7 +790,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699079523820</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="11.04 before each tast">
+      <created>1699082092226</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1699082092226</updated>
+    </task>
+    <task id="LOCAL-00057" summary="11.05 test index move">
+      <created>1699162722909</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1699162722910</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -828,8 +836,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="04.30 websocket basic2" />
-    <MESSAGE value="05. 02 websocket Basic" />
     <MESSAGE value="06_05 new pro" />
     <MESSAGE value="08.31 kafka fix" />
     <MESSAGE value="08.31 kafka produce / consunme" />
@@ -853,7 +859,9 @@
     <MESSAGE value="11.03 comment create" />
     <MESSAGE value="11.04 elastic article setup &amp; h2 fix" />
     <MESSAGE value="11.04 elastic img base setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.04 elastic img base setup" />
+    <MESSAGE value="11.04 before each tast" />
+    <MESSAGE value="11.05 test index move" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.05 test index move" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,21 +1,23 @@
 package com.study.elasticsearchprac.domain.search;
 
+import lombok.Builder;
 import lombok.Getter;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
-
+import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import java.util.List;
 
-@Document(indexName = "article")
-@Getter
+// 인덱스 명 소문자로 해야함
+@Document(indexName = "image")
+@Getter @Builder
 public class Image {
-    @javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Field(type = FieldType.Keyword)
-    private String Id;
+    private Long id;
 
     @Field(type = FieldType.Text)
     private String imageName;
