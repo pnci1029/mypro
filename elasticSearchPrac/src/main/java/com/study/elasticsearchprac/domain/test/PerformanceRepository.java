@@ -1,7 +1,6 @@
-package com.study.elasticsearchprac.domain;
+package com.study.elasticsearchprac.domain.test;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 public interface PerformanceRepository extends JpaRepository<Performance, Long> {
 }

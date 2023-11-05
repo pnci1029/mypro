@@ -1,7 +1,6 @@
 package com.study.elasticsearchprac.controller;
 
-import com.study.elasticsearchprac.domain.search.Job;
-import com.study.elasticsearchprac.domain.search.Member;
+import com.study.elasticsearchprac.domain.test.Job;
 import com.study.elasticsearchprac.dto.MemberJobResponseDto;
 import com.study.elasticsearchprac.service.JobSearchService;
 import lombok.RequiredArgsConstructor;

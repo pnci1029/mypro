@@ -1,10 +1,9 @@
-package com.study.elasticsearchprac.domain;
+package com.study.elasticsearchprac.domain.test;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.*;
 

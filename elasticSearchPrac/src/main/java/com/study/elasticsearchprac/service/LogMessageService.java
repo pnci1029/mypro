@@ -1,7 +1,7 @@
 package com.study.elasticsearchprac.service;
 
-import com.study.elasticsearchprac.domain.search.LogMessage;
-import com.study.elasticsearchprac.domain.search.LogMessageRepository;
+import com.study.elasticsearchprac.domain.test.LogMessage;
+import com.study.elasticsearchprac.domain.test.LogMessageRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

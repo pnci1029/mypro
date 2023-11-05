@@ -1,4 +1,4 @@
-package com.study.elasticsearchprac.domain;
+package com.study.elasticsearchprac.domain.test;
 
 public enum PerformanceType {
 
