@@ -14,6 +14,15 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/bookPrac" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/bookPrac" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/elasticSearchPrac" />
         <option name="modules">
           <set>

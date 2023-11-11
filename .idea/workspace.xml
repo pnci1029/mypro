@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.05 test index move">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.10 test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearchRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/ArticleRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/ArticleRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/CommonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/CommonRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/MemberJobResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/MemberJobResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/ArticleService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +17,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/bookPrac">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/elasticSearchPrac">
@@ -87,8 +82,8 @@
         <option value="HTML File" />
         <option value="Enum" />
         <option value="package.json" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -300,6 +295,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookPracApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="bookPrac.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.bookprac.BookPracApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ElasticSearchPracApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="elasticSearchPrac.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.elasticsearchprac.ElasticSearchPracApplication" />
@@ -459,28 +461,9 @@
       <workItem from="1698754462003" duration="199000" />
       <workItem from="1699008305242" duration="644000" />
       <workItem from="1699068496397" duration="11686000" />
-      <workItem from="1699161229871" duration="1498000" />
-    </task>
-    <task id="LOCAL-00009" summary="02.20">
-      <created>1676904520450</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1676904520450</updated>
-    </task>
-    <task id="LOCAL-00010" summary="02.23">
-      <created>1677247939065</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1677247939065</updated>
-    </task>
-    <task id="LOCAL-00011" summary="02.28">
-      <created>1677510043356</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1677510043356</updated>
+      <workItem from="1699161229871" duration="1683000" />
+      <workItem from="1699573118673" duration="952000" />
+      <workItem from="1699678632787" duration="188000" />
     </task>
     <task id="LOCAL-00012" summary="03.04 actuator 추가">
       <created>1677938429240</created>
@@ -804,7 +787,28 @@
       <option name="project" value="LOCAL" />
       <updated>1699162722910</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="11.05 entity index divide">
+      <created>1699162815256</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1699162815256</updated>
+    </task>
+    <task id="LOCAL-00059" summary="11.05 entity index divide">
+      <created>1699573131501</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1699573131502</updated>
+    </task>
+    <task id="LOCAL-00060" summary="11.10 test">
+      <created>1699573986375</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1699573986376</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -836,8 +840,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="06_05 new pro" />
-    <MESSAGE value="08.31 kafka fix" />
     <MESSAGE value="08.31 kafka produce / consunme" />
     <MESSAGE value="09.03 elastic fix" />
     <MESSAGE value="09.03 elastic fix2" />
@@ -861,7 +863,9 @@
     <MESSAGE value="11.04 elastic img base setup" />
     <MESSAGE value="11.04 before each tast" />
     <MESSAGE value="11.05 test index move" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.05 test index move" />
+    <MESSAGE value="11.05 entity index divide" />
+    <MESSAGE value="11.10 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.10 test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
