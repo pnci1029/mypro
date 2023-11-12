@@ -66,4 +66,23 @@ public class ArticleSearchRepositoryImpl implements ArticleSearchRepositoryCusto
                 .map(SearchHit::getContent)
                 .findFirst();
     }
+
+    @Override
+    public List<ArticleSearch> searchArticleByKeyword(String keyword) {
+        BoolQueryBuilder boolQuery = QueryBuilders.boolQuery()
+                .should(QueryBuilders.matchQuery("title", keyword))
+                .should(QueryBuilders.matchQuery("content",keyword))
+                .should(QueryBuilders.matchQuery("imgTagging",keyword))
+                ;
+
+        NativeSearchQuery searchQuery = new NativeSearchQueryBuilder()
+                .withQuery(boolQuery)
+                .withPageable(PageRequest.of(0,1000))
+                .build();
+
+        SearchHits<ArticleSearch> search = elasticsearchOperations.search(searchQuery, ArticleSearch.class);
+        return search.stream()
+                .map(SearchHit::getContent)
+                .collect(Collectors.toList());
+    }
 }

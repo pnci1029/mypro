@@ -35,9 +35,14 @@ public class ArticleRestController {
         return articleSearchService.getAllArticles();
     }
 
+    @GetMapping("/article/search/{articleId}")
+    public ArticleSearch getArticleById(@PathVariable String articleId) {
+        return articleSearchService.getArticleById(articleId);
+    }
+
     @GetMapping("/article/search")
-    public ArticleSearch getArticleTagging(@RequestParam String articleId) {
-        return articleSearchService.searchArticle(articleId);
+    public List<ArticleSearch> getArticleTagging(@RequestParam String keyword) {
+        return articleSearchService.searchArticle(keyword);
     }
 
     @PostMapping("/article/tagging")
