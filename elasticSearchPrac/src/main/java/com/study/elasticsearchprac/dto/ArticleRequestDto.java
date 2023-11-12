@@ -10,5 +10,5 @@ import java.util.List;
 public class ArticleRequestDto {
     private String title;
     private String content;
-    private List<MultipartFile> imgList;
+//    private MultipartFile img;
 }

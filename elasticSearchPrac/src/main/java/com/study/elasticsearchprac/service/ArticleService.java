@@ -15,9 +15,8 @@ public class ArticleService {
     private final ArticleSearchRepository articleRepository;
     private final ImageRepository imageRepository;
 
-    public void create(ArticleRequestDto articleRequestDto, List<MultipartFile> multipartFiles) {
-        multipartFiles.forEach(data -> log.info(data.getOriginalFilename()));
-
-
+    public void create(ArticleRequestDto articleRequestDto, MultipartFile multipartFiles) {
+//        multipartFiles.forEach(data -> log.info(data.getOriginalFilename()));
+        log.info(multipartFiles.getOriginalFilename());
     }
 }

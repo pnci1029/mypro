@@ -21,7 +21,7 @@ public class MemberController {
     public String getAllMember(Model model) {
         model.addAttribute("member", memberService.getMember());
         model.addAttribute("memberSize", memberService.getMember().size());
-        return "main";
+        return "/region/main";
     }
 
 
@@ -33,7 +33,7 @@ public class MemberController {
 
         model.addAttribute("member", memberService.getMemberName(memberName));
         model.addAttribute("memberSize", memberService.getMemberName(memberName).size());
-        return "main";
+        return "/region/main";
     }
 
     @GetMapping("/age")
@@ -41,7 +41,7 @@ public class MemberController {
                                     Model model) {
         model.addAttribute("member", memberService.getMemberAge(memberAge));
         model.addAttribute("memberSize", memberService.getMemberAge(memberAge).size());
-        return "main";
+        return "/region/main";
     }
 
 
@@ -55,7 +55,7 @@ public class MemberController {
 //        return memberService.postMembers();
         memberService.postMembers();
 
-        return "redirect:/";
+        return "redirect:/region";
     }
 
     @GetMapping("/aggregate/gender")
@@ -67,7 +67,7 @@ public class MemberController {
             System.out.println("s = " + s);
         }
 
-        return "aggregate";
+        return "/region/aggregate";
     }
 
 }
