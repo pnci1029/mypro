@@ -30,8 +30,19 @@ public class ArticleRestController {
         return "1";
     }
 
-    @GetMapping("/search/articles")
+    @GetMapping("/article/searches")
     public List<ArticleSearch> getArticles() {
         return articleSearchService.getAllArticles();
+    }
+
+    @GetMapping("/article/search")
+    public ArticleSearch getArticleTagging(@RequestParam String articleId) {
+        return articleSearchService.searchArticle(articleId);
+    }
+
+    @PostMapping("/article/tagging")
+    public void tagImage(@RequestParam(required = false) List<String> tagging,
+                         @RequestParam(required = false) String img) {
+        articleSearchService.tagImage(tagging, img);
     }
 }
