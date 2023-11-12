@@ -4,18 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.11 simple setup">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.12 article post basic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/LogMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/LogMessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/ArticleRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/dto/ArticleRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearchRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/aggregate.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/region/aggregate.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/create.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/region/create.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/region/main.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/search.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/region/search.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/searchLog.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/region/searchLog.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/article/articleMain.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/article/articleMain.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/build/resources/main/META-INF/build-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/resources/main/META-INF/build-info.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/build/resources/main/git.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/build/resources/main/git.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +100,8 @@
         <option value="HTML File" />
         <option value="Enum" />
         <option value="package.json" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -474,14 +482,7 @@
       <workItem from="1699161229871" duration="1683000" />
       <workItem from="1699573118673" duration="952000" />
       <workItem from="1699678632787" duration="455000" />
-      <workItem from="1699756843957" duration="3135000" />
-    </task>
-    <task id="LOCAL-00013" summary="03.05 actuator 끝">
-      <created>1677988738755</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1677988738755</updated>
+      <workItem from="1699756843957" duration="6305000" />
     </task>
     <task id="LOCAL-00014" summary="03.06 테스트코드">
       <created>1678099277182</created>
@@ -819,7 +820,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699678852902</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="11.12 article post basic">
+      <created>1699760297240</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1699760297240</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -851,7 +859,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="09.03 elastic fix" />
     <MESSAGE value="09.03 elastic fix2" />
     <MESSAGE value="09.05 docker build test" />
     <MESSAGE value="09.06 kafka setup" />
@@ -876,7 +883,8 @@
     <MESSAGE value="11.05 entity index divide" />
     <MESSAGE value="11.10 test" />
     <MESSAGE value="11.11 simple setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.11 simple setup" />
+    <MESSAGE value="11.12 article post basic" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.12 article post basic" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

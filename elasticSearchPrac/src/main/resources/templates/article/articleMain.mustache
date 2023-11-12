@@ -51,8 +51,9 @@
 
 </style>
 <body>
-<input type="text" id="inputField">
 <button onclick="openModal()">create</button>
+<button>절대 누르지마시오</button>
+<input type="text" id="inputField">
 <button onclick="search()">submit</button>
 
 <button onclick="goMain()">go home</button>
@@ -75,6 +76,18 @@
         </form>
     </div>
 </div>
+
+            <!--ㅡㅡㅡㅡㅡㅡㅡ 바디 ㅡㅡㅡㅡㅡㅡㅡ-->
+{{#article}}
+    <li style="font-size: 20px;">{{id}}</li>
+    <div style="margin: auto; padding-bottom: 20px;">
+        <ul style="margin-top: 10px;">
+            <li>{{title}}</li>
+            <li>{{content}}</li>
+            <li>{{img}}</li>
+        </ul>
+    </div>
+{{/article}}
 
 
 </body>
