@@ -35,6 +35,7 @@ public class ArticleSearchService {
                     .id(articleSearch.get().getId())
                     .title(articleSearch.get().getTitle())
                     .content(articleSearch.get().getContent())
+                    .img(articleSearch.get().getImg())
                     .imgTagging(imgTagging)
                     .build();
 //            articleSearchRepository.addTagging(tagging);
@@ -48,12 +49,16 @@ public class ArticleSearchService {
         }
     }
 
-    public ArticleSearch searchArticle(String articleId) {
+    public ArticleSearch getArticleById(String articleId) {
         if (articleSearchRepository.findArticle(articleId).isPresent()) {
             return articleSearchRepository.findArticle(articleId).get();
         } else {
             throw new NoSuchElementException("실패");
         }
 
+    }
+
+    public List<ArticleSearch> searchArticle(String keyword) {
+        return articleSearchRepository.searchArticleByKeyword(keyword);
     }
 }

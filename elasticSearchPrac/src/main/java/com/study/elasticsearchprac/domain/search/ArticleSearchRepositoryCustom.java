@@ -12,4 +12,6 @@ public interface ArticleSearchRepositoryCustom {
     void addTagging(List<String> imgTagging);
 
     Optional<ArticleSearch> findArticle(String articleId);
+
+    List<ArticleSearch> searchArticleByKeyword(String keyword);
 }
