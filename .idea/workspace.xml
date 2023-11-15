@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.12 article post basic">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.12 tagging &amp; search sample">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller/ArticleRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/domain/search/ArticleSearchRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/article/articleMain.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/article/articleMain.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
@@ -120,29 +113,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/Users/song-wonjae/Desktop/study/pro",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.12699747",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "spring.configuration.checksum": "64963837c3c0f92a601a2e4e65637838"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/song-wonjae/Desktop/study/pro&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.12699747&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;64963837c3c0f92a601a2e4e65637838&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.study.elasticsearchprac.service" />
@@ -482,28 +475,8 @@
       <workItem from="1699161229871" duration="1683000" />
       <workItem from="1699573118673" duration="952000" />
       <workItem from="1699678632787" duration="455000" />
-      <workItem from="1699756843957" duration="6305000" />
-    </task>
-    <task id="LOCAL-00014" summary="03.06 테스트코드">
-      <created>1678099277182</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1678099277182</updated>
-    </task>
-    <task id="LOCAL-00015" summary="03.06 테스트코드">
-      <created>1678099323424</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1678099323424</updated>
-    </task>
-    <task id="LOCAL-00016" summary="03.06 프로메테우스 기본">
-      <created>1678111460663</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1678111460663</updated>
+      <workItem from="1699756843957" duration="11041000" />
+      <workItem from="1699920128266" duration="598000" />
     </task>
     <task id="LOCAL-00017" summary="03.10 cpu,메모리 이슈 발생">
       <created>1678454252179</created>
@@ -827,7 +800,28 @@
       <option name="project" value="LOCAL" />
       <updated>1699760297240</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="11.12 article search add">
+      <created>1699763524324</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1699763524324</updated>
+    </task>
+    <task id="LOCAL-00064" summary="11.12 article tagging add &amp; search each article">
+      <created>1699765671437</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1699765671437</updated>
+    </task>
+    <task id="LOCAL-00065" summary="11.12 tagging &amp; search sample">
+      <created>1699768015224</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1699768015224</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -859,9 +853,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="09.03 elastic fix2" />
-    <MESSAGE value="09.05 docker build test" />
-    <MESSAGE value="09.06 kafka setup" />
     <MESSAGE value="09.18 gradle fix" />
     <MESSAGE value="09.19 logstash basic" />
     <MESSAGE value="10.07 db prac project gradle queryDSL, web add" />
@@ -884,7 +875,10 @@
     <MESSAGE value="11.10 test" />
     <MESSAGE value="11.11 simple setup" />
     <MESSAGE value="11.12 article post basic" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.12 article post basic" />
+    <MESSAGE value="11.12 article search add" />
+    <MESSAGE value="11.12 article tagging add &amp; search each article" />
+    <MESSAGE value="11.12 tagging &amp; search sample" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.12 tagging &amp; search sample" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
