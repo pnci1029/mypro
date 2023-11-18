@@ -30,3 +30,9 @@ spring:
 logging:
   level:
     com.example.pro.controller: debug
+
+# 한글 인코딩 문제
+server:
+  servlet:
+    encoding:
+      force-response: true
