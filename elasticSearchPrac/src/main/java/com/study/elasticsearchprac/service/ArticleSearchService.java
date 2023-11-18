@@ -61,4 +61,8 @@ public class ArticleSearchService {
     public List<ArticleSearch> searchArticle(String keyword) {
         return articleSearchRepository.searchArticleByKeyword(keyword);
     }
+
+    public ArticleSearch searchArticleTag(String imgId) {
+        return articleSearchRepository.searchArticleTags(imgId);
+    }
 }

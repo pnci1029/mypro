@@ -1,5 +1,6 @@
 package com.study.elasticsearchprac.controller;
 
+import com.study.elasticsearchprac.domain.search.ArticleSearch;
 import com.study.elasticsearchprac.dto.ArticleRequestDto;
 import com.study.elasticsearchprac.service.ArticleSearchService;
 import com.study.elasticsearchprac.service.ArticleService;
@@ -8,9 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 @Controller
@@ -38,5 +37,19 @@ public class ArticleController {
         // elastic
         model.addAttribute("article", articleSearchService.getAllArticles());
         return "/article/articleMain";
+    }
+
+    @GetMapping("/article/tag")
+    public ArticleSearch getArticleTag(@RequestParam String imgId) {
+        return articleSearchService.searchArticleTag(imgId);
+    }
+
+    @GetMapping("/article/tags")
+    public void getAllArticleTags(Model model) {
+    }
+
+    @PutMapping("/article/tagging")
+    public void articleTag() {
+
     }
 }

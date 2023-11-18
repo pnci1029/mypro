@@ -69,20 +69,45 @@ public class ArticleSearchRepositoryImpl implements ArticleSearchRepositoryCusto
 
     @Override
     public List<ArticleSearch> searchArticleByKeyword(String keyword) {
-        BoolQueryBuilder boolQuery = QueryBuilders.boolQuery()
-                .should(QueryBuilders.matchQuery("title", keyword))
-                .should(QueryBuilders.matchQuery("content",keyword))
-                .should(QueryBuilders.matchQuery("imgTagging",keyword))
-                ;
+        SearchHits<ArticleSearch> search = elasticsearchOperations.search(
+                new NativeSearchQueryBuilder()
+                        .withQuery(QueryBuilders.multiMatchQuery(keyword, "title", "content", "imgTagging"))
+                        .withPageable(PageRequest.of(0, 1000))
+                        .build(),
+                ArticleSearch.class
+        );
 
-        NativeSearchQuery searchQuery = new NativeSearchQueryBuilder()
-                .withQuery(boolQuery)
-                .withPageable(PageRequest.of(0,1000))
-                .build();
-
-        SearchHits<ArticleSearch> search = elasticsearchOperations.search(searchQuery, ArticleSearch.class);
         return search.stream()
                 .map(SearchHit::getContent)
                 .collect(Collectors.toList());
+
+
+//        BoolQueryBuilder boolQuery = QueryBuilders.boolQuery()
+//                .should(QueryBuilders.matchQuery("title", keyword))
+//                .should(QueryBuilders.matchQuery("content",keyword))
+//                .should(QueryBuilders.matchQuery("imgTagging",keyword))
+//                ;
+//
+//        NativeSearchQuery searchQuery = new NativeSearchQueryBuilder()
+//                .withQuery(boolQuery)
+//                .withPageable(PageRequest.of(0,1000))
+//                .build();
+//
+//        SearchHits<ArticleSearch> search = elasticsearchOperations.search(searchQuery, ArticleSearch.class);
+//        return search.stream()
+//                .map(SearchHit::getContent)
+//                .collect(Collectors.toList());
+    }
+
+    @Override
+    public ArticleSearch searchArticleTags(String imgId) {
+        SearchHits<ArticleSearch> search = elasticsearchOperations.search(
+                new NativeSearchQueryBuilder()
+                        .withQuery(QueryBuilders.matchQuery(imgId,"id"))
+                        .withPageable(PageRequest.of(0, 1000))
+                        .build(),
+                ArticleSearch.class
+        );
+        return search.isEmpty() ? null : search.getSearchHit(0).getContent();
     }
 }
