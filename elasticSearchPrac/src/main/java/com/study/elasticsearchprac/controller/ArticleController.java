@@ -2,6 +2,7 @@ package com.study.elasticsearchprac.controller;
 
 import com.study.elasticsearchprac.domain.search.ArticleSearch;
 import com.study.elasticsearchprac.dto.ArticleRequestDto;
+import com.study.elasticsearchprac.dto.ImageTagResponseDto;
 import com.study.elasticsearchprac.service.ArticleSearchService;
 import com.study.elasticsearchprac.service.ArticleService;
 import lombok.RequiredArgsConstructor;
@@ -44,12 +45,25 @@ public class ArticleController {
         return articleSearchService.searchArticleTag(imgId);
     }
 
-    @GetMapping("/article/tags")
-    public void getAllArticleTags(Model model) {
+    @GetMapping("/article/image")
+    public String getImageInfo(Model model) {
+        model.addAttribute("image", articleSearchService.getAllImageInfo());
+
+        return "/article/articleImage";
+    }
+
+    @GetMapping("/article/search/{keyword}")
+    public String getAllArticleTags(@PathVariable String keyword, Model model) {
+
+        model.addAttribute("article", articleSearchService.searchArticle(keyword));
+        return "/article/articleMain";
+
     }
 
     @PutMapping("/article/tagging")
-    public void articleTag() {
-
+    public String articleTag(ImageTagResponseDto dto) {
+        log.info(dto.getImageName());
+        articleSearchService.tagImage(dto.getImageTag(), dto.getImageName());
+        return "/article/articleImage";
     }
 }
