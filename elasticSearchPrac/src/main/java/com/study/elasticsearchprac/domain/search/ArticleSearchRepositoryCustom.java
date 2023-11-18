@@ -14,4 +14,6 @@ public interface ArticleSearchRepositoryCustom {
     Optional<ArticleSearch> findArticle(String articleId);
 
     List<ArticleSearch> searchArticleByKeyword(String keyword);
+
+    ArticleSearch searchArticleTags(String imgId);
 }

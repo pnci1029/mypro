@@ -45,6 +45,11 @@ public class ArticleRestController {
         return articleSearchService.searchArticle(keyword);
     }
 
+    @GetMapping("/article/tag")
+    public ArticleSearch getArticleTag(@RequestParam String imgId) {
+        return articleSearchService.searchArticleTag(imgId);
+    }
+
     @PostMapping("/article/tagging")
     public void tagImage(@RequestParam(required = false) List<String> tagging,
                          @RequestParam(required = false) String img) {
