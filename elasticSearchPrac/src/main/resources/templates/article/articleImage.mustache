@@ -1,0 +1,131 @@
+<html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    form {
+        display: grid;
+        gap: 10px;
+    }
+
+</style>
+<body>
+<!--<button onclick="openModal()">create</button>-->
+<button>절대 누르지마시오</button>
+<input type="text" id="inputField">
+<button onclick="search()">submit</button>
+<a href="/article">show articles</a>
+<button onclick="goMain()">go home</button>
+
+
+<!--ㅡㅡㅡㅡㅡㅡㅡ 바디 ㅡㅡㅡㅡㅡㅡㅡ-->
+{{#image}}
+    <div style="margin: auto; padding-bottom: 20px;">
+        <ul style="margin-top: 10px;">
+            <li onclick="openModal('{{imageName}}')">{{imageName}}</li>
+            <li>{{imageTag}}</li>
+
+        </ul>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <form id="imageForm" enctype="application/x-www-form-urlencoded">
+                <label for="imageName" id="imageName">{{imageName}}</label>
+
+                <label for="tagInfo">tagInfo:</label>
+                <textarea id="tagInfo" name="tagInfo" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+{{/image}}
+
+
+</body>
+<script>
+    let imageSource = '';
+
+    function openModal(source) {
+        imageSource = source;
+        document.getElementById('myModal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+    document.getElementById('imageForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var tagInfo = document.getElementById('tagInfo').value;
+            var tagArray = tagInfo.split(/[,\s]+/);
+            console.log(tagInfo);
+            console.log(tagArray);
+            console.log(imageSource)
+
+            var formData = new FormData();
+            formData.append('imageName', imageSource);
+            formData.append('imageTag', tagArray);
+
+            $.ajax({
+                type: 'PUT',
+                url: '/article/tagging',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    alert("image tagging success");
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                },
+            });
+            closeModal();
+        }
+    )
+
+</script>
+</html>

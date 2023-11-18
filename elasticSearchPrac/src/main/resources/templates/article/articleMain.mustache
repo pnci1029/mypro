@@ -54,7 +54,9 @@
 <button onclick="openModal()">create</button>
 <button>절대 누르지마시오</button>
 <input type="text" id="inputField">
-<button onclick="search()">submit</button>
+<button onclick="articleSearch()">submit</button>
+<a href="/article">show articles</a>
+<a href="/article/image"><button>태그 정보 바꾸러가기</button></a>
 
 <button onclick="goMain()">go home</button>
 
@@ -146,6 +148,28 @@
                 closeModal();
             }
     )
+
+
+    function articleSearch() {
+
+        var inputValue = document.getElementById("inputField").value;
+        console.log(inputValue);
+
+        $.ajax({
+            type: 'GET',
+            url: '/article/search/' + inputValue,
+            // dataType: 'json',
+            data: {
+                keyword: inputValue,
+            },
+            success: function (data) {
+                location.href = this.url;
+
+            },
+            error: function (xhr, textStatus, errorThrown) {
+            },
+        });
+    }
 
 
 </script>
