@@ -1,5 +1,6 @@
 package com.study.elasticsearchprac.domain.search;
 
+import com.study.elasticsearchprac.dto.ImageTagResponseDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.index.query.BoolQueryBuilder;
@@ -10,6 +11,7 @@ import org.springframework.data.elasticsearch.core.SearchHit;
 import org.springframework.data.elasticsearch.core.SearchHits;
 import org.springframework.data.elasticsearch.core.query.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -109,5 +111,47 @@ public class ArticleSearchRepositoryImpl implements ArticleSearchRepositoryCusto
                 ArticleSearch.class
         );
         return search.isEmpty() ? null : search.getSearchHit(0).getContent();
+    }
+
+    @Override
+    public List<ImageTagResponseDto> getAllImageInfos() {
+        /**
+         * 리팩토링
+         */
+        return elasticsearchOperations.search(
+                        new NativeSearchQueryBuilder()
+                                .withPageable(PageRequest.of(0, 1000))
+                                .build(),
+                        ArticleSearch.class
+                )
+                .stream()
+                .map(SearchHit::getContent)
+                .map(item -> ImageTagResponseDto.builder()
+                        .imageName(item.getImg())
+                        .imageTag(item.getImgTagging())
+                        .build())
+                .collect(Collectors.toList());
+
+//        SearchHits<ArticleSearch> search = elasticsearchOperations.search(
+//                new NativeSearchQueryBuilder()
+//                        .withPageable(PageRequest.of(0, 1000))
+//                        .build(),
+//                ArticleSearch.class
+//        );
+//        List<ImageTagResponseDto> image = new ArrayList<>();
+//
+//        search.stream()
+//                .map(SearchHit::getContent)
+//                .forEach(item -> image.add(ImageTagResponseDto
+//                        .builder()
+//                        .imageName(item.getImg())
+//                        .imageTag(item.getImgTagging())
+//                        .build())
+//                )
+//        ;
+//        for (ImageTagResponseDto imageTagResponseDto : image) {
+//            log.info("image : {}",imageTagResponseDto.getImageName());
+//        }
+//        return image;
     }
 }

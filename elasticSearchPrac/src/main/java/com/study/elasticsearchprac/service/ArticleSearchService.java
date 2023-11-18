@@ -2,6 +2,7 @@ package com.study.elasticsearchprac.service;
 
 import com.study.elasticsearchprac.domain.search.ArticleSearch;
 import com.study.elasticsearchprac.domain.search.ArticleSearchRepository;
+import com.study.elasticsearchprac.dto.ImageTagResponseDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -64,5 +65,9 @@ public class ArticleSearchService {
 
     public ArticleSearch searchArticleTag(String imgId) {
         return articleSearchRepository.searchArticleTags(imgId);
+    }
+
+    public List<ImageTagResponseDto> getAllImageInfo() {
+        return articleSearchRepository.getAllImageInfos();
     }
 }
