@@ -3,7 +3,7 @@ package com.study.bookprac.part2;
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
-public class item7 {
+public class Item7 {
 
     public class Stack{
         private Object[] elements;
