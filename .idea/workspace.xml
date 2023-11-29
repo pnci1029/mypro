@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.22 security basic">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.27 add item18">
+      <change afterPath="$PROJECT_DIR$/java_basic/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/.idea/magento2plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/java_basic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_basic/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/example/security/mySecurity/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/example/security/mySecurity/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/example/security/mySecurity/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/example/security/mySecurity/config/FilterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/example/security/mySecurity/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/example/security/mySecurity/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +32,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/elasticSearchPrac">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/java_basic">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/kafkaPrac">
@@ -105,28 +114,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/song-wonjae/Desktop/study/pro&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.12699747&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;64963837c3c0f92a601a2e4e65637838&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "/Users/song-wonjae/Desktop/study/pro/security/src/test/java/com/example/security",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.12699747",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "64963837c3c0f92a601a2e4e65637838"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.study.elasticsearchprac.service" />
@@ -134,11 +144,11 @@
       <recent name="com.example.springdbprac.study.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/security/src/test/java/com/example/security" />
       <recent name="$PROJECT_DIR$/springDbPrac/src/test/java/com/example/springdbprac/study" />
       <recent name="$PROJECT_DIR$/springDbPrac/src/main/resources" />
       <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/java/com/study/elasticsearchprac/controller" />
-      <recent name="$PROJECT_DIR$/security" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -475,28 +485,11 @@
       <workItem from="1700277151931" duration="8231000" />
       <workItem from="1700366075083" duration="1743000" />
       <workItem from="1700609962304" duration="1140000" />
-      <workItem from="1700653970687" duration="1706000" />
-    </task>
-    <task id="LOCAL-00025" summary="04.24 api1">
-      <created>1682341403802</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1682341403802</updated>
-    </task>
-    <task id="LOCAL-00026" summary="04.26 api2">
-      <created>1682500841052</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1682500841052</updated>
-    </task>
-    <task id="LOCAL-00027" summary="04.30 websocket basic">
-      <created>1682828592704</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1682828592704</updated>
+      <workItem from="1700653970687" duration="3586000" />
+      <workItem from="1700875471936" duration="488000" />
+      <workItem from="1701042496593" duration="609000" />
+      <workItem from="1701234902375" duration="638000" />
+      <workItem from="1701255848589" duration="1337000" />
     </task>
     <task id="LOCAL-00028" summary="04.30 websocket basic2">
       <created>1682837039016</created>
@@ -820,7 +813,28 @@
       <option name="project" value="LOCAL" />
       <updated>1700655133056</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="11.22 security basic2">
+      <created>1700655752839</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1700655752839</updated>
+    </task>
+    <task id="LOCAL-00075" summary="11.25 add simple test">
+      <created>1700875491448</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1700875491448</updated>
+    </task>
+    <task id="LOCAL-00076" summary="11.27 add item18">
+      <created>1701042793563</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1701042793564</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -852,9 +866,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10.15 kafka fixing" />
-    <MESSAGE value="10.17 db setup" />
-    <MESSAGE value="10.18 db setup" />
     <MESSAGE value="10.2 fix" />
     <MESSAGE value="10.28 fix" />
     <MESSAGE value="11.03 comment create" />
@@ -877,7 +888,10 @@
     <MESSAGE value="11.19 article tagging ui fix" />
     <MESSAGE value="11.22 effective Java item 17" />
     <MESSAGE value="11.22 security basic" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.22 security basic" />
+    <MESSAGE value="11.22 security basic2" />
+    <MESSAGE value="11.25 add simple test" />
+    <MESSAGE value="11.27 add item18" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.27 add item18" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
