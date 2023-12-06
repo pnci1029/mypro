@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="11.27 add item18">
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/magento2plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/java_basic.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/src/Main.java" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="12.06 effective java item23">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookPrac/src/main/java/com/study/bookprac/WebScrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookPrac/src/main/java/com/study/bookprac/WebScrapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +42,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/springDbPrac">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/webcrawling">
       <ProjectState />
     </projectState>
   </component>
@@ -114,29 +112,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/Users/song-wonjae/Desktop/study/pro/security/src/test/java/com/example/security",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.12699747",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "spring.configuration.checksum": "64963837c3c0f92a601a2e4e65637838"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/song-wonjae/Desktop/study/pro&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.12699747&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1799b3cc6da18373d65e012ab6f74465&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.study.elasticsearchprac.service" />
@@ -178,7 +176,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SecurityApplication">
+  <component name="RunManager" selected="Application.WebScrapper">
+    <configuration name="WebScrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.bookprac.WebScrapper" />
+      <module name="bookPrac.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.bookprac.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArticleControllerTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -271,29 +282,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ArticleServiceTest.findByArticleId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springDbPrac" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.springdbprac.study.service.ArticleServiceTest.findByArticleId&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="pro" />
       <method v="2">
@@ -356,13 +344,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebcrawlingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="webcrawling.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.prac.webcrawling.WebcrawlingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WebScrapper" />
         <item itemvalue="Gradle.ArticleControllerTest2" />
         <item itemvalue="Gradle.ArticleServiceTest" />
         <item itemvalue="Gradle.ArticleServiceTest.createArticle" />
         <item itemvalue="Gradle.ArticleRepositoryTest" />
-        <item itemvalue="Gradle.ArticleServiceTest.findByArticleId" />
       </list>
     </recent_temporary>
   </component>
@@ -489,56 +484,15 @@
       <workItem from="1700875471936" duration="488000" />
       <workItem from="1701042496593" duration="609000" />
       <workItem from="1701234902375" duration="638000" />
-      <workItem from="1701255848589" duration="1337000" />
-    </task>
-    <task id="LOCAL-00028" summary="04.30 websocket basic2">
-      <created>1682837039016</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1682837039016</updated>
-    </task>
-    <task id="LOCAL-00029" summary="05. 02 websocket Basic">
-      <created>1683033874831</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1683033874831</updated>
-    </task>
-    <task id="LOCAL-00030" summary="06_05 new pro">
-      <created>1685964274825</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1685964274825</updated>
-    </task>
-    <task id="LOCAL-00031" summary="08.31 kafka fix">
-      <created>1693489005296</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1693489005296</updated>
-    </task>
-    <task id="LOCAL-00032" summary="08.31 kafka produce / consunme">
-      <created>1693636658704</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1693636658704</updated>
-    </task>
-    <task id="LOCAL-00033" summary="09.03 elastic fix">
-      <created>1693740909386</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1693740909386</updated>
-    </task>
-    <task id="LOCAL-00034" summary="09.03 elastic fix">
-      <created>1693740951196</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1693740951196</updated>
+      <workItem from="1701255848589" duration="1448000" />
+      <workItem from="1701301626781" duration="14000" />
+      <workItem from="1701301931047" duration="626000" />
+      <workItem from="1701346023301" duration="983000" />
+      <workItem from="1701494427786" duration="2632000" />
+      <workItem from="1701597950981" duration="654000" />
+      <workItem from="1701694235359" duration="6000" />
+      <workItem from="1701733770661" duration="557000" />
+      <workItem from="1701776513862" duration="2879000" />
     </task>
     <task id="LOCAL-00035" summary="09.03 elastic fix2">
       <created>1693741004657</created>
@@ -834,7 +788,56 @@
       <option name="project" value="LOCAL" />
       <updated>1701042793564</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="11.29 add java_basic">
+      <created>1701263469833</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1701263469834</updated>
+    </task>
+    <task id="LOCAL-00078" summary="11.30 add java_basic">
+      <created>1701348576276</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1701348576277</updated>
+    </task>
+    <task id="LOCAL-00079" summary="12.02 gradle fix &amp; scrpping set up">
+      <created>1701494953781</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1701494953781</updated>
+    </task>
+    <task id="LOCAL-00080" summary="12.02 new project setup">
+      <created>1701496116785</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1701496116785</updated>
+    </task>
+    <task id="LOCAL-00081" summary="12.03 java_basic">
+      <created>1701600124723</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1701600124724</updated>
+    </task>
+    <task id="LOCAL-00082" summary="12.05 effective java item22">
+      <created>1701734126626</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1701734126627</updated>
+    </task>
+    <task id="LOCAL-00083" summary="12.06 effective java item23">
+      <created>1701820951339</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1701820951340</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -866,13 +869,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10.2 fix" />
-    <MESSAGE value="10.28 fix" />
-    <MESSAGE value="11.03 comment create" />
-    <MESSAGE value="11.04 elastic article setup &amp; h2 fix" />
-    <MESSAGE value="11.04 elastic img base setup" />
-    <MESSAGE value="11.04 before each tast" />
-    <MESSAGE value="11.05 test index move" />
     <MESSAGE value="11.05 entity index divide" />
     <MESSAGE value="11.10 test" />
     <MESSAGE value="11.11 simple setup" />
@@ -891,7 +887,14 @@
     <MESSAGE value="11.22 security basic2" />
     <MESSAGE value="11.25 add simple test" />
     <MESSAGE value="11.27 add item18" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.27 add item18" />
+    <MESSAGE value="11.29 add java_basic" />
+    <MESSAGE value="11.30 add java_basic" />
+    <MESSAGE value="12.02 gradle fix &amp; scrpping set up" />
+    <MESSAGE value="12.02 new project setup" />
+    <MESSAGE value="12.03 java_basic" />
+    <MESSAGE value="12.05 effective java item22" />
+    <MESSAGE value="12.06 effective java item23" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.06 effective java item23" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
