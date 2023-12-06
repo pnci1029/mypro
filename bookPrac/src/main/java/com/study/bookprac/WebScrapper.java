@@ -15,18 +15,9 @@ public class WebScrapper {
 
         Document document = Jsoup.connect(url).get();
 
-        Elements select = document.select(".deal-title");
-        System.out.println("select = " + select);
-        for (Element element : select) {
-            Elements value = select.select(".deal-name");
-            System.out.println("value = " + value);
-            System.out.println(element.select(".product-title").size());
-        }
+        Elements select = document.select(".deal-name");
 
-        Elements select2 = document.select("div.deal-title");
-        Elements select3 = document.select("product-link ");
-        System.out.println("select2 = " + select2.size());
-        System.out.println("select3 = " + select3.size());
+        System.out.println(select.text() + "\n");
 
     }
 }
