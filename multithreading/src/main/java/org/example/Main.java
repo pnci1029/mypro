@@ -6,11 +6,29 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Main {
+    private static final Lock lock = new ReentrantLock();
+    private static int counter = 0;
+
     public static void main(String[] args) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         List<Integer> box = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+//        int counter = 0;
+
+        box.parallelStream().forEach(value -> {
+            counter += value + 1;
+            System.out.println(counter);
+        });
+
+
+
+
+
+
         System.out.println("Part 1");
         System.out.println("────────────────────────────────────────────");
         long startTime1 = System.currentTimeMillis();
