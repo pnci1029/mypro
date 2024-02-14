@@ -59,15 +59,6 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/multithreading" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/multithreading" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/mypro" />
         <option name="modules">
           <set>
@@ -99,6 +90,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/webcrawling" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../practicalTest" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../practicalTest" />
           </set>
         </option>
       </GradleProjectSettings>
