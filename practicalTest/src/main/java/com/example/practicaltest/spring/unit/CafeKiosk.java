@@ -2,11 +2,13 @@ package com.example.practicaltest.spring.unit;
 
 import com.example.practicaltest.spring.unit.beverages.Beverage;
 import com.example.practicaltest.spring.unit.order.Order;
+import lombok.Getter;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class CafeKiosk {
 
     private final List<Beverage> beverages = new ArrayList<>();

@@ -4,54 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.02.08 add basic multithreading study">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.02.14 add new manual api">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/Main2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/Main2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/Main3$NewThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/Main3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4$AscendingHackerThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4$DescendingHackerThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4$HackerThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4$PoliceThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4$Vault.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/org/example/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/org/example/Main3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/org/example/imgProcessing/Main5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/org/example/policeHancker/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicalTest/src/main/java/com/example/practicaltest/spring/unit/CafeKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/practicalTest/src/main/java/com/example/practicaltest/spring/unit/CafeKiosk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practicalTest/src/test/java/com/example/practicaltest/spring/unit/CafeKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/practicalTest/src/test/java/com/example/practicaltest/spring/unit/CafeKioskTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +43,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/mypro">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/practicalTest">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/security">
@@ -140,12 +102,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="HTML File" />
         <option value="Enum" />
         <option value="package.json" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -186,7 +148,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.12699747&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;29f663c9815af3493715b00cef8ca71a&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;763001eb90772243990380af6f578955&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -213,6 +175,8 @@
       <recent name="$PROJECT_DIR$/springDbPrac/src/test/java/resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.practicaltest.spring.unit.beverages" />
+      <recent name="com.example.practicaltest.spring.unit" />
       <recent name="com.example.pro.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -230,7 +194,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PracticalTestApplication">
+  <component name="RunManager" selected="Gradle.CafeKioskTest">
+    <configuration name="CafeKioskRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.practicaltest.spring.unit.CafeKioskRunner" />
+      <module name="practicalTest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.practicaltest.spring.unit.beverages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="untitled.main" />
@@ -257,10 +234,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArticleControllerTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AmericanoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springDbPrac" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/practicalTest" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -270,7 +247,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.springdbprac.study.controller.ArticleControllerTest2&quot;" />
+            <option value="&quot;com.example.practicaltest.spring.unit.beverages.AmericanoTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -280,10 +257,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ArticleServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CafeKioskTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springDbPrac" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/practicalTest" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -293,30 +270,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.springdbprac.study.service.ArticleServiceTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ArticleServiceTest.createArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springDbPrac" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.springdbprac.study.service.ArticleServiceTest.createArticle&quot;" />
+            <option value="&quot;com.example.practicaltest.spring.unit.CafeKioskTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -356,6 +310,13 @@
     <configuration name="KafkaPracApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="kafkaPrac.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.kafkaprac.KafkaPracApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticalTestApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="practicalTest.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.practicaltest.spring.spring.PracticalTestApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -404,11 +365,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CafeKioskTest" />
+        <item itemvalue="Gradle.AmericanoTest" />
+        <item itemvalue="Application.CafeKioskRunner" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.WebScrapper" />
-        <item itemvalue="Gradle.ArticleControllerTest2" />
-        <item itemvalue="Gradle.ArticleServiceTest" />
-        <item itemvalue="Gradle.ArticleServiceTest.createArticle" />
       </list>
     </recent_temporary>
   </component>
@@ -553,13 +514,8 @@
       <workItem from="1707884912787" duration="86000" />
       <workItem from="1707885001554" duration="92000" />
       <workItem from="1707885108128" duration="251000" />
-    </task>
-    <task id="LOCAL-00039" summary="09.19 logstash basic">
-      <created>1695125032089</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1695125032089</updated>
+      <workItem from="1707886493177" duration="79000" />
+      <workItem from="1707886576577" duration="2633000" />
     </task>
     <task id="LOCAL-00040" summary="10.07 db prac project gradle queryDSL, web add">
       <created>1696655017838</created>
@@ -897,7 +853,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707369977102</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="24.02.14 add new manual api">
+      <created>1707887748929</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1707887748929</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -929,7 +892,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="11.12 article post basic" />
     <MESSAGE value="11.12 article search add" />
     <MESSAGE value="11.12 article tagging add &amp; search each article" />
     <MESSAGE value="11.12 tagging &amp; search sample" />
@@ -954,7 +916,8 @@
     <MESSAGE value="24.01.31 add multithreading porject" />
     <MESSAGE value="24.02.03 add multithreading project" />
     <MESSAGE value="24.02.08 add basic multithreading study" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.02.08 add basic multithreading study" />
+    <MESSAGE value="24.02.14 add new manual api" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.02.14 add new manual api" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
