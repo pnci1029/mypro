@@ -4,17 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.02.03 add multithreading project">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.02.08 add basic multithreading study">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreading/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/multithreading/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/7.4/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/Main2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/Main3$NewThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/Main3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4$AscendingHackerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4$DescendingHackerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4$HackerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4$PoliceThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4$Vault.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/classes/java/main/org/example/policeHancker/Main4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/org/example/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/org/example/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/org/example/imgProcessing/Main5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/src/main/java/org/example/policeHancker/Main4.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +95,9 @@
     <projectState path="$PROJECT_DIR$/webcrawling">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/../practicalTest">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -71,12 +111,20 @@
         <task path="$PROJECT_DIR$/springDbPrac">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/bookPrac">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="untitled" type="f1a62948:ProjectNode" />
+                <item name="bookPrac" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bookPrac" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -124,6 +172,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
@@ -177,7 +230,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Spring Boot.PracticalTestApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="untitled.main" />
@@ -303,6 +356,13 @@
     <configuration name="KafkaPracApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="kafkaPrac.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.kafkaprac.KafkaPracApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticalTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="practicalTest.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.practicaltest.PracticalTestApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -486,14 +546,13 @@
       <workItem from="1701776513862" duration="2879000" />
       <workItem from="1706673036379" duration="940000" />
       <workItem from="1706849228821" duration="3346000" />
-      <workItem from="1707369943652" duration="4000" />
-    </task>
-    <task id="LOCAL-00038" summary="09.18 gradle fix">
-      <created>1695044840187</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1695044840187</updated>
+      <workItem from="1707369943652" duration="71000" />
+      <workItem from="1707370018401" duration="599000" />
+      <workItem from="1707448061941" duration="598000" />
+      <workItem from="1707884840733" duration="68000" />
+      <workItem from="1707884912787" duration="86000" />
+      <workItem from="1707885001554" duration="92000" />
+      <workItem from="1707885108128" duration="251000" />
     </task>
     <task id="LOCAL-00039" summary="09.19 logstash basic">
       <created>1695125032089</created>
@@ -831,7 +890,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706934923306</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="24.02.08 add basic multithreading study">
+      <created>1707369977101</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1707369977102</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -863,7 +929,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="11.11 simple setup" />
     <MESSAGE value="11.12 article post basic" />
     <MESSAGE value="11.12 article search add" />
     <MESSAGE value="11.12 article tagging add &amp; search each article" />
@@ -888,7 +953,8 @@
     <MESSAGE value="12.06 effective java item23" />
     <MESSAGE value="24.01.31 add multithreading porject" />
     <MESSAGE value="24.02.03 add multithreading project" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.02.03 add multithreading project" />
+    <MESSAGE value="24.02.08 add basic multithreading study" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.02.08 add basic multithreading study" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
