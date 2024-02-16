@@ -30,6 +30,7 @@ public class ProductResponse {
         return ProductResponse.builder()
                 .id(product.getId())
                 .name(product.getName())
+                .sellingType(product.getSellingType())
                 .productType(product.getProductType())
                 .productNo(product.getProductNo())
                 .name(product.getName())
