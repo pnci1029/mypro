@@ -3,6 +3,7 @@ package com.example.practicaltest.spring.spring.domain.product;
 import com.example.practicaltest.spring.spring.api.service.product.response.ProductResponse;
 import com.example.practicaltest.spring.spring.domain.BaseEntity;
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -27,4 +28,12 @@ public class Product extends BaseEntity {
     private String name;
     private int price;
 
+    @Builder
+    private Product(String productNo, ProductType productType, ProductSellingType sellingType, String name, int price) {
+        this.productNo = productNo;
+        this.productType = productType;
+        this.sellingType = sellingType;
+        this.name = name;
+        this.price = price;
+    }
 }
