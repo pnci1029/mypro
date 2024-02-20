@@ -1,0 +1,240 @@
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderProductNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T130722.200.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderProductNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T125205.500.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderProductNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124650.500.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderProductNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124616.500.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderProductNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124612.500.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderProductNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124551.500.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderProductNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124527.500.json
+
+###
+
+GET http://localhost:8080/api/v1/products/selling
+
+<> 2024-02-20T124523.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/selling
+
+<> 2024-02-20T124515.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/selling
+
+<> 2024-02-20T124511.200.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderProductNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124424.500.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderProductNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124403.500.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderProductNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124334.500.json
+
+###
+
+GET http://localhost:8080/api/v1/products/selling
+
+<> 2024-02-20T124331.200.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderProductNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124323.500.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderCreateRequest": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124302.500.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "orderCreateRequest": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124200.500.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "productNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124149.500.json
+
+###
+
+GET http://localhost:8080/api/v1/products/selling
+
+<> 2024-02-20T124144.200.json
+
+###
+
+POST http://localhost:8080/api/v1/orders/new
+Content-Type: application/json
+
+{
+  "productNumbers": [
+    "001",
+    "002"
+  ]
+}
+
+<> 2024-02-20T124134.500.json
+
+###
+

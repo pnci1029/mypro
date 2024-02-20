@@ -8,24 +8,23 @@ import com.example.practicaltest.spring.spring.domain.product.Product;
 import com.example.practicaltest.spring.spring.domain.product.ProductRepository;
 import com.example.practicaltest.spring.spring.domain.product.ProductSellingType;
 import com.example.practicaltest.spring.spring.domain.product.ProductType;
-import com.example.practicaltest.spring.unit.CafeKiosk;
-import com.example.practicaltest.spring.unit.beverages.Americano;
-import com.example.practicaltest.spring.unit.beverages.Latte;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
-import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.List;
 
 import static com.example.practicaltest.spring.spring.domain.product.ProductSellingType.*;
-import static com.example.practicaltest.spring.spring.domain.product.ProductType.*;
+import static com.example.practicaltest.spring.spring.domain.product.ProductType.BAKERY;
+import static com.example.practicaltest.spring.spring.domain.product.ProductType.HANDMADE;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.groups.Tuple.tuple;
 
+@ActiveProfiles("test")
 @SpringBootTest
 //@DataJpaTest
 class OrderServiceTest {
@@ -46,9 +45,9 @@ class OrderServiceTest {
     void tearDown() {
 
 //        productRepository.deleteAll();
+        orderProductRepository.deleteAllInBatch();
         productRepository.deleteAllInBatch();
         orderRepository.deleteAllInBatch();
-        orderProductRepository.deleteAllInBatch();
     }
 
     @DisplayName("상품 번호를 받아서 주문을 생성한다.")

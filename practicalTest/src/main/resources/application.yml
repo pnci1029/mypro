@@ -18,7 +18,9 @@ spring:
   config:
     activate:
       on-profile: local
-
+  sql:
+    init:
+      mode: always
   jpa:
     hibernate:
       ddl-auto: create
