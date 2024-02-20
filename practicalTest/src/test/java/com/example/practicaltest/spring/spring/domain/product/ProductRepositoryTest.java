@@ -1,26 +1,29 @@
 package com.example.practicaltest.spring.spring.domain.product;
 
+import com.example.practicaltest.spring.spring.domain.stock.Stock;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.test.context.ActiveProfiles;
 
-import javax.transaction.Transactional;
 import java.util.List;
 
 import static com.example.practicaltest.spring.spring.domain.product.ProductSellingType.*;
-import static com.example.practicaltest.spring.spring.domain.product.ProductType.*;
+import static com.example.practicaltest.spring.spring.domain.product.ProductType.BOTTLE;
+import static com.example.practicaltest.spring.spring.domain.product.ProductType.HANDMADE;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.groups.Tuple.tuple;
 
-@SpringBootTest
+@ActiveProfiles("test")
+//@SpringBootTest
+@DataJpaTest
 class ProductRepositoryTest {
 
     @Autowired
     ProductRepository productRepository;
 
     @DisplayName("원하는 판매 가능한 상품을 조회한다.")
-    @Transactional
     @Test
     void findAllBySellingTypeIn() {
         // given
@@ -44,7 +47,6 @@ class ProductRepositoryTest {
 
 
     @DisplayName("상품 id를 가지고 상품들을 조회한다.")
-    @Transactional
     @Test
     void findAllByProductNoIn() {
         // given

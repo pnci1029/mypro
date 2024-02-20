@@ -3,6 +3,8 @@ package com.example.practicaltest.spring.spring.domain.product;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
+import java.util.List;
+
 @Getter
 @RequiredArgsConstructor
 public enum ProductType {
@@ -12,4 +14,8 @@ public enum ProductType {
     BAKERY("빵");
 
     private final String text;
+
+    public static boolean containsStockType(ProductType productType) {
+        return List.of(BOTTLE, BAKERY).contains(productType);
+    }
 }

@@ -3,7 +3,9 @@ package com.example.practicaltest.spring.spring.domain.order;
 import com.example.practicaltest.spring.spring.domain.product.Product;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -13,7 +15,9 @@ import static com.example.practicaltest.spring.spring.domain.product.ProductSell
 import static com.example.practicaltest.spring.spring.domain.product.ProductType.HANDMADE;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest
+@ActiveProfiles("test")
+//@SpringBootTest
+@DataJpaTest
 class OrderTest {
 
     @DisplayName("주문 생성 시 상태는 INIT이다")
