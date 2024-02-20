@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Service @RequiredArgsConstructor @Slf4j
 public class OrderService {
@@ -20,10 +22,11 @@ public class OrderService {
     private final ProductRepository productRepository;
 
     public OrderCreateResponse createdOrders(OrderCreateRequest orderCreateRequest, LocalDateTime registeredDateTime) {
-        List<String> orderCreate = orderCreateRequest.getOrderProductNumbers();
-        List<Product> targetProducts = productRepository.findAllByProductNoIn(orderCreate);
+        List<String> orderNumbers = orderCreateRequest.getOrderProductNumbers();
 
-        Order order = Order.create(targetProducts, registeredDateTime);
+        List<Product> collectsResult = findOrderProductNumbers(orderNumbers);
+
+        Order order = Order.create(collectsResult, registeredDateTime);
 
         Order savedOrder = orderRepository.save(order);
         return OrderCreateResponse.of(savedOrder);
@@ -37,5 +40,16 @@ public class OrderService {
 //                        .orderStatus(OrderStatus.INIT)
 //                        .registeredDateTime(registeredDateTime)
 //                        .build());
+    }
+
+    private List<Product> findOrderProductNumbers(List<String> orderNumbers) {
+        List<Product> targetProducts = productRepository.findAllByProductNoIn(orderNumbers);
+
+        Map<String, Product> collectedProductNumbers = targetProducts.stream()
+                .collect(Collectors.toMap(Product::getProductNo, o -> o));
+
+        return orderNumbers.stream()
+                .map(collectedProductNumbers::get)
+                .collect(Collectors.toList());
     }
 }
