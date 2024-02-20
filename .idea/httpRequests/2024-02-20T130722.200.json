@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "totalPrice": 8500,
+  "registeredDateTime": "2024-02-20T13:07:22.118939",
+  "productResponses": [
+    {
+      "id": 1,
+      "productNo": "001",
+      "productType": "HANDMADE",
+      "sellingType": "SELLING",
+      "name": "아메리카노",
+      "price": 4000
+    },
+    {
+      "id": 2,
+      "productNo": "002",
+      "productType": "HANDMADE",
+      "sellingType": "HOLD",
+      "name": "카페라떼",
+      "price": 4500
+    }
+  ]
+}
