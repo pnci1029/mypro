@@ -4,7 +4,6 @@ import com.example.practicaltest.spring.spring.api.controller.order.request.Orde
 import com.example.practicaltest.spring.spring.api.service.order.response.OrderCreateResponse;
 import com.example.practicaltest.spring.spring.domain.order.Order;
 import com.example.practicaltest.spring.spring.domain.order.OrderRepository;
-import com.example.practicaltest.spring.spring.domain.order.OrderStatus;
 import com.example.practicaltest.spring.spring.domain.product.Product;
 import com.example.practicaltest.spring.spring.domain.product.ProductRepository;
 import com.example.practicaltest.spring.spring.domain.product.ProductType;
@@ -15,6 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -25,6 +25,10 @@ public class OrderService {
     private final ProductRepository productRepository;
     private final StockRepository stockRepository;
 
+    /**
+     * 재고감소 -> 동시성 고민
+     * optimistic lock / pessimistic lock / ...
+     */
 
     public OrderCreateResponse createdOrders(OrderCreateRequest orderCreateRequest, LocalDateTime registeredDateTime) {
         List<String> orderNumbers = orderCreateRequest.getOrderProductNumbers();
@@ -35,17 +39,24 @@ public class OrderService {
                 .map(Product::getProductNo)
                 .collect(Collectors.toList());
 
-        // 재고 조회
+        deductStockQuantity(stockTypeProductList);
+
+
+        Order order = Order.create(collectsResult, registeredDateTime);
+
+        Order savedOrder = orderRepository.save(order);
+        return OrderCreateResponse.of(savedOrder);
+
+    }
+
+    // 재고 차감 메소드
+    private void deductStockQuantity(List<String> stockTypeProductList) {
         List<Stock> stocks = stockRepository.findAllByProductNoIn(stockTypeProductList);
-        Map<String, Stock> stockMap = stocks.stream()
-                .collect(Collectors.toMap(Stock::getProductNo, stock -> stock));
 
-        // 상품별 재고 카운팅
-        Map<String, Long> stockCountingMap = stocks.stream()
-                .collect(Collectors.groupingBy(Stock::getProductNo, Collectors.counting()));
+        Map<String, Stock> stockMap = createStockMapBy(stocks);
+        Map<String, Long> stockCountingMap = createSockCountingMapBy(stocks);
 
-        //
-        for (String productNo : stockTypeProductList) {
+        for (String productNo : new HashSet<>(stockTypeProductList)) {
             Stock stock = stockMap.get(productNo);
             int quantity = stockCountingMap.get(productNo).intValue();
 
@@ -54,24 +65,21 @@ public class OrderService {
             }
             stock.decrease(quantity);
         }
-
-
-        Order order = Order.create(collectsResult, registeredDateTime);
-
-        Order savedOrder = orderRepository.save(order);
-        return OrderCreateResponse.of(savedOrder);
-
-//        final int[] totalPrice = {0};
-//        targetProducts.forEach(product -> totalPrice[0] += product.getPrice());
-//
-//        orderRepository.save(
-//                Order.builder()
-//                        .totalPrice(totalPrice[0])
-//                        .orderStatus(OrderStatus.INIT)
-//                        .registeredDateTime(registeredDateTime)
-//                        .build());
+    }
+    
+    // 상품별 재고 카운팅
+    private static Map<String, Long> createSockCountingMapBy(List<Stock> stocks) {
+        return stocks.stream()
+                .collect(Collectors.groupingBy(Stock::getProductNo, Collectors.counting()));
     }
 
+    // 재고조회
+    private static Map<String, Stock> createStockMapBy(List<Stock> stocks) {
+        return stocks.stream()
+                .collect(Collectors.toMap(Stock::getProductNo, stock -> stock));
+    }
+
+    // 주문번호 조회 메소드
     private List<Product> findOrderProductNumbers(List<String> orderNumbers) {
         List<Product> targetProducts = productRepository.findAllByProductNoIn(orderNumbers);
 

@@ -14,20 +14,18 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
 
-import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.List;
 
 import static com.example.practicaltest.spring.spring.domain.product.ProductSellingType.*;
 import static com.example.practicaltest.spring.spring.domain.product.ProductType.*;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.assertj.core.groups.Tuple.tuple;
 
-@ActiveProfiles("test")
+//@ActiveProfiles("test")
 @SpringBootTest
 //@DataJpaTest
 class OrderServiceTest {
@@ -54,6 +52,7 @@ class OrderServiceTest {
         orderProductRepository.deleteAllInBatch();
         productRepository.deleteAllInBatch();
         orderRepository.deleteAllInBatch();
+        stockRepository.deleteAllInBatch();
     }
 
     @DisplayName("상품 번호를 받아서 주문을 생성한다.")
@@ -144,6 +143,37 @@ class OrderServiceTest {
                 );
 
 
+    }
+
+
+    @DisplayName("재고가 없는 상품을 주문하면 예외가 발생한다.")
+    @Test
+    void createOrderNoStockTest() {
+        // given
+        LocalDateTime now = LocalDateTime.now();
+        Product product1 = createProduct("아메리카노", "001", SELLING, BOTTLE,2000);
+        Product product2 = createProduct("라떼", "002", SELLING, BAKERY, 4000);
+        Product product3 = createProduct("팥빙수", "003", HOLD, HANDMADE, 6000);
+
+        productRepository.saveAll(List.of(product1, product2, product3));
+
+        Stock stock1 = Stock.create("001", 0);
+        Stock stock2 = Stock.create("002", 0);
+
+        stockRepository.saveAll(List.of(stock1, stock2));
+
+
+        OrderCreateRequest orderRequest = OrderCreateRequest
+                .builder()
+                .orderProductNumbers(List.of("001", "001", "002", "003"))
+                .build();
+
+        // when // then
+//        OrderCreateResponse orderResponse = orderService.createdOrders(orderRequest, now);
+
+        assertThatThrownBy(() ->orderService.createdOrders(orderRequest, now))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("재고가 부족한 상품이 있습니다. 관리자에게 문의하세요.");
     }
 
 
