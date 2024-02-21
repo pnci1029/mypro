@@ -1,5 +1,6 @@
 package com.example.practicaltest.spring.spring.api.service.product;
 
+import com.example.practicaltest.spring.spring.api.controller.product.dto.request.ProductCreateRequest;
 import com.example.practicaltest.spring.spring.api.service.product.response.ProductResponse;
 import com.example.practicaltest.spring.spring.domain.product.Product;
 import com.example.practicaltest.spring.spring.domain.product.ProductRepository;
@@ -16,10 +17,36 @@ public class ProductService  {
 
     private final ProductRepository productRepository;
 
+    public ProductResponse createProduct(ProductCreateRequest request) {
+        // 상품 번호 생성 / 001, 002 ,003 ...
+        // db를 읽어 가장 마지막 상품번호 +1
+
+        String newProductNo = createNewProductNo();
+        Product product = Product.builder()
+                .name(request.getName())
+                .productNo(newProductNo)
+                .productType(request.getProductType())
+                .sellingType(request.getSellingType())
+                .price(request.getPrice())
+                .build();
+        Product resultProduct = productRepository.save(product);
+        return ProductResponse.of(resultProduct);
+    }
+
+    private String createNewProductNo() {
+        String latestProductNo = productRepository.findLatestProduct();
+        if (latestProductNo == null) {
+            return "001";
+        }
+        return String.format("%03d", Integer.parseInt(latestProductNo) + 1);
+    }
+
     public List<ProductResponse> getSellingProducts() {
+
         List<Product> productList = productRepository.findAllBySellingTypeIn(ProductSellingType.forDisplay());
         return productList.stream()
                 .map(item -> ProductResponse.of(item))
                 .collect(Collectors.toList());
     }
+
 }
