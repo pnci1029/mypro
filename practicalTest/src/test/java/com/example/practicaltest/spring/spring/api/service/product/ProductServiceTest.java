@@ -4,6 +4,7 @@ import com.example.practicaltest.spring.spring.api.controller.product.dto.reques
 import com.example.practicaltest.spring.spring.api.service.product.response.ProductResponse;
 import com.example.practicaltest.spring.spring.domain.product.Product;
 import com.example.practicaltest.spring.spring.domain.product.ProductRepository;
+import org.assertj.core.groups.Tuple;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -51,6 +52,17 @@ class ProductServiceTest {
         assertThat(response)
                 .extracting("productNo", "name")
                 .contains("004", "카푸치노");
+
+        List<Product> products = productRepository.findAll();
+        assertThat(products).hasSize(4)
+                .extracting("productNo", "name")
+                .containsExactlyInAnyOrder(
+                        Tuple.tuple("001","아메리카노"),
+                        Tuple.tuple("002","아메리카노"),
+                        Tuple.tuple("003","아메리카노"),
+                        Tuple.tuple("004","카푸치노")
+                )
+        ;
     }
 
     @DisplayName("등록 상품이 없는 경우에서 상품을 등록합니다. 상품번호는 001 입니다.")
@@ -66,6 +78,9 @@ class ProductServiceTest {
         assertThat(response)
                 .extracting("productNo", "name")
                 .contains("001", "카푸치노");
+
+        List<Product> products = productRepository.findAll();
+        assertThat(products).hasSize(1);
     }
 
     private Product createProduct(String productNo) {

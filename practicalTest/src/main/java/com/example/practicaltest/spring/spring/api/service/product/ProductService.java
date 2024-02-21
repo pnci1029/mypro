@@ -22,13 +22,8 @@ public class ProductService  {
         // db를 읽어 가장 마지막 상품번호 +1
 
         String newProductNo = createNewProductNo();
-        Product product = Product.builder()
-                .name(request.getName())
-                .productNo(newProductNo)
-                .productType(request.getProductType())
-                .sellingType(request.getSellingType())
-                .price(request.getPrice())
-                .build();
+        Product product = request.toEntity(newProductNo);
+
         Product resultProduct = productRepository.save(product);
         return ProductResponse.of(resultProduct);
     }
