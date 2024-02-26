@@ -14,6 +14,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import static com.example.practicaltest.spring.spring.domain.product.ProductSellingType.SELLING;
@@ -58,7 +59,105 @@ class ProductControllerTest {
                         .content(om.writeValueAsString(request))
                         .contentType(MediaType.APPLICATION_JSON)
                 )
-                .andExpect(MockMvcResultMatchers.status().isOk());
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andDo(MockMvcResultHandlers.print());
+    }
+    
+    @DisplayName("신규 상품을 등록할 때 상품 타입은 필수이다.")
+    @Test
+    void createProductWithoutProductType() throws Exception {
+        // given
+        ProductCreateRequest request = ProductCreateRequest.builder()
+                .sellingType(SELLING)
+                .price(3000)
+                .name("아메리카노")
+                .build();
+
+        // when // then
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/product/new")
+                        .content(om.writeValueAsString(request))
+                        .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(MockMvcResultMatchers.status().isBadRequest())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.httpStatus").value("BAD_REQUEST"))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.statusCode").value("400"))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.message").value("상품 타입은 필수입니다."))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.data").isEmpty())
+        ;
+    }
+
+    @DisplayName("신규 상품을 등록할 때 판매 타입은 필수이다.")
+    @Test
+    void createProductWithoutSellingType() throws Exception {
+        // given
+        ProductCreateRequest request = ProductCreateRequest.builder()
+                .productType(HANDMADE)
+                .price(3000)
+                .name("아메리카노")
+                .build();
+
+        // when // then
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/product/new")
+                        .content(om.writeValueAsString(request))
+                        .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(MockMvcResultMatchers.status().isBadRequest())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.httpStatus").value("BAD_REQUEST"))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.statusCode").value("400"))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.message").value("상품 판매 타입은 필수입니다."))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.data").isEmpty())
+        ;
+    }
+
+    @DisplayName("신규 상품을 등록할 때 상품명 기입은 필수이다.")
+    @Test
+    void createProductWithoutProductName() throws Exception {
+        // given
+        ProductCreateRequest request = ProductCreateRequest.builder()
+                .productType(HANDMADE)
+                .sellingType(SELLING)
+                .price(3000)
+                .build();
+
+        // when // then
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/product/new")
+                        .content(om.writeValueAsString(request))
+                        .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(MockMvcResultMatchers.status().isBadRequest())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.httpStatus").value("BAD_REQUEST"))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.statusCode").value("400"))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.message").value("상품 이름은 필수입니다."))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.data").isEmpty())
+        ;
+    }
+
+
+    @DisplayName("신규 상품을 등록할 때 가격은 필수이다.")
+    @Test
+    void createProductWithoutPrice() throws Exception {
+        // given
+        ProductCreateRequest request = ProductCreateRequest.builder()
+                .productType(HANDMADE)
+                .sellingType(SELLING)
+                .name("아메리카노")
+                .build();
+
+        // when // then
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/product/new")
+                        .content(om.writeValueAsString(request))
+                        .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(MockMvcResultMatchers.status().isBadRequest())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.httpStatus").value("BAD_REQUEST"))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.statusCode").value("400"))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.message").value("상품 가격은 양수여야 합니다."))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.data").isEmpty())
+        ;
     }
 
 }
