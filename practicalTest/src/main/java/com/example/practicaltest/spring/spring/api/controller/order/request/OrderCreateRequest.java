@@ -1,5 +1,6 @@
 package com.example.practicaltest.spring.spring.api.controller.order.request;
 
+import com.example.practicaltest.spring.spring.api.service.order.request.OrderCreateServiceRequest;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,4 +20,12 @@ public class OrderCreateRequest {
     public OrderCreateRequest(List<String> orderProductNumbers) {
         this.orderProductNumbers = orderProductNumbers;
     }
+
+    public OrderCreateServiceRequest toService() {
+        return OrderCreateServiceRequest
+                .builder()
+                .orderProductNumbers(orderProductNumbers)
+                .build();
+    }
+
 }

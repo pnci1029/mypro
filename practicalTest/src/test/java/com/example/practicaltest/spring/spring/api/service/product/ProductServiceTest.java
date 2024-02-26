@@ -1,6 +1,7 @@
 package com.example.practicaltest.spring.spring.api.service.product;
 
 import com.example.practicaltest.spring.spring.api.controller.product.dto.request.ProductCreateRequest;
+import com.example.practicaltest.spring.spring.api.service.product.request.ProductCreateServiceRequest;
 import com.example.practicaltest.spring.spring.api.service.product.response.ProductResponse;
 import com.example.practicaltest.spring.spring.domain.product.Product;
 import com.example.practicaltest.spring.spring.domain.product.ProductRepository;
@@ -43,7 +44,7 @@ class ProductServiceTest {
 
         productRepository.saveAll(List.of(product1, product2, product3));
 
-        ProductCreateRequest request = ProductCreateRequest.of(BAKERY, SELLING, "카푸치노", 3000);
+        ProductCreateServiceRequest request = ProductCreateServiceRequest.of(BAKERY, SELLING, "카푸치노", 3000);
 
         // when
         ProductResponse response = productService.createProduct(request);
@@ -69,7 +70,7 @@ class ProductServiceTest {
     @Test
     void createProductWithoutProductLeft() {
         // given
-        ProductCreateRequest request = ProductCreateRequest.of(BAKERY, SELLING, "카푸치노", 3000);
+        ProductCreateServiceRequest request = ProductCreateServiceRequest.of(BAKERY, SELLING, "카푸치노", 3000);
 
         // when
         ProductResponse response = productService.createProduct(request);
