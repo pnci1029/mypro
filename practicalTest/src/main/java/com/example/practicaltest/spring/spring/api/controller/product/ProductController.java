@@ -6,6 +6,7 @@ import com.example.practicaltest.spring.spring.api.service.product.response.Prod
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public class ProductController {
 
 
     @PostMapping("/api/v1/product/new")
-    public ProductResponse createProduct(ProductCreateRequest request) {
+    public ProductResponse createProduct(@RequestBody ProductCreateRequest request) {
         return productService.createProduct(request);
     }
 
