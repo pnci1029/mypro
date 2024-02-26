@@ -1,6 +1,7 @@
 package com.example.practicaltest.spring.spring.api.service.order;
 
 import com.example.practicaltest.spring.spring.api.controller.order.request.OrderCreateRequest;
+import com.example.practicaltest.spring.spring.api.service.order.request.OrderCreateServiceRequest;
 import com.example.practicaltest.spring.spring.api.service.order.response.OrderCreateResponse;
 import com.example.practicaltest.spring.spring.domain.order.OrderRepository;
 import com.example.practicaltest.spring.spring.domain.orderproduct.OrderProductRepository;
@@ -67,7 +68,7 @@ class OrderServiceTest {
         productRepository.saveAll(List.of(product1, product2, product3));
 
 
-        OrderCreateRequest orderRequest = OrderCreateRequest
+        OrderCreateServiceRequest orderRequest = OrderCreateServiceRequest
                 .builder()
                 .orderProductNumbers(List.of("001", "003"))
                 .build();
@@ -111,7 +112,7 @@ class OrderServiceTest {
         stockRepository.saveAll(List.of(stock1, stock2));
 
 
-        OrderCreateRequest orderRequest = OrderCreateRequest
+        OrderCreateServiceRequest orderRequest = OrderCreateServiceRequest
                 .builder()
                 .orderProductNumbers(List.of("001", "001", "002", "003"))
                 .build();
@@ -163,7 +164,7 @@ class OrderServiceTest {
         stockRepository.saveAll(List.of(stock1, stock2));
 
 
-        OrderCreateRequest orderRequest = OrderCreateRequest
+        OrderCreateServiceRequest orderRequest = OrderCreateServiceRequest
                 .builder()
                 .orderProductNumbers(List.of("001", "001", "002", "003"))
                 .build();
@@ -189,7 +190,7 @@ class OrderServiceTest {
         productRepository.saveAll(List.of(product1, product2, product3));
 
 
-        OrderCreateRequest orderRequest = OrderCreateRequest
+        OrderCreateServiceRequest orderRequest = OrderCreateServiceRequest
                 .builder()
                 .orderProductNumbers(List.of("001", "001"))
                 .build();

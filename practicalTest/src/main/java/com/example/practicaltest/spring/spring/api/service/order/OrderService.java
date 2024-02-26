@@ -1,6 +1,7 @@
 package com.example.practicaltest.spring.spring.api.service.order;
 
 import com.example.practicaltest.spring.spring.api.controller.order.request.OrderCreateRequest;
+import com.example.practicaltest.spring.spring.api.service.order.request.OrderCreateServiceRequest;
 import com.example.practicaltest.spring.spring.api.service.order.response.OrderCreateResponse;
 import com.example.practicaltest.spring.spring.domain.order.Order;
 import com.example.practicaltest.spring.spring.domain.order.OrderRepository;
@@ -30,8 +31,8 @@ public class OrderService {
      * optimistic lock / pessimistic lock / ...
      */
 
-    public OrderCreateResponse createdOrders(OrderCreateRequest orderCreateRequest, LocalDateTime registeredDateTime) {
-        List<String> orderNumbers = orderCreateRequest.getOrderProductNumbers();
+    public OrderCreateResponse createdOrders(OrderCreateServiceRequest request, LocalDateTime registeredDateTime) {
+        List<String> orderNumbers = request.getOrderProductNumbers();
         List<Product> collectsResult = findOrderProductNumbers(orderNumbers);
 
         List<String> stockTypeProductList = collectsResult.stream()
