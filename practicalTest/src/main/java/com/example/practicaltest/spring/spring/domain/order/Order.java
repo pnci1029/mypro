@@ -7,6 +7,7 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.aspectj.weaver.ast.Or;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -33,15 +34,8 @@ public class Order extends BaseEntity {
     private List<OrderProduct> orderProduct;
 
     @Builder
-    private Order(OrderStatus orderStatus, int totalPrice, LocalDateTime registeredDateTime, List<OrderProduct> orderProduct) {
+    private Order(List<Product> productList, OrderStatus orderStatus, LocalDateTime registeredDateTime) {
         this.orderStatus = orderStatus;
-        this.totalPrice = totalPrice;
-        this.registeredDateTime = registeredDateTime;
-        this.orderProduct = orderProduct;
-    }
-
-    private Order(List<Product> productList, LocalDateTime registeredDateTime) {
-        this.orderStatus = OrderStatus.INIT;
         this.totalPrice = calculateTotalPrice(productList);
         this.registeredDateTime = registeredDateTime;
         this.orderProduct = productList
@@ -50,7 +44,12 @@ public class Order extends BaseEntity {
     }
 
     public static Order create(List<Product> productList, LocalDateTime registeredDateTime) {
-        return new Order(productList, registeredDateTime);
+//        return new Order(productList, registeredDateTime);
+        return Order.builder()
+                .orderStatus(OrderStatus.INIT)
+                .productList(productList)
+                .registeredDateTime(registeredDateTime)
+                .build();
     }
 
     private int calculateTotalPrice(List<Product> productList) {

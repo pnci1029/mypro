@@ -16,13 +16,13 @@ public class OrderStatisticsService {
     private final OrderRepository orderRepository;
     private final MailService mailService;
 
-    public void sendOrderStatisticsMail(LocalDate localDate, String email) {
+    public boolean sendOrderStatisticsMail(LocalDate localDate, String email) {
         // 해당 일자에 해당하는 결제를 조회하고
         List<Order> ordersBy = orderRepository.findOrdersBy(
                 // localDate의 0시를 의미
                 localDate.atStartOfDay(),
                 localDate.plusDays(1).atStartOfDay(),
-                OrderStatus.PAYMENT_COMPLETED
+                OrderStatus.COMPLETED
         );
 
         // 결제 조회된 금액들을 합산하여
@@ -40,6 +40,7 @@ public class OrderStatisticsService {
             throw new IllegalArgumentException("매출 통계 메일 전송에 실패했습니다.");
         }
 
+        return true;
     }
 
 }
