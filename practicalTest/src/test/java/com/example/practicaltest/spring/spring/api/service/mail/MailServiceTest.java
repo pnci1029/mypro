@@ -6,24 +6,25 @@ import com.example.practicaltest.spring.spring.domain.history.mail.MailSendHisto
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
+import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class MailServiceTest {
 
-    @Mock
+    @Spy
     MailSendClient mailSendClient;
 
     @Mock
     MailSendHistoryRepository mailSendHistoryRepository;
+
+    @InjectMocks
+    MailService mailService;
 
     @DisplayName("메일 전송 테스트")
     @Test
@@ -34,14 +35,14 @@ class MailServiceTest {
          * private final MailSendClient mailSendClient;
          * private final MailSendHistoryRepository mailSendHistoryRepository;
          */
-//        MailSendClient mailSendClient = Mockito.mock(MailSendClient.class);
-//        MailSendHistoryRepository mailSendHistoryRepository = Mockito.mock(MailSendHistoryRepository.class);
+//        when(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
+//                .thenReturn(true);
+        doReturn(true)
+                .when(mailSendClient)
+                .sendEmail(anyString(), anyString(), anyString(), anyString());
 
-        MailService mailService = new MailService(mailSendClient, mailSendHistoryRepository);
-
-        when(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
-                .thenReturn(true);
-//        when(mailSendHistoryRepository.save(any(MailSendHistory.class))).thenReturn();
+        BDDMockito.given(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
+                .willReturn(true);
 
         // when
         boolean result = mailService.sendMail("", "", "", "");
