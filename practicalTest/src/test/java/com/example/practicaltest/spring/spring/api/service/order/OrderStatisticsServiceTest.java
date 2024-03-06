@@ -1,6 +1,6 @@
 package com.example.practicaltest.spring.spring.api.service.order;
 
-import com.example.practicaltest.spring.spring.client.mail.MailSendClient;
+import com.example.practicaltest.spring.spring.IntegrationTestSupport;
 import com.example.practicaltest.spring.spring.domain.history.mail.MailSendHistory;
 import com.example.practicaltest.spring.spring.domain.history.mail.MailSendHistoryRepository;
 import com.example.practicaltest.spring.spring.domain.order.Order;
@@ -16,8 +16,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -28,8 +26,8 @@ import static com.example.practicaltest.spring.spring.domain.product.ProductType
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 
-@SpringBootTest
-class OrderStatisticsServiceTest {
+//@SpringBootTest
+class OrderStatisticsServiceTest extends IntegrationTestSupport {
 
     @Autowired
     OrderProductRepository orderProductRepository;
@@ -45,9 +43,6 @@ class OrderStatisticsServiceTest {
 
     @Autowired
     MailSendHistoryRepository mailSendHistoryRepository;
-
-    @MockBean
-    private MailSendClient mailSendClient;
 
 
     @AfterEach

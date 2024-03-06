@@ -1,5 +1,6 @@
 package com.example.practicaltest.spring.spring.api.service.order;
 
+import com.example.practicaltest.spring.spring.IntegrationTestSupport;
 import com.example.practicaltest.spring.spring.api.controller.order.request.OrderCreateRequest;
 import com.example.practicaltest.spring.spring.api.service.order.request.OrderCreateServiceRequest;
 import com.example.practicaltest.spring.spring.api.service.order.response.OrderCreateResponse;
@@ -16,6 +17,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -27,9 +29,9 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.assertj.core.groups.Tuple.tuple;
 
 //@ActiveProfiles("test")
-@SpringBootTest
+//@SpringBootTest
 //@DataJpaTest
-class OrderServiceTest {
+class OrderServiceTest extends IntegrationTestSupport {
 
     @Autowired
     OrderService orderService;
