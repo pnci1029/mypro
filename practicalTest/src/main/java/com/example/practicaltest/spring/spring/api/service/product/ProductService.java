@@ -28,25 +28,18 @@ import java.util.stream.Collectors;
 public class ProductService  {
 
     private final ProductRepository productRepository;
+    private final ProductNumberFactory productNumberFactory;
 
     @Transactional
     public ProductResponse createProduct(ProductCreateServiceRequest request) {
         // 상품 번호 생성 / 001, 002 ,003 ...
         // db를 읽어 가장 마지막 상품번호 +1
 
-        String newProductNo = createNewProductNo();
+        String newProductNo = productNumberFactory.createNewProductNo();
         Product product = request.toEntity(newProductNo);
 
         Product resultProduct = productRepository.save(product);
         return ProductResponse.of(resultProduct);
-    }
-
-    private String createNewProductNo() {
-        String latestProductNo = productRepository.findLatestProduct();
-        if (latestProductNo == null) {
-            return "001";
-        }
-        return String.format("%03d", Integer.parseInt(latestProductNo) + 1);
     }
 
     public List<ProductResponse> getSellingProducts() {
