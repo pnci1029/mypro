@@ -1,5 +1,6 @@
 package com.example.practicaltest.spring.spring.api.controller.product;
 
+import com.example.practicaltest.spring.ControllerTestSupport;
 import com.example.practicaltest.spring.spring.api.controller.product.dto.request.ProductCreateRequest;
 import com.example.practicaltest.spring.spring.api.service.product.ProductService;
 import com.example.practicaltest.spring.spring.api.service.product.response.ProductResponse;
@@ -29,22 +30,16 @@ import static org.mockito.Mockito.when;
  * WebMvctest 어노테이션은 컨트롤러 레이어만 뗴어내서 테스트 하기 위함
  * MockMvc 어노테이션과 함께 사용
  */
-@WebMvcTest(controllers = ProductController.class)
-class ProductControllerTest {
+class ProductControllerTest extends ControllerTestSupport {
 
     /**
      * service 레이어 하위는 모두 mocking 처리
      * 이를 위한 MockMvc 의존성 주입
      */
-    @Autowired
-    MockMvc mockMvc;
-
-    @MockBean
-    ProductService productService;
 
     // 요청 시 직렬화/역직렬화를 위함
-    @Autowired
-    ObjectMapper om;
+//    @Autowired
+//    ObjectMapper om;
 
 
     @DisplayName("상품을 등록한다.")

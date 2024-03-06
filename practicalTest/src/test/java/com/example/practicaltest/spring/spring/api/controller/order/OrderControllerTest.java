@@ -1,15 +1,10 @@
 package com.example.practicaltest.spring.spring.api.controller.order;
 
+import com.example.practicaltest.spring.ControllerTestSupport;
 import com.example.practicaltest.spring.spring.api.controller.order.request.OrderCreateRequest;
-import com.example.practicaltest.spring.spring.api.service.order.OrderService;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.util.List;
@@ -18,17 +13,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@WebMvcTest(controllers = OrderController.class)
-class OrderControllerTest {
-
-    @Autowired
-    MockMvc mockMvc;
-
-    @MockBean
-    OrderService orderService;
-
-    @Autowired
-    ObjectMapper om;
+class OrderControllerTest extends ControllerTestSupport {
 
     @DisplayName("주문을 생성합니다.")
     @Test

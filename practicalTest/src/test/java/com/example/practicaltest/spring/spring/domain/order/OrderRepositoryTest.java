@@ -1,14 +1,13 @@
 package com.example.practicaltest.spring.spring.domain.order;
 
+import com.example.practicaltest.spring.spring.IntegrationTestSupport;
 import com.example.practicaltest.spring.spring.domain.product.Product;
 import com.example.practicaltest.spring.spring.domain.product.ProductRepository;
 import com.example.practicaltest.spring.spring.domain.product.ProductSellingType;
 import com.example.practicaltest.spring.spring.domain.product.ProductType;
-import org.assertj.core.groups.Tuple;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -17,8 +16,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.groups.Tuple.tuple;
 
-@SpringBootTest
-class OrderRepositoryTest {
+class OrderRepositoryTest extends IntegrationTestSupport {
 
     @Autowired
     OrderRepository orderRepository;

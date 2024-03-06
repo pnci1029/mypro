@@ -1,5 +1,6 @@
 package com.example.practicaltest.spring.spring.domain.stock;
 
+import com.example.practicaltest.spring.spring.IntegrationTestSupport;
 import org.assertj.core.groups.Tuple;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -12,8 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.groups.Tuple.tuple;
 import static org.junit.jupiter.api.Assertions.*;
 
-@DataJpaTest
-class StockRepositoryTest {
+class StockRepositoryTest extends IntegrationTestSupport {
 
     @Autowired
     StockRepository stockRepository;

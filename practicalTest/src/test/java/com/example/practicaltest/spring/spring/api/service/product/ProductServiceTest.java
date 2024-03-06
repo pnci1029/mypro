@@ -1,5 +1,6 @@
 package com.example.practicaltest.spring.spring.api.service.product;
 
+import com.example.practicaltest.spring.spring.IntegrationTestSupport;
 import com.example.practicaltest.spring.spring.api.controller.product.dto.request.ProductCreateRequest;
 import com.example.practicaltest.spring.spring.api.service.product.request.ProductCreateServiceRequest;
 import com.example.practicaltest.spring.spring.api.service.product.response.ProductResponse;
@@ -19,9 +20,7 @@ import static com.example.practicaltest.spring.spring.domain.product.ProductSell
 import static com.example.practicaltest.spring.spring.domain.product.ProductType.BAKERY;
 import static org.assertj.core.api.Assertions.*;
 
-@ActiveProfiles("test")
-@SpringBootTest
-class ProductServiceTest {
+class ProductServiceTest extends IntegrationTestSupport {
 
     @Autowired
     ProductService productService;
