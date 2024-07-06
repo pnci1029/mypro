@@ -55,5 +55,19 @@ public class ThroughputHttpMethod {
             responseBody.write(response);
             responseBody.close();
         }
+
+        private long countWord(String word) {
+            long count = 0;
+            int index = 0;
+            while (index >= 0) {
+                index = text.indexOf(word, index);
+
+                if (index >= 0) {
+                    count++;
+                    index++;
+                }
+            }
+            return count;
+        }
     }
 }
