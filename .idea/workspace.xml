@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.07.08 setup for inventory thread test">
-      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/src/udemy/inventory/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/src/udemy/inventory/main.java" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.03.06 external library test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +17,9 @@
     <execution />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../multithreading">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
@@ -39,6 +41,9 @@
     <projectState path="$PROJECT_DIR$/mypro">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/practicalTest">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/security">
       <ProjectState />
     </projectState>
@@ -46,6 +51,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/webcrawling">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../practicalTest">
       <ProjectState />
     </projectState>
   </component>
@@ -61,23 +69,31 @@
         <task path="$PROJECT_DIR$/springDbPrac">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/bookPrac">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/practicalTest">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="pro" type="f1a62948:ProjectNode" />
+                <item name="bookPrac" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="pro" type="f1a62948:ProjectNode" />
+                <item name="bookPrac" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="pro" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="practicalTest" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="practicalTest" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -89,63 +105,74 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="HTML File" />
-        <option value="Enum" />
         <option value="package.json" />
+        <option value="Enum" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="2LSSFQrnKiQpYZw7BfBKBf0X0bE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hongchanghyeong/Desktop/study/pro&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.12699747&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;155d8125d12b31912e08f82839c096d2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "11",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/hongchanghyeong/Desktop/study/mypro",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.12699747",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "editing.templates",
+    "spring.configuration.checksum": "763001eb90772243990380af6f578955",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.practicaltest.spring.spring.api.controller.order.request" />
       <recent name="com.study.elasticsearchprac.service" />
       <recent name="com.example.springdbprac.study.domain.repository" />
       <recent name="com.example.springdbprac.study.service" />
@@ -161,14 +188,18 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/elasticSearchPrac/src/main/resources/templates/region" />
       <recent name="$PROJECT_DIR$/springDbPrac/src/test/resources" />
       <recent name="$PROJECT_DIR$/springDbPrac/src/test/java" />
       <recent name="$PROJECT_DIR$/springDbPrac/src/test/java/resources" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.example.pro.service" />
+      <recent name="com.example.practicaltest.spring.spring.api.controller.product" />
+      <recent name="com.example.practicaltest.spring.spring.api.service.product" />
+      <recent name="com.example.practicaltest.spring.spring.domain.stock" />
+      <recent name="com.example.practicaltest.spring.spring.domain.product" />
+      <recent name="com.example.practicaltest.spring.spring.domain.order" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.security.mySecurity.filter" />
@@ -187,104 +218,139 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BackJoon">
-    <configuration name="BackJoon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.security.mySecurity.BackJoon" />
-      <module name="security.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.security.mySecurity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Gradle.ProductControllerTest.createProduct">
+    <configuration name="ProductControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/practicalTest" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.practicaltest.spring.spring.api.controller.product.ProductControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductControllerTest.createProduct" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/practicalTest" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.practicaltest.spring.spring.api.controller.product.ProductControllerTest.createProduct&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/practicalTest" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.practicaltest.spring.spring.api.service.product.ProductServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductServiceTest.createProduct" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/practicalTest" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.practicaltest.spring.spring.api.service.product.ProductServiceTest.createProduct&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductServiceTest.createProductWithoutProductLeft" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/practicalTest" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.practicaltest.spring.spring.api.service.product.ProductServiceTest.createProductWithoutProductLeft&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="pro" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebScrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.bookprac.WebScrapper" />
-      <module name="bookPrac.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.bookprac.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="pro" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="ArticleControllerTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springDbPrac" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.springdbprac.study.controller.ArticleControllerTest2&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ArticleServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springDbPrac" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.springdbprac.study.service.ArticleServiceTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ArticleServiceTest.createArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springDbPrac" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.springdbprac.study.service.ArticleServiceTest.createArticle&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="BookPracApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bookPrac.main" />
@@ -307,8 +373,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PracticalTestApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="practicalTest.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.practicaltest.spring.spring.PracticalTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticalTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="practicalTest.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.practicaltest.PracticalTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="com.example.pro.main" />
+      <module name="pro.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.pro.ProApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -344,11 +424,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BackJoon" />
-        <item itemvalue="Application.WebScrapper" />
-        <item itemvalue="Gradle.ArticleControllerTest2" />
-        <item itemvalue="Gradle.ArticleServiceTest" />
-        <item itemvalue="Gradle.ArticleServiceTest.createArticle" />
+        <item itemvalue="Gradle.ProductControllerTest.createProduct" />
+        <item itemvalue="Gradle.ProductControllerTest" />
+        <item itemvalue="Gradle.ProductServiceTest" />
+        <item itemvalue="Gradle.ProductServiceTest.createProductWithoutProductLeft" />
+        <item itemvalue="Gradle.ProductServiceTest.createProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -492,281 +572,26 @@
       <workItem from="1701694235359" duration="6000" />
       <workItem from="1701733770661" duration="557000" />
       <workItem from="1701776513862" duration="2879000" />
-      <workItem from="1706672676438" duration="882000" />
-      <workItem from="1707369867872" duration="14000" />
-      <workItem from="1712458395783" duration="787000" />
-      <workItem from="1712470673027" duration="1132000" />
-      <workItem from="1712719862767" duration="1329000" />
-      <workItem from="1713592952319" duration="966000" />
-      <workItem from="1720235401805" duration="30000" />
-      <workItem from="1720235468300" duration="2515000" />
-      <workItem from="1720437614016" duration="910000" />
-    </task>
-    <task id="LOCAL-00035" summary="09.03 elastic fix2">
-      <created>1693741004657</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1693741004657</updated>
-    </task>
-    <task id="LOCAL-00036" summary="09.05 docker build test">
-      <created>1693918259468</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1693918259468</updated>
-    </task>
-    <task id="LOCAL-00037" summary="09.06 kafka setup">
-      <created>1694005733789</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1694005733789</updated>
-    </task>
-    <task id="LOCAL-00038" summary="09.18 gradle fix">
-      <created>1695044840187</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1695044840187</updated>
-    </task>
-    <task id="LOCAL-00039" summary="09.19 logstash basic">
-      <created>1695125032089</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1695125032089</updated>
-    </task>
-    <task id="LOCAL-00040" summary="10.07 db prac project gradle queryDSL, web add">
-      <created>1696655017838</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1696655017838</updated>
-    </task>
-    <task id="LOCAL-00041" summary="10.07 db prac project set up">
-      <created>1696658142486</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1696658142486</updated>
-    </task>
-    <task id="LOCAL-00042" summary="10.08 basic article logic setup">
-      <created>1696741037141</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1696741037141</updated>
-    </task>
-    <task id="LOCAL-00043" summary="10.08 basic article controller test">
-      <created>1696743618349</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1696743618349</updated>
-    </task>
-    <task id="LOCAL-00044" summary="10.08 basic article repository test">
-      <created>1696747153041</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1696747153041</updated>
-    </task>
-    <task id="LOCAL-00045" summary="10.14 basic article test fix">
-      <created>1697259843306</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1697259843306</updated>
-    </task>
-    <task id="LOCAL-00046" summary="10.15 kafka fixing">
-      <created>1697347335734</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1697347335734</updated>
-    </task>
-    <task id="LOCAL-00047" summary="10.15 kafka fixing">
-      <created>1697351885282</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1697351885282</updated>
-    </task>
-    <task id="LOCAL-00048" summary="10.15 kafka fixing">
-      <created>1697353368239</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1697353368239</updated>
-    </task>
-    <task id="LOCAL-00049" summary="10.17 db setup">
-      <created>1697543366919</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1697543366919</updated>
-    </task>
-    <task id="LOCAL-00050" summary="10.18 db setup">
-      <created>1697623257914</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1697623257914</updated>
-    </task>
-    <task id="LOCAL-00051" summary="10.2 fix">
-      <created>1698235717170</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1698235717171</updated>
-    </task>
-    <task id="LOCAL-00052" summary="10.28 fix">
-      <created>1698490651198</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1698490651198</updated>
-    </task>
-    <task id="LOCAL-00053" summary="11.03 comment create">
-      <created>1699008942864</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1699008942864</updated>
-    </task>
-    <task id="LOCAL-00054" summary="11.04 elastic article setup &amp; h2 fix">
-      <created>1699071921653</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1699071921653</updated>
-    </task>
-    <task id="LOCAL-00055" summary="11.04 elastic img base setup">
-      <created>1699079523820</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1699079523820</updated>
-    </task>
-    <task id="LOCAL-00056" summary="11.04 before each tast">
-      <created>1699082092226</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1699082092226</updated>
-    </task>
-    <task id="LOCAL-00057" summary="11.05 test index move">
-      <created>1699162722909</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1699162722910</updated>
-    </task>
-    <task id="LOCAL-00058" summary="11.05 entity index divide">
-      <created>1699162815256</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1699162815256</updated>
-    </task>
-    <task id="LOCAL-00059" summary="11.05 entity index divide">
-      <created>1699573131501</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1699573131502</updated>
-    </task>
-    <task id="LOCAL-00060" summary="11.10 test">
-      <created>1699573986375</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1699573986376</updated>
-    </task>
-    <task id="LOCAL-00061" summary="11.11 simple setup">
-      <created>1699678852902</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1699678852902</updated>
-    </task>
-    <task id="LOCAL-00062" summary="11.12 article post basic">
-      <created>1699760297240</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1699760297240</updated>
-    </task>
-    <task id="LOCAL-00063" summary="11.12 article search add">
-      <created>1699763524324</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1699763524324</updated>
-    </task>
-    <task id="LOCAL-00064" summary="11.12 article tagging add &amp; search each article">
-      <created>1699765671437</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1699765671437</updated>
-    </task>
-    <task id="LOCAL-00065" summary="11.12 tagging &amp; search sample">
-      <created>1699768015224</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1699768015224</updated>
-    </task>
-    <task id="LOCAL-00066" summary="11.15 trash">
-      <created>1700051015200</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1700051015201</updated>
-    </task>
-    <task id="LOCAL-00067" summary="11.16 basic comment test">
-      <created>1700137181462</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1700137181463</updated>
-    </task>
-    <task id="LOCAL-00068" summary="11.17 security prac">
-      <created>1700224433949</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1700224433949</updated>
-    </task>
-    <task id="LOCAL-00069" summary="11.18 search tag setup">
-      <created>1700288576320</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1700288576320</updated>
-    </task>
-    <task id="LOCAL-00070" summary="11.19 tagging search basic">
-      <created>1700289724951</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1700289724951</updated>
-    </task>
-    <task id="LOCAL-00071" summary="11.19 article tagging ui fix">
-      <created>1700293139931</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1700293139931</updated>
-    </task>
-    <task id="LOCAL-00072" summary="11.22 effective Java item 17">
-      <created>1700610502352</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1700610502353</updated>
+      <workItem from="1706673036379" duration="940000" />
+      <workItem from="1706849228821" duration="3346000" />
+      <workItem from="1707369943652" duration="71000" />
+      <workItem from="1707370018401" duration="599000" />
+      <workItem from="1707448061941" duration="598000" />
+      <workItem from="1707884840733" duration="68000" />
+      <workItem from="1707884912787" duration="86000" />
+      <workItem from="1707885001554" duration="92000" />
+      <workItem from="1707885108128" duration="251000" />
+      <workItem from="1707886493177" duration="79000" />
+      <workItem from="1707886576577" duration="7325000" />
+      <workItem from="1708055062493" duration="12057000" />
+      <workItem from="1708398356839" duration="10756000" />
+      <workItem from="1708492033973" duration="8197000" />
+      <workItem from="1708922308711" duration="5617000" />
+      <workItem from="1709530225465" duration="800000" />
+      <workItem from="1709613385686" duration="2983000" />
+      <workItem from="1709693192789" duration="3766000" />
+      <workItem from="1710307950436" duration="613000" />
+      <workItem from="1720235421399" duration="776000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -845,7 +670,273 @@
       <option name="project" value="LOCAL" />
       <updated>1701820951340</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00084" summary="24.01.31 add multithreading porject">
+      <created>1706673466414</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1706673466414</updated>
+    </task>
+    <task id="LOCAL-00085" summary="24.01.31 add multithreading porject">
+      <created>1706673522645</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1706673522645</updated>
+    </task>
+    <task id="LOCAL-00086" summary="24.02.03 add multithreading project">
+      <created>1706934923305</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1706934923306</updated>
+    </task>
+    <task id="LOCAL-00087" summary="24.02.08 add basic multithreading study">
+      <created>1707369977101</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1707369977102</updated>
+    </task>
+    <task id="LOCAL-00088" summary="24.02.14 add new manual api">
+      <created>1707887748929</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1707887748929</updated>
+    </task>
+    <task id="LOCAL-00089" summary="24.02.14 add new auto test">
+      <created>1707889430388</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1707889430388</updated>
+    </task>
+    <task id="LOCAL-00090" summary="24.02.14 add hard to test case">
+      <created>1707891982281</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1707891982281</updated>
+    </task>
+    <task id="LOCAL-00091" summary="24.02.14 add display name">
+      <created>1707894735356</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1707894735356</updated>
+    </task>
+    <task id="LOCAL-00092" summary="24.02.16 setup for api test">
+      <created>1708058085285</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1708058085285</updated>
+    </task>
+    <task id="LOCAL-00093" summary="24.02.16 setup yml &amp; data">
+      <created>1708059423658</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1708059423658</updated>
+    </task>
+    <task id="LOCAL-00094" summary="24.02.16 add repository test">
+      <created>1708061830619</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1708061830619</updated>
+    </task>
+    <task id="LOCAL-00095" summary="24.02.16 add orderService test">
+      <created>1708067907372</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1708067907372</updated>
+    </task>
+    <task id="LOCAL-00096" summary="24.02.20 refactoring method &amp; Transactional clear">
+      <created>1708399729818</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1708399729818</updated>
+    </task>
+    <task id="LOCAL-00097" summary="24.02.20 add http request &amp; fix yml &amp; data.sql">
+      <created>1708402292510</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1708402292510</updated>
+    </task>
+    <task id="LOCAL-00098" summary="24.02.20 add stocks">
+      <created>1708403582934</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1708403582935</updated>
+    </task>
+    <task id="LOCAL-00099" summary="24.02.20 add productType test">
+      <created>1708404323029</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1708404323029</updated>
+    </task>
+    <task id="LOCAL-00100" summary="24.02.20 fix test error &amp; add test method">
+      <created>1708408072858</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1708408072858</updated>
+    </task>
+    <task id="LOCAL-00101" summary="24.02.21 fix refactoring service logic &amp; add service test code">
+      <created>1708493692009</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1708493692009</updated>
+    </task>
+    <task id="LOCAL-00102" summary="24.02.21 add product service method &amp; test code">
+      <created>1708497992196</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1708497992196</updated>
+    </task>
+    <task id="LOCAL-00103" summary="24.02.21 product service refactoring">
+      <created>1708498914750</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1708498914750</updated>
+    </task>
+    <task id="LOCAL-00104" summary="24.02.21 add product service transaction">
+      <created>1708501007262</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1708501007262</updated>
+    </task>
+    <task id="LOCAL-00105" summary="24.02.26 fix config setting &amp; add simple controller test">
+      <created>1708923726879</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1708923726879</updated>
+    </task>
+    <task id="LOCAL-00106" summary="24.02.26 add validation test &amp; Global exception, response">
+      <created>1708926706927</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1708926706927</updated>
+    </task>
+    <task id="LOCAL-00107" summary="24.02.26 create order controller test">
+      <created>1708928883019</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1708928883019</updated>
+    </task>
+    <task id="LOCAL-00108" summary="24.02.26 refactoring between service &amp; controller dto">
+      <created>1708929726046</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1708929726046</updated>
+    </task>
+    <task id="LOCAL-00109" summary="24.02.26 add orderRepository test">
+      <created>1708932730933</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1708932730933</updated>
+    </task>
+    <task id="LOCAL-00110" summary="24.03.04 add orderStatistics &amp; mailSend">
+      <created>1709530254995</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1709530254995</updated>
+    </task>
+    <task id="LOCAL-00111" summary="24.03.04 add mailsend history">
+      <created>1709530392669</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1709530392669</updated>
+    </task>
+    <task id="LOCAL-00112" summary="24.03.04 add orderStatisticsService test">
+      <created>1709534003911</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1709534003911</updated>
+    </task>
+    <task id="LOCAL-00113" summary="24.03.05 test with mockito v1">
+      <created>1709614845249</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1709614845249</updated>
+    </task>
+    <task id="LOCAL-00114" summary="24.03.05 test with mockito v2">
+      <created>1709614897419</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1709614897419</updated>
+    </task>
+    <task id="LOCAL-00115" summary="24.03.05 test with spy &amp; BDD mockito">
+      <created>1709615976967</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1709615976967</updated>
+    </task>
+    <task id="LOCAL-00116" summary="24.03.05 add parameterized test">
+      <created>1709620143973</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1709620143973</updated>
+    </task>
+    <task id="LOCAL-00117" summary="24.03.06 add dynamic test">
+      <created>1709693756438</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1709693756438</updated>
+    </task>
+    <task id="LOCAL-00118" summary="24.03.06 add test integration support">
+      <created>1709695674913</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1709695674913</updated>
+    </task>
+    <task id="LOCAL-00119" summary="24.03.06 extend test integration properties">
+      <created>1709695700413</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1709695700413</updated>
+    </task>
+    <task id="LOCAL-00120" summary="24.03.06 how to test private method">
+      <created>1709696500965</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1709696500965</updated>
+    </task>
+    <task id="LOCAL-00121" summary="24.03.06 external library test">
+      <created>1709698211899</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1709698211899</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -877,32 +968,32 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="11.15 trash" />
-    <MESSAGE value="11.16 basic comment test" />
-    <MESSAGE value="11.17 security prac" />
-    <MESSAGE value="11.18 search tag setup" />
-    <MESSAGE value="11.19 tagging search basic" />
-    <MESSAGE value="11.19 article tagging ui fix" />
-    <MESSAGE value="11.22 effective Java item 17" />
-    <MESSAGE value="11.22 security basic" />
-    <MESSAGE value="11.22 security basic2" />
-    <MESSAGE value="11.25 add simple test" />
-    <MESSAGE value="11.27 add item18" />
-    <MESSAGE value="11.29 add java_basic" />
-    <MESSAGE value="11.30 add java_basic" />
-    <MESSAGE value="12.02 gradle fix &amp; scrpping set up" />
-    <MESSAGE value="12.02 new project setup" />
-    <MESSAGE value="12.03 java_basic" />
-    <MESSAGE value="12.05 effective java item22" />
-    <MESSAGE value="12.06 effective java item23" />
-    <MESSAGE value="24.07.06 add dummy data" />
-    <MESSAGE value="24.07.06 build file" />
-    <MESSAGE value="24.07.06 add searching class" />
-    <MESSAGE value="24.07.06 add wordCountHandler implementation" />
-    <MESSAGE value="24.07.06 add countWord function" />
-    <MESSAGE value="24.07.06 add comment" />
-    <MESSAGE value="24.07.08 setup for inventory thread test" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.07.08 setup for inventory thread test" />
+    <MESSAGE value="24.02.20 add http request &amp; fix yml &amp; data.sql" />
+    <MESSAGE value="24.02.20 add stocks" />
+    <MESSAGE value="24.02.20 add productType test" />
+    <MESSAGE value="24.02.20 fix test error &amp; add test method" />
+    <MESSAGE value="24.02.21 fix refactoring service logic &amp; add service test code" />
+    <MESSAGE value="24.02.21 add product service method &amp; test code" />
+    <MESSAGE value="24.02.21 product service refactoring" />
+    <MESSAGE value="24.02.21 add product service transaction" />
+    <MESSAGE value="24.02.26 fix config setting &amp; add simple controller test" />
+    <MESSAGE value="24.02.26 add validation test &amp; Global exception, response" />
+    <MESSAGE value="24.02.26 create order controller test" />
+    <MESSAGE value="24.02.26 refactoring between service &amp; controller dto" />
+    <MESSAGE value="24.02.26 add orderRepository test" />
+    <MESSAGE value="24.03.04 add orderStatistics &amp; mailSend" />
+    <MESSAGE value="24.03.04 add mailsend history" />
+    <MESSAGE value="24.03.04 add orderStatisticsService test" />
+    <MESSAGE value="24.03.05 test with mockito v1" />
+    <MESSAGE value="24.03.05 test with mockito v2" />
+    <MESSAGE value="24.03.05 test with spy &amp; BDD mockito" />
+    <MESSAGE value="24.03.05 add parameterized test" />
+    <MESSAGE value="24.03.06 add dynamic test" />
+    <MESSAGE value="24.03.06 add test integration support" />
+    <MESSAGE value="24.03.06 extend test integration properties" />
+    <MESSAGE value="24.03.06 how to test private method" />
+    <MESSAGE value="24.03.06 external library test" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.03.06 external library test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
