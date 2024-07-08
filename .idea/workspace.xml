@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.07.06 add comment">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.07.08 setup for inventory thread test">
+      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java_basic/src/udemy/inventory/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/src/udemy/inventory/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -498,7 +500,7 @@
       <workItem from="1713592952319" duration="966000" />
       <workItem from="1720235401805" duration="30000" />
       <workItem from="1720235468300" duration="2515000" />
-      <workItem from="1720437614016" duration="272000" />
+      <workItem from="1720437614016" duration="910000" />
     </task>
     <task id="LOCAL-00035" summary="09.03 elastic fix2">
       <created>1693741004657</created>
@@ -843,7 +845,7 @@
       <option name="project" value="LOCAL" />
       <updated>1701820951340</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -875,7 +877,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="11.12 tagging &amp; search sample" />
     <MESSAGE value="11.15 trash" />
     <MESSAGE value="11.16 basic comment test" />
     <MESSAGE value="11.17 security prac" />
@@ -900,7 +901,8 @@
     <MESSAGE value="24.07.06 add wordCountHandler implementation" />
     <MESSAGE value="24.07.06 add countWord function" />
     <MESSAGE value="24.07.06 add comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.07.06 add comment" />
+    <MESSAGE value="24.07.08 setup for inventory thread test" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.07.08 setup for inventory thread test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
