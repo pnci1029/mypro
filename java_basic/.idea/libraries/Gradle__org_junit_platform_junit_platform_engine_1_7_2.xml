@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: org.junit.platform:junit-platform-engine:1.7.2">
+  <library name="Gradle: org.junit.platform:junit-platform-engine:1.7.2" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.7.2/2573770b46b8a199ed5f6b0f96fb99e468bfe891/junit-platform-engine-1.7.2.jar!/" />
     </CLASSES>

@@ -4,95 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="12.21 item 34">
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__com_h2database_h2_1_4_200.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__com_sun_istack_istack_commons_runtime_3_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__com_zaxxer_HikariCP_4_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_10_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_10_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__net_minidev_accessors_smart_2_4_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__net_minidev_json_smart_2_4_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_14_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_assertj_assertj_core_3_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_glassfish_jaxb_jaxb_runtime_2_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_glassfish_jaxb_txw2_2_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_hibernate_hibernate_core_5_4_32_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_javassist_javassist_3_27_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_jboss_jandex_2_2_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_4_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_mockito_mockito_core_3_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_mockito_mockito_junit_jupiter_3_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_objenesis_objenesis_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_ow2_asm_asm_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_data_spring_data_commons_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_data_spring_data_jpa_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_spring_aop_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_spring_aspects_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_spring_beans_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_spring_context_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_spring_core_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_spring_expression_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_spring_jcl_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_spring_orm_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_spring_test_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_springframework_spring_tx_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/libraries/Gradle__org_yaml_snakeyaml_1_28.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/modules/java_basic.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_basic/.idea/modules/java_basic.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/java_basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/java_basic.iml" afterDir="false" />
-    </list>
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.07.06 add comment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,16 +96,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="226b2176-37c7-415c-8727-cd06563b6dd8" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2LSSFQrnKiQpYZw7BfBKBf0X0bE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -216,6 +126,10 @@
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/hongchanghyeong/Desktop/study/pro",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.12699747",
@@ -390,7 +304,7 @@
       </method>
     </configuration>
     <configuration name="ProApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="pro.main" />
+      <module name="com.example.pro.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.pro.ProApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -581,6 +495,7 @@
       <workItem from="1712719862767" duration="1329000" />
       <workItem from="1713592952319" duration="966000" />
       <workItem from="1720235401805" duration="30000" />
+      <workItem from="1720235468300" duration="2515000" />
     </task>
     <task id="LOCAL-00035" summary="09.03 elastic fix2">
       <created>1693741004657</created>
@@ -925,7 +840,7 @@
       <option name="project" value="LOCAL" />
       <updated>1701820951340</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -957,12 +872,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="11.05 entity index divide" />
-    <MESSAGE value="11.10 test" />
-    <MESSAGE value="11.11 simple setup" />
-    <MESSAGE value="11.12 article post basic" />
-    <MESSAGE value="11.12 article search add" />
-    <MESSAGE value="11.12 article tagging add &amp; search each article" />
     <MESSAGE value="11.12 tagging &amp; search sample" />
     <MESSAGE value="11.15 trash" />
     <MESSAGE value="11.16 basic comment test" />
@@ -982,7 +891,13 @@
     <MESSAGE value="12.03 java_basic" />
     <MESSAGE value="12.05 effective java item22" />
     <MESSAGE value="12.06 effective java item23" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.06 effective java item23" />
+    <MESSAGE value="24.07.06 add dummy data" />
+    <MESSAGE value="24.07.06 build file" />
+    <MESSAGE value="24.07.06 add searching class" />
+    <MESSAGE value="24.07.06 add wordCountHandler implementation" />
+    <MESSAGE value="24.07.06 add countWord function" />
+    <MESSAGE value="24.07.06 add comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.07.06 add comment" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: org.springframework.data:spring-data-jpa:2.5.5">
+  <library name="Gradle: org.springframework.data:spring-data-jpa:2.5.5" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.5.5/a1ad7a3a0b7f97ad59a77ec16dac63e58ae938db/spring-data-jpa-2.5.5.jar!/" />
     </CLASSES>

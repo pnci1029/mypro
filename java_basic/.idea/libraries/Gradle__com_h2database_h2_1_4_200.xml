@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.h2database:h2:1.4.200">
+  <library name="Gradle: com.h2database:h2:1.4.200" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.h2database/h2/1.4.200/f7533fe7cb8e99c87a43d325a77b4b678ad9031a/h2-1.4.200.jar!/" />
     </CLASSES>

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: org.glassfish.jaxb:txw2:2.3.5">
+  <library name="Gradle: org.glassfish.jaxb:txw2:2.3.5" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.3.5/ec8930fa62e7b1758b1664d135f50c7abe86a4a3/txw2-2.3.5.jar!/" />
     </CLASSES>
