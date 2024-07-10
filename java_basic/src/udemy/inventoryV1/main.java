@@ -1,4 +1,4 @@
-package udemy.inventory;
+package udemy.inventoryV1;
 
 public class main {
     public static void main(String[] args) throws InterruptedException {
