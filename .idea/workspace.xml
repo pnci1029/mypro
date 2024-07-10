@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.07.08 reason why thread result changes" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.07.10 first solution to prevent thread problem" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +15,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/../multithreading">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../practicalTest">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$">
@@ -48,9 +51,6 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/webcrawling">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/../practicalTest">
       <ProjectState />
     </projectState>
   </component>
@@ -114,10 +114,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -580,6 +580,7 @@
       <workItem from="1709693192789" duration="3766000" />
       <workItem from="1710307950436" duration="613000" />
       <workItem from="1720235421399" duration="776000" />
+      <workItem from="1720606698256" duration="620000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -924,7 +925,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -956,8 +957,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.02.20 add stocks" />
-    <MESSAGE value="24.02.20 add productType test" />
     <MESSAGE value="24.02.20 fix test error &amp; add test method" />
     <MESSAGE value="24.02.21 fix refactoring service logic &amp; add service test code" />
     <MESSAGE value="24.02.21 add product service method &amp; test code" />
@@ -981,7 +980,9 @@
     <MESSAGE value="24.03.06 how to test private method" />
     <MESSAGE value="24.03.06 external library test" />
     <MESSAGE value="24.07.08 reason why thread result changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.07.08 reason why thread result changes" />
+    <MESSAGE value="24.07.10 change package" />
+    <MESSAGE value="24.07.10 first solution to prevent thread problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.07.10 first solution to prevent thread problem" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
