@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.15 add new dependency about redis and readme">
-      <change beforePath="$PROJECT_DIR$/coupon-system/api/src/main/java/com/example/api/service/ApplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-system/api/src/main/java/com/example/api/service/ApplyService.java" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.15 add redis repository and function &amp; create service function v2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-system/api/src/test/java/com/example/api/service/ApplyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-system/api/src/test/java/com/example/api/service/ApplyServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-system/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-system/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +19,6 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/../multithreading">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/../practicalTest">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$">
@@ -53,6 +52,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/webcrawling">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../practicalTest">
       <ProjectState />
     </projectState>
   </component>
@@ -584,6 +586,7 @@
       <workItem from="1710307950436" duration="613000" />
       <workItem from="1720235421399" duration="776000" />
       <workItem from="1720606698256" duration="620000" />
+      <workItem from="1726657032635" duration="5000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -928,7 +931,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -960,7 +963,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.02.26 refactoring between service &amp; controller dto" />
     <MESSAGE value="24.02.26 add orderRepository test" />
     <MESSAGE value="24.03.04 add orderStatistics &amp; mailSend" />
     <MESSAGE value="24.03.04 add mailsend history" />
@@ -985,7 +987,8 @@
     <MESSAGE value="24.09.15 fix something" />
     <MESSAGE value="24.09.15 add test case about multi thread condition" />
     <MESSAGE value="24.09.15 add new dependency about redis and readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.09.15 add new dependency about redis and readme" />
+    <MESSAGE value="24.09.15 add redis repository and function &amp; create service function v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.09.15 add redis repository and function &amp; create service function v2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

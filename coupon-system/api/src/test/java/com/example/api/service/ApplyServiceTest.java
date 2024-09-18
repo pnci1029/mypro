@@ -25,7 +25,7 @@ class ApplyServiceTest {
     @Test
     void checkWhenApplyFirstTime() {
         // given
-        applyService.apply(1L);
+        applyService.applyV2(1L);
 
         // when
         long count = couponRepository.count();
@@ -52,7 +52,7 @@ class ApplyServiceTest {
             int userId = i;
             executorService.submit(() -> {
                 try {
-                    applyService.apply((long) userId);
+                    applyService.applyV2((long) userId);
                 } finally {
                     countDownLatch.countDown();
                 }
