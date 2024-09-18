@@ -12,6 +12,8 @@
 
 `멀티스레드 문제를 개선하기 위한 방법 1. redis`
 ````
+    export COMPOSE_PROJECT_NAME=coupon
+
     싱글 스레드 환경의 레디스는 
     incr 명령어를 통해서 원하는 id에 대한 카운트를 관리할 수 있다.
     
@@ -30,4 +32,31 @@
     2. 동시에 많은 양을 처리하는 도중 다른 인서트 동작이 발생할 경우 타임아웃 문제 발생 가능
         -> ex) insrt를 1분에 10000건 가능한 상황에 100,000건의 인서트 요청이 들어왔을 경우,
                그 사이 회원가입이나 주문 insert가 요청되었을때 100,000건의 요청이 전체가 처리되지 않을 수 있다.
+````
+
+<br />
+<br />
+
+`2. kafka`
+````
+
+    docker-compose.yml
+    
+    version: '2'
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+  kafka:
+    image: wurstmeister/kafka:2.12-2.5.0
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: 127.0.0.1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
 ````
