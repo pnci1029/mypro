@@ -14,6 +14,11 @@
 ````
     싱글 스레드 환경의 레디스는 
     incr 명령어를 통해서 원하는 id에 대한 카운트를 관리할 수 있다.
+    
+    
+    docker pull redis
+    docker run --name myredis -d -p 6379:6379 redis
+    docker exec -it b8d0(컨테이너 이름) redis-cli
 ````
 
 <br />
