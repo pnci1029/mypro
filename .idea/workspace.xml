@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.18 add command about kafka">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.21 add kafka gradle" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -585,6 +583,7 @@
       <workItem from="1720235421399" duration="776000" />
       <workItem from="1720606698256" duration="620000" />
       <workItem from="1726657032635" duration="1657000" />
+      <workItem from="1726895514289" duration="974000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -929,7 +928,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -961,7 +960,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.03.05 test with mockito v1" />
     <MESSAGE value="24.03.05 test with mockito v2" />
     <MESSAGE value="24.03.05 test with spy &amp; BDD mockito" />
     <MESSAGE value="24.03.05 add parameterized test" />
@@ -986,7 +984,8 @@
     <MESSAGE value="24.09.18 fix test case as v2" />
     <MESSAGE value="24.09.18 add command about redis" />
     <MESSAGE value="24.09.18 add command about kafka" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.09.18 add command about kafka" />
+    <MESSAGE value="24.09.21 add kafka gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.09.21 add kafka gradle" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
