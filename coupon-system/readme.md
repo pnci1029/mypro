@@ -21,6 +21,8 @@
     docker pull redis
     docker run --name myredis -d -p 6379:6379 redis
     docker exec -it b8d0(컨테이너 이름) redis-cli
+    
+    flushall
 ````
 
 <br />
