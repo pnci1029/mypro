@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.21 create coupon create component" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.21 create apply logic v3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-system/api/src/test/java/com/example/api/service/ApplyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-system/api/src/test/java/com/example/api/service/ApplyServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -583,7 +586,7 @@
       <workItem from="1720235421399" duration="776000" />
       <workItem from="1720606698256" duration="620000" />
       <workItem from="1726657032635" duration="1657000" />
-      <workItem from="1726895514289" duration="1316000" />
+      <workItem from="1726895514289" duration="1913000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -928,7 +931,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -960,7 +963,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.03.05 add parameterized test" />
     <MESSAGE value="24.03.06 add dynamic test" />
     <MESSAGE value="24.03.06 add test integration support" />
     <MESSAGE value="24.03.06 extend test integration properties" />
@@ -985,7 +987,8 @@
     <MESSAGE value="24.09.21 add kafka gradle" />
     <MESSAGE value="24.09.21 create default kafka producer factory config" />
     <MESSAGE value="24.09.21 create coupon create component" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.09.21 create coupon create component" />
+    <MESSAGE value="24.09.21 create apply logic v3" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.09.21 create apply logic v3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
