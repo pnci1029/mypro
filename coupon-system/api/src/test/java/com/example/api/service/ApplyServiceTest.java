@@ -49,10 +49,10 @@ class ApplyServiceTest {
 
         // when
         for(int i = 0; i < threadCount; i++) {
-            int userId = i;
+            long userId = i;
             executorService.submit(() -> {
                 try {
-                    applyService.applyV3((long) userId);
+                    applyService.applyV3(userId);
                 } finally {
                     countDownLatch.countDown();
                 }
@@ -79,10 +79,10 @@ class ApplyServiceTest {
 
         // when
         for(int i = 0; i < threadCount; i++) {
-            int userId = i;
+            long userId = i;
             executorService.submit(() -> {
                 try {
-                    applyService.applyV2((long) userId);
+                    applyService.applyV2(userId);
                 } finally {
                     countDownLatch.countDown();
                 }
