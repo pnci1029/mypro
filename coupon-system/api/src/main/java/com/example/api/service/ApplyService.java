@@ -20,6 +20,19 @@ public class ApplyService {
         this.couponCreateProducer = couponCreateProducer;
     }
 
+    public void applyV4(Long userId) {
+        Long count = couponCountRepository.increment();
+
+        if (count > 100) {
+            return;
+        }
+
+        couponCreateProducer.create(userId);
+    }
+
+    /**
+     * 카프카 + 레디스
+     */
     public void applyV3(Long userId) {
         Long count = couponCountRepository.increment();
 
@@ -30,6 +43,9 @@ public class ApplyService {
         couponCreateProducer.create(userId);
     }
 
+    /**
+     * 레디스
+     */
     public void applyV2(Long userId) {
         Long count = couponCountRepository.increment();
 
@@ -40,6 +56,9 @@ public class ApplyService {
         couponRepository.save(new Coupon(userId));
     }
 
+    /**
+     * 순수 DB
+     */
     public void applyV1(Long userId) {
         long count = couponRepository.count();
 
