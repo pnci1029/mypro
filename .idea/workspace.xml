@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.21 create main consumer">
-      <change beforePath="$PROJECT_DIR$/coupon-system/api/src/test/java/com/example/api/service/ApplyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-system/api/src/test/java/com/example/api/service/ApplyServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-system/consumer/src/main/java/com/example/consumer/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-system/consumer/src/main/java/com/example/consumer/config/KafkaConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-system/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-system/readme.md" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.23 fix something">
+      <change beforePath="$PROJECT_DIR$/coupon-system/api/src/main/java/com/example/api/service/ApplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-system/api/src/main/java/com/example/api/service/ApplyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-system/consumer/src/main/java/com/example/consumer/consumer/CouponCreatedConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-system/consumer/src/main/java/com/example/consumer/consumer/CouponCreatedConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-system/consumer/src/main/java/com/example/consumer/repository/CouponRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-system/consumer/src/main/java/com/example/consumer/repository/CouponRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -588,6 +588,7 @@
       <workItem from="1720606698256" duration="620000" />
       <workItem from="1726657032635" duration="1657000" />
       <workItem from="1726895514289" duration="3902000" />
+      <workItem from="1727090148627" duration="678000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -932,7 +933,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -964,8 +965,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.07.08 reason why thread result changes" />
-    <MESSAGE value="24.07.10 change package" />
     <MESSAGE value="24.07.10 first solution to prevent thread problem" />
     <MESSAGE value="24.09.14 remove" />
     <MESSAGE value="24.09.14 remove present src directory and add new module for api" />
@@ -987,9 +986,11 @@
     <MESSAGE value="24.09.21 create apply logic v3 test" />
     <MESSAGE value="24.09.21 add consumer modules" />
     <MESSAGE value="24.09.21 fix yml in consumer modules" />
-    <MESSAGE value="24.09.21 create consumer config" />
     <MESSAGE value="24.09.21 create main consumer" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.09.21 create main consumer" />
+    <MESSAGE value="24.09.21 create coupon model in consumer" />
+    <MESSAGE value="24.09.21 create consumer config" />
+    <MESSAGE value="24.09.23 fix something" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.09.23 fix something" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
