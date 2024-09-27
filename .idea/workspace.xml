@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.23 add error log logic">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-system/consumer/src/main/java/com/example/consumer/consumer/CouponCreatedConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-system/consumer/src/main/java/com/example/consumer/consumer/CouponCreatedConsumer.java" afterDir="false" />
-    </list>
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.23 add error log logic" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -588,6 +585,7 @@
       <workItem from="1726657032635" duration="1657000" />
       <workItem from="1726895514289" duration="3902000" />
       <workItem from="1727090148627" duration="2166000" />
+      <workItem from="1727435201432" duration="3000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
