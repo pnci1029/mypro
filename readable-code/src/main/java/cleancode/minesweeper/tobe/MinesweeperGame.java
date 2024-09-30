@@ -15,9 +15,9 @@ public class MinesweeperGame {
         System.out.println("지뢰찾기 게임 시작!");
         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 10; j++) {
-                board[i][j] = "□";
+        for (int row = 0; row < 8; row++) {
+            for (int column = 0; column < 10; column++) {
+                board[row][column] = "□";
             }
         }
         for (int i = 0; i < 10; i++) {
@@ -25,38 +25,38 @@ public class MinesweeperGame {
             int row = new Random().nextInt(8);
             landMines[row][col] = true;
         }
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 10; j++) {
+        for (int row = 0; row < 8; row++) {
+            for (int column = 0; column < 10; column++) {
                 int count = 0;
-                if (!landMines[i][j]) {
-                    if (i - 1 >= 0 && j - 1 >= 0 && landMines[i - 1][j - 1]) {
+                if (!landMines[row][column]) {
+                    if (row - 1 >= 0 && column - 1 >= 0 && landMines[row - 1][column - 1]) {
                         count++;
                     }
-                    if (i - 1 >= 0 && landMines[i - 1][j]) {
+                    if (row - 1 >= 0 && landMines[row - 1][column]) {
                         count++;
                     }
-                    if (i - 1 >= 0 && j + 1 < 10 && landMines[i - 1][j + 1]) {
+                    if (row - 1 >= 0 && column +1 < 10 && landMines[row - 1][column +1]) {
                         count++;
                     }
-                    if (j - 1 >= 0 && landMines[i][j - 1]) {
+                    if (column -1 >= 0 && landMines[row][column -1]) {
                         count++;
                     }
-                    if (j + 1 < 10 && landMines[i][j + 1]) {
+                    if (column +1 < 10 && landMines[row][column +1]) {
                         count++;
                     }
-                    if (i + 1 < 8 && j - 1 >= 0 && landMines[i + 1][j - 1]) {
+                    if (row + 1 < 8 && column -1 >= 0 && landMines[row + 1][column -1]) {
                         count++;
                     }
-                    if (i + 1 < 8 && landMines[i + 1][j]) {
+                    if (row + 1 < 8 && landMines[row + 1][column]) {
                         count++;
                     }
-                    if (i + 1 < 8 && j + 1 < 10 && landMines[i + 1][j + 1]) {
+                    if (row + 1 < 8 && column +1 < 10 && landMines[row + 1][column +1]) {
                         count++;
                     }
-                    landMineCounts[i][j] = count;
+                    landMineCounts[row][column] = count;
                     continue;
                 }
-                landMineCounts[i][j] = 0;
+                landMineCounts[row][column] = 0;
             }
         }
         while (true) {
