@@ -78,13 +78,13 @@ public class MinesweeperGame {
             }
             System.out.println();
             System.out.println("선택할 좌표를 입력하세요. (예: a1)");
-            String input = scanner.nextLine();
+            String cellInput = scanner.nextLine();
             System.out.println("선택한 셀에 대한 행위를 선택하세요. (1: 오픈, 2: 깃발 꽂기)");
-            String input2 = scanner.nextLine();
-            char cellInput = input.charAt(0);
-            char rowInput = input.charAt(1);
+            String userActionInput = scanner.nextLine();
+            char c = cellInput.charAt(0);
+            char r = cellInput.charAt(1);
             int col;
-            switch (cellInput) {
+            switch (c) {
                 case 'a':
                     col = 0;
                     break;
@@ -119,8 +119,8 @@ public class MinesweeperGame {
                     col = -1;
                     break;
             }
-            int row = Character.getNumericValue(rowInput) - 1;
-            if (input2.equals("2")) {
+            int row = Character.getNumericValue(r) - 1;
+            if (userActionInput.equals("2")) {
                 board[row][col] = "⚑";
                 boolean open = true;
                 for (int i = 0; i < 8; i++) {
@@ -133,7 +133,7 @@ public class MinesweeperGame {
                 if (open) {
                     gameStatus = 1;
                 }
-            } else if (input2.equals("1")) {
+            } else if (userActionInput.equals("1")) {
                 if (landMines[row][col]) {
                     board[row][col] = "☼";
                     gameStatus = -1;
