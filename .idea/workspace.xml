@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.23 add error log logic" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.30 set naming">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -585,7 +588,9 @@
       <workItem from="1726657032635" duration="1657000" />
       <workItem from="1726895514289" duration="3902000" />
       <workItem from="1727090148627" duration="2166000" />
-      <workItem from="1727435201432" duration="3000" />
+      <workItem from="1727435201432" duration="720000" />
+      <workItem from="1727694249670" duration="7000" />
+      <workItem from="1727695280520" duration="246000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -930,7 +935,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -962,9 +967,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.09.15 add test case" />
-    <MESSAGE value="24.09.15 fix something" />
-    <MESSAGE value="24.09.15 add test case about multi thread condition" />
     <MESSAGE value="24.09.15 add new dependency about redis and readme" />
     <MESSAGE value="24.09.15 add redis repository and function &amp; create service function v2" />
     <MESSAGE value="24.09.18 add read me about kafka" />
@@ -987,7 +989,10 @@
     <MESSAGE value="24.09.23 add repository function" />
     <MESSAGE value="24.09.23 add new version" />
     <MESSAGE value="24.09.23 add error log logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.09.23 add error log logic" />
+    <MESSAGE value="24.09.27 add something" />
+    <MESSAGE value="24.09.27 add new project readable-code" />
+    <MESSAGE value="24.09.30 set naming" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.09.30 set naming" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
