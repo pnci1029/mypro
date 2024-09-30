@@ -141,15 +141,15 @@ public class MinesweeperGame {
                 } else {
                     open(selectedRowIndex, selectedColumnIndex);
                 }
-                boolean open = true;
-                for (int i = 0; i < 8; i++) {
-                    for (int j = 0; j < 10; j++) {
-                        if (board[i][j].equals("□")) {
-                            open = false;
+                boolean isAllOpened = true;
+                for (int row = 0; row < 8; row++) {
+                    for (int column = 0; column < 10; column++) {
+                        if (board[row][column].equals("□")) {
+                            isAllOpened = false;
                         }
                     }
                 }
-                if (open) {
+                if (isAllOpened) {
                     gameStatus = 1;
                 }
             } else {
