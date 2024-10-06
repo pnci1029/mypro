@@ -43,25 +43,30 @@ public class MinesweeperGame {
             String cellInput = getCellInputFromUser(scanner);
             String userActionInput = getUserInputFromUser(scanner);
 
-            int selectedColumnIndex = getSelectedUserIndex(cellInput);
-            int selectedRowIndex = getSelectedRowIndex(cellInput);
-
-            if (doesUserChooseToPlantFlag(userActionInput)) {
-                BOARD[selectedRowIndex][selectedColumnIndex] = FLAG_SIGN;
-                checkIfGameIsOver();
-            } else if (doesUserPlantToOpenCell(userActionInput)) {
-                if (isLandMinedCell(selectedRowIndex, selectedColumnIndex)) {
-                    BOARD[selectedRowIndex][selectedColumnIndex] = MINE_SIGN;
-                    changeGameStatusToLose();
-                    continue;
-                } else {
-                    open(selectedRowIndex, selectedColumnIndex);
-                }
-                checkIfGameIsOver();
-            } else {
-                System.out.println("잘못된 번호를 선택하셨습니다.");
-            }
+            actOnCell(cellInput, userActionInput);
         }
+    }
+
+    private static void actOnCell(String cellInput, String userActionInput) {
+        int selectedColumnIndex = getSelectedUserIndex(cellInput);
+        int selectedRowIndex = getSelectedRowIndex(cellInput);
+
+        if (doesUserChooseToPlantFlag(userActionInput)) {
+            BOARD[selectedRowIndex][selectedColumnIndex] = FLAG_SIGN;
+            checkIfGameIsOver();
+            return;
+        }
+        if (doesUserPlantToOpenCell(userActionInput)) {
+            if (isLandMinedCell(selectedRowIndex, selectedColumnIndex)) {
+                BOARD[selectedRowIndex][selectedColumnIndex] = MINE_SIGN;
+                changeGameStatusToLose();
+                return;
+            }
+            open(selectedRowIndex, selectedColumnIndex);
+            checkIfGameIsOver();
+            return;
+        }
+        System.out.println("잘못된 번호를 선택하셨습니다.");
     }
 
     private static void changeGameStatusToLose() {
