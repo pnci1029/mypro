@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.09.30 set naming">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.10.06 추상화 레벨 조절중">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -589,7 +590,10 @@
       <workItem from="1727090148627" duration="2166000" />
       <workItem from="1727435201432" duration="720000" />
       <workItem from="1727694249670" duration="7000" />
-      <workItem from="1727695280520" duration="629000" />
+      <workItem from="1727695280520" duration="1149000" />
+      <workItem from="1727770244335" duration="29000" />
+      <workItem from="1727870064651" duration="1617000" />
+      <workItem from="1728195085369" duration="1568000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -934,7 +938,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -966,10 +970,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.09.15 add new dependency about redis and readme" />
-    <MESSAGE value="24.09.15 add redis repository and function &amp; create service function v2" />
-    <MESSAGE value="24.09.18 add read me about kafka" />
-    <MESSAGE value="24.09.18 fix test case as v2" />
     <MESSAGE value="24.09.18 add command about redis" />
     <MESSAGE value="24.09.18 add command about kafka" />
     <MESSAGE value="24.09.21 add kafka gradle" />
@@ -991,7 +991,11 @@
     <MESSAGE value="24.09.27 add something" />
     <MESSAGE value="24.09.27 add new project readable-code" />
     <MESSAGE value="24.09.30 set naming" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.09.30 set naming" />
+    <MESSAGE value="24.10.02 add default test case" />
+    <MESSAGE value="24.10.02 method extracting" />
+    <MESSAGE value="24.10.06 method extracting" />
+    <MESSAGE value="24.10.06 추상화 레벨 조절중" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.10.06 추상화 레벨 조절중" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
