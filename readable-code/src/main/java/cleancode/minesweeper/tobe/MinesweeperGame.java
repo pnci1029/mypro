@@ -10,12 +10,14 @@ public class MinesweeperGame {
     private static final String[][] BOARD = new String[BOARD_ROW_SIZE][BOARD_COLUMN_SIZE];
     private static final Integer[][] LAND_MINE_COUNTS = new Integer[8][10];
     private static final boolean[][] LAND_MINES = new boolean[8][10];
-    private static final int GAME_STATUS = 0; // 0: 게임 중, 1: 승리, -1: 패배
     public static final int MINE_COUNT = 10;
     public static final String FLAG_SIGN = "⚑";
     public static final String MINE_SIGN = "☼";
     public static final String OPEND_LANG_SIGN = "■";
     public static final String UNOPEND_LAND_SIGN = "□";
+
+    private static int gameStatus = 0;
+
 
     public static void main(String[] args) {
         // 시작 알림 텍스트
@@ -63,7 +65,7 @@ public class MinesweeperGame {
     }
 
     private static void changeGameStatusToLose() {
-        GAME_STATUS = -1;
+        gameStatus = -1;
     }
 
     private static boolean isLandMinedCell(int selectedRowIndex, int selectedColumnIndex) {
@@ -103,11 +105,11 @@ public class MinesweeperGame {
     }
 
     private static boolean doesUserLoseTheGame() {
-        return GAME_STATUS == -1;
+        return gameStatus == -1;
     }
 
     private static boolean doesUserWinTheGmae() {
-        return GAME_STATUS == 1;
+        return gameStatus == 1;
     }
 
     private static void checkIfGameIsOver() {
@@ -118,7 +120,7 @@ public class MinesweeperGame {
     }
 
     private static void changeGameStatusToWin() {
-        GAME_STATUS = 1;
+        gameStatus = 1;
     }
 
     private static boolean isAllCellOpened() {
@@ -198,22 +200,22 @@ public class MinesweeperGame {
                     if (row - 1 >= 0 && isLandMinedCell(row - 1, column)) {
                         count++;
                     }
-                    if (row - 1 >= 0 && column +1 < 10 && isLandMinedCell(row - 1, column + 1)) {
+                    if (row - 1 >= 0 && column + 1 < 10 && isLandMinedCell(row - 1, column + 1)) {
                         count++;
                     }
-                    if (column -1 >= 0 && isLandMinedCell(row, column - 1)) {
+                    if (column - 1 >= 0 && isLandMinedCell(row, column - 1)) {
                         count++;
                     }
-                    if (column +1 < 10 && isLandMinedCell(row, column + 1)) {
+                    if (column + 1 < 10 && isLandMinedCell(row, column + 1)) {
                         count++;
                     }
-                    if (row + 1 < 8 && column -1 >= 0 && isLandMinedCell(row + 1, column - 1)) {
+                    if (row + 1 < 8 && column - 1 >= 0 && isLandMinedCell(row + 1, column - 1)) {
                         count++;
                     }
                     if (row + 1 < 8 && isLandMinedCell(row + 1, column)) {
                         count++;
                     }
-                    if (row + 1 < 8 && column +1 < 10 && isLandMinedCell(row + 1, column + 1)) {
+                    if (row + 1 < 8 && column + 1 < 10 && isLandMinedCell(row + 1, column + 1)) {
                         count++;
                     }
                     LAND_MINE_COUNTS[row][column] = count;
