@@ -37,56 +37,13 @@ public class MinesweeperGame {
             String userActionInput = scanner.nextLine();
             char cellInputColumn = cellInput.charAt(0);
             char cellInputRow = cellInput.charAt(1);
-            int selectedColumnIndex;
-            switch (cellInputColumn) {
-                case 'a':
-                    selectedColumnIndex = 0;
-                    break;
-                case 'b':
-                    selectedColumnIndex = 1;
-                    break;
-                case 'c':
-                    selectedColumnIndex = 2;
-                    break;
-                case 'd':
-                    selectedColumnIndex = 3;
-                    break;
-                case 'e':
-                    selectedColumnIndex = 4;
-                    break;
-                case 'f':
-                    selectedColumnIndex = 5;
-                    break;
-                case 'g':
-                    selectedColumnIndex = 6;
-                    break;
-                case 'h':
-                    selectedColumnIndex = 7;
-                    break;
-                case 'i':
-                    selectedColumnIndex = 8;
-                    break;
-                case 'j':
-                    selectedColumnIndex = 9;
-                    break;
-                default:
-                    selectedColumnIndex = -1;
-                    break;
-            }
-            int selectedRowIndex = Character.getNumericValue(cellInputRow) - 1;
+
+            int selectedColumnIndex = convertColumnFrom(cellInputColumn);
+            int selectedRowIndex = convertRowFrom(cellInputRow);
+
             if (userActionInput.equals("2")) {
                 board[selectedRowIndex][selectedColumnIndex] = "⚑";
-                boolean open = true;
-                for (int row = 0; row < 8; row++) {
-                    for (int column = 0; column < 10; column++) {
-                        if (board[row][column].equals("□")) {
-                            open = false;
-                        }
-                    }
-                }
-                if (open) {
-                    gameStatus = 1;
-                }
+                checkIfGameIsOver();
             } else if (userActionInput.equals("1")) {
                 if (landMines[selectedRowIndex][selectedColumnIndex]) {
                     board[selectedRowIndex][selectedColumnIndex] = "☼";
@@ -95,20 +52,61 @@ public class MinesweeperGame {
                 } else {
                     open(selectedRowIndex, selectedColumnIndex);
                 }
-                boolean isAllOpened = true;
-                for (int row = 0; row < 8; row++) {
-                    for (int column = 0; column < 10; column++) {
-                        if (board[row][column].equals("□")) {
-                            isAllOpened = false;
-                        }
-                    }
-                }
-                if (isAllOpened) {
-                    gameStatus = 1;
-                }
+                checkIfGameIsOver();
             } else {
                 System.out.println("잘못된 번호를 선택하셨습니다.");
             }
+        }
+    }
+
+    private static void checkIfGameIsOver() {
+        boolean isAllOpened = isAllCellOpened();
+        if (isAllOpened) {
+            gameStatus = 1;
+        }
+    }
+
+    private static boolean isAllCellOpened() {
+        boolean isAllOpened = true;
+        for (int row = 0; row < 8; row++) {
+            for (int column = 0; column < 10; column++) {
+                if (board[row][column].equals("□")) {
+                    isAllOpened = false;
+                }
+            }
+        }
+        return isAllOpened;
+    }
+
+    private static int convertRowFrom(char cellInputRow) {
+        int selectedRowIndex = Character.getNumericValue(cellInputRow) - 1;
+        return selectedRowIndex;
+    }
+
+    private static int convertColumnFrom(char cellInputColumn) {
+        switch (cellInputColumn) {
+            case 'a':
+                return 0;
+            case 'b':
+                return 1;
+            case 'c':
+                return 2;
+            case 'd':
+                return 3;
+            case 'e':
+                return 4;
+            case 'f':
+                return 5;
+            case 'g':
+                return 6;
+            case 'h':
+                return 7;
+            case 'i':
+                return 8;
+            case 'j':
+                return 9;
+            default:
+                return -1;
         }
     }
 
