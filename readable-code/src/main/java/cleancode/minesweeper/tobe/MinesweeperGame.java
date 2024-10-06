@@ -43,7 +43,7 @@ public class MinesweeperGame {
             } else if (doesUserPlantToOpenCell(userActionInput)) {
                 if (isLandMinedCell(selectedRowIndex, selectedColumnIndex)) {
                     board[selectedRowIndex][selectedColumnIndex] = "☼";
-                    gameStatus = -1;
+                    changeGameStatusToLose();
                     continue;
                 } else {
                     open(selectedRowIndex, selectedColumnIndex);
@@ -53,6 +53,10 @@ public class MinesweeperGame {
                 System.out.println("잘못된 번호를 선택하셨습니다.");
             }
         }
+    }
+
+    private static void changeGameStatusToLose() {
+        gameStatus = -1;
     }
 
     private static boolean isLandMinedCell(int selectedRowIndex, int selectedColumnIndex) {
@@ -102,8 +106,12 @@ public class MinesweeperGame {
     private static void checkIfGameIsOver() {
         boolean isAllOpened = isAllCellOpened();
         if (isAllOpened) {
-            gameStatus = 1;
+            changeGameStatusToWin();
         }
+    }
+
+    private static void changeGameStatusToWin() {
+        gameStatus = 1;
     }
 
     private static boolean isAllCellOpened() {
