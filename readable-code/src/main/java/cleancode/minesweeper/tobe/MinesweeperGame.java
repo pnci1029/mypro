@@ -140,6 +140,18 @@ public class MinesweeperGame {
         return isAllOpened;
     }
 
+    private static boolean isAllCellOpened2() {
+        boolean isAllOpened = true;
+        for (int row = 0; row < BOARD_ROW_SIZE; row++) {
+            for (int column = 0; column < BOARD_COLUMN_SIZE; column++) {
+                if (BOARD[row][column].equals("□")) {
+                    isAllOpened = false;
+                }
+            }
+        }
+        return isAllOpened;
+    }
+
     private static int convertRowFrom(char cellInputRow) {
         int selectedRowIndex = Character.getNumericValue(cellInputRow) - 1;
         return selectedRowIndex;
