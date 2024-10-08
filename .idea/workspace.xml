@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.10.06 매직넘버 매직스트링 상수 컨벤션 처리">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.10.08 2중 반복문 스트림 리팩토링">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -593,7 +592,8 @@
       <workItem from="1727695280520" duration="1149000" />
       <workItem from="1727770244335" duration="29000" />
       <workItem from="1727870064651" duration="1617000" />
-      <workItem from="1728195085369" duration="2582000" />
+      <workItem from="1728195085369" duration="4199000" />
+      <workItem from="1728390424993" duration="706000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -938,7 +938,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -970,10 +970,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.09.21 add kafka gradle" />
-    <MESSAGE value="24.09.21 create default kafka producer factory config" />
-    <MESSAGE value="24.09.21 create coupon create component" />
-    <MESSAGE value="24.09.21 create apply logic v3" />
     <MESSAGE value="24.09.21 create apply logic v3 test" />
     <MESSAGE value="24.09.21 add consumer modules" />
     <MESSAGE value="24.09.21 fix yml in consumer modules" />
@@ -995,7 +991,11 @@
     <MESSAGE value="24.10.06 추상화 레벨 조절중" />
     <MESSAGE value="24.10.06 추상화 레벨 조정 완료" />
     <MESSAGE value="24.10.06 매직넘버 매직스트링 상수 컨벤션 처리" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.10.06 매직넘버 매직스트링 상수 컨벤션 처리" />
+    <MESSAGE value="24.10.06 early return 리팩토링" />
+    <MESSAGE value="24.10.06 중첩 반, 분기문을 줄이기 위한 자세" />
+    <MESSAGE value="24.10.08 메소드 리팩토링을 접근하는 방법" />
+    <MESSAGE value="24.10.08 2중 반복문 스트림 리팩토링" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.10.08 2중 반복문 스트림 리팩토링" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
