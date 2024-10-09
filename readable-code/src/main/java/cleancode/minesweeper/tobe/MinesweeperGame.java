@@ -24,8 +24,6 @@ public class MinesweeperGame {
     public static void main(String[] args) {
         // 시작 알림 텍스트
         showGameStartComments();
-
-
         // 게임 초기화
         initializeGame();
 
@@ -41,6 +39,7 @@ public class MinesweeperGame {
                 System.out.println("지뢰를 밟았습니다. GAME OVER!");
                 break;
             }
+
             String cellInput = getCellInputFromUser();
             String userActionInput = getUserInputFromUser(SCANNER);
 
@@ -57,16 +56,19 @@ public class MinesweeperGame {
             checkIfGameIsOver();
             return;
         }
+
         if (doesUserPlantToOpenCell(userActionInput)) {
             if (isLandMinedCell(selectedRowIndex, selectedColumnIndex)) {
                 BOARD[selectedRowIndex][selectedColumnIndex] = MINE_SIGN;
                 changeGameStatusToLose();
                 return;
             }
+
             open(selectedRowIndex, selectedColumnIndex);
             checkIfGameIsOver();
             return;
         }
+
         System.out.println("잘못된 번호를 선택하셨습니다.");
     }
 
@@ -193,11 +195,13 @@ public class MinesweeperGame {
                 BOARD[row][column] = "□";
             }
         }
+
         for (int i = 0; i < MINE_COUNT; i++) {
             int col = new Random().nextInt(10);
             int row = new Random().nextInt(8);
             LAND_MINES[row][col] = true;
         }
+
         for (int row = 0; row < BOARD_ROW_SIZE; row++) {
             for (int column = 0; column < BOARD_COLUMN_SIZE; column++) {
                 int count = 0;
