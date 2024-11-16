@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.10.08 2중 반복문 스트림 리팩토링">
-      <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.10.14 readme 정리">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/bookPrac.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/kafkaPrac.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/springDbPrac.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/springDbPrac.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +141,7 @@
   <component name="ProjectId" id="2LSSFQrnKiQpYZw7BfBKBf0X0bE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
@@ -154,7 +166,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hongchanghyeong/Desktop/study/mypro&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hongchanghyeong/Desktop/study/github/mypro&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -593,7 +605,15 @@
       <workItem from="1727770244335" duration="29000" />
       <workItem from="1727870064651" duration="1617000" />
       <workItem from="1728195085369" duration="4199000" />
-      <workItem from="1728390424993" duration="1028000" />
+      <workItem from="1728390424993" duration="1179000" />
+      <workItem from="1728453779655" duration="172000" />
+      <workItem from="1728902041172" duration="1921000" />
+      <workItem from="1728905490584" duration="39000" />
+      <workItem from="1728905732698" duration="602000" />
+      <workItem from="1729233540251" duration="34000" />
+      <workItem from="1729772236661" duration="148000" />
+      <workItem from="1729928866767" duration="643000" />
+      <workItem from="1730606043539" duration="1839000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -938,7 +958,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -970,9 +990,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.09.21 create apply logic v3 test" />
-    <MESSAGE value="24.09.21 add consumer modules" />
-    <MESSAGE value="24.09.21 fix yml in consumer modules" />
     <MESSAGE value="24.09.21 create main consumer" />
     <MESSAGE value="24.09.21 create coupon model in consumer" />
     <MESSAGE value="24.09.21 create consumer config" />
@@ -995,7 +1012,10 @@
     <MESSAGE value="24.10.06 중첩 반, 분기문을 줄이기 위한 자세" />
     <MESSAGE value="24.10.08 메소드 리팩토링을 접근하는 방법" />
     <MESSAGE value="24.10.08 2중 반복문 스트림 리팩토링" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.10.08 2중 반복문 스트림 리팩토링" />
+    <MESSAGE value="24.10.08 변수 가깝게 두고 사용 &amp; 파라미터 최소화" />
+    <MESSAGE value="24.10.09 공백라인을 대하는 자세" />
+    <MESSAGE value="24.10.14 readme 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.10.14 readme 정리" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
