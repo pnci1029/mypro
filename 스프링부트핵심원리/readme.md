@@ -41,3 +41,11 @@
     1번 동작 방식에 비해 하드코딩이 추가되지만 조건이나 특정 서블릿을 따로 관리할 수 있기 때문에
     훨씬 유연하게 사용 가능하다.
 ````
+
+4. 애플리케이션 초기화
+````
+    1. jakarta 서블릿 이니셜라이저에 새로운 이니셜라이저 추가(MyContainerInitV2)
+    2. 초기화할 애플리케이션 인터페이스를 @HandlesTypes 어노테이션 내 추가 (@HandlesTypes(AppInit.class))
+    3. 이니셜라이저에서 onStartup 실행 후 위 인터페이스의 구현체를 불러와, 서블릿 실행 
+      (helloServlet.addMapping("/hello-servlet");)
+````
