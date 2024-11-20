@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.10.14 readme 정리">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/bookPrac.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/kafkaPrac.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/springDbPrac.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/springDbPrac.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mypro/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
-    </list>
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.11.16 애플리케이션 초기화 readme" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +48,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/webcrawling">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/스프링부트핵심원리">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/../practicalTest">
@@ -614,6 +604,7 @@
       <workItem from="1729772236661" duration="148000" />
       <workItem from="1729928866767" duration="643000" />
       <workItem from="1730606043539" duration="1839000" />
+      <workItem from="1731725219762" duration="4727000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -958,7 +949,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -990,12 +981,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.09.21 create main consumer" />
-    <MESSAGE value="24.09.21 create coupon model in consumer" />
-    <MESSAGE value="24.09.21 create consumer config" />
-    <MESSAGE value="24.09.23 add new case for 1coupon per 1 user" />
-    <MESSAGE value="24.09.23 fix something" />
-    <MESSAGE value="24.09.23 add new repository applieduser for 1 coupon for 1 person requirement" />
     <MESSAGE value="24.09.23 add repository function" />
     <MESSAGE value="24.09.23 add new version" />
     <MESSAGE value="24.09.23 add error log logic" />
@@ -1015,7 +1000,13 @@
     <MESSAGE value="24.10.08 변수 가깝게 두고 사용 &amp; 파라미터 최소화" />
     <MESSAGE value="24.10.09 공백라인을 대하는 자세" />
     <MESSAGE value="24.10.14 readme 정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.10.14 readme 정리" />
+    <MESSAGE value="24.11.16 강의 셋업" />
+    <MESSAGE value="24.11.16 서블릿 초기화 1" />
+    <MESSAGE value="24.11.16 서블릿 초기화 2" />
+    <MESSAGE value="24.11.16 서블릿 동작2 readme" />
+    <MESSAGE value="24.11.16 애플리케이션 초기화" />
+    <MESSAGE value="24.11.16 애플리케이션 초기화 readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.11.16 애플리케이션 초기화 readme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

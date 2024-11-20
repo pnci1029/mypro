@@ -108,6 +108,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/스프링부트핵심원리" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/스프링부트핵심원리" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/../practicalTest" />
         <option name="modules">
           <set>
