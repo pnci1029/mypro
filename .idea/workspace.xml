@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.11.16 애플리케이션 초기화 readme" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.11.20 setup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -605,6 +608,8 @@
       <workItem from="1729928866767" duration="643000" />
       <workItem from="1730606043539" duration="1839000" />
       <workItem from="1731725219762" duration="4727000" />
+      <workItem from="1732103949077" duration="667000" />
+      <workItem from="1732193973290" duration="138000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -949,7 +954,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -981,7 +986,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.09.23 add repository function" />
     <MESSAGE value="24.09.23 add new version" />
     <MESSAGE value="24.09.23 add error log logic" />
     <MESSAGE value="24.09.27 add something" />
@@ -1006,7 +1010,8 @@
     <MESSAGE value="24.11.16 서블릿 동작2 readme" />
     <MESSAGE value="24.11.16 애플리케이션 초기화" />
     <MESSAGE value="24.11.16 애플리케이션 초기화 readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.11.16 애플리케이션 초기화 readme" />
+    <MESSAGE value="24.11.20 setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.11.20 setup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
