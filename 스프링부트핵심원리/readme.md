@@ -56,6 +56,9 @@
       (helloServlet.addMapping("/hello-servlet");)
 ````
 
+<br />
+<br />
+
 4. 스프링 컨테이너 생성
 ````
     1. Rest API 통신을 위한 HelloController 생성
@@ -71,4 +74,16 @@
     http://localhost:8080/spring/hello 요청
     -> 디스패처 서블릿(MyContainerInitV2 - onStartUp - "dispatcherV2") 실행 
     -> 실행된 디스패처 서블릿에서 컨트롤러 찾아서 호출
+````
+
+<br />
+<br />
+
+5. 스프링에서 제공하는 서블릿 컨테이너 초기화
+````
+    * 4.3번 곽정에서 거쳤던 수작업들을 스프링 MVC에서 제공하는 기능으로 대체할 수 있다.
+    WebApplicationInitializer 를 구현하면 된다.
+    
+    1. 서블릿 컨테이너 생성을 위한 AppInitV3SpringMVC 생성 후 WebApplicationInitializer 구현체 등록
+    2.  
 ````
