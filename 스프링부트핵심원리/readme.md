@@ -31,6 +31,9 @@
     4. 톰캣 실행 -> onStartup 실행 확인
 ````
 
+<br />
+<br />
+
 3. 서블릿 동작2 (프로그래밍 방식)
 ````
     1. 서블릿 테스트용 컨트롤러 생성 (HelloServlet)
@@ -42,10 +45,24 @@
     훨씬 유연하게 사용 가능하다.
 ````
 
+<br />
+<br />
+
 4. 애플리케이션 초기화
 ````
     1. jakarta 서블릿 이니셜라이저에 새로운 이니셜라이저 추가(MyContainerInitV2)
     2. 초기화할 애플리케이션 인터페이스를 @HandlesTypes 어노테이션 내 추가 (@HandlesTypes(AppInit.class))
     3. 이니셜라이저에서 onStartup 실행 후 위 인터페이스의 구현체를 불러와, 서블릿 실행 
       (helloServlet.addMapping("/hello-servlet");)
+````
+
+4. 스프링 컨테이너 생성
+````
+    1. Rest API 통신을 위한 HelloController 생성
+    2. HelloController를 빈에 등록하기 위한 컨피그 파일(HelloConfig) 생성
+    3. 서블릿 구현체 생성 (AppInitV2Spring)
+        3.1 스프링 컨테이너 생성
+        3.2 디스패처 서블릿 생성 후 스프링 컨테이너와 연결
+        3.3 생성한 디스패처 서블릿을 서플릿 컨테이너에 등록
+        3.4 서블릿 컨테이너에 컨트롤러 url 매핑
 ````
