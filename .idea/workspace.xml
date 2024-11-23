@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.11.23 디스패처 서블릿 스프링 컨테이너 연결 실행과정 추가">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.11.23 스프링 MVC 서블릿 컨테이너 초기화">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -610,7 +609,7 @@
       <workItem from="1731725219762" duration="4727000" />
       <workItem from="1732103949077" duration="667000" />
       <workItem from="1732193973290" duration="2163000" />
-      <workItem from="1732330533301" duration="1858000" />
+      <workItem from="1732330533301" duration="2888000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -955,7 +954,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <option name="localTasksCounter" value="203" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -987,7 +986,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.10.02 method extracting" />
     <MESSAGE value="24.10.06 method extracting" />
     <MESSAGE value="24.10.06 추상화 레벨 조절중" />
     <MESSAGE value="24.10.06 추상화 레벨 조정 완료" />
@@ -1012,7 +1010,8 @@
     <MESSAGE value="24.11.21 디스패처 서블릿 스프링 컨테이너 연결" />
     <MESSAGE value="24.11.23 디스패처 서블릿 스프링 컨테이너 연결 readme" />
     <MESSAGE value="24.11.23 디스패처 서블릿 스프링 컨테이너 연결 실행과정 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.11.23 디스패처 서블릿 스프링 컨테이너 연결 실행과정 추가" />
+    <MESSAGE value="24.11.23 스프링 MVC 서블릿 컨테이너 초기화" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.11.23 스프링 MVC 서블릿 컨테이너 초기화" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
