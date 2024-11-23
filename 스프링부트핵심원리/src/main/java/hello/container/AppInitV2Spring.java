@@ -22,6 +22,6 @@ public class AppInitV2Spring implements AppInit{
         ServletRegistration.Dynamic servlet = servletContext.addServlet("dispatcherV2", dispatcher);
 
         // /spring-hello 요청을 디스패처 서블릿을 통하도록 설정
-        servlet.addMapping("/spring-hello");
+        servlet.addMapping("/spring/*");
     }
 }
