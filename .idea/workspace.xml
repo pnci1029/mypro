@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.11.23 스프링 MVC 서블릿 컨테이너 초기화">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.11.23 톰캣 + 스프링 컨테이너 연동">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/embed/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/embed/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -610,6 +611,8 @@
       <workItem from="1732103949077" duration="667000" />
       <workItem from="1732193973290" duration="2163000" />
       <workItem from="1732330533301" duration="2888000" />
+      <workItem from="1732334718866" duration="2375000" />
+      <workItem from="1732531035565" duration="3000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -954,7 +957,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="203" />
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -986,11 +989,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.10.06 method extracting" />
-    <MESSAGE value="24.10.06 추상화 레벨 조절중" />
-    <MESSAGE value="24.10.06 추상화 레벨 조정 완료" />
-    <MESSAGE value="24.10.06 매직넘버 매직스트링 상수 컨벤션 처리" />
-    <MESSAGE value="24.10.06 early return 리팩토링" />
     <MESSAGE value="24.10.06 중첩 반, 분기문을 줄이기 위한 자세" />
     <MESSAGE value="24.10.08 메소드 리팩토링을 접근하는 방법" />
     <MESSAGE value="24.10.08 2중 반복문 스트림 리팩토링" />
@@ -1011,7 +1009,12 @@
     <MESSAGE value="24.11.23 디스패처 서블릿 스프링 컨테이너 연결 readme" />
     <MESSAGE value="24.11.23 디스패처 서블릿 스프링 컨테이너 연결 실행과정 추가" />
     <MESSAGE value="24.11.23 스프링 MVC 서블릿 컨테이너 초기화" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.11.23 스프링 MVC 서블릿 컨테이너 초기화" />
+    <MESSAGE value="24.11.23 프로젝트 파일 이전" />
+    <MESSAGE value="24.11.23 내장톰켓 프로젝트 추가" />
+    <MESSAGE value="24.11.23 내장 톰켓 프로젝트용 매인 메서드 생성" />
+    <MESSAGE value="24.11.23 메인메서드 톰캣 설정 &amp; 실행" />
+    <MESSAGE value="24.11.23 메인메서드 톰캣 설정 &amp; 실행 readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.11.23 메인메서드 톰캣 설정 &amp; 실행 readme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
