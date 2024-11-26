@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.11.25 톰캣 실행을 위한 Run 메소드 생성">
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/embed/src/main/java/hello/spring/HelloConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/embed/src/main/java/hello/spring/HelloConfig.java" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.11.25 스프링부트 프로젝트 셋업">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -611,7 +611,7 @@
       <workItem from="1732193973290" duration="2163000" />
       <workItem from="1732330533301" duration="2888000" />
       <workItem from="1732334718866" duration="2375000" />
-      <workItem from="1732531035565" duration="2033000" />
+      <workItem from="1732531035565" duration="3211000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -956,7 +956,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -988,11 +988,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.10.08 변수 가깝게 두고 사용 &amp; 파라미터 최소화" />
-    <MESSAGE value="24.10.09 공백라인을 대하는 자세" />
-    <MESSAGE value="24.10.14 readme 정리" />
-    <MESSAGE value="24.11.16 강의 셋업" />
-    <MESSAGE value="24.11.16 서블릿 초기화 1" />
     <MESSAGE value="24.11.16 서블릿 초기화 2" />
     <MESSAGE value="24.11.16 서블릿 동작2 readme" />
     <MESSAGE value="24.11.16 애플리케이션 초기화" />
@@ -1013,7 +1008,12 @@
     <MESSAGE value="24.11.23 톰캣 + 스프링 컨테이너 연동" />
     <MESSAGE value="24.11.25 톰캣으로 배포하는 방법" />
     <MESSAGE value="24.11.25 톰캣 실행을 위한 Run 메소드 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.11.25 톰캣 실행을 위한 Run 메소드 생성" />
+    <MESSAGE value="24.11.25 컴포넌트 스캔" />
+    <MESSAGE value="24.11.25 어노테이션 추가" />
+    <MESSAGE value="24.11.25 스프링부트 클래스 생성" />
+    <MESSAGE value="24.11.25 스프링부트 readme" />
+    <MESSAGE value="24.11.25 스프링부트 프로젝트 셋업" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.11.25 스프링부트 프로젝트 셋업" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
