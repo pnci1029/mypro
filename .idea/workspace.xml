@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.11.28 데이터소스 h2 추가">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/autoconfig/src/main/java/hello/config/DbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/autoconfig/src/main/java/hello/config/DbConfig.java" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.11.28 멤버 리포지토리">
+      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/autoconfig/src/main/java/hello/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/autoconfig/src/main/java/hello/member/MemberRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -615,7 +614,7 @@
       <workItem from="1732531035565" duration="3211000" />
       <workItem from="1732617793739" duration="2548000" />
       <workItem from="1732748839700" duration="2554000" />
-      <workItem from="1732771400097" duration="102000" />
+      <workItem from="1732771400097" duration="435000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -960,7 +959,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="224" />
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -992,8 +991,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.11.20 setup" />
-    <MESSAGE value="24.11.21 setup" />
     <MESSAGE value="24.11.21 webmvc 의존성" />
     <MESSAGE value="24.11.21 컨트롤러 bean 직접등록(컴포넌트스캔x)" />
     <MESSAGE value="24.11.21 디스패처 서블릿 스프링 컨테이너 연결" />
@@ -1017,7 +1014,9 @@
     <MESSAGE value="24.11.26 자동구성" />
     <MESSAGE value="24.11.26 자동구성 member" />
     <MESSAGE value="24.11.28 데이터소스 h2 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.11.28 데이터소스 h2 추가" />
+    <MESSAGE value="24.11.28 데이터소스 빈 2개 추가" />
+    <MESSAGE value="24.11.28 멤버 리포지토리" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.11.28 멤버 리포지토리" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

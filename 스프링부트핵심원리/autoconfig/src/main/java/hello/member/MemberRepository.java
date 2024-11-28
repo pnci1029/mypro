@@ -4,6 +4,8 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public class MemberRepository {
 
@@ -24,5 +26,10 @@ public class MemberRepository {
     public Member find(String memberId) {
         return jdbcTemplate.queryForObject("select memberId, name from Member where member_id = ?",
                 new BeanPropertyRowMapper<>(Member.class), memberId);
+    }
+
+    public List<Member> findAll() {
+        return jdbcTemplate.query("select memberId, name from Member",
+                new BeanPropertyRowMapper<>(Member.class));
     }
 }
