@@ -4,6 +4,9 @@ import com.zaxxer.hikari.HikariDataSource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.support.JdbcTransactionManager;
+import org.springframework.transaction.TransactionManager;
 
 import javax.sql.DataSource;
 
@@ -23,4 +26,17 @@ public class DbConfig {
         return dataSource;
     }
 
+    @Bean
+    public TransactionManager transactionManager() {
+        log.info("트랜잭션 매니저 빈 등록");
+
+        return new JdbcTransactionManager(dataSource());
+    }
+
+    @Bean
+    public JdbcTemplate jdbcTemplate() {
+        log.info("jdbc 템플릿 빈 등록");
+
+        return new JdbcTemplate(dataSource());
+    }
 }
