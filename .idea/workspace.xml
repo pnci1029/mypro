@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.08 테스트 추가">
-      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java_basic/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/autoconfig/src/test/java/hello/member/MemberRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/autoconfig/src/test/java/hello/member/MemberRepositoryTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.08 db config 테스트 추가" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -617,7 +613,7 @@
       <workItem from="1732617793739" duration="2548000" />
       <workItem from="1732748839700" duration="2554000" />
       <workItem from="1732771400097" duration="816000" />
-      <workItem from="1733635581549" duration="614000" />
+      <workItem from="1733635581549" duration="1497000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -962,7 +958,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="230" />
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -994,8 +990,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.11.23 디스패처 서블릿 스프링 컨테이너 연결 readme" />
-    <MESSAGE value="24.11.23 디스패처 서블릿 스프링 컨테이너 연결 실행과정 추가" />
     <MESSAGE value="24.11.23 스프링 MVC 서블릿 컨테이너 초기화" />
     <MESSAGE value="24.11.23 프로젝트 파일 이전" />
     <MESSAGE value="24.11.23 내장톰켓 프로젝트 추가" />
@@ -1019,7 +1013,9 @@
     <MESSAGE value="24.11.28 함수 생성" />
     <MESSAGE value="24.12.08 함수 수정" />
     <MESSAGE value="24.12.08 테스트 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12.08 테스트 추가" />
+    <MESSAGE value="24.12.08 쿼리 수정" />
+    <MESSAGE value="24.12.08 db config 테스트 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.12.08 db config 테스트 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
