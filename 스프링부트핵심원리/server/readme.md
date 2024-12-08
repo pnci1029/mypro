@@ -87,3 +87,21 @@
     1. 서블릿 컨테이너 생성을 위한 AppInitV3SpringMVC 생성 후 WebApplicationInitializer 구현체 등록
     2.  
 ````
+
+<br />
+<br />
+
+6. Condition
+````
+    스프링에서는 @Condition을 통해서 외부 라이브러리나
+    빈들을 조건처리하여 스프링 컨테이너에 등록할 수 있다.
+    
+    1. MemoryConfig - @Conditional(MemoryCondition.class) // memoryCondition이 true이면 아래 bean 등록 / 아니면 미등록
+    2. public class MemoryCondition ""implements Condition"" <-
+    
+    
+    * 스프링은 외부 설정을 추상화하여 'Environment'로 통합했다.
+    그래서 다양한 외부 설정들을 'Environment' 하나로 읽어들일 수 있다.
+    
+    ..추가예정
+````
