@@ -24,12 +24,12 @@ public class MemberRepository {
     }
 
     public Member find(String memberId) {
-        return jdbcTemplate.queryForObject("select memberId, name from Member where member_id = ?",
+        return jdbcTemplate.queryForObject("select member_id, name from member where member_id = ?",
                 new BeanPropertyRowMapper<>(Member.class), memberId);
     }
 
     public List<Member> findAll() {
-        return jdbcTemplate.query("select memberId, name from Member",
+        return jdbcTemplate.query("select member_id, name from member",
                 new BeanPropertyRowMapper<>(Member.class));
     }
 }
