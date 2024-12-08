@@ -17,7 +17,7 @@ class MemberRepositoryTest {
     MemberRepository memberRepository;
 
     @Transactional
-    @DisplayName("")
+    @DisplayName("db 생성 및 조회 테스트")
     @Test
     void memberTest() {
         // given
