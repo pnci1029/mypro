@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.08 @condition readme 추가">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/autoconfig/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/autoconfig/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/autoconfig/src/main/java/hello/config/MemoryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/autoconfig/src/main/java/hello/config/MemoryConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.14 test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -619,6 +615,7 @@
       <workItem from="1732771400097" duration="816000" />
       <workItem from="1733635581549" duration="3066000" />
       <workItem from="1734152787649" duration="339000" />
+      <workItem from="1734153131989" duration="2187000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -963,7 +960,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -995,11 +992,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.11.23 메인메서드 톰캣 설정 &amp; 실행 readme" />
-    <MESSAGE value="24.11.23 톰캣 + 스프링 컨테이너 연동" />
-    <MESSAGE value="24.11.25 톰캣으로 배포하는 방법" />
-    <MESSAGE value="24.11.25 톰캣 실행을 위한 Run 메소드 생성" />
-    <MESSAGE value="24.11.25 컴포넌트 스캔" />
     <MESSAGE value="24.11.25 어노테이션 추가" />
     <MESSAGE value="24.11.25 스프링부트 클래스 생성" />
     <MESSAGE value="24.11.25 스프링부트 readme" />
@@ -1020,7 +1012,12 @@
     <MESSAGE value="24.12.08 autoconfig에서 memory 빈 등록 후 사용" />
     <MESSAGE value="24.12.08 @condition 빈 등록 추가" />
     <MESSAGE value="24.12.08 @condition readme 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12.08 @condition readme 추가" />
+    <MESSAGE value="24.12.14 스프링부트 컨디셔널 어노테이션 수정" />
+    <MESSAGE value="24.12.14 다양한 컨디셔널 어노테이션 readme 추가" />
+    <MESSAGE value="24.12.14 메모리 라이브러리용 프로젝트 임포트" />
+    <MESSAGE value="24.12.14 이전 메모리 패키지 이전" />
+    <MESSAGE value="24.12.14 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.12.14 test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
