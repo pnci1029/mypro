@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.15 자동구성 지정 대상파일 생성">
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/libs/memory-v1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/reports/tests/test/classes/memory.MemoryFinderTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/reports/tests/test/classes/memory.MemoryFinderTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/reports/tests/test/packages/memory.html" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/reports/tests/test/packages/memory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/test-results/test/TEST-memory.MemoryFinderTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/test-results/test/TEST-memory.MemoryFinderTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/memory-v2/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.15 project v2">
+      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/project-v2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/project-v2/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -633,7 +619,7 @@
       <workItem from="1733635581549" duration="3066000" />
       <workItem from="1734152787649" duration="339000" />
       <workItem from="1734153131989" duration="4523000" />
-      <workItem from="1734226919861" duration="608000" />
+      <workItem from="1734226919861" duration="1039000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -978,7 +964,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="254" />
+    <option name="localTasksCounter" value="257" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1010,7 +996,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.11.28 데이터소스 빈 2개 추가" />
     <MESSAGE value="24.11.28 멤버 리포지토리" />
     <MESSAGE value="24.11.28 함수 생성" />
     <MESSAGE value="24.12.08 함수 수정" />
@@ -1035,7 +1020,8 @@
     <MESSAGE value="24.12.15 add memory v2" />
     <MESSAGE value="24.12.15 auto config 추가" />
     <MESSAGE value="24.12.15 자동구성 지정 대상파일 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12.15 자동구성 지정 대상파일 생성" />
+    <MESSAGE value="24.12.15 project v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.12.15 project v2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
