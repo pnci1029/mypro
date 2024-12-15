@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.15 project v2">
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/project-v2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/project-v2/build.gradle" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.15 v2라이브러리 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/project-v2/src/test/java/hello/selector/HelloBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/project-v2/src/test/java/hello/selector/HelloBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/project-v2/src/test/java/hello/selector/HelloConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/project-v2/src/test/java/hello/selector/HelloConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -619,7 +621,7 @@
       <workItem from="1733635581549" duration="3066000" />
       <workItem from="1734152787649" duration="339000" />
       <workItem from="1734153131989" duration="4523000" />
-      <workItem from="1734226919861" duration="1039000" />
+      <workItem from="1734226919861" duration="2123000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -964,7 +966,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="257" />
+    <option name="localTasksCounter" value="258" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -996,7 +998,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.11.28 멤버 리포지토리" />
     <MESSAGE value="24.11.28 함수 생성" />
     <MESSAGE value="24.12.08 함수 수정" />
     <MESSAGE value="24.12.08 테스트 추가" />
@@ -1021,7 +1022,8 @@
     <MESSAGE value="24.12.15 auto config 추가" />
     <MESSAGE value="24.12.15 자동구성 지정 대상파일 생성" />
     <MESSAGE value="24.12.15 project v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12.15 project v2" />
+    <MESSAGE value="24.12.15 v2라이브러리 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.12.15 v2라이브러리 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
