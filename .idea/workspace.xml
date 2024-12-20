@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.15 외부 설정 기본 내용 readme">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.20 자바 프로퍼티 외부설정" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -622,7 +620,7 @@
       <workItem from="1734226919861" duration="2604000" />
       <workItem from="1734334805424" duration="1845000" />
       <workItem from="1734518898266" duration="1019000" />
-      <workItem from="1734666263868" duration="566000" />
+      <workItem from="1734666263868" duration="1146000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -967,7 +965,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="265" />
+    <option name="localTasksCounter" value="268" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -999,9 +997,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.12.08 db config 테스트 추가" />
-    <MESSAGE value="24.12.08 메모리 사용량 테스트 객체 생성" />
-    <MESSAGE value="24.12.08 메모리 외부 라이브러리 완료" />
     <MESSAGE value="24.12.08 autoconfig에서 memory 빈 등록 후 사용" />
     <MESSAGE value="24.12.08 @condition 빈 등록 추가" />
     <MESSAGE value="24.12.08 @condition readme 추가" />
@@ -1024,7 +1019,10 @@
     <MESSAGE value="24.12.15 임포트 셀렉터 테스트추가" />
     <MESSAGE value="24.12.15 외부 설정용 프로젝트 셋업" />
     <MESSAGE value="24.12.15 외부 설정 기본 내용 readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12.15 외부 설정 기본 내용 readme" />
+    <MESSAGE value="24.12.20 시스팀 환경변수 조회" />
+    <MESSAGE value="24.12.20 OS환경변수 설정 방법" />
+    <MESSAGE value="24.12.20 자바 프로퍼티 외부설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.12.20 자바 프로퍼티 외부설정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

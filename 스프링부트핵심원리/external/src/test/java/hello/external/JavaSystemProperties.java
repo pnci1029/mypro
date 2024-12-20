@@ -11,5 +11,13 @@ public class JavaSystemProperties {
         for (Object key : properties.keySet()) {
             log.info("prop : {},{}",key, properties.get(String.valueOf(key)));
         }
+
+        String url = System.getProperty("url");
+        String username = System.getProperty("username");
+        String password = System.getProperty("password");
+
+        log.info("url : {}", url);
+        log.info("username : {}", username);
+        log.info("password : {}", password);
     }
 }
