@@ -13,5 +13,9 @@ public class OsEnv {
         for (String key : envMap.keySet()) {
             log.info("env : {}={}",key,System.getenv(key));
         }
+
+        //DBURL = dev.db.com 개발서버
+        //DBURL = prod.db.com 운영서버
+        System.getenv("DBURL");
     }
 }
