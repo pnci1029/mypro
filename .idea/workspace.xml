@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.15 임포트 셀렉터 테스트">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.15 외부 설정 기본 내용 readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -620,7 +620,9 @@
       <workItem from="1734152787649" duration="339000" />
       <workItem from="1734153131989" duration="4523000" />
       <workItem from="1734226919861" duration="2604000" />
-      <workItem from="1734334805424" duration="3000" />
+      <workItem from="1734334805424" duration="1845000" />
+      <workItem from="1734518898266" duration="1019000" />
+      <workItem from="1734666263868" duration="566000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -965,7 +967,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="260" />
+    <option name="localTasksCounter" value="265" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -997,9 +999,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.12.08 함수 수정" />
-    <MESSAGE value="24.12.08 테스트 추가" />
-    <MESSAGE value="24.12.08 쿼리 수정" />
     <MESSAGE value="24.12.08 db config 테스트 추가" />
     <MESSAGE value="24.12.08 메모리 사용량 테스트 객체 생성" />
     <MESSAGE value="24.12.08 메모리 외부 라이브러리 완료" />
@@ -1022,7 +1021,10 @@
     <MESSAGE value="24.12.15 project v2" />
     <MESSAGE value="24.12.15 v2라이브러리 추가" />
     <MESSAGE value="24.12.15 임포트 셀렉터 테스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12.15 임포트 셀렉터 테스트" />
+    <MESSAGE value="24.12.15 임포트 셀렉터 테스트추가" />
+    <MESSAGE value="24.12.15 외부 설정용 프로젝트 셋업" />
+    <MESSAGE value="24.12.15 외부 설정 기본 내용 readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.12.15 외부 설정 기본 내용 readme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
