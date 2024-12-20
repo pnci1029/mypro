@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.20 자바 프로퍼티 예제 항목 추가">
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/external/src/test/java/hello/external/JavaSystemProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/external/src/test/java/hello/external/JavaSystemProperties.java" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.20 커맨드라인 예제 항목 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/external/src/test/java/hello/external/CommandLineV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/external/src/test/java/hello/external/CommandLineV1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -622,7 +623,7 @@
       <workItem from="1734226919861" duration="2604000" />
       <workItem from="1734334805424" duration="1845000" />
       <workItem from="1734518898266" duration="1019000" />
-      <workItem from="1734666263868" duration="1524000" />
+      <workItem from="1734666263868" duration="2154000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -967,7 +968,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="269" />
+    <option name="localTasksCounter" value="272" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -999,7 +1000,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.12.08 @condition 빈 등록 추가" />
     <MESSAGE value="24.12.08 @condition readme 추가" />
     <MESSAGE value="24.12.14 스프링부트 컨디셔널 어노테이션 수정" />
     <MESSAGE value="24.12.14 다양한 컨디셔널 어노테이션 readme 추가" />
@@ -1024,7 +1024,8 @@
     <MESSAGE value="24.12.20 OS환경변수 설정 방법" />
     <MESSAGE value="24.12.20 자바 프로퍼티 외부설정" />
     <MESSAGE value="24.12.20 자바 프로퍼티 예제 항목 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12.20 자바 프로퍼티 예제 항목 추가" />
+    <MESSAGE value="24.12.20 커맨드라인 예제 항목 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.12.20 커맨드라인 예제 항목 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
