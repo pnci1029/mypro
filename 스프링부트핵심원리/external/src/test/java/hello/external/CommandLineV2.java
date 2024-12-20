@@ -31,5 +31,26 @@ public class CommandLineV2 {
         log.info("NonOptionArgs = {}", appArgs.getNonOptionArgs()); // NonOptionArgs = [mode=on]
         log.info("OptionNames = {}", appArgs.getOptionNames()); // OptionNames = [password, url, username]
 
+        Set<String> optionNames = appArgs.getOptionNames();
+        for (String optionName : optionNames) {
+            log.info("option Args {}={}", optionName, appArgs.getOptionValues(optionName));
+        }
+
+        List<String> url = appArgs.getOptionValues("url");
+        List<String> username = appArgs.getOptionValues("username");
+        List<String> password = appArgs.getOptionValues("password");
+        List<String> mode = appArgs.getOptionValues("mode");
+
+        log.info("url : {}", url);
+        log.info("username : {}", username);
+        log.info("password : {}", password);
+        log.info("mode : {}", mode);
+        /**
+         * => "--" 대시가 안들어가있어서 mode를 못꺼냄
+         url : [devdb]
+         username : [dev_user]
+         password : [dev_pw]
+         mode : null
+         */
     }
 }
