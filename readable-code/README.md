@@ -33,3 +33,26 @@
  
  
 ````
+
+<br />
+<br />
+
+`부정어를 대하는 자세`
+````
+    부정어를 사용할때도 뇌의 사고를 최소화하도록 설계 필요
+
+    ex) 
+    if(!isRightDirection() // isRightDirection메소드 명을 읽고 ! 부정어를 읽으며 2번 사고
+    {
+        doSomething();
+    }
+    
+    
+    refactor)
+    if(isNotRightDirection()
+    {
+        doSomething();
+    }
+    
+    -
+````
