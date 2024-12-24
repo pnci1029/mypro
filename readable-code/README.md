@@ -42,7 +42,7 @@
     부정어를 사용할때도 뇌의 사고를 최소화하도록 설계 필요
 
     ex) 
-    if(!isRightDirection() // isRightDirection메소드 명을 읽고 ! 부정어를 읽으며 2번 사고
+    if(!isRightDirection() // isRightDirection메소드 명을 읽고 ! 부정어를 읽으며 2번의 사고흐름 생성
     {
         doSomething();
     }
@@ -54,5 +54,7 @@
         doSomething();
     }
     
-    -
+    1. 부정어구를 쓰지 않아도 되는 상황인지 체크
+    2. 부정의 의미를 담은 다른 단어가 존재하는지 고민
+        or 부정어구로 메서드명 구성 (isNotRightDirection)
 ````
