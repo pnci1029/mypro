@@ -85,4 +85,8 @@
         -> Optional을 파라미터로 받지 않도록 한다. 분기 케이스가 3개나 된다
             (Optional의 데이터가 null인지 아닌지 + Optional 자체가 Null인지)
         -> Optional을 반환받았다면 최대한 빠르게 해소
+            -> isPresent .get 등 API 사용
+            -> orElse(), orElseGet(), orElseThrow()의 차이를 숙지
+                -> orElse() => 항상 실행, 확정된 값일때 사용
+                -> orElseGet() => null인 경우 실행, 값을 제공하는 동작 정의
 ````
