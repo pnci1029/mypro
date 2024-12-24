@@ -70,3 +70,19 @@
     - 의도한 예외와 예상하지 못한 예외 구분
         (사용자에게 보여줄 예외 vs 개발자가 보고 처리해야할 예외)
 ````
+
+<br />
+<br />
+
+`Null을 대하는 자세`
+````
+    1. 항상 NullPointerException을 방지하는 방향으로 경각심 가지기
+    2. 메서드 설계시 return null 자제
+        -> 자제가 어렵다면 Optional 사용 고민 필요
+        
+    * Optional
+        -> Optional은 비싼 객체다. 꼭 필요한 상황에서 반환 타입에 사용
+        -> Optional을 파라미터로 받지 않도록 한다. 분기 케이스가 3개나 된다
+            (Optional의 데이터가 null인지 아닌지 + Optional 자체가 Null인지)
+        -> Optional을 반환받았다면 최대한 빠르게 해소
+````
