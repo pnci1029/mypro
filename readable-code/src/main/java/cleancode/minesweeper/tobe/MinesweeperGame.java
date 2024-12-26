@@ -28,6 +28,8 @@ public class MinesweeperGame {
         initializeGame();
 
         while (true) {
+            try {
+
             // 보드를 그리는 부분
             showBoard();
 
@@ -44,6 +46,10 @@ public class MinesweeperGame {
             String userActionInput = getUserInputFromUser(SCANNER);
 
             actOnCell(cellInput, userActionInput);
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
+
         }
     }
 
