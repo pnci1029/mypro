@@ -149,11 +149,15 @@ public class MinesweeperGame {
     private static boolean isAllCellOpened() {
         return Arrays.stream(BOARD)
                 .flatMap(Arrays::stream)
-                .noneMatch(cell -> cell.equals(UNOPEND_LAND_SIGN));
+                .noneMatch(UNOPEND_LAND_SIGN::equals);
     }
 
     private static int convertRowFrom(char cellInputRow) {
-        return Character.getNumericValue(cellInputRow) - 1;
+        int rowIndex = Character.getNumericValue(cellInputRow) - 1;
+        if(rowIndex >= BOARD_ROW_SIZE) {
+            throw new IllegalArgumentException("잘못된 입력입니다.");
+        }
+        return rowIndex;
     }
 
     private static int convertColumnFrom(char cellInputColumn) {
