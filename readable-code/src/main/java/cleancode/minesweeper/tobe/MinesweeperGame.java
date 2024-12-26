@@ -50,7 +50,6 @@ public class MinesweeperGame {
                 System.out.println(e.getMessage());
             } catch (Exception e){
                 System.out.println("프로그램에 문제가 생겼습니다.");
-                e.printStackTrace();
             }
 
         }

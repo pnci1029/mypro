@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.20 커맨드라인2 예제 항목 추가">
-      <change beforePath="$PROJECT_DIR$/스프링부트핵심원리/external/src/test/java/hello/external/CommandLineV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링부트핵심원리/external/src/test/java/hello/external/CommandLineV2.java" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.26 프로그램 예외처리2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -622,7 +623,8 @@
       <workItem from="1734226919861" duration="2604000" />
       <workItem from="1734334805424" duration="1845000" />
       <workItem from="1734518898266" duration="1019000" />
-      <workItem from="1734666263868" duration="2803000" />
+      <workItem from="1734666263868" duration="2907000" />
+      <workItem from="1735027070732" duration="3004000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -967,7 +969,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="275" />
+    <option name="localTasksCounter" value="287" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -999,15 +1001,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.12.14 스프링부트 컨디셔널 어노테이션 수정" />
-    <MESSAGE value="24.12.14 다양한 컨디셔널 어노테이션 readme 추가" />
-    <MESSAGE value="24.12.14 메모리 라이브러리용 프로젝트 임포트" />
-    <MESSAGE value="24.12.14 이전 메모리 패키지 이전" />
-    <MESSAGE value="24.12.14 test" />
-    <MESSAGE value="24.12.14 라이브러리 주입을 받기위한 프로젝트 세팅" />
-    <MESSAGE value="24.12.14 기본 테스트 추가" />
-    <MESSAGE value="24.12.14 외부 라이브러리 임포트" />
-    <MESSAGE value="24.12.14 외부 라이브러리 컨피그 추가" />
     <MESSAGE value="24.12.14 readme 기재" />
     <MESSAGE value="24.12.15 add memory v2" />
     <MESSAGE value="24.12.15 auto config 추가" />
@@ -1024,7 +1017,16 @@
     <MESSAGE value="24.12.20 자바 프로퍼티 예제 항목 추가" />
     <MESSAGE value="24.12.20 커맨드라인 예제 항목 추가" />
     <MESSAGE value="24.12.20 커맨드라인2 예제 항목 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12.20 커맨드라인2 예제 항목 추가" />
+    <MESSAGE value="24.12.20 커맨드라인2 예제 추가" />
+    <MESSAGE value="24.12.24 부정어를 대하는 자세" />
+    <MESSAGE value="24.12.24 메소드 추상화 + 부정어구 수정" />
+    <MESSAGE value="24.12.24 해피케이스와 예외처리" />
+    <MESSAGE value="24.12.24 null을 대하는 자세" />
+    <MESSAGE value="24.12.26 해피케이스 처리" />
+    <MESSAGE value="24.12.26 예외처리 변경(상수)" />
+    <MESSAGE value="24.12.26 프로그램 예외처리1" />
+    <MESSAGE value="24.12.26 프로그램 예외처리2" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.12.26 프로그램 예외처리2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
