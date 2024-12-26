@@ -173,7 +173,7 @@ public class MinesweeperGame {
             case 'j':
                 return 9;
             default:
-                return -1;
+                throw new IllegalArgumentException("잘못된 입력입니다.");
         }
     }
 
