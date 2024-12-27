@@ -10,6 +10,7 @@ public class MinesweeperGame {
     public static final int BOARD_ROW_SIZE = 10;
     public static final Scanner SCANNER = new Scanner(System.in);
     private static final String[][] BOARD = new String[BOARD_ROW_SIZE][BOARD_COLUMN_SIZE];
+    private static final Cell[][] BOARD2 = new Cell[BOARD_ROW_SIZE][BOARD_COLUMN_SIZE];
     private static final Integer[][] LAND_MINE_COUNTS = new Integer[8][10];
     private static final boolean[][] LAND_MINES = new boolean[8][10];
     public static final int MINE_COUNT = 10;
@@ -60,14 +61,14 @@ public class MinesweeperGame {
         int selectedRowIndex = getSelectedRowIndex(cellInput);
 
         if (doesUserChooseToPlantFlag(userActionInput)) {
-            BOARD[selectedRowIndex][selectedColumnIndex] = FLAG_SIGN;
+            BOARD2[selectedRowIndex][selectedColumnIndex] = Cell.of(FLAG_SIGN);
             checkIfGameIsOver();
             return;
         }
 
         if (doesUserPlantToOpenCell(userActionInput)) {
             if (isLandMinedCell(selectedRowIndex, selectedColumnIndex)) {
-                BOARD[selectedRowIndex][selectedColumnIndex] = MINE_SIGN;
+                BOARD2[selectedRowIndex][selectedColumnIndex] = Cell.of(MINE_SIGN);
                 changeGameStatusToLose();
                 return;
             }
@@ -136,9 +137,9 @@ public class MinesweeperGame {
     }
 
     private static boolean isAllCellOpened() {
-        return Arrays.stream(BOARD)
+        return Arrays.stream(BOARD2)
                 .flatMap(Arrays::stream)
-                .noneMatch(UNOPEND_LAND_SIGN::equals);
+                .noneMatch(cell -> cell.equalsSign(UNOPEND_LAND_SIGN));
     }
 
     private static int convertRowFrom(char cellInputRow) {
