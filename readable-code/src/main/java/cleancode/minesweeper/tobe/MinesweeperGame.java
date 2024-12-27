@@ -135,19 +135,6 @@ public class MinesweeperGame {
         gameStatus = 1;
     }
 
-    @Deprecated
-    private static boolean isAllCellOpened2() {
-        boolean isAllOpened = true;
-        for (int row = 0; row < BOARD_ROW_SIZE; row++) {
-            for (int column = 0; column < BOARD_COLUMN_SIZE; column++) {
-                if (BOARD[row][column].equals("□")) {
-                    isAllOpened = false;
-                }
-            }
-        }
-        return isAllOpened;
-    }
-
     private static boolean isAllCellOpened() {
         return Arrays.stream(BOARD)
                 .flatMap(Arrays::stream)
