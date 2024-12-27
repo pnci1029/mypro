@@ -15,4 +15,12 @@ public class Cell {
     public boolean equalsSign(String sign) {
         return this.sign.equals(sign);
     }
+
+    public boolean doesNotEqualsSign(String sign) {
+        return !equalsSign(sign);
+    }
+
+    public String getSign() {
+        return this.sign;
+    }
 }
