@@ -141,6 +141,7 @@
                 private final List<Menu> menus;
                 private final long totalPrice;
                 
+                // 필드 대신 제공할 수 있는 기능 (totalPrice를 가지고 있을 필요가 없다.)
                 privaet long calculateTotalPrice(){
                     return this.menus.stream()
                                 .mapToLong(Menu::getPrice)
