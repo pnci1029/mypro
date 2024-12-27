@@ -136,5 +136,16 @@
         => 불필요한 데이터가 많을수록 복잡도가 높아지고 대응할 변화가 많아진다.
         => 필드 A를 가지고 계산할 수 있는 A' 필드가 있따면 메서드 기능으로 제공
         => 단, 미리 가공하는 것이 성능 상 이점이 있다면, 필드로 가지고 있는것이 좋을수도 있다.
+        
+        ex) class Bill{
+                private final List<Menu> menus;
+                private final long totalPrice;
+                
+                privaet long calculateTotalPrice(){
+                    return this.menus.stream()
+                                .mapToLong(Menu::getPrice)
+                                .sume();
+                }
+        }
      
 ````
