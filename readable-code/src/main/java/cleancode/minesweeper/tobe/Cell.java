@@ -7,13 +7,19 @@ public class Cell {
     private static final String OPEND_LAND_SIGN = "■";
     private static final String UNOPEND_LAND_SIGN = "□";
 
-    private Cell(String sign) {
+    private final String sign;
+    private int nearbyLandMineCount;
+    private boolean isLandMine;
+
+    private Cell(String sign, int nearbyLandMineCount, boolean isLandMine) {
         this.sign = sign;
+        this.nearbyLandMineCount = nearbyLandMineCount;
+        this.isLandMine = isLandMine;
     }
 
     // 정적 팩토리 메서드 패턴
-    public static Cell of(String sign) {
-        return new Cell(sign);
+    public static Cell of(String sign, int nearbyLandMineCount, boolean isLandMine) {
+        return new Cell(sign, nearbyLandMineCount, isLandMine);
     }
 
     public static Cell ofFlag() {
