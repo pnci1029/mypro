@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.27 객체 설계하기 (점진적 리팩토링4)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.31 객체 설계하기2 변수추가">
       <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" afterDir="false" />
     </list>
@@ -627,7 +626,7 @@
       <workItem from="1734666263868" duration="2907000" />
       <workItem from="1735027070732" duration="3212000" />
       <workItem from="1735280828225" duration="4229000" />
-      <workItem from="1735624011130" duration="10000" />
+      <workItem from="1735624011130" duration="370000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -972,7 +971,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="301" />
+    <option name="localTasksCounter" value="304" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1004,8 +1003,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.12.15 외부 설정용 프로젝트 셋업" />
-    <MESSAGE value="24.12.15 외부 설정 기본 내용 readme" />
     <MESSAGE value="24.12.20 시스팀 환경변수 조회" />
     <MESSAGE value="24.12.20 OS환경변수 설정 방법" />
     <MESSAGE value="24.12.20 자바 프로퍼티 외부설정" />
@@ -1029,7 +1026,9 @@
     <MESSAGE value="24.12.27 객체 설계하기 (점진적 리팩토링2)" />
     <MESSAGE value="24.12.27 객체 설계하기 (점진적 리팩토링3)" />
     <MESSAGE value="24.12.27 객체 설계하기 (점진적 리팩토링4)" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12.27 객체 설계하기 (점진적 리팩토링4)" />
+    <MESSAGE value="24.12.31 객체 설계하기2" />
+    <MESSAGE value="24.12.31 객체 설계하기2 변수추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.12.31 객체 설계하기2 변수추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
