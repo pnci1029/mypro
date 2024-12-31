@@ -41,36 +41,8 @@ public class Cell {
         this.nearbyLandMineCount = count;
     }
 
-    public static Cell ofFlag() {
-        return of(FLAG_SIGN);
-    }
-
-    public static Cell ofMine() {
-        return of(MINE_SIGN);
-    }
-
-    public static Cell ofOpenedLand() {
-        return of(EMPTY_SIGN);
-    }
-
-    public static Cell ofClosed() {
-        return of(UNCHECKED_SIGN);
-    }
-
-    public static Cell ofNearbyLandmineCount(int count) {
-        return of(String.valueOf(count));
-    }
-
     public String getSign() {
         return this.sign;
-    }
-
-    public boolean isClosed() {
-        return UNCHECKED_SIGN.equals(this.sign);
-    }
-
-    public boolean doesNotClosed() {
-        return !isClosed();
     }
 
     public boolean isChecked() {
