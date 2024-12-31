@@ -21,6 +21,18 @@ public class Cell {
         return new Cell(sign, nearbyLandMineCount, isLandMine);
     }
 
+    public static Cell create() {
+        return of("", 0, false);
+    }
+
+    public void turnOnLandMine() {
+        this.isLandMine = true;
+    }
+
+    public void updateNearbyLandMineCount(int count) {
+        this.nearbyLandMineCount = count;
+    }
+
     public static Cell ofFlag() {
         return of(FLAG_SIGN);
     }
