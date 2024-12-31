@@ -6,14 +6,12 @@ public class Cell {
     private static final String EMPTY_SIGN = "■";
     private static final String UNCHECKED_SIGN = "□";
 
-    private final String sign;
     private int nearbyLandMineCount;
     private boolean isLandMine;
     private boolean isFlagged;
     private boolean isOpened;
 
-    private Cell(String sign, int nearbyLandMineCount, boolean isLandMine, boolean isFlagged, boolean isOpened) {
-        this.sign = sign;
+    private Cell(int nearbyLandMineCount, boolean isLandMine, boolean isFlagged, boolean isOpened) {
         this.nearbyLandMineCount = nearbyLandMineCount;
         this.isLandMine = isLandMine;
         this.isFlagged = isFlagged;
@@ -21,12 +19,12 @@ public class Cell {
     }
 
     // 정적 팩토리 메서드 패턴
-    public static Cell of(String sign, int nearbyLandMineCount, boolean isLandMine, boolean isFlagged, boolean isOpened) {
-        return new Cell(sign, nearbyLandMineCount, isLandMine, isFlagged, isOpened);
+    public static Cell of(int nearbyLandMineCount, boolean isLandMine, boolean isFlagged, boolean isOpened) {
+        return new Cell(nearbyLandMineCount, isLandMine, isFlagged, isOpened);
     }
 
     public static Cell create() {
-        return of("", 0, false, false, false);
+        return of( 0, false, false, false);
     }
 
     public void flag() {
@@ -42,7 +40,23 @@ public class Cell {
     }
 
     public String getSign() {
-        return this.sign;
+        // 열린경우
+        if (isOpened) {
+            if (isLandMine) {
+                return MINE_SIGN;
+            }
+            if (hasLandMineCount()) {
+                return String.valueOf(nearbyLandMineCount);
+            }
+            return EMPTY_SIGN;
+        }
+
+        // 닫힌경우
+        if (isFlagged) {
+            return FLAG_SIGN;
+        }
+
+        return UNCHECKED_SIGN;
     }
 
     public boolean isChecked() {
