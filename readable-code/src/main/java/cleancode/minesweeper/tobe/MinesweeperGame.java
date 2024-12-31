@@ -253,11 +253,10 @@ public class MinesweeperGame {
         if (isLandMinedCell(row, col)) {
             return;
         }
+        BOARD[row][col].open();
+
         if (BOARD[row][col].hasLandMineCount()) {
-            BOARD[row][col] = Cell.ofNearbyLandmineCount(LAND_MINE_COUNTS[row][col]);
             return;
-        } else {
-            BOARD[row][col] = Cell.ofOpenedLand();
         }
         open(row - 1, col - 1);
         open(row - 1, col);
