@@ -187,24 +187,23 @@ public class MinesweeperGame {
     private static void initializeGame() {
         for (int row = 0; row < BOARD_ROW_SIZE; row++) {
             for (int column = 0; column < BOARD_COLUMN_SIZE; column++) {
-                BOARD[row][column] = Cell.ofClosed();
+                BOARD[row][column] = Cell.create();
             }
         }
 
         for (int i = 0; i < MINE_COUNT; i++) {
             int col = new Random().nextInt(10);
             int row = new Random().nextInt(8);
-            LAND_MINES[row][col] = true;
+            BOARD[row][col].turnOnLandMine();
         }
 
         for (int row = 0; row < BOARD_ROW_SIZE; row++) {
             for (int column = 0; column < BOARD_COLUMN_SIZE; column++) {
                 if (isLandMinedCell(row, column)) {
-                    LAND_MINE_COUNTS[row][column] = 0;
                     continue;
                 }
                     int count = countNearbyLandMines(row, column);
-                    LAND_MINE_COUNTS[row][column] = count;
+                    BOARD[row][column].updateNearbyLandMineCount(count);
             }
         }
     }
