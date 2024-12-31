@@ -56,7 +56,7 @@ public class MinesweeperGame {
         int selectedRowIndex = getSelectedRowIndex(cellInput);
 
         if (doesUserChooseToPlantFlag(userActionInput)) {
-            BOARD[selectedRowIndex][selectedColumnIndex] = Cell.ofFlag();
+            BOARD[selectedRowIndex][selectedColumnIndex].flag();;
             checkIfGameIsOver();
             return;
         }

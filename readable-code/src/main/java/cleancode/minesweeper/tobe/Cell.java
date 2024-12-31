@@ -9,20 +9,26 @@ public class Cell {
     private final String sign;
     private int nearbyLandMineCount;
     private boolean isLandMine;
+    private boolean isFlagged;
 
-    private Cell(String sign, int nearbyLandMineCount, boolean isLandMine) {
+    private Cell(String sign, int nearbyLandMineCount, boolean isLandMine, boolean isFlagged) {
         this.sign = sign;
         this.nearbyLandMineCount = nearbyLandMineCount;
         this.isLandMine = isLandMine;
+        this.isFlagged = isFlagged;
     }
 
     // 정적 팩토리 메서드 패턴
-    public static Cell of(String sign, int nearbyLandMineCount, boolean isLandMine) {
-        return new Cell(sign, nearbyLandMineCount, isLandMine);
+    public static Cell of(String sign, int nearbyLandMineCount, boolean isLandMine, boolean isFlagged) {
+        return new Cell(sign, nearbyLandMineCount, isLandMine, isFlagged);
     }
 
     public static Cell create() {
-        return of("", 0, false);
+        return of("", 0, false, false);
+    }
+
+    public void flag() {
+        this.isFlagged = true;
     }
 
     public void turnOnLandMine() {
