@@ -63,6 +63,7 @@ public class MinesweeperGame {
 
         if (doesUserPlantToOpenCell(userActionInput)) {
             if (isLandMinedCell(selectedRowIndex, selectedColumnIndex)) {
+                BOARD[selectedRowIndex][selectedColumnIndex].open();
                 changeGameStatusToLose();
                 return;
             }
@@ -246,13 +247,13 @@ public class MinesweeperGame {
         if (row < 0 || row >= 8 || col < 0 || col >= 10) {
             return;
         }
-            if (BOARD[row][col].doesNotClosed()) {
+            if (BOARD[row][col].isOpened()) {
             return;
         }
         if (isLandMinedCell(row, col)) {
             return;
         }
-        if (LAND_MINE_COUNTS[row][col] != 0) {
+        if (BOARD[row][col].hasLandMineCount()) {
             BOARD[row][col] = Cell.ofNearbyLandmineCount(LAND_MINE_COUNTS[row][col]);
             return;
         } else {

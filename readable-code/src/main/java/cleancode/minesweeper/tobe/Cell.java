@@ -80,4 +80,16 @@ public class Cell {
     public boolean isLandMine() {
         return isLandMine;
     }
+
+    public void open() {
+        this.isOpened = true;
+    }
+
+    public boolean isOpened() {
+        return isOpened;
+    }
+
+    public boolean hasLandMineCount() {
+        return this.nearbyLandMineCount != 0;
+    }
 }
