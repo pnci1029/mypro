@@ -10,8 +10,6 @@ public class MinesweeperGame {
     public static final int BOARD_ROW_SIZE = 10;
     public static final Scanner SCANNER = new Scanner(System.in);
     private static final Cell[][] BOARD = new Cell[BOARD_ROW_SIZE][BOARD_COLUMN_SIZE];
-    private static final Integer[][] LAND_MINE_COUNTS = new Integer[8][10];
-    private static final boolean[][] LAND_MINES = new boolean[8][10];
     public static final int MINE_COUNT = 10;
 
     private static int gameStatus = 0;

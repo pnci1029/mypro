@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.31 객체 설계하기2 함수 수정">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.31 객체 설계하기2 재귀 함수 수정">
       <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MinesweeperGame.java" afterDir="false" />
     </list>
@@ -626,7 +626,7 @@
       <workItem from="1734666263868" duration="2907000" />
       <workItem from="1735027070732" duration="3212000" />
       <workItem from="1735280828225" duration="4229000" />
-      <workItem from="1735624011130" duration="727000" />
+      <workItem from="1735624011130" duration="1311000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -971,7 +971,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="306" />
+    <option name="localTasksCounter" value="308" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1003,8 +1003,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.12.20 OS환경변수 설정 방법" />
-    <MESSAGE value="24.12.20 자바 프로퍼티 외부설정" />
     <MESSAGE value="24.12.20 자바 프로퍼티 예제 항목 추가" />
     <MESSAGE value="24.12.20 커맨드라인 예제 항목 추가" />
     <MESSAGE value="24.12.20 커맨드라인2 예제 항목 추가" />
@@ -1028,7 +1026,9 @@
     <MESSAGE value="24.12.31 객체 설계하기2" />
     <MESSAGE value="24.12.31 객체 설계하기2 변수추가" />
     <MESSAGE value="24.12.31 객체 설계하기2 함수 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12.31 객체 설계하기2 함수 수정" />
+    <MESSAGE value="24.12.31 객체 설계하기2 함수 추가 2" />
+    <MESSAGE value="24.12.31 객체 설계하기2 재귀 함수 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.12.31 객체 설계하기2 재귀 함수 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
