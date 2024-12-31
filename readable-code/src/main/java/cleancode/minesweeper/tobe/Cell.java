@@ -76,4 +76,8 @@ public class Cell {
     public boolean isChecked() {
         return isFlagged || isOpened;
     }
+
+    public boolean isLandMine() {
+        return isLandMine;
+    }
 }

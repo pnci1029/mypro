@@ -63,7 +63,6 @@ public class MinesweeperGame {
 
         if (doesUserPlantToOpenCell(userActionInput)) {
             if (isLandMinedCell(selectedRowIndex, selectedColumnIndex)) {
-                BOARD[selectedRowIndex][selectedColumnIndex] = Cell.ofMine();
                 changeGameStatusToLose();
                 return;
             }
@@ -81,7 +80,7 @@ public class MinesweeperGame {
     }
 
     private static boolean isLandMinedCell(int selectedRowIndex, int selectedColumnIndex) {
-        return LAND_MINES[selectedRowIndex][selectedColumnIndex];
+        return BOARD[selectedRowIndex][selectedColumnIndex].isLandMine();
     }
 
     private static boolean doesUserPlantToOpenCell(String userActionInput) {
@@ -121,8 +120,8 @@ public class MinesweeperGame {
     }
 
     private static void checkIfGameIsOver() {
-        boolean isAllOpened = isAllCellOpened();
-        if (isAllOpened) {
+        boolean isAllChecked = isAllCellChecked();
+        if (isAllChecked) {
             changeGameStatusToWin();
         }
     }
@@ -131,7 +130,7 @@ public class MinesweeperGame {
         gameStatus = 1;
     }
 
-    private static boolean isAllCellOpened() {
+    private static boolean isAllCellChecked() {
         return Arrays.stream(BOARD)
                 .flatMap(Arrays::stream)
                 .allMatch(Cell::isChecked);
