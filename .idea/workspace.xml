@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="24.12.31 get sign 수정 및 변수 제거">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25.1.2 스프링 environment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -627,6 +625,7 @@
       <workItem from="1735280828225" duration="4229000" />
       <workItem from="1735624011130" duration="2056000" />
       <workItem from="1735728114061" duration="227000" />
+      <workItem from="1735822895537" duration="1557000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -971,7 +970,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="311" />
+    <option name="localTasksCounter" value="315" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1003,10 +1002,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.12.20 커맨드라인2 예제 항목 추가" />
-    <MESSAGE value="24.12.20 커맨드라인2 예제 추가" />
-    <MESSAGE value="24.12.24 부정어를 대하는 자세" />
-    <MESSAGE value="24.12.24 메소드 추상화 + 부정어구 수정" />
     <MESSAGE value="24.12.24 해피케이스와 예외처리" />
     <MESSAGE value="24.12.24 null을 대하는 자세" />
     <MESSAGE value="24.12.26 해피케이스 처리" />
@@ -1028,7 +1023,11 @@
     <MESSAGE value="24.12.31 객체 설계하기2 재귀 함수 수정" />
     <MESSAGE value="24.12.31 객체 설계하기2 이전 메소드 변수 제거" />
     <MESSAGE value="24.12.31 get sign 수정 및 변수 제거" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12.31 get sign 수정 및 변수 제거" />
+    <MESSAGE value="25.1.2 커맨드라인빈1" />
+    <MESSAGE value="25.1.2 커맨드라인 빈1" />
+    <MESSAGE value="25.1.2 외부 설정의 한계" />
+    <MESSAGE value="25.1.2 스프링 environment" />
+    <option name="LAST_COMMIT_MESSAGE" value="25.1.2 스프링 environment" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
