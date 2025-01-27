@@ -6,8 +6,8 @@ buildscript {
 
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.3.8'
-    id 'io.spring.dependency-management' version '1.1.7'
+    id 'org.springframework.boot' version '3.2.3'
+    id 'io.spring.dependency-management' version '1.1.4'
     id 'nu.studer.jooq' version '9.0'
 }
 
@@ -15,16 +15,24 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 
 java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
-    }
+    sourceCompatibility = '17'
 }
 
 repositories {
     mavenCentral()
 }
 
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src/main/java", "src/main/generated"]
+        }
+    }
+}
+
 dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter'
     implementation ('org.springframework.boot:spring-boot-starter-jooq') {
         exclude group: 'org.jooq:jooq'
     }
@@ -32,7 +40,6 @@ dependencies {
     implementation "org.jooq:jooq:${jooqVersion}"
     runtimeOnly 'com.mysql:mysql-connector-j'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
     jooqGenerator 'com.mysql:mysql-connector-j'
     jooqGenerator "org.jooq:jooq:${jooqVersion}"
@@ -51,15 +58,12 @@ jooq {
     configurations {
         sakilaDB {
             generationTool {
-
-                // DB 접속정보
                 jdbc {
                     driver = 'com.mysql.cj.jdbc.Driver'
-                    url = 'jdbc:mysql://localhost:3306'
+                    url = 'jdbc:mysql://localhost:3306/sakila'
                     user = "${dbUser}"
                     password = "${dbPasswd}"
                 }
-
 
                 generator {
                     name = 'org.jooq.codegen.DefaultGenerator'
@@ -69,7 +73,7 @@ jooq {
 
                         schemata {
                             schema {
-                                inputSchema = 'sakila'
+                                inputSchema = 'mysql' // 주의
                             }
                         }
                     }
@@ -77,25 +81,16 @@ jooq {
                     generate {
                         daos = true
                         records = true
-                        immutablePojos = true
                         fluentSetters = true
                         javaTimeTypes = true
                         deprecated = false
                     }
 
                     target {
-                        directory = 'src/generated'
+                        directory = 'src/main/generated'
                     }
                 }
             }
-        }
-    }
-}
-
-sourceSets {
-    main {
-        java {
-            srcDirs = ["src/main/java", "src/generated"]
         }
     }
 }
