@@ -89,6 +89,9 @@ jooq {
                     target {
                         directory = 'src/main/generated'
                     }
+
+                    strategy.name = 'jooq.custom.generator.JPrefixGeneratorStrategy' // 서브 모듈 분리 -> 왜 분리함?
+
                 }
             }
         }

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25.1.26 gradle 수정">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25.1.30 기본 생성자 제거 &amp; 테스트 삭제" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -644,7 +642,7 @@
       <workItem from="1735822895537" duration="1557000" />
       <workItem from="1737877960435" duration="1140000" />
       <workItem from="1737959792766" duration="1215000" />
-      <workItem from="1738223823773" duration="507000" />
+      <workItem from="1738223823773" duration="812000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -989,7 +987,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="326" />
+    <option name="localTasksCounter" value="329" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1021,8 +1019,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.12.27 객체 설계하기 (리팩토링)" />
-    <MESSAGE value="24.12.27 객체 설계하기 (점진적 리팩토링)" />
     <MESSAGE value="24.12.27 객체 설계하기 (점진적 리팩토링2)" />
     <MESSAGE value="24.12.27 객체 설계하기 (점진적 리팩토링3)" />
     <MESSAGE value="24.12.27 객체 설계하기 (점진적 리팩토링4)" />
@@ -1046,7 +1042,9 @@
     <MESSAGE value="25.1.26 불필요한 db 스키마 삭제" />
     <MESSAGE value="25.1.26 jooq class 생성" />
     <MESSAGE value="25.1.26 gradle 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="25.1.26 gradle 수정" />
+    <MESSAGE value="25.1.30 커스텀 모튤 생성" />
+    <MESSAGE value="25.1.30 기본 생성자 제거 &amp; 테스트 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="25.1.30 기본 생성자 제거 &amp; 테스트 삭제" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
