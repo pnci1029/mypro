@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.HelpCategory;
+import org.jooq.generated.tables.JHelpCategory;
+import org.jooq.generated.tables.pojos.HelpCategory;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UShort;
 
@@ -95,14 +96,14 @@ public class HelpCategoryRecord extends UpdatableRecordImpl<HelpCategoryRecord> 
      * Create a detached HelpCategoryRecord
      */
     public HelpCategoryRecord() {
-        super(HelpCategory.HELP_CATEGORY);
+        super(JHelpCategory.HELP_CATEGORY);
     }
 
     /**
      * Create a detached, initialised HelpCategoryRecord
      */
     public HelpCategoryRecord(UShort helpCategoryId, String name, UShort parentCategoryId, String url) {
-        super(HelpCategory.HELP_CATEGORY);
+        super(JHelpCategory.HELP_CATEGORY);
 
         setHelpCategoryId(helpCategoryId);
         setName(name);
@@ -114,8 +115,8 @@ public class HelpCategoryRecord extends UpdatableRecordImpl<HelpCategoryRecord> 
     /**
      * Create a detached, initialised HelpCategoryRecord
      */
-    public HelpCategoryRecord(org.jooq.generated.tables.pojos.HelpCategory value) {
-        super(HelpCategory.HELP_CATEGORY);
+    public HelpCategoryRecord(HelpCategory value) {
+        super(JHelpCategory.HELP_CATEGORY);
 
         if (value != null) {
             setHelpCategoryId(value.getHelpCategoryId());

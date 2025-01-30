@@ -10,7 +10,8 @@ import java.util.List;
 import org.jooq.Configuration;
 import org.jooq.Record5;
 import org.jooq.generated.enums.ProcsPrivRoutineType;
-import org.jooq.generated.tables.ProcsPriv;
+import org.jooq.generated.tables.JProcsPriv;
+import org.jooq.generated.tables.pojos.ProcsPriv;
 import org.jooq.generated.tables.records.ProcsPrivRecord;
 import org.jooq.impl.DAOImpl;
 
@@ -19,24 +20,24 @@ import org.jooq.impl.DAOImpl;
  * Procedure privileges
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class ProcsPrivDao extends DAOImpl<ProcsPrivRecord, org.jooq.generated.tables.pojos.ProcsPriv, Record5<String, String, String, String, ProcsPrivRoutineType>> {
+public class ProcsPrivDao extends DAOImpl<ProcsPrivRecord, ProcsPriv, Record5<String, String, String, String, ProcsPrivRoutineType>> {
 
     /**
      * Create a new ProcsPrivDao without any configuration
      */
     public ProcsPrivDao() {
-        super(ProcsPriv.PROCS_PRIV, org.jooq.generated.tables.pojos.ProcsPriv.class);
+        super(JProcsPriv.PROCS_PRIV, ProcsPriv.class);
     }
 
     /**
      * Create a new ProcsPrivDao with an attached configuration
      */
     public ProcsPrivDao(Configuration configuration) {
-        super(ProcsPriv.PROCS_PRIV, org.jooq.generated.tables.pojos.ProcsPriv.class, configuration);
+        super(JProcsPriv.PROCS_PRIV, ProcsPriv.class, configuration);
     }
 
     @Override
-    public Record5<String, String, String, String, ProcsPrivRoutineType> getId(org.jooq.generated.tables.pojos.ProcsPriv object) {
+    public Record5<String, String, String, String, ProcsPrivRoutineType> getId(ProcsPriv object) {
         return compositeKeyRecord(object.getHost(), object.getUser(), object.getDb(), object.getRoutineName(), object.getRoutineType());
     }
 
@@ -44,119 +45,119 @@ public class ProcsPrivDao extends DAOImpl<ProcsPrivRecord, org.jooq.generated.ta
      * Fetch records that have <code>Host BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchRangeOfHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ProcsPriv.PROCS_PRIV.HOST, lowerInclusive, upperInclusive);
+    public List<ProcsPriv> fetchRangeOfJHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JProcsPriv.PROCS_PRIV.HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Host IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchByHost(String... values) {
-        return fetch(ProcsPriv.PROCS_PRIV.HOST, values);
+    public List<ProcsPriv> fetchByJHost(String... values) {
+        return fetch(JProcsPriv.PROCS_PRIV.HOST, values);
     }
 
     /**
      * Fetch records that have <code>Db BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchRangeOfDb(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ProcsPriv.PROCS_PRIV.DB, lowerInclusive, upperInclusive);
+    public List<ProcsPriv> fetchRangeOfJDb(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JProcsPriv.PROCS_PRIV.DB, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Db IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchByDb(String... values) {
-        return fetch(ProcsPriv.PROCS_PRIV.DB, values);
+    public List<ProcsPriv> fetchByJDb(String... values) {
+        return fetch(JProcsPriv.PROCS_PRIV.DB, values);
     }
 
     /**
      * Fetch records that have <code>User BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchRangeOfUser(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ProcsPriv.PROCS_PRIV.USER, lowerInclusive, upperInclusive);
+    public List<ProcsPriv> fetchRangeOfJUser(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JProcsPriv.PROCS_PRIV.USER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>User IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchByUser(String... values) {
-        return fetch(ProcsPriv.PROCS_PRIV.USER, values);
+    public List<ProcsPriv> fetchByJUser(String... values) {
+        return fetch(JProcsPriv.PROCS_PRIV.USER, values);
     }
 
     /**
      * Fetch records that have <code>Routine_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchRangeOfRoutineName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ProcsPriv.PROCS_PRIV.ROUTINE_NAME, lowerInclusive, upperInclusive);
+    public List<ProcsPriv> fetchRangeOfJRoutineName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JProcsPriv.PROCS_PRIV.ROUTINE_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Routine_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchByRoutineName(String... values) {
-        return fetch(ProcsPriv.PROCS_PRIV.ROUTINE_NAME, values);
+    public List<ProcsPriv> fetchByJRoutineName(String... values) {
+        return fetch(JProcsPriv.PROCS_PRIV.ROUTINE_NAME, values);
     }
 
     /**
      * Fetch records that have <code>Routine_type BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchRangeOfRoutineType(ProcsPrivRoutineType lowerInclusive, ProcsPrivRoutineType upperInclusive) {
-        return fetchRange(ProcsPriv.PROCS_PRIV.ROUTINE_TYPE, lowerInclusive, upperInclusive);
+    public List<ProcsPriv> fetchRangeOfJRoutineType(ProcsPrivRoutineType lowerInclusive, ProcsPrivRoutineType upperInclusive) {
+        return fetchRange(JProcsPriv.PROCS_PRIV.ROUTINE_TYPE, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Routine_type IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchByRoutineType(ProcsPrivRoutineType... values) {
-        return fetch(ProcsPriv.PROCS_PRIV.ROUTINE_TYPE, values);
+    public List<ProcsPriv> fetchByJRoutineType(ProcsPrivRoutineType... values) {
+        return fetch(JProcsPriv.PROCS_PRIV.ROUTINE_TYPE, values);
     }
 
     /**
      * Fetch records that have <code>Grantor BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchRangeOfGrantor(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ProcsPriv.PROCS_PRIV.GRANTOR, lowerInclusive, upperInclusive);
+    public List<ProcsPriv> fetchRangeOfJGrantor(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JProcsPriv.PROCS_PRIV.GRANTOR, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Grantor IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchByGrantor(String... values) {
-        return fetch(ProcsPriv.PROCS_PRIV.GRANTOR, values);
+    public List<ProcsPriv> fetchByJGrantor(String... values) {
+        return fetch(JProcsPriv.PROCS_PRIV.GRANTOR, values);
     }
 
     /**
      * Fetch records that have <code>Proc_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchRangeOfProcPriv(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ProcsPriv.PROCS_PRIV.PROC_PRIV, lowerInclusive, upperInclusive);
+    public List<ProcsPriv> fetchRangeOfJProcPriv(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JProcsPriv.PROCS_PRIV.PROC_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Proc_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchByProcPriv(String... values) {
-        return fetch(ProcsPriv.PROCS_PRIV.PROC_PRIV, values);
+    public List<ProcsPriv> fetchByJProcPriv(String... values) {
+        return fetch(JProcsPriv.PROCS_PRIV.PROC_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Timestamp BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchRangeOfTimestamp(LocalDateTime lowerInclusive, LocalDateTime upperInclusive) {
-        return fetchRange(ProcsPriv.PROCS_PRIV.TIMESTAMP, lowerInclusive, upperInclusive);
+    public List<ProcsPriv> fetchRangeOfJTimestamp(LocalDateTime lowerInclusive, LocalDateTime upperInclusive) {
+        return fetchRange(JProcsPriv.PROCS_PRIV.TIMESTAMP, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Timestamp IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProcsPriv> fetchByTimestamp(LocalDateTime... values) {
-        return fetch(ProcsPriv.PROCS_PRIV.TIMESTAMP, values);
+    public List<ProcsPriv> fetchByJTimestamp(LocalDateTime... values) {
+        return fetch(JProcsPriv.PROCS_PRIV.TIMESTAMP, values);
     }
 }

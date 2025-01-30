@@ -8,7 +8,8 @@ import java.util.List;
 
 import org.jooq.Configuration;
 import org.jooq.Record2;
-import org.jooq.generated.tables.TimeZoneTransition;
+import org.jooq.generated.tables.JTimeZoneTransition;
+import org.jooq.generated.tables.pojos.TimeZoneTransition;
 import org.jooq.generated.tables.records.TimeZoneTransitionRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UInteger;
@@ -18,24 +19,24 @@ import org.jooq.types.UInteger;
  * Time zone transitions
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class TimeZoneTransitionDao extends DAOImpl<TimeZoneTransitionRecord, org.jooq.generated.tables.pojos.TimeZoneTransition, Record2<UInteger, Long>> {
+public class TimeZoneTransitionDao extends DAOImpl<TimeZoneTransitionRecord, TimeZoneTransition, Record2<UInteger, Long>> {
 
     /**
      * Create a new TimeZoneTransitionDao without any configuration
      */
     public TimeZoneTransitionDao() {
-        super(TimeZoneTransition.TIME_ZONE_TRANSITION, org.jooq.generated.tables.pojos.TimeZoneTransition.class);
+        super(JTimeZoneTransition.TIME_ZONE_TRANSITION, TimeZoneTransition.class);
     }
 
     /**
      * Create a new TimeZoneTransitionDao with an attached configuration
      */
     public TimeZoneTransitionDao(Configuration configuration) {
-        super(TimeZoneTransition.TIME_ZONE_TRANSITION, org.jooq.generated.tables.pojos.TimeZoneTransition.class, configuration);
+        super(JTimeZoneTransition.TIME_ZONE_TRANSITION, TimeZoneTransition.class, configuration);
     }
 
     @Override
-    public Record2<UInteger, Long> getId(org.jooq.generated.tables.pojos.TimeZoneTransition object) {
+    public Record2<UInteger, Long> getId(TimeZoneTransition object) {
         return compositeKeyRecord(object.getTimeZoneId(), object.getTransitionTime());
     }
 
@@ -43,44 +44,44 @@ public class TimeZoneTransitionDao extends DAOImpl<TimeZoneTransitionRecord, org
      * Fetch records that have <code>Time_zone_id BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneTransition> fetchRangeOfTimeZoneId(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(TimeZoneTransition.TIME_ZONE_TRANSITION.TIME_ZONE_ID, lowerInclusive, upperInclusive);
+    public List<TimeZoneTransition> fetchRangeOfJTimeZoneId(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JTimeZoneTransition.TIME_ZONE_TRANSITION.TIME_ZONE_ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Time_zone_id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneTransition> fetchByTimeZoneId(UInteger... values) {
-        return fetch(TimeZoneTransition.TIME_ZONE_TRANSITION.TIME_ZONE_ID, values);
+    public List<TimeZoneTransition> fetchByJTimeZoneId(UInteger... values) {
+        return fetch(JTimeZoneTransition.TIME_ZONE_TRANSITION.TIME_ZONE_ID, values);
     }
 
     /**
      * Fetch records that have <code>Transition_time BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneTransition> fetchRangeOfTransitionTime(Long lowerInclusive, Long upperInclusive) {
-        return fetchRange(TimeZoneTransition.TIME_ZONE_TRANSITION.TRANSITION_TIME, lowerInclusive, upperInclusive);
+    public List<TimeZoneTransition> fetchRangeOfJTransitionTime(Long lowerInclusive, Long upperInclusive) {
+        return fetchRange(JTimeZoneTransition.TIME_ZONE_TRANSITION.TRANSITION_TIME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Transition_time IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneTransition> fetchByTransitionTime(Long... values) {
-        return fetch(TimeZoneTransition.TIME_ZONE_TRANSITION.TRANSITION_TIME, values);
+    public List<TimeZoneTransition> fetchByJTransitionTime(Long... values) {
+        return fetch(JTimeZoneTransition.TIME_ZONE_TRANSITION.TRANSITION_TIME, values);
     }
 
     /**
      * Fetch records that have <code>Transition_type_id BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneTransition> fetchRangeOfTransitionTypeId(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(TimeZoneTransition.TIME_ZONE_TRANSITION.TRANSITION_TYPE_ID, lowerInclusive, upperInclusive);
+    public List<TimeZoneTransition> fetchRangeOfJTransitionTypeId(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JTimeZoneTransition.TIME_ZONE_TRANSITION.TRANSITION_TYPE_ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Transition_type_id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneTransition> fetchByTransitionTypeId(UInteger... values) {
-        return fetch(TimeZoneTransition.TIME_ZONE_TRANSITION.TRANSITION_TYPE_ID, values);
+    public List<TimeZoneTransition> fetchByJTransitionTypeId(UInteger... values) {
+        return fetch(JTimeZoneTransition.TIME_ZONE_TRANSITION.TRANSITION_TYPE_ID, values);
     }
 }

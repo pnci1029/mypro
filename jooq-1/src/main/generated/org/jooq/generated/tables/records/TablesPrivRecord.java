@@ -7,7 +7,8 @@ package org.jooq.generated.tables.records;
 import java.time.LocalDateTime;
 
 import org.jooq.Record4;
-import org.jooq.generated.tables.TablesPriv;
+import org.jooq.generated.tables.JTablesPriv;
+import org.jooq.generated.tables.pojos.TablesPriv;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -156,14 +157,14 @@ public class TablesPrivRecord extends UpdatableRecordImpl<TablesPrivRecord> {
      * Create a detached TablesPrivRecord
      */
     public TablesPrivRecord() {
-        super(TablesPriv.TABLES_PRIV);
+        super(JTablesPriv.TABLES_PRIV);
     }
 
     /**
      * Create a detached, initialised TablesPrivRecord
      */
     public TablesPrivRecord(String host, String db, String user, String tableName, String grantor, LocalDateTime timestamp, String tablePriv, String columnPriv) {
-        super(TablesPriv.TABLES_PRIV);
+        super(JTablesPriv.TABLES_PRIV);
 
         setHost(host);
         setDb(db);
@@ -179,8 +180,8 @@ public class TablesPrivRecord extends UpdatableRecordImpl<TablesPrivRecord> {
     /**
      * Create a detached, initialised TablesPrivRecord
      */
-    public TablesPrivRecord(org.jooq.generated.tables.pojos.TablesPriv value) {
-        super(TablesPriv.TABLES_PRIV);
+    public TablesPrivRecord(TablesPriv value) {
+        super(JTablesPriv.TABLES_PRIV);
 
         if (value != null) {
             setHost(value.getHost());

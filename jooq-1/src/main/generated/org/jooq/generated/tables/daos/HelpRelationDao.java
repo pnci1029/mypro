@@ -8,7 +8,8 @@ import java.util.List;
 
 import org.jooq.Configuration;
 import org.jooq.Record2;
-import org.jooq.generated.tables.HelpRelation;
+import org.jooq.generated.tables.JHelpRelation;
+import org.jooq.generated.tables.pojos.HelpRelation;
 import org.jooq.generated.tables.records.HelpRelationRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UInteger;
@@ -18,24 +19,24 @@ import org.jooq.types.UInteger;
  * keyword-topic relation
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class HelpRelationDao extends DAOImpl<HelpRelationRecord, org.jooq.generated.tables.pojos.HelpRelation, Record2<UInteger, UInteger>> {
+public class HelpRelationDao extends DAOImpl<HelpRelationRecord, HelpRelation, Record2<UInteger, UInteger>> {
 
     /**
      * Create a new HelpRelationDao without any configuration
      */
     public HelpRelationDao() {
-        super(HelpRelation.HELP_RELATION, org.jooq.generated.tables.pojos.HelpRelation.class);
+        super(JHelpRelation.HELP_RELATION, HelpRelation.class);
     }
 
     /**
      * Create a new HelpRelationDao with an attached configuration
      */
     public HelpRelationDao(Configuration configuration) {
-        super(HelpRelation.HELP_RELATION, org.jooq.generated.tables.pojos.HelpRelation.class, configuration);
+        super(JHelpRelation.HELP_RELATION, HelpRelation.class, configuration);
     }
 
     @Override
-    public Record2<UInteger, UInteger> getId(org.jooq.generated.tables.pojos.HelpRelation object) {
+    public Record2<UInteger, UInteger> getId(HelpRelation object) {
         return compositeKeyRecord(object.getHelpKeywordId(), object.getHelpTopicId());
     }
 
@@ -43,29 +44,29 @@ public class HelpRelationDao extends DAOImpl<HelpRelationRecord, org.jooq.genera
      * Fetch records that have <code>help_topic_id BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpRelation> fetchRangeOfHelpTopicId(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(HelpRelation.HELP_RELATION.HELP_TOPIC_ID, lowerInclusive, upperInclusive);
+    public List<HelpRelation> fetchRangeOfJHelpTopicId(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JHelpRelation.HELP_RELATION.HELP_TOPIC_ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>help_topic_id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpRelation> fetchByHelpTopicId(UInteger... values) {
-        return fetch(HelpRelation.HELP_RELATION.HELP_TOPIC_ID, values);
+    public List<HelpRelation> fetchByJHelpTopicId(UInteger... values) {
+        return fetch(JHelpRelation.HELP_RELATION.HELP_TOPIC_ID, values);
     }
 
     /**
      * Fetch records that have <code>help_keyword_id BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpRelation> fetchRangeOfHelpKeywordId(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(HelpRelation.HELP_RELATION.HELP_KEYWORD_ID, lowerInclusive, upperInclusive);
+    public List<HelpRelation> fetchRangeOfJHelpKeywordId(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JHelpRelation.HELP_RELATION.HELP_KEYWORD_ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>help_keyword_id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpRelation> fetchByHelpKeywordId(UInteger... values) {
-        return fetch(HelpRelation.HELP_RELATION.HELP_KEYWORD_ID, values);
+    public List<HelpRelation> fetchByJHelpKeywordId(UInteger... values) {
+        return fetch(JHelpRelation.HELP_RELATION.HELP_KEYWORD_ID, values);
     }
 }

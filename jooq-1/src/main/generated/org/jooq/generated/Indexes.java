@@ -6,12 +6,12 @@ package org.jooq.generated;
 
 import org.jooq.Index;
 import org.jooq.OrderField;
-import org.jooq.generated.tables.Db;
-import org.jooq.generated.tables.ProcsPriv;
-import org.jooq.generated.tables.ProxiesPriv;
-import org.jooq.generated.tables.ReplicationAsynchronousConnectionFailover;
-import org.jooq.generated.tables.ReplicationGroupMemberActions;
-import org.jooq.generated.tables.TablesPriv;
+import org.jooq.generated.tables.JDb;
+import org.jooq.generated.tables.JProcsPriv;
+import org.jooq.generated.tables.JProxiesPriv;
+import org.jooq.generated.tables.JReplicationAsynchronousConnectionFailover;
+import org.jooq.generated.tables.JReplicationGroupMemberActions;
+import org.jooq.generated.tables.JTablesPriv;
 import org.jooq.impl.DSL;
 import org.jooq.impl.Internal;
 
@@ -26,10 +26,10 @@ public class Indexes {
     // INDEX definitions
     // -------------------------------------------------------------------------
 
-    public static final Index REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_CHANNEL_NAME = Internal.createIndex(DSL.name("Channel_name"), ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER, new OrderField[] { ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.CHANNEL_NAME, ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.MANAGED_NAME }, false);
-    public static final Index REPLICATION_GROUP_MEMBER_ACTIONS_EVENT = Internal.createIndex(DSL.name("event"), ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS, new OrderField[] { ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.EVENT }, false);
-    public static final Index PROCS_PRIV_GRANTOR = Internal.createIndex(DSL.name("Grantor"), ProcsPriv.PROCS_PRIV, new OrderField[] { ProcsPriv.PROCS_PRIV.GRANTOR }, false);
-    public static final Index PROXIES_PRIV_GRANTOR = Internal.createIndex(DSL.name("Grantor"), ProxiesPriv.PROXIES_PRIV, new OrderField[] { ProxiesPriv.PROXIES_PRIV.GRANTOR }, false);
-    public static final Index TABLES_PRIV_GRANTOR = Internal.createIndex(DSL.name("Grantor"), TablesPriv.TABLES_PRIV, new OrderField[] { TablesPriv.TABLES_PRIV.GRANTOR }, false);
-    public static final Index DB_USER = Internal.createIndex(DSL.name("User"), Db.DB, new OrderField[] { Db.DB.USER }, false);
+    public static final Index REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_CHANNEL_NAME = Internal.createIndex(DSL.name("Channel_name"), JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER, new OrderField[] { JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.CHANNEL_NAME, JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.MANAGED_NAME }, false);
+    public static final Index REPLICATION_GROUP_MEMBER_ACTIONS_EVENT = Internal.createIndex(DSL.name("event"), JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS, new OrderField[] { JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.EVENT }, false);
+    public static final Index PROCS_PRIV_GRANTOR = Internal.createIndex(DSL.name("Grantor"), JProcsPriv.PROCS_PRIV, new OrderField[] { JProcsPriv.PROCS_PRIV.GRANTOR }, false);
+    public static final Index PROXIES_PRIV_GRANTOR = Internal.createIndex(DSL.name("Grantor"), JProxiesPriv.PROXIES_PRIV, new OrderField[] { JProxiesPriv.PROXIES_PRIV.GRANTOR }, false);
+    public static final Index TABLES_PRIV_GRANTOR = Internal.createIndex(DSL.name("Grantor"), JTablesPriv.TABLES_PRIV, new OrderField[] { JTablesPriv.TABLES_PRIV.GRANTOR }, false);
+    public static final Index DB_USER = Internal.createIndex(DSL.name("User"), JDb.DB, new OrderField[] { JDb.DB.USER }, false);
 }

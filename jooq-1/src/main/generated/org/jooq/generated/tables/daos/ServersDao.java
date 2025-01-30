@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.jooq.Configuration;
-import org.jooq.generated.tables.Servers;
+import org.jooq.generated.tables.JServers;
+import org.jooq.generated.tables.pojos.Servers;
 import org.jooq.generated.tables.records.ServersRecord;
 import org.jooq.impl.DAOImpl;
 
@@ -17,24 +18,24 @@ import org.jooq.impl.DAOImpl;
  * MySQL Foreign Servers table
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class ServersDao extends DAOImpl<ServersRecord, org.jooq.generated.tables.pojos.Servers, String> {
+public class ServersDao extends DAOImpl<ServersRecord, Servers, String> {
 
     /**
      * Create a new ServersDao without any configuration
      */
     public ServersDao() {
-        super(Servers.SERVERS, org.jooq.generated.tables.pojos.Servers.class);
+        super(JServers.SERVERS, Servers.class);
     }
 
     /**
      * Create a new ServersDao with an attached configuration
      */
     public ServersDao(Configuration configuration) {
-        super(Servers.SERVERS, org.jooq.generated.tables.pojos.Servers.class, configuration);
+        super(JServers.SERVERS, Servers.class, configuration);
     }
 
     @Override
-    public String getId(org.jooq.generated.tables.pojos.Servers object) {
+    public String getId(Servers object) {
         return object.getServerName();
     }
 
@@ -42,148 +43,148 @@ public class ServersDao extends DAOImpl<ServersRecord, org.jooq.generated.tables
      * Fetch records that have <code>Server_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchRangeOfServerName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Servers.SERVERS.SERVER_NAME, lowerInclusive, upperInclusive);
+    public List<Servers> fetchRangeOfJServerName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JServers.SERVERS.SERVER_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Server_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchByServerName(String... values) {
-        return fetch(Servers.SERVERS.SERVER_NAME, values);
+    public List<Servers> fetchByJServerName(String... values) {
+        return fetch(JServers.SERVERS.SERVER_NAME, values);
     }
 
     /**
      * Fetch a unique record that has <code>Server_name = value</code>
      */
-    public org.jooq.generated.tables.pojos.Servers fetchOneByServerName(String value) {
-        return fetchOne(Servers.SERVERS.SERVER_NAME, value);
+    public Servers fetchOneByJServerName(String value) {
+        return fetchOne(JServers.SERVERS.SERVER_NAME, value);
     }
 
     /**
      * Fetch a unique record that has <code>Server_name = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.Servers> fetchOptionalByServerName(String value) {
-        return fetchOptional(Servers.SERVERS.SERVER_NAME, value);
+    public Optional<Servers> fetchOptionalByJServerName(String value) {
+        return fetchOptional(JServers.SERVERS.SERVER_NAME, value);
     }
 
     /**
      * Fetch records that have <code>Host BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchRangeOfHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Servers.SERVERS.HOST, lowerInclusive, upperInclusive);
+    public List<Servers> fetchRangeOfJHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JServers.SERVERS.HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Host IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchByHost(String... values) {
-        return fetch(Servers.SERVERS.HOST, values);
+    public List<Servers> fetchByJHost(String... values) {
+        return fetch(JServers.SERVERS.HOST, values);
     }
 
     /**
      * Fetch records that have <code>Db BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchRangeOfDb(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Servers.SERVERS.DB, lowerInclusive, upperInclusive);
+    public List<Servers> fetchRangeOfJDb(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JServers.SERVERS.DB, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Db IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchByDb(String... values) {
-        return fetch(Servers.SERVERS.DB, values);
+    public List<Servers> fetchByJDb(String... values) {
+        return fetch(JServers.SERVERS.DB, values);
     }
 
     /**
      * Fetch records that have <code>Username BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchRangeOfUsername(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Servers.SERVERS.USERNAME, lowerInclusive, upperInclusive);
+    public List<Servers> fetchRangeOfJUsername(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JServers.SERVERS.USERNAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Username IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchByUsername(String... values) {
-        return fetch(Servers.SERVERS.USERNAME, values);
+    public List<Servers> fetchByJUsername(String... values) {
+        return fetch(JServers.SERVERS.USERNAME, values);
     }
 
     /**
      * Fetch records that have <code>Password BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchRangeOfPassword(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Servers.SERVERS.PASSWORD, lowerInclusive, upperInclusive);
+    public List<Servers> fetchRangeOfJPassword(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JServers.SERVERS.PASSWORD, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Password IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchByPassword(String... values) {
-        return fetch(Servers.SERVERS.PASSWORD, values);
+    public List<Servers> fetchByJPassword(String... values) {
+        return fetch(JServers.SERVERS.PASSWORD, values);
     }
 
     /**
      * Fetch records that have <code>Port BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchRangeOfPort(Integer lowerInclusive, Integer upperInclusive) {
-        return fetchRange(Servers.SERVERS.PORT, lowerInclusive, upperInclusive);
+    public List<Servers> fetchRangeOfJPort(Integer lowerInclusive, Integer upperInclusive) {
+        return fetchRange(JServers.SERVERS.PORT, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Port IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchByPort(Integer... values) {
-        return fetch(Servers.SERVERS.PORT, values);
+    public List<Servers> fetchByJPort(Integer... values) {
+        return fetch(JServers.SERVERS.PORT, values);
     }
 
     /**
      * Fetch records that have <code>Socket BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchRangeOfSocket(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Servers.SERVERS.SOCKET, lowerInclusive, upperInclusive);
+    public List<Servers> fetchRangeOfJSocket(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JServers.SERVERS.SOCKET, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Socket IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchBySocket(String... values) {
-        return fetch(Servers.SERVERS.SOCKET, values);
+    public List<Servers> fetchByJSocket(String... values) {
+        return fetch(JServers.SERVERS.SOCKET, values);
     }
 
     /**
      * Fetch records that have <code>Wrapper BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchRangeOfWrapper(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Servers.SERVERS.WRAPPER, lowerInclusive, upperInclusive);
+    public List<Servers> fetchRangeOfJWrapper(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JServers.SERVERS.WRAPPER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Wrapper IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchByWrapper(String... values) {
-        return fetch(Servers.SERVERS.WRAPPER, values);
+    public List<Servers> fetchByJWrapper(String... values) {
+        return fetch(JServers.SERVERS.WRAPPER, values);
     }
 
     /**
      * Fetch records that have <code>Owner BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchRangeOfOwner(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Servers.SERVERS.OWNER, lowerInclusive, upperInclusive);
+    public List<Servers> fetchRangeOfJOwner(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JServers.SERVERS.OWNER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Owner IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Servers> fetchByOwner(String... values) {
-        return fetch(Servers.SERVERS.OWNER, values);
+    public List<Servers> fetchByJOwner(String... values) {
+        return fetch(JServers.SERVERS.OWNER, values);
     }
 }

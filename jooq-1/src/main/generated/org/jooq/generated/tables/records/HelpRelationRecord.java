@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record2;
-import org.jooq.generated.tables.HelpRelation;
+import org.jooq.generated.tables.JHelpRelation;
+import org.jooq.generated.tables.pojos.HelpRelation;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 
@@ -65,14 +66,14 @@ public class HelpRelationRecord extends UpdatableRecordImpl<HelpRelationRecord> 
      * Create a detached HelpRelationRecord
      */
     public HelpRelationRecord() {
-        super(HelpRelation.HELP_RELATION);
+        super(JHelpRelation.HELP_RELATION);
     }
 
     /**
      * Create a detached, initialised HelpRelationRecord
      */
     public HelpRelationRecord(UInteger helpTopicId, UInteger helpKeywordId) {
-        super(HelpRelation.HELP_RELATION);
+        super(JHelpRelation.HELP_RELATION);
 
         setHelpTopicId(helpTopicId);
         setHelpKeywordId(helpKeywordId);
@@ -82,8 +83,8 @@ public class HelpRelationRecord extends UpdatableRecordImpl<HelpRelationRecord> 
     /**
      * Create a detached, initialised HelpRelationRecord
      */
-    public HelpRelationRecord(org.jooq.generated.tables.pojos.HelpRelation value) {
-        super(HelpRelation.HELP_RELATION);
+    public HelpRelationRecord(HelpRelation value) {
+        super(JHelpRelation.HELP_RELATION);
 
         if (value != null) {
             setHelpTopicId(value.getHelpTopicId());

@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record5;
-import org.jooq.generated.tables.ReplicationAsynchronousConnectionFailover;
+import org.jooq.generated.tables.JReplicationAsynchronousConnectionFailover;
+import org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UByte;
 import org.jooq.types.UInteger;
@@ -162,7 +163,7 @@ public class ReplicationAsynchronousConnectionFailoverRecord extends UpdatableRe
      * Create a detached ReplicationAsynchronousConnectionFailoverRecord
      */
     public ReplicationAsynchronousConnectionFailoverRecord() {
-        super(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER);
+        super(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER);
     }
 
     /**
@@ -170,7 +171,7 @@ public class ReplicationAsynchronousConnectionFailoverRecord extends UpdatableRe
      * ReplicationAsynchronousConnectionFailoverRecord
      */
     public ReplicationAsynchronousConnectionFailoverRecord(String channelName, String host, UInteger port, String networkNamespace, UByte weight, String managedName) {
-        super(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER);
+        super(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER);
 
         setChannelName(channelName);
         setHost(host);
@@ -185,8 +186,8 @@ public class ReplicationAsynchronousConnectionFailoverRecord extends UpdatableRe
      * Create a detached, initialised
      * ReplicationAsynchronousConnectionFailoverRecord
      */
-    public ReplicationAsynchronousConnectionFailoverRecord(org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover value) {
-        super(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER);
+    public ReplicationAsynchronousConnectionFailoverRecord(ReplicationAsynchronousConnectionFailover value) {
+        super(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER);
 
         if (value != null) {
             setChannelName(value.getChannelName());

@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record2;
-import org.jooq.generated.tables.TimeZoneTransition;
+import org.jooq.generated.tables.JTimeZoneTransition;
+import org.jooq.generated.tables.pojos.TimeZoneTransition;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 
@@ -80,14 +81,14 @@ public class TimeZoneTransitionRecord extends UpdatableRecordImpl<TimeZoneTransi
      * Create a detached TimeZoneTransitionRecord
      */
     public TimeZoneTransitionRecord() {
-        super(TimeZoneTransition.TIME_ZONE_TRANSITION);
+        super(JTimeZoneTransition.TIME_ZONE_TRANSITION);
     }
 
     /**
      * Create a detached, initialised TimeZoneTransitionRecord
      */
     public TimeZoneTransitionRecord(UInteger timeZoneId, Long transitionTime, UInteger transitionTypeId) {
-        super(TimeZoneTransition.TIME_ZONE_TRANSITION);
+        super(JTimeZoneTransition.TIME_ZONE_TRANSITION);
 
         setTimeZoneId(timeZoneId);
         setTransitionTime(transitionTime);
@@ -98,8 +99,8 @@ public class TimeZoneTransitionRecord extends UpdatableRecordImpl<TimeZoneTransi
     /**
      * Create a detached, initialised TimeZoneTransitionRecord
      */
-    public TimeZoneTransitionRecord(org.jooq.generated.tables.pojos.TimeZoneTransition value) {
-        super(TimeZoneTransition.TIME_ZONE_TRANSITION);
+    public TimeZoneTransitionRecord(TimeZoneTransition value) {
+        super(JTimeZoneTransition.TIME_ZONE_TRANSITION);
 
         if (value != null) {
             setTimeZoneId(value.getTimeZoneId());

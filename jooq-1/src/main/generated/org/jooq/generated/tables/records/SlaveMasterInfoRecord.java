@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.SlaveMasterInfo;
+import org.jooq.generated.tables.JSlaveMasterInfo;
+import org.jooq.generated.tables.pojos.SlaveMasterInfo;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 import org.jooq.types.ULong;
@@ -605,14 +606,14 @@ public class SlaveMasterInfoRecord extends UpdatableRecordImpl<SlaveMasterInfoRe
      * Create a detached SlaveMasterInfoRecord
      */
     public SlaveMasterInfoRecord() {
-        super(SlaveMasterInfo.SLAVE_MASTER_INFO);
+        super(JSlaveMasterInfo.SLAVE_MASTER_INFO);
     }
 
     /**
      * Create a detached, initialised SlaveMasterInfoRecord
      */
     public SlaveMasterInfoRecord(UInteger numberOfLines, String masterLogName, ULong masterLogPos, String host, String userName, String userPassword, UInteger port, UInteger connectRetry, Byte enabledSsl, String sslCa, String sslCapath, String sslCert, String sslCipher, String sslKey, Byte sslVerifyServerCert, Double heartbeat, String bind, String ignoredServerIds, String uuid, ULong retryCount, String sslCrl, String sslCrlpath, Byte enabledAutoPosition, String channelName, String tlsVersion, String publicKeyPath, Byte getPublicKey, String networkNamespace, String masterCompressionAlgorithm, UInteger masterZstdCompressionLevel, String tlsCiphersuites, Byte sourceConnectionAutoFailover, Byte gtidOnly) {
-        super(SlaveMasterInfo.SLAVE_MASTER_INFO);
+        super(JSlaveMasterInfo.SLAVE_MASTER_INFO);
 
         setNumberOfLines(numberOfLines);
         setMasterLogName(masterLogName);
@@ -653,8 +654,8 @@ public class SlaveMasterInfoRecord extends UpdatableRecordImpl<SlaveMasterInfoRe
     /**
      * Create a detached, initialised SlaveMasterInfoRecord
      */
-    public SlaveMasterInfoRecord(org.jooq.generated.tables.pojos.SlaveMasterInfo value) {
-        super(SlaveMasterInfo.SLAVE_MASTER_INFO);
+    public SlaveMasterInfoRecord(SlaveMasterInfo value) {
+        super(JSlaveMasterInfo.SLAVE_MASTER_INFO);
 
         if (value != null) {
             setNumberOfLines(value.getNumberOfLines());

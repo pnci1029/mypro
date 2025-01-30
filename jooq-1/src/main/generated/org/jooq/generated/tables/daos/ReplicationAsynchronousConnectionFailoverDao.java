@@ -8,7 +8,8 @@ import java.util.List;
 
 import org.jooq.Configuration;
 import org.jooq.Record5;
-import org.jooq.generated.tables.ReplicationAsynchronousConnectionFailover;
+import org.jooq.generated.tables.JReplicationAsynchronousConnectionFailover;
+import org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover;
 import org.jooq.generated.tables.records.ReplicationAsynchronousConnectionFailoverRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UByte;
@@ -19,14 +20,14 @@ import org.jooq.types.UInteger;
  * The source configuration details
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class ReplicationAsynchronousConnectionFailoverDao extends DAOImpl<ReplicationAsynchronousConnectionFailoverRecord, org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover, Record5<String, String, UInteger, String, String>> {
+public class ReplicationAsynchronousConnectionFailoverDao extends DAOImpl<ReplicationAsynchronousConnectionFailoverRecord, ReplicationAsynchronousConnectionFailover, Record5<String, String, UInteger, String, String>> {
 
     /**
      * Create a new ReplicationAsynchronousConnectionFailoverDao without any
      * configuration
      */
     public ReplicationAsynchronousConnectionFailoverDao() {
-        super(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER, org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover.class);
+        super(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER, ReplicationAsynchronousConnectionFailover.class);
     }
 
     /**
@@ -34,11 +35,11 @@ public class ReplicationAsynchronousConnectionFailoverDao extends DAOImpl<Replic
      * attached configuration
      */
     public ReplicationAsynchronousConnectionFailoverDao(Configuration configuration) {
-        super(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER, org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover.class, configuration);
+        super(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER, ReplicationAsynchronousConnectionFailover.class, configuration);
     }
 
     @Override
-    public Record5<String, String, UInteger, String, String> getId(org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover object) {
+    public Record5<String, String, UInteger, String, String> getId(ReplicationAsynchronousConnectionFailover object) {
         return compositeKeyRecord(object.getChannelName(), object.getHost(), object.getPort(), object.getNetworkNamespace(), object.getManagedName());
     }
 
@@ -46,89 +47,89 @@ public class ReplicationAsynchronousConnectionFailoverDao extends DAOImpl<Replic
      * Fetch records that have <code>Channel_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchRangeOfChannelName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.CHANNEL_NAME, lowerInclusive, upperInclusive);
+    public List<ReplicationAsynchronousConnectionFailover> fetchRangeOfJChannelName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.CHANNEL_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Channel_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchByChannelName(String... values) {
-        return fetch(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.CHANNEL_NAME, values);
+    public List<ReplicationAsynchronousConnectionFailover> fetchByJChannelName(String... values) {
+        return fetch(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.CHANNEL_NAME, values);
     }
 
     /**
      * Fetch records that have <code>Host BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchRangeOfHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.HOST, lowerInclusive, upperInclusive);
+    public List<ReplicationAsynchronousConnectionFailover> fetchRangeOfJHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Host IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchByHost(String... values) {
-        return fetch(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.HOST, values);
+    public List<ReplicationAsynchronousConnectionFailover> fetchByJHost(String... values) {
+        return fetch(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.HOST, values);
     }
 
     /**
      * Fetch records that have <code>Port BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchRangeOfPort(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.PORT, lowerInclusive, upperInclusive);
+    public List<ReplicationAsynchronousConnectionFailover> fetchRangeOfJPort(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.PORT, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Port IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchByPort(UInteger... values) {
-        return fetch(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.PORT, values);
+    public List<ReplicationAsynchronousConnectionFailover> fetchByJPort(UInteger... values) {
+        return fetch(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.PORT, values);
     }
 
     /**
      * Fetch records that have <code>Network_namespace BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchRangeOfNetworkNamespace(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.NETWORK_NAMESPACE, lowerInclusive, upperInclusive);
+    public List<ReplicationAsynchronousConnectionFailover> fetchRangeOfJNetworkNamespace(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.NETWORK_NAMESPACE, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Network_namespace IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchByNetworkNamespace(String... values) {
-        return fetch(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.NETWORK_NAMESPACE, values);
+    public List<ReplicationAsynchronousConnectionFailover> fetchByJNetworkNamespace(String... values) {
+        return fetch(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.NETWORK_NAMESPACE, values);
     }
 
     /**
      * Fetch records that have <code>Weight BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchRangeOfWeight(UByte lowerInclusive, UByte upperInclusive) {
-        return fetchRange(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.WEIGHT, lowerInclusive, upperInclusive);
+    public List<ReplicationAsynchronousConnectionFailover> fetchRangeOfJWeight(UByte lowerInclusive, UByte upperInclusive) {
+        return fetchRange(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.WEIGHT, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Weight IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchByWeight(UByte... values) {
-        return fetch(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.WEIGHT, values);
+    public List<ReplicationAsynchronousConnectionFailover> fetchByJWeight(UByte... values) {
+        return fetch(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.WEIGHT, values);
     }
 
     /**
      * Fetch records that have <code>Managed_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchRangeOfManagedName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.MANAGED_NAME, lowerInclusive, upperInclusive);
+    public List<ReplicationAsynchronousConnectionFailover> fetchRangeOfJManagedName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.MANAGED_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Managed_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailover> fetchByManagedName(String... values) {
-        return fetch(ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.MANAGED_NAME, values);
+    public List<ReplicationAsynchronousConnectionFailover> fetchByJManagedName(String... values) {
+        return fetch(JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER.MANAGED_NAME, values);
     }
 }

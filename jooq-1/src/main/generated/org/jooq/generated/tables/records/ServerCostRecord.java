@@ -7,7 +7,8 @@ package org.jooq.generated.tables.records;
 import java.time.LocalDateTime;
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.ServerCost;
+import org.jooq.generated.tables.JServerCost;
+import org.jooq.generated.tables.pojos.ServerCost;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -111,14 +112,14 @@ public class ServerCostRecord extends UpdatableRecordImpl<ServerCostRecord> {
      * Create a detached ServerCostRecord
      */
     public ServerCostRecord() {
-        super(ServerCost.SERVER_COST);
+        super(JServerCost.SERVER_COST);
     }
 
     /**
      * Create a detached, initialised ServerCostRecord
      */
     public ServerCostRecord(String costName, Double costValue, LocalDateTime lastUpdate, String comment, Double defaultValue) {
-        super(ServerCost.SERVER_COST);
+        super(JServerCost.SERVER_COST);
 
         setCostName(costName);
         setCostValue(costValue);
@@ -131,8 +132,8 @@ public class ServerCostRecord extends UpdatableRecordImpl<ServerCostRecord> {
     /**
      * Create a detached, initialised ServerCostRecord
      */
-    public ServerCostRecord(org.jooq.generated.tables.pojos.ServerCost value) {
-        super(ServerCost.SERVER_COST);
+    public ServerCostRecord(ServerCost value) {
+        super(JServerCost.SERVER_COST);
 
         if (value != null) {
             setCostName(value.getCostName());

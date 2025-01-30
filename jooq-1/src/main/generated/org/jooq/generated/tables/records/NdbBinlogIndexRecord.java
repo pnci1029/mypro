@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record3;
-import org.jooq.generated.tables.NdbBinlogIndex;
+import org.jooq.generated.tables.JNdbBinlogIndex;
+import org.jooq.generated.tables.pojos.NdbBinlogIndex;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 import org.jooq.types.ULong;
@@ -216,14 +217,14 @@ public class NdbBinlogIndexRecord extends UpdatableRecordImpl<NdbBinlogIndexReco
      * Create a detached NdbBinlogIndexRecord
      */
     public NdbBinlogIndexRecord() {
-        super(NdbBinlogIndex.NDB_BINLOG_INDEX);
+        super(JNdbBinlogIndex.NDB_BINLOG_INDEX);
     }
 
     /**
      * Create a detached, initialised NdbBinlogIndexRecord
      */
     public NdbBinlogIndexRecord(ULong position, String file, ULong epoch, UInteger inserts, UInteger updates, UInteger deletes, UInteger schemaops, UInteger origServerId, ULong origEpoch, UInteger gci, ULong nextPosition, String nextFile) {
-        super(NdbBinlogIndex.NDB_BINLOG_INDEX);
+        super(JNdbBinlogIndex.NDB_BINLOG_INDEX);
 
         setPosition(position);
         setFile(file);
@@ -243,8 +244,8 @@ public class NdbBinlogIndexRecord extends UpdatableRecordImpl<NdbBinlogIndexReco
     /**
      * Create a detached, initialised NdbBinlogIndexRecord
      */
-    public NdbBinlogIndexRecord(org.jooq.generated.tables.pojos.NdbBinlogIndex value) {
-        super(NdbBinlogIndex.NDB_BINLOG_INDEX);
+    public NdbBinlogIndexRecord(NdbBinlogIndex value) {
+        super(JNdbBinlogIndex.NDB_BINLOG_INDEX);
 
         if (value != null) {
             setPosition(value.getPosition());

@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.ReplicationGroupConfigurationVersion;
+import org.jooq.generated.tables.JReplicationGroupConfigurationVersion;
+import org.jooq.generated.tables.pojos.ReplicationGroupConfigurationVersion;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.ULong;
 
@@ -73,14 +74,14 @@ public class ReplicationGroupConfigurationVersionRecord extends UpdatableRecordI
      * Create a detached ReplicationGroupConfigurationVersionRecord
      */
     public ReplicationGroupConfigurationVersionRecord() {
-        super(ReplicationGroupConfigurationVersion.REPLICATION_GROUP_CONFIGURATION_VERSION);
+        super(JReplicationGroupConfigurationVersion.REPLICATION_GROUP_CONFIGURATION_VERSION);
     }
 
     /**
      * Create a detached, initialised ReplicationGroupConfigurationVersionRecord
      */
     public ReplicationGroupConfigurationVersionRecord(String name, ULong version) {
-        super(ReplicationGroupConfigurationVersion.REPLICATION_GROUP_CONFIGURATION_VERSION);
+        super(JReplicationGroupConfigurationVersion.REPLICATION_GROUP_CONFIGURATION_VERSION);
 
         setName(name);
         setVersion(version);
@@ -90,8 +91,8 @@ public class ReplicationGroupConfigurationVersionRecord extends UpdatableRecordI
     /**
      * Create a detached, initialised ReplicationGroupConfigurationVersionRecord
      */
-    public ReplicationGroupConfigurationVersionRecord(org.jooq.generated.tables.pojos.ReplicationGroupConfigurationVersion value) {
-        super(ReplicationGroupConfigurationVersion.REPLICATION_GROUP_CONFIGURATION_VERSION);
+    public ReplicationGroupConfigurationVersionRecord(ReplicationGroupConfigurationVersion value) {
+        super(JReplicationGroupConfigurationVersion.REPLICATION_GROUP_CONFIGURATION_VERSION);
 
         if (value != null) {
             setName(value.getName());

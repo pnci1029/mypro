@@ -9,7 +9,8 @@ import java.util.List;
 import org.jooq.Configuration;
 import org.jooq.Record4;
 import org.jooq.generated.enums.RoleEdgesWithAdminOption;
-import org.jooq.generated.tables.RoleEdges;
+import org.jooq.generated.tables.JRoleEdges;
+import org.jooq.generated.tables.pojos.RoleEdges;
 import org.jooq.generated.tables.records.RoleEdgesRecord;
 import org.jooq.impl.DAOImpl;
 
@@ -18,24 +19,24 @@ import org.jooq.impl.DAOImpl;
  * Role hierarchy and role grants
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class RoleEdgesDao extends DAOImpl<RoleEdgesRecord, org.jooq.generated.tables.pojos.RoleEdges, Record4<String, String, String, String>> {
+public class RoleEdgesDao extends DAOImpl<RoleEdgesRecord, RoleEdges, Record4<String, String, String, String>> {
 
     /**
      * Create a new RoleEdgesDao without any configuration
      */
     public RoleEdgesDao() {
-        super(RoleEdges.ROLE_EDGES, org.jooq.generated.tables.pojos.RoleEdges.class);
+        super(JRoleEdges.ROLE_EDGES, RoleEdges.class);
     }
 
     /**
      * Create a new RoleEdgesDao with an attached configuration
      */
     public RoleEdgesDao(Configuration configuration) {
-        super(RoleEdges.ROLE_EDGES, org.jooq.generated.tables.pojos.RoleEdges.class, configuration);
+        super(JRoleEdges.ROLE_EDGES, RoleEdges.class, configuration);
     }
 
     @Override
-    public Record4<String, String, String, String> getId(org.jooq.generated.tables.pojos.RoleEdges object) {
+    public Record4<String, String, String, String> getId(RoleEdges object) {
         return compositeKeyRecord(object.getFromHost(), object.getFromUser(), object.getToHost(), object.getToUser());
     }
 
@@ -43,74 +44,74 @@ public class RoleEdgesDao extends DAOImpl<RoleEdgesRecord, org.jooq.generated.ta
      * Fetch records that have <code>FROM_HOST BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.RoleEdges> fetchRangeOfFromHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(RoleEdges.ROLE_EDGES.FROM_HOST, lowerInclusive, upperInclusive);
+    public List<RoleEdges> fetchRangeOfJFromHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JRoleEdges.ROLE_EDGES.FROM_HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>FROM_HOST IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.RoleEdges> fetchByFromHost(String... values) {
-        return fetch(RoleEdges.ROLE_EDGES.FROM_HOST, values);
+    public List<RoleEdges> fetchByJFromHost(String... values) {
+        return fetch(JRoleEdges.ROLE_EDGES.FROM_HOST, values);
     }
 
     /**
      * Fetch records that have <code>FROM_USER BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.RoleEdges> fetchRangeOfFromUser(String lowerInclusive, String upperInclusive) {
-        return fetchRange(RoleEdges.ROLE_EDGES.FROM_USER, lowerInclusive, upperInclusive);
+    public List<RoleEdges> fetchRangeOfJFromUser(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JRoleEdges.ROLE_EDGES.FROM_USER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>FROM_USER IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.RoleEdges> fetchByFromUser(String... values) {
-        return fetch(RoleEdges.ROLE_EDGES.FROM_USER, values);
+    public List<RoleEdges> fetchByJFromUser(String... values) {
+        return fetch(JRoleEdges.ROLE_EDGES.FROM_USER, values);
     }
 
     /**
      * Fetch records that have <code>TO_HOST BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.RoleEdges> fetchRangeOfToHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(RoleEdges.ROLE_EDGES.TO_HOST, lowerInclusive, upperInclusive);
+    public List<RoleEdges> fetchRangeOfJToHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JRoleEdges.ROLE_EDGES.TO_HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>TO_HOST IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.RoleEdges> fetchByToHost(String... values) {
-        return fetch(RoleEdges.ROLE_EDGES.TO_HOST, values);
+    public List<RoleEdges> fetchByJToHost(String... values) {
+        return fetch(JRoleEdges.ROLE_EDGES.TO_HOST, values);
     }
 
     /**
      * Fetch records that have <code>TO_USER BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.RoleEdges> fetchRangeOfToUser(String lowerInclusive, String upperInclusive) {
-        return fetchRange(RoleEdges.ROLE_EDGES.TO_USER, lowerInclusive, upperInclusive);
+    public List<RoleEdges> fetchRangeOfJToUser(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JRoleEdges.ROLE_EDGES.TO_USER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>TO_USER IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.RoleEdges> fetchByToUser(String... values) {
-        return fetch(RoleEdges.ROLE_EDGES.TO_USER, values);
+    public List<RoleEdges> fetchByJToUser(String... values) {
+        return fetch(JRoleEdges.ROLE_EDGES.TO_USER, values);
     }
 
     /**
      * Fetch records that have <code>WITH_ADMIN_OPTION BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.RoleEdges> fetchRangeOfWithAdminOption(RoleEdgesWithAdminOption lowerInclusive, RoleEdgesWithAdminOption upperInclusive) {
-        return fetchRange(RoleEdges.ROLE_EDGES.WITH_ADMIN_OPTION, lowerInclusive, upperInclusive);
+    public List<RoleEdges> fetchRangeOfJWithAdminOption(RoleEdgesWithAdminOption lowerInclusive, RoleEdgesWithAdminOption upperInclusive) {
+        return fetchRange(JRoleEdges.ROLE_EDGES.WITH_ADMIN_OPTION, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>WITH_ADMIN_OPTION IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.RoleEdges> fetchByWithAdminOption(RoleEdgesWithAdminOption... values) {
-        return fetch(RoleEdges.ROLE_EDGES.WITH_ADMIN_OPTION, values);
+    public List<RoleEdges> fetchByJWithAdminOption(RoleEdgesWithAdminOption... values) {
+        return fetch(JRoleEdges.ROLE_EDGES.WITH_ADMIN_OPTION, values);
     }
 }

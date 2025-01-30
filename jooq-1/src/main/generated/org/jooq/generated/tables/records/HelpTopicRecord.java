@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.HelpTopic;
+import org.jooq.generated.tables.JHelpTopic;
+import org.jooq.generated.tables.pojos.HelpTopic;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 import org.jooq.types.UShort;
@@ -126,14 +127,14 @@ public class HelpTopicRecord extends UpdatableRecordImpl<HelpTopicRecord> {
      * Create a detached HelpTopicRecord
      */
     public HelpTopicRecord() {
-        super(HelpTopic.HELP_TOPIC);
+        super(JHelpTopic.HELP_TOPIC);
     }
 
     /**
      * Create a detached, initialised HelpTopicRecord
      */
     public HelpTopicRecord(UInteger helpTopicId, String name, UShort helpCategoryId, String description, String example, String url) {
-        super(HelpTopic.HELP_TOPIC);
+        super(JHelpTopic.HELP_TOPIC);
 
         setHelpTopicId(helpTopicId);
         setName(name);
@@ -147,8 +148,8 @@ public class HelpTopicRecord extends UpdatableRecordImpl<HelpTopicRecord> {
     /**
      * Create a detached, initialised HelpTopicRecord
      */
-    public HelpTopicRecord(org.jooq.generated.tables.pojos.HelpTopic value) {
-        super(HelpTopic.HELP_TOPIC);
+    public HelpTopicRecord(HelpTopic value) {
+        super(JHelpTopic.HELP_TOPIC);
 
         if (value != null) {
             setHelpTopicId(value.getHelpTopicId());

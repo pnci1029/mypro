@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.Plugin;
+import org.jooq.generated.tables.JPlugin;
+import org.jooq.generated.tables.pojos.Plugin;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -64,14 +65,14 @@ public class PluginRecord extends UpdatableRecordImpl<PluginRecord> {
      * Create a detached PluginRecord
      */
     public PluginRecord() {
-        super(Plugin.PLUGIN);
+        super(JPlugin.PLUGIN);
     }
 
     /**
      * Create a detached, initialised PluginRecord
      */
     public PluginRecord(String name, String dl) {
-        super(Plugin.PLUGIN);
+        super(JPlugin.PLUGIN);
 
         setName(name);
         setDl(dl);
@@ -81,8 +82,8 @@ public class PluginRecord extends UpdatableRecordImpl<PluginRecord> {
     /**
      * Create a detached, initialised PluginRecord
      */
-    public PluginRecord(org.jooq.generated.tables.pojos.Plugin value) {
-        super(Plugin.PLUGIN);
+    public PluginRecord(Plugin value) {
+        super(JPlugin.PLUGIN);
 
         if (value != null) {
             setName(value.getName());

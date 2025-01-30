@@ -8,7 +8,8 @@ import java.util.List;
 
 import org.jooq.Configuration;
 import org.jooq.Record2;
-import org.jooq.generated.tables.SlaveWorkerInfo;
+import org.jooq.generated.tables.JSlaveWorkerInfo;
+import org.jooq.generated.tables.pojos.SlaveWorkerInfo;
 import org.jooq.generated.tables.records.SlaveWorkerInfoRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UInteger;
@@ -19,24 +20,24 @@ import org.jooq.types.ULong;
  * Worker Information
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class SlaveWorkerInfoDao extends DAOImpl<SlaveWorkerInfoRecord, org.jooq.generated.tables.pojos.SlaveWorkerInfo, Record2<String, UInteger>> {
+public class SlaveWorkerInfoDao extends DAOImpl<SlaveWorkerInfoRecord, SlaveWorkerInfo, Record2<String, UInteger>> {
 
     /**
      * Create a new SlaveWorkerInfoDao without any configuration
      */
     public SlaveWorkerInfoDao() {
-        super(SlaveWorkerInfo.SLAVE_WORKER_INFO, org.jooq.generated.tables.pojos.SlaveWorkerInfo.class);
+        super(JSlaveWorkerInfo.SLAVE_WORKER_INFO, SlaveWorkerInfo.class);
     }
 
     /**
      * Create a new SlaveWorkerInfoDao with an attached configuration
      */
     public SlaveWorkerInfoDao(Configuration configuration) {
-        super(SlaveWorkerInfo.SLAVE_WORKER_INFO, org.jooq.generated.tables.pojos.SlaveWorkerInfo.class, configuration);
+        super(JSlaveWorkerInfo.SLAVE_WORKER_INFO, SlaveWorkerInfo.class, configuration);
     }
 
     @Override
-    public Record2<String, UInteger> getId(org.jooq.generated.tables.pojos.SlaveWorkerInfo object) {
+    public Record2<String, UInteger> getId(SlaveWorkerInfo object) {
         return compositeKeyRecord(object.getChannelName(), object.getId());
     }
 
@@ -44,197 +45,197 @@ public class SlaveWorkerInfoDao extends DAOImpl<SlaveWorkerInfoRecord, org.jooq.
      * Fetch records that have <code>Id BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfId(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.ID, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJId(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchById(UInteger... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.ID, values);
+    public List<SlaveWorkerInfo> fetchByJId(UInteger... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.ID, values);
     }
 
     /**
      * Fetch records that have <code>Relay_log_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfRelayLogName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.RELAY_LOG_NAME, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJRelayLogName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.RELAY_LOG_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Relay_log_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByRelayLogName(String... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.RELAY_LOG_NAME, values);
+    public List<SlaveWorkerInfo> fetchByJRelayLogName(String... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.RELAY_LOG_NAME, values);
     }
 
     /**
      * Fetch records that have <code>Relay_log_pos BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfRelayLogPos(ULong lowerInclusive, ULong upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.RELAY_LOG_POS, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJRelayLogPos(ULong lowerInclusive, ULong upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.RELAY_LOG_POS, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Relay_log_pos IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByRelayLogPos(ULong... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.RELAY_LOG_POS, values);
+    public List<SlaveWorkerInfo> fetchByJRelayLogPos(ULong... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.RELAY_LOG_POS, values);
     }
 
     /**
      * Fetch records that have <code>Master_log_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfMasterLogName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.MASTER_LOG_NAME, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJMasterLogName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.MASTER_LOG_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Master_log_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByMasterLogName(String... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.MASTER_LOG_NAME, values);
+    public List<SlaveWorkerInfo> fetchByJMasterLogName(String... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.MASTER_LOG_NAME, values);
     }
 
     /**
      * Fetch records that have <code>Master_log_pos BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfMasterLogPos(ULong lowerInclusive, ULong upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.MASTER_LOG_POS, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJMasterLogPos(ULong lowerInclusive, ULong upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.MASTER_LOG_POS, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Master_log_pos IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByMasterLogPos(ULong... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.MASTER_LOG_POS, values);
+    public List<SlaveWorkerInfo> fetchByJMasterLogPos(ULong... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.MASTER_LOG_POS, values);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_relay_log_name BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfCheckpointRelayLogName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_RELAY_LOG_NAME, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJCheckpointRelayLogName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_RELAY_LOG_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_relay_log_name IN
      * (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByCheckpointRelayLogName(String... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_RELAY_LOG_NAME, values);
+    public List<SlaveWorkerInfo> fetchByJCheckpointRelayLogName(String... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_RELAY_LOG_NAME, values);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_relay_log_pos BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfCheckpointRelayLogPos(ULong lowerInclusive, ULong upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_RELAY_LOG_POS, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJCheckpointRelayLogPos(ULong lowerInclusive, ULong upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_RELAY_LOG_POS, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_relay_log_pos IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByCheckpointRelayLogPos(ULong... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_RELAY_LOG_POS, values);
+    public List<SlaveWorkerInfo> fetchByJCheckpointRelayLogPos(ULong... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_RELAY_LOG_POS, values);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_master_log_name BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfCheckpointMasterLogName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_MASTER_LOG_NAME, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJCheckpointMasterLogName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_MASTER_LOG_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_master_log_name IN
      * (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByCheckpointMasterLogName(String... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_MASTER_LOG_NAME, values);
+    public List<SlaveWorkerInfo> fetchByJCheckpointMasterLogName(String... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_MASTER_LOG_NAME, values);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_master_log_pos BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfCheckpointMasterLogPos(ULong lowerInclusive, ULong upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_MASTER_LOG_POS, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJCheckpointMasterLogPos(ULong lowerInclusive, ULong upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_MASTER_LOG_POS, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_master_log_pos IN
      * (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByCheckpointMasterLogPos(ULong... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_MASTER_LOG_POS, values);
+    public List<SlaveWorkerInfo> fetchByJCheckpointMasterLogPos(ULong... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_MASTER_LOG_POS, values);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_seqno BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfCheckpointSeqno(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_SEQNO, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJCheckpointSeqno(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_SEQNO, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_seqno IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByCheckpointSeqno(UInteger... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_SEQNO, values);
+    public List<SlaveWorkerInfo> fetchByJCheckpointSeqno(UInteger... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_SEQNO, values);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_group_size BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfCheckpointGroupSize(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_GROUP_SIZE, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJCheckpointGroupSize(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_GROUP_SIZE, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_group_size IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByCheckpointGroupSize(UInteger... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_GROUP_SIZE, values);
+    public List<SlaveWorkerInfo> fetchByJCheckpointGroupSize(UInteger... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_GROUP_SIZE, values);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_group_bitmap BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfCheckpointGroupBitmap(byte[] lowerInclusive, byte[] upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_GROUP_BITMAP, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJCheckpointGroupBitmap(byte[] lowerInclusive, byte[] upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_GROUP_BITMAP, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Checkpoint_group_bitmap IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByCheckpointGroupBitmap(byte[]... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_GROUP_BITMAP, values);
+    public List<SlaveWorkerInfo> fetchByJCheckpointGroupBitmap(byte[]... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHECKPOINT_GROUP_BITMAP, values);
     }
 
     /**
      * Fetch records that have <code>Channel_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchRangeOfChannelName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHANNEL_NAME, lowerInclusive, upperInclusive);
+    public List<SlaveWorkerInfo> fetchRangeOfJChannelName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHANNEL_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Channel_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveWorkerInfo> fetchByChannelName(String... values) {
-        return fetch(SlaveWorkerInfo.SLAVE_WORKER_INFO.CHANNEL_NAME, values);
+    public List<SlaveWorkerInfo> fetchByJChannelName(String... values) {
+        return fetch(JSlaveWorkerInfo.SLAVE_WORKER_INFO.CHANNEL_NAME, values);
     }
 }

@@ -9,7 +9,8 @@ import java.util.List;
 
 import org.jooq.Configuration;
 import org.jooq.Record4;
-import org.jooq.generated.tables.ProxiesPriv;
+import org.jooq.generated.tables.JProxiesPriv;
+import org.jooq.generated.tables.pojos.ProxiesPriv;
 import org.jooq.generated.tables.records.ProxiesPrivRecord;
 import org.jooq.impl.DAOImpl;
 
@@ -18,24 +19,24 @@ import org.jooq.impl.DAOImpl;
  * User proxy privileges
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class ProxiesPrivDao extends DAOImpl<ProxiesPrivRecord, org.jooq.generated.tables.pojos.ProxiesPriv, Record4<String, String, String, String>> {
+public class ProxiesPrivDao extends DAOImpl<ProxiesPrivRecord, ProxiesPriv, Record4<String, String, String, String>> {
 
     /**
      * Create a new ProxiesPrivDao without any configuration
      */
     public ProxiesPrivDao() {
-        super(ProxiesPriv.PROXIES_PRIV, org.jooq.generated.tables.pojos.ProxiesPriv.class);
+        super(JProxiesPriv.PROXIES_PRIV, ProxiesPriv.class);
     }
 
     /**
      * Create a new ProxiesPrivDao with an attached configuration
      */
     public ProxiesPrivDao(Configuration configuration) {
-        super(ProxiesPriv.PROXIES_PRIV, org.jooq.generated.tables.pojos.ProxiesPriv.class, configuration);
+        super(JProxiesPriv.PROXIES_PRIV, ProxiesPriv.class, configuration);
     }
 
     @Override
-    public Record4<String, String, String, String> getId(org.jooq.generated.tables.pojos.ProxiesPriv object) {
+    public Record4<String, String, String, String> getId(ProxiesPriv object) {
         return compositeKeyRecord(object.getHost(), object.getUser(), object.getProxiedHost(), object.getProxiedUser());
     }
 
@@ -43,104 +44,104 @@ public class ProxiesPrivDao extends DAOImpl<ProxiesPrivRecord, org.jooq.generate
      * Fetch records that have <code>Host BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchRangeOfHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ProxiesPriv.PROXIES_PRIV.HOST, lowerInclusive, upperInclusive);
+    public List<ProxiesPriv> fetchRangeOfJHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JProxiesPriv.PROXIES_PRIV.HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Host IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchByHost(String... values) {
-        return fetch(ProxiesPriv.PROXIES_PRIV.HOST, values);
+    public List<ProxiesPriv> fetchByJHost(String... values) {
+        return fetch(JProxiesPriv.PROXIES_PRIV.HOST, values);
     }
 
     /**
      * Fetch records that have <code>User BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchRangeOfUser(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ProxiesPriv.PROXIES_PRIV.USER, lowerInclusive, upperInclusive);
+    public List<ProxiesPriv> fetchRangeOfJUser(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JProxiesPriv.PROXIES_PRIV.USER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>User IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchByUser(String... values) {
-        return fetch(ProxiesPriv.PROXIES_PRIV.USER, values);
+    public List<ProxiesPriv> fetchByJUser(String... values) {
+        return fetch(JProxiesPriv.PROXIES_PRIV.USER, values);
     }
 
     /**
      * Fetch records that have <code>Proxied_host BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchRangeOfProxiedHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ProxiesPriv.PROXIES_PRIV.PROXIED_HOST, lowerInclusive, upperInclusive);
+    public List<ProxiesPriv> fetchRangeOfJProxiedHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JProxiesPriv.PROXIES_PRIV.PROXIED_HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Proxied_host IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchByProxiedHost(String... values) {
-        return fetch(ProxiesPriv.PROXIES_PRIV.PROXIED_HOST, values);
+    public List<ProxiesPriv> fetchByJProxiedHost(String... values) {
+        return fetch(JProxiesPriv.PROXIES_PRIV.PROXIED_HOST, values);
     }
 
     /**
      * Fetch records that have <code>Proxied_user BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchRangeOfProxiedUser(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ProxiesPriv.PROXIES_PRIV.PROXIED_USER, lowerInclusive, upperInclusive);
+    public List<ProxiesPriv> fetchRangeOfJProxiedUser(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JProxiesPriv.PROXIES_PRIV.PROXIED_USER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Proxied_user IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchByProxiedUser(String... values) {
-        return fetch(ProxiesPriv.PROXIES_PRIV.PROXIED_USER, values);
+    public List<ProxiesPriv> fetchByJProxiedUser(String... values) {
+        return fetch(JProxiesPriv.PROXIES_PRIV.PROXIED_USER, values);
     }
 
     /**
      * Fetch records that have <code>With_grant BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchRangeOfWithGrant(Byte lowerInclusive, Byte upperInclusive) {
-        return fetchRange(ProxiesPriv.PROXIES_PRIV.WITH_GRANT, lowerInclusive, upperInclusive);
+    public List<ProxiesPriv> fetchRangeOfJWithGrant(Byte lowerInclusive, Byte upperInclusive) {
+        return fetchRange(JProxiesPriv.PROXIES_PRIV.WITH_GRANT, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>With_grant IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchByWithGrant(Byte... values) {
-        return fetch(ProxiesPriv.PROXIES_PRIV.WITH_GRANT, values);
+    public List<ProxiesPriv> fetchByJWithGrant(Byte... values) {
+        return fetch(JProxiesPriv.PROXIES_PRIV.WITH_GRANT, values);
     }
 
     /**
      * Fetch records that have <code>Grantor BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchRangeOfGrantor(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ProxiesPriv.PROXIES_PRIV.GRANTOR, lowerInclusive, upperInclusive);
+    public List<ProxiesPriv> fetchRangeOfJGrantor(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JProxiesPriv.PROXIES_PRIV.GRANTOR, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Grantor IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchByGrantor(String... values) {
-        return fetch(ProxiesPriv.PROXIES_PRIV.GRANTOR, values);
+    public List<ProxiesPriv> fetchByJGrantor(String... values) {
+        return fetch(JProxiesPriv.PROXIES_PRIV.GRANTOR, values);
     }
 
     /**
      * Fetch records that have <code>Timestamp BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchRangeOfTimestamp(LocalDateTime lowerInclusive, LocalDateTime upperInclusive) {
-        return fetchRange(ProxiesPriv.PROXIES_PRIV.TIMESTAMP, lowerInclusive, upperInclusive);
+    public List<ProxiesPriv> fetchRangeOfJTimestamp(LocalDateTime lowerInclusive, LocalDateTime upperInclusive) {
+        return fetchRange(JProxiesPriv.PROXIES_PRIV.TIMESTAMP, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Timestamp IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ProxiesPriv> fetchByTimestamp(LocalDateTime... values) {
-        return fetch(ProxiesPriv.PROXIES_PRIV.TIMESTAMP, values);
+    public List<ProxiesPriv> fetchByJTimestamp(LocalDateTime... values) {
+        return fetch(JProxiesPriv.PROXIES_PRIV.TIMESTAMP, values);
     }
 }

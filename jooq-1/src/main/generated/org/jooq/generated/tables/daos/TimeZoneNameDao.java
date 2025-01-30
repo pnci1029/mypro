@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.jooq.Configuration;
-import org.jooq.generated.tables.TimeZoneName;
+import org.jooq.generated.tables.JTimeZoneName;
+import org.jooq.generated.tables.pojos.TimeZoneName;
 import org.jooq.generated.tables.records.TimeZoneNameRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UInteger;
@@ -18,24 +19,24 @@ import org.jooq.types.UInteger;
  * Time zone names
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class TimeZoneNameDao extends DAOImpl<TimeZoneNameRecord, org.jooq.generated.tables.pojos.TimeZoneName, String> {
+public class TimeZoneNameDao extends DAOImpl<TimeZoneNameRecord, TimeZoneName, String> {
 
     /**
      * Create a new TimeZoneNameDao without any configuration
      */
     public TimeZoneNameDao() {
-        super(TimeZoneName.TIME_ZONE_NAME, org.jooq.generated.tables.pojos.TimeZoneName.class);
+        super(JTimeZoneName.TIME_ZONE_NAME, TimeZoneName.class);
     }
 
     /**
      * Create a new TimeZoneNameDao with an attached configuration
      */
     public TimeZoneNameDao(Configuration configuration) {
-        super(TimeZoneName.TIME_ZONE_NAME, org.jooq.generated.tables.pojos.TimeZoneName.class, configuration);
+        super(JTimeZoneName.TIME_ZONE_NAME, TimeZoneName.class, configuration);
     }
 
     @Override
-    public String getId(org.jooq.generated.tables.pojos.TimeZoneName object) {
+    public String getId(TimeZoneName object) {
         return object.getName();
     }
 
@@ -43,43 +44,43 @@ public class TimeZoneNameDao extends DAOImpl<TimeZoneNameRecord, org.jooq.genera
      * Fetch records that have <code>Name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneName> fetchRangeOfName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(TimeZoneName.TIME_ZONE_NAME.NAME, lowerInclusive, upperInclusive);
+    public List<TimeZoneName> fetchRangeOfJName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JTimeZoneName.TIME_ZONE_NAME.NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneName> fetchByName(String... values) {
-        return fetch(TimeZoneName.TIME_ZONE_NAME.NAME, values);
+    public List<TimeZoneName> fetchByJName(String... values) {
+        return fetch(JTimeZoneName.TIME_ZONE_NAME.NAME, values);
     }
 
     /**
      * Fetch a unique record that has <code>Name = value</code>
      */
-    public org.jooq.generated.tables.pojos.TimeZoneName fetchOneByName(String value) {
-        return fetchOne(TimeZoneName.TIME_ZONE_NAME.NAME, value);
+    public TimeZoneName fetchOneByJName(String value) {
+        return fetchOne(JTimeZoneName.TIME_ZONE_NAME.NAME, value);
     }
 
     /**
      * Fetch a unique record that has <code>Name = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.TimeZoneName> fetchOptionalByName(String value) {
-        return fetchOptional(TimeZoneName.TIME_ZONE_NAME.NAME, value);
+    public Optional<TimeZoneName> fetchOptionalByJName(String value) {
+        return fetchOptional(JTimeZoneName.TIME_ZONE_NAME.NAME, value);
     }
 
     /**
      * Fetch records that have <code>Time_zone_id BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneName> fetchRangeOfTimeZoneId(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(TimeZoneName.TIME_ZONE_NAME.TIME_ZONE_ID, lowerInclusive, upperInclusive);
+    public List<TimeZoneName> fetchRangeOfJTimeZoneId(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JTimeZoneName.TIME_ZONE_NAME.TIME_ZONE_ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Time_zone_id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneName> fetchByTimeZoneId(UInteger... values) {
-        return fetch(TimeZoneName.TIME_ZONE_NAME.TIME_ZONE_ID, values);
+    public List<TimeZoneName> fetchByJTimeZoneId(UInteger... values) {
+        return fetch(JTimeZoneName.TIME_ZONE_NAME.TIME_ZONE_ID, values);
     }
 }

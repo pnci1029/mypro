@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.TimeZoneName;
+import org.jooq.generated.tables.JTimeZoneName;
+import org.jooq.generated.tables.pojos.TimeZoneName;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 
@@ -65,14 +66,14 @@ public class TimeZoneNameRecord extends UpdatableRecordImpl<TimeZoneNameRecord> 
      * Create a detached TimeZoneNameRecord
      */
     public TimeZoneNameRecord() {
-        super(TimeZoneName.TIME_ZONE_NAME);
+        super(JTimeZoneName.TIME_ZONE_NAME);
     }
 
     /**
      * Create a detached, initialised TimeZoneNameRecord
      */
     public TimeZoneNameRecord(String name, UInteger timeZoneId) {
-        super(TimeZoneName.TIME_ZONE_NAME);
+        super(JTimeZoneName.TIME_ZONE_NAME);
 
         setName(name);
         setTimeZoneId(timeZoneId);
@@ -82,8 +83,8 @@ public class TimeZoneNameRecord extends UpdatableRecordImpl<TimeZoneNameRecord> 
     /**
      * Create a detached, initialised TimeZoneNameRecord
      */
-    public TimeZoneNameRecord(org.jooq.generated.tables.pojos.TimeZoneName value) {
-        super(TimeZoneName.TIME_ZONE_NAME);
+    public TimeZoneNameRecord(TimeZoneName value) {
+        super(JTimeZoneName.TIME_ZONE_NAME);
 
         if (value != null) {
             setName(value.getName());

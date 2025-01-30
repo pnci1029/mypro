@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.jooq.Configuration;
-import org.jooq.generated.tables.HelpCategory;
+import org.jooq.generated.tables.JHelpCategory;
+import org.jooq.generated.tables.pojos.HelpCategory;
 import org.jooq.generated.tables.records.HelpCategoryRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UShort;
@@ -18,24 +19,24 @@ import org.jooq.types.UShort;
  * help categories
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class HelpCategoryDao extends DAOImpl<HelpCategoryRecord, org.jooq.generated.tables.pojos.HelpCategory, UShort> {
+public class HelpCategoryDao extends DAOImpl<HelpCategoryRecord, HelpCategory, UShort> {
 
     /**
      * Create a new HelpCategoryDao without any configuration
      */
     public HelpCategoryDao() {
-        super(HelpCategory.HELP_CATEGORY, org.jooq.generated.tables.pojos.HelpCategory.class);
+        super(JHelpCategory.HELP_CATEGORY, HelpCategory.class);
     }
 
     /**
      * Create a new HelpCategoryDao with an attached configuration
      */
     public HelpCategoryDao(Configuration configuration) {
-        super(HelpCategory.HELP_CATEGORY, org.jooq.generated.tables.pojos.HelpCategory.class, configuration);
+        super(JHelpCategory.HELP_CATEGORY, HelpCategory.class, configuration);
     }
 
     @Override
-    public UShort getId(org.jooq.generated.tables.pojos.HelpCategory object) {
+    public UShort getId(HelpCategory object) {
         return object.getHelpCategoryId();
     }
 
@@ -43,87 +44,87 @@ public class HelpCategoryDao extends DAOImpl<HelpCategoryRecord, org.jooq.genera
      * Fetch records that have <code>help_category_id BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpCategory> fetchRangeOfHelpCategoryId(UShort lowerInclusive, UShort upperInclusive) {
-        return fetchRange(HelpCategory.HELP_CATEGORY.HELP_CATEGORY_ID, lowerInclusive, upperInclusive);
+    public List<HelpCategory> fetchRangeOfJHelpCategoryId(UShort lowerInclusive, UShort upperInclusive) {
+        return fetchRange(JHelpCategory.HELP_CATEGORY.HELP_CATEGORY_ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>help_category_id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpCategory> fetchByHelpCategoryId(UShort... values) {
-        return fetch(HelpCategory.HELP_CATEGORY.HELP_CATEGORY_ID, values);
+    public List<HelpCategory> fetchByJHelpCategoryId(UShort... values) {
+        return fetch(JHelpCategory.HELP_CATEGORY.HELP_CATEGORY_ID, values);
     }
 
     /**
      * Fetch a unique record that has <code>help_category_id = value</code>
      */
-    public org.jooq.generated.tables.pojos.HelpCategory fetchOneByHelpCategoryId(UShort value) {
-        return fetchOne(HelpCategory.HELP_CATEGORY.HELP_CATEGORY_ID, value);
+    public HelpCategory fetchOneByJHelpCategoryId(UShort value) {
+        return fetchOne(JHelpCategory.HELP_CATEGORY.HELP_CATEGORY_ID, value);
     }
 
     /**
      * Fetch a unique record that has <code>help_category_id = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.HelpCategory> fetchOptionalByHelpCategoryId(UShort value) {
-        return fetchOptional(HelpCategory.HELP_CATEGORY.HELP_CATEGORY_ID, value);
+    public Optional<HelpCategory> fetchOptionalByJHelpCategoryId(UShort value) {
+        return fetchOptional(JHelpCategory.HELP_CATEGORY.HELP_CATEGORY_ID, value);
     }
 
     /**
      * Fetch records that have <code>name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpCategory> fetchRangeOfName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(HelpCategory.HELP_CATEGORY.NAME, lowerInclusive, upperInclusive);
+    public List<HelpCategory> fetchRangeOfJName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JHelpCategory.HELP_CATEGORY.NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpCategory> fetchByName(String... values) {
-        return fetch(HelpCategory.HELP_CATEGORY.NAME, values);
+    public List<HelpCategory> fetchByJName(String... values) {
+        return fetch(JHelpCategory.HELP_CATEGORY.NAME, values);
     }
 
     /**
      * Fetch a unique record that has <code>name = value</code>
      */
-    public org.jooq.generated.tables.pojos.HelpCategory fetchOneByName(String value) {
-        return fetchOne(HelpCategory.HELP_CATEGORY.NAME, value);
+    public HelpCategory fetchOneByJName(String value) {
+        return fetchOne(JHelpCategory.HELP_CATEGORY.NAME, value);
     }
 
     /**
      * Fetch a unique record that has <code>name = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.HelpCategory> fetchOptionalByName(String value) {
-        return fetchOptional(HelpCategory.HELP_CATEGORY.NAME, value);
+    public Optional<HelpCategory> fetchOptionalByJName(String value) {
+        return fetchOptional(JHelpCategory.HELP_CATEGORY.NAME, value);
     }
 
     /**
      * Fetch records that have <code>parent_category_id BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpCategory> fetchRangeOfParentCategoryId(UShort lowerInclusive, UShort upperInclusive) {
-        return fetchRange(HelpCategory.HELP_CATEGORY.PARENT_CATEGORY_ID, lowerInclusive, upperInclusive);
+    public List<HelpCategory> fetchRangeOfJParentCategoryId(UShort lowerInclusive, UShort upperInclusive) {
+        return fetchRange(JHelpCategory.HELP_CATEGORY.PARENT_CATEGORY_ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>parent_category_id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpCategory> fetchByParentCategoryId(UShort... values) {
-        return fetch(HelpCategory.HELP_CATEGORY.PARENT_CATEGORY_ID, values);
+    public List<HelpCategory> fetchByJParentCategoryId(UShort... values) {
+        return fetch(JHelpCategory.HELP_CATEGORY.PARENT_CATEGORY_ID, values);
     }
 
     /**
      * Fetch records that have <code>url BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpCategory> fetchRangeOfUrl(String lowerInclusive, String upperInclusive) {
-        return fetchRange(HelpCategory.HELP_CATEGORY.URL, lowerInclusive, upperInclusive);
+    public List<HelpCategory> fetchRangeOfJUrl(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JHelpCategory.HELP_CATEGORY.URL, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>url IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpCategory> fetchByUrl(String... values) {
-        return fetch(HelpCategory.HELP_CATEGORY.URL, values);
+    public List<HelpCategory> fetchByJUrl(String... values) {
+        return fetch(JHelpCategory.HELP_CATEGORY.URL, values);
     }
 }

@@ -6,7 +6,8 @@ package org.jooq.generated.tables.records;
 
 import org.jooq.JSON;
 import org.jooq.Record2;
-import org.jooq.generated.tables.ReplicationAsynchronousConnectionFailoverManaged;
+import org.jooq.generated.tables.JReplicationAsynchronousConnectionFailoverManaged;
+import org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailoverManaged;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -119,7 +120,7 @@ public class ReplicationAsynchronousConnectionFailoverManagedRecord extends Upda
      * Create a detached ReplicationAsynchronousConnectionFailoverManagedRecord
      */
     public ReplicationAsynchronousConnectionFailoverManagedRecord() {
-        super(ReplicationAsynchronousConnectionFailoverManaged.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_MANAGED);
+        super(JReplicationAsynchronousConnectionFailoverManaged.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_MANAGED);
     }
 
     /**
@@ -127,7 +128,7 @@ public class ReplicationAsynchronousConnectionFailoverManagedRecord extends Upda
      * ReplicationAsynchronousConnectionFailoverManagedRecord
      */
     public ReplicationAsynchronousConnectionFailoverManagedRecord(String channelName, String managedName, String managedType, JSON configuration) {
-        super(ReplicationAsynchronousConnectionFailoverManaged.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_MANAGED);
+        super(JReplicationAsynchronousConnectionFailoverManaged.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_MANAGED);
 
         setChannelName(channelName);
         setManagedName(managedName);
@@ -140,8 +141,8 @@ public class ReplicationAsynchronousConnectionFailoverManagedRecord extends Upda
      * Create a detached, initialised
      * ReplicationAsynchronousConnectionFailoverManagedRecord
      */
-    public ReplicationAsynchronousConnectionFailoverManagedRecord(org.jooq.generated.tables.pojos.ReplicationAsynchronousConnectionFailoverManaged value) {
-        super(ReplicationAsynchronousConnectionFailoverManaged.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_MANAGED);
+    public ReplicationAsynchronousConnectionFailoverManagedRecord(ReplicationAsynchronousConnectionFailoverManaged value) {
+        super(JReplicationAsynchronousConnectionFailoverManaged.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_MANAGED);
 
         if (value != null) {
             setChannelName(value.getChannelName());

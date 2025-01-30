@@ -10,7 +10,8 @@ import java.util.Optional;
 import org.jooq.Configuration;
 import org.jooq.generated.enums.SlaveRelayLogInfoAssignGtidsToAnonymousTransactionsType;
 import org.jooq.generated.enums.SlaveRelayLogInfoRequireTablePrimaryKeyCheck;
-import org.jooq.generated.tables.SlaveRelayLogInfo;
+import org.jooq.generated.tables.JSlaveRelayLogInfo;
+import org.jooq.generated.tables.pojos.SlaveRelayLogInfo;
 import org.jooq.generated.tables.records.SlaveRelayLogInfoRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UInteger;
@@ -21,24 +22,24 @@ import org.jooq.types.ULong;
  * Relay Log Information
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class SlaveRelayLogInfoDao extends DAOImpl<SlaveRelayLogInfoRecord, org.jooq.generated.tables.pojos.SlaveRelayLogInfo, String> {
+public class SlaveRelayLogInfoDao extends DAOImpl<SlaveRelayLogInfoRecord, SlaveRelayLogInfo, String> {
 
     /**
      * Create a new SlaveRelayLogInfoDao without any configuration
      */
     public SlaveRelayLogInfoDao() {
-        super(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO, org.jooq.generated.tables.pojos.SlaveRelayLogInfo.class);
+        super(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO, SlaveRelayLogInfo.class);
     }
 
     /**
      * Create a new SlaveRelayLogInfoDao with an attached configuration
      */
     public SlaveRelayLogInfoDao(Configuration configuration) {
-        super(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO, org.jooq.generated.tables.pojos.SlaveRelayLogInfo.class, configuration);
+        super(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO, SlaveRelayLogInfo.class, configuration);
     }
 
     @Override
-    public String getId(org.jooq.generated.tables.pojos.SlaveRelayLogInfo object) {
+    public String getId(SlaveRelayLogInfo object) {
         return object.getChannelName();
     }
 
@@ -46,228 +47,228 @@ public class SlaveRelayLogInfoDao extends DAOImpl<SlaveRelayLogInfoRecord, org.j
      * Fetch records that have <code>Number_of_lines BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfNumberOfLines(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.NUMBER_OF_LINES, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJNumberOfLines(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.NUMBER_OF_LINES, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Number_of_lines IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByNumberOfLines(UInteger... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.NUMBER_OF_LINES, values);
+    public List<SlaveRelayLogInfo> fetchByJNumberOfLines(UInteger... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.NUMBER_OF_LINES, values);
     }
 
     /**
      * Fetch records that have <code>Relay_log_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfRelayLogName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.RELAY_LOG_NAME, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJRelayLogName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.RELAY_LOG_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Relay_log_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByRelayLogName(String... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.RELAY_LOG_NAME, values);
+    public List<SlaveRelayLogInfo> fetchByJRelayLogName(String... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.RELAY_LOG_NAME, values);
     }
 
     /**
      * Fetch records that have <code>Relay_log_pos BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfRelayLogPos(ULong lowerInclusive, ULong upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.RELAY_LOG_POS, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJRelayLogPos(ULong lowerInclusive, ULong upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.RELAY_LOG_POS, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Relay_log_pos IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByRelayLogPos(ULong... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.RELAY_LOG_POS, values);
+    public List<SlaveRelayLogInfo> fetchByJRelayLogPos(ULong... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.RELAY_LOG_POS, values);
     }
 
     /**
      * Fetch records that have <code>Master_log_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfMasterLogName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.MASTER_LOG_NAME, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJMasterLogName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.MASTER_LOG_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Master_log_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByMasterLogName(String... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.MASTER_LOG_NAME, values);
+    public List<SlaveRelayLogInfo> fetchByJMasterLogName(String... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.MASTER_LOG_NAME, values);
     }
 
     /**
      * Fetch records that have <code>Master_log_pos BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfMasterLogPos(ULong lowerInclusive, ULong upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.MASTER_LOG_POS, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJMasterLogPos(ULong lowerInclusive, ULong upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.MASTER_LOG_POS, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Master_log_pos IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByMasterLogPos(ULong... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.MASTER_LOG_POS, values);
+    public List<SlaveRelayLogInfo> fetchByJMasterLogPos(ULong... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.MASTER_LOG_POS, values);
     }
 
     /**
      * Fetch records that have <code>Sql_delay BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfSqlDelay(Integer lowerInclusive, Integer upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.SQL_DELAY, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJSqlDelay(Integer lowerInclusive, Integer upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.SQL_DELAY, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Sql_delay IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchBySqlDelay(Integer... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.SQL_DELAY, values);
+    public List<SlaveRelayLogInfo> fetchByJSqlDelay(Integer... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.SQL_DELAY, values);
     }
 
     /**
      * Fetch records that have <code>Number_of_workers BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfNumberOfWorkers(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.NUMBER_OF_WORKERS, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJNumberOfWorkers(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.NUMBER_OF_WORKERS, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Number_of_workers IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByNumberOfWorkers(UInteger... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.NUMBER_OF_WORKERS, values);
+    public List<SlaveRelayLogInfo> fetchByJNumberOfWorkers(UInteger... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.NUMBER_OF_WORKERS, values);
     }
 
     /**
      * Fetch records that have <code>Id BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfId(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ID, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJId(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchById(UInteger... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ID, values);
+    public List<SlaveRelayLogInfo> fetchByJId(UInteger... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ID, values);
     }
 
     /**
      * Fetch records that have <code>Channel_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfChannelName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.CHANNEL_NAME, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJChannelName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.CHANNEL_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Channel_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByChannelName(String... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.CHANNEL_NAME, values);
+    public List<SlaveRelayLogInfo> fetchByJChannelName(String... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.CHANNEL_NAME, values);
     }
 
     /**
      * Fetch a unique record that has <code>Channel_name = value</code>
      */
-    public org.jooq.generated.tables.pojos.SlaveRelayLogInfo fetchOneByChannelName(String value) {
-        return fetchOne(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.CHANNEL_NAME, value);
+    public SlaveRelayLogInfo fetchOneByJChannelName(String value) {
+        return fetchOne(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.CHANNEL_NAME, value);
     }
 
     /**
      * Fetch a unique record that has <code>Channel_name = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchOptionalByChannelName(String value) {
-        return fetchOptional(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.CHANNEL_NAME, value);
+    public Optional<SlaveRelayLogInfo> fetchOptionalByJChannelName(String value) {
+        return fetchOptional(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.CHANNEL_NAME, value);
     }
 
     /**
      * Fetch records that have <code>Privilege_checks_username BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfPrivilegeChecksUsername(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.PRIVILEGE_CHECKS_USERNAME, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJPrivilegeChecksUsername(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.PRIVILEGE_CHECKS_USERNAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Privilege_checks_username IN
      * (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByPrivilegeChecksUsername(String... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.PRIVILEGE_CHECKS_USERNAME, values);
+    public List<SlaveRelayLogInfo> fetchByJPrivilegeChecksUsername(String... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.PRIVILEGE_CHECKS_USERNAME, values);
     }
 
     /**
      * Fetch records that have <code>Privilege_checks_hostname BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfPrivilegeChecksHostname(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.PRIVILEGE_CHECKS_HOSTNAME, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJPrivilegeChecksHostname(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.PRIVILEGE_CHECKS_HOSTNAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Privilege_checks_hostname IN
      * (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByPrivilegeChecksHostname(String... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.PRIVILEGE_CHECKS_HOSTNAME, values);
+    public List<SlaveRelayLogInfo> fetchByJPrivilegeChecksHostname(String... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.PRIVILEGE_CHECKS_HOSTNAME, values);
     }
 
     /**
      * Fetch records that have <code>Require_row_format BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfRequireRowFormat(Byte lowerInclusive, Byte upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.REQUIRE_ROW_FORMAT, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJRequireRowFormat(Byte lowerInclusive, Byte upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.REQUIRE_ROW_FORMAT, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Require_row_format IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByRequireRowFormat(Byte... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.REQUIRE_ROW_FORMAT, values);
+    public List<SlaveRelayLogInfo> fetchByJRequireRowFormat(Byte... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.REQUIRE_ROW_FORMAT, values);
     }
 
     /**
      * Fetch records that have <code>Require_table_primary_key_check BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfRequireTablePrimaryKeyCheck(SlaveRelayLogInfoRequireTablePrimaryKeyCheck lowerInclusive, SlaveRelayLogInfoRequireTablePrimaryKeyCheck upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.REQUIRE_TABLE_PRIMARY_KEY_CHECK, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJRequireTablePrimaryKeyCheck(SlaveRelayLogInfoRequireTablePrimaryKeyCheck lowerInclusive, SlaveRelayLogInfoRequireTablePrimaryKeyCheck upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.REQUIRE_TABLE_PRIMARY_KEY_CHECK, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Require_table_primary_key_check IN
      * (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByRequireTablePrimaryKeyCheck(SlaveRelayLogInfoRequireTablePrimaryKeyCheck... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.REQUIRE_TABLE_PRIMARY_KEY_CHECK, values);
+    public List<SlaveRelayLogInfo> fetchByJRequireTablePrimaryKeyCheck(SlaveRelayLogInfoRequireTablePrimaryKeyCheck... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.REQUIRE_TABLE_PRIMARY_KEY_CHECK, values);
     }
 
     /**
      * Fetch records that have <code>Assign_gtids_to_anonymous_transactions_type
      * BETWEEN lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfAssignGtidsToAnonymousTransactionsType(SlaveRelayLogInfoAssignGtidsToAnonymousTransactionsType lowerInclusive, SlaveRelayLogInfoAssignGtidsToAnonymousTransactionsType upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ASSIGN_GTIDS_TO_ANONYMOUS_TRANSACTIONS_TYPE, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJAssignGtidsToAnonymousTransactionsType(SlaveRelayLogInfoAssignGtidsToAnonymousTransactionsType lowerInclusive, SlaveRelayLogInfoAssignGtidsToAnonymousTransactionsType upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ASSIGN_GTIDS_TO_ANONYMOUS_TRANSACTIONS_TYPE, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Assign_gtids_to_anonymous_transactions_type
      * IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByAssignGtidsToAnonymousTransactionsType(SlaveRelayLogInfoAssignGtidsToAnonymousTransactionsType... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ASSIGN_GTIDS_TO_ANONYMOUS_TRANSACTIONS_TYPE, values);
+    public List<SlaveRelayLogInfo> fetchByJAssignGtidsToAnonymousTransactionsType(SlaveRelayLogInfoAssignGtidsToAnonymousTransactionsType... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ASSIGN_GTIDS_TO_ANONYMOUS_TRANSACTIONS_TYPE, values);
     }
 
     /**
@@ -275,15 +276,15 @@ public class SlaveRelayLogInfoDao extends DAOImpl<SlaveRelayLogInfoRecord, org.j
      * <code>Assign_gtids_to_anonymous_transactions_value BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchRangeOfAssignGtidsToAnonymousTransactionsValue(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ASSIGN_GTIDS_TO_ANONYMOUS_TRANSACTIONS_VALUE, lowerInclusive, upperInclusive);
+    public List<SlaveRelayLogInfo> fetchRangeOfJAssignGtidsToAnonymousTransactionsValue(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ASSIGN_GTIDS_TO_ANONYMOUS_TRANSACTIONS_VALUE, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have
      * <code>Assign_gtids_to_anonymous_transactions_value IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveRelayLogInfo> fetchByAssignGtidsToAnonymousTransactionsValue(String... values) {
-        return fetch(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ASSIGN_GTIDS_TO_ANONYMOUS_TRANSACTIONS_VALUE, values);
+    public List<SlaveRelayLogInfo> fetchByJAssignGtidsToAnonymousTransactionsValue(String... values) {
+        return fetch(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO.ASSIGN_GTIDS_TO_ANONYMOUS_TRANSACTIONS_VALUE, values);
     }
 }

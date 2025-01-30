@@ -7,7 +7,8 @@ package org.jooq.generated.tables.records;
 import org.jooq.Record1;
 import org.jooq.generated.enums.SlaveRelayLogInfoAssignGtidsToAnonymousTransactionsType;
 import org.jooq.generated.enums.SlaveRelayLogInfoRequireTablePrimaryKeyCheck;
-import org.jooq.generated.tables.SlaveRelayLogInfo;
+import org.jooq.generated.tables.JSlaveRelayLogInfo;
+import org.jooq.generated.tables.pojos.SlaveRelayLogInfo;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 import org.jooq.types.ULong;
@@ -319,14 +320,14 @@ public class SlaveRelayLogInfoRecord extends UpdatableRecordImpl<SlaveRelayLogIn
      * Create a detached SlaveRelayLogInfoRecord
      */
     public SlaveRelayLogInfoRecord() {
-        super(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO);
+        super(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO);
     }
 
     /**
      * Create a detached, initialised SlaveRelayLogInfoRecord
      */
     public SlaveRelayLogInfoRecord(UInteger numberOfLines, String relayLogName, ULong relayLogPos, String masterLogName, ULong masterLogPos, Integer sqlDelay, UInteger numberOfWorkers, UInteger id, String channelName, String privilegeChecksUsername, String privilegeChecksHostname, Byte requireRowFormat, SlaveRelayLogInfoRequireTablePrimaryKeyCheck requireTablePrimaryKeyCheck, SlaveRelayLogInfoAssignGtidsToAnonymousTransactionsType assignGtidsToAnonymousTransactionsType, String assignGtidsToAnonymousTransactionsValue) {
-        super(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO);
+        super(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO);
 
         setNumberOfLines(numberOfLines);
         setRelayLogName(relayLogName);
@@ -349,8 +350,8 @@ public class SlaveRelayLogInfoRecord extends UpdatableRecordImpl<SlaveRelayLogIn
     /**
      * Create a detached, initialised SlaveRelayLogInfoRecord
      */
-    public SlaveRelayLogInfoRecord(org.jooq.generated.tables.pojos.SlaveRelayLogInfo value) {
-        super(SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO);
+    public SlaveRelayLogInfoRecord(SlaveRelayLogInfo value) {
+        super(JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO);
 
         if (value != null) {
             setNumberOfLines(value.getNumberOfLines());

@@ -9,7 +9,8 @@ import java.util.List;
 
 import org.jooq.Configuration;
 import org.jooq.Record4;
-import org.jooq.generated.tables.TablesPriv;
+import org.jooq.generated.tables.JTablesPriv;
+import org.jooq.generated.tables.pojos.TablesPriv;
 import org.jooq.generated.tables.records.TablesPrivRecord;
 import org.jooq.impl.DAOImpl;
 
@@ -18,24 +19,24 @@ import org.jooq.impl.DAOImpl;
  * Table privileges
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class TablesPrivDao extends DAOImpl<TablesPrivRecord, org.jooq.generated.tables.pojos.TablesPriv, Record4<String, String, String, String>> {
+public class TablesPrivDao extends DAOImpl<TablesPrivRecord, TablesPriv, Record4<String, String, String, String>> {
 
     /**
      * Create a new TablesPrivDao without any configuration
      */
     public TablesPrivDao() {
-        super(TablesPriv.TABLES_PRIV, org.jooq.generated.tables.pojos.TablesPriv.class);
+        super(JTablesPriv.TABLES_PRIV, TablesPriv.class);
     }
 
     /**
      * Create a new TablesPrivDao with an attached configuration
      */
     public TablesPrivDao(Configuration configuration) {
-        super(TablesPriv.TABLES_PRIV, org.jooq.generated.tables.pojos.TablesPriv.class, configuration);
+        super(JTablesPriv.TABLES_PRIV, TablesPriv.class, configuration);
     }
 
     @Override
-    public Record4<String, String, String, String> getId(org.jooq.generated.tables.pojos.TablesPriv object) {
+    public Record4<String, String, String, String> getId(TablesPriv object) {
         return compositeKeyRecord(object.getHost(), object.getUser(), object.getDb(), object.getTableName());
     }
 
@@ -43,119 +44,119 @@ public class TablesPrivDao extends DAOImpl<TablesPrivRecord, org.jooq.generated.
      * Fetch records that have <code>Host BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchRangeOfHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(TablesPriv.TABLES_PRIV.HOST, lowerInclusive, upperInclusive);
+    public List<TablesPriv> fetchRangeOfJHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JTablesPriv.TABLES_PRIV.HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Host IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchByHost(String... values) {
-        return fetch(TablesPriv.TABLES_PRIV.HOST, values);
+    public List<TablesPriv> fetchByJHost(String... values) {
+        return fetch(JTablesPriv.TABLES_PRIV.HOST, values);
     }
 
     /**
      * Fetch records that have <code>Db BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchRangeOfDb(String lowerInclusive, String upperInclusive) {
-        return fetchRange(TablesPriv.TABLES_PRIV.DB, lowerInclusive, upperInclusive);
+    public List<TablesPriv> fetchRangeOfJDb(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JTablesPriv.TABLES_PRIV.DB, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Db IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchByDb(String... values) {
-        return fetch(TablesPriv.TABLES_PRIV.DB, values);
+    public List<TablesPriv> fetchByJDb(String... values) {
+        return fetch(JTablesPriv.TABLES_PRIV.DB, values);
     }
 
     /**
      * Fetch records that have <code>User BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchRangeOfUser(String lowerInclusive, String upperInclusive) {
-        return fetchRange(TablesPriv.TABLES_PRIV.USER, lowerInclusive, upperInclusive);
+    public List<TablesPriv> fetchRangeOfJUser(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JTablesPriv.TABLES_PRIV.USER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>User IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchByUser(String... values) {
-        return fetch(TablesPriv.TABLES_PRIV.USER, values);
+    public List<TablesPriv> fetchByJUser(String... values) {
+        return fetch(JTablesPriv.TABLES_PRIV.USER, values);
     }
 
     /**
      * Fetch records that have <code>Table_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchRangeOfTableName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(TablesPriv.TABLES_PRIV.TABLE_NAME, lowerInclusive, upperInclusive);
+    public List<TablesPriv> fetchRangeOfJTableName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JTablesPriv.TABLES_PRIV.TABLE_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Table_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchByTableName(String... values) {
-        return fetch(TablesPriv.TABLES_PRIV.TABLE_NAME, values);
+    public List<TablesPriv> fetchByJTableName(String... values) {
+        return fetch(JTablesPriv.TABLES_PRIV.TABLE_NAME, values);
     }
 
     /**
      * Fetch records that have <code>Grantor BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchRangeOfGrantor(String lowerInclusive, String upperInclusive) {
-        return fetchRange(TablesPriv.TABLES_PRIV.GRANTOR, lowerInclusive, upperInclusive);
+    public List<TablesPriv> fetchRangeOfJGrantor(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JTablesPriv.TABLES_PRIV.GRANTOR, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Grantor IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchByGrantor(String... values) {
-        return fetch(TablesPriv.TABLES_PRIV.GRANTOR, values);
+    public List<TablesPriv> fetchByJGrantor(String... values) {
+        return fetch(JTablesPriv.TABLES_PRIV.GRANTOR, values);
     }
 
     /**
      * Fetch records that have <code>Timestamp BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchRangeOfTimestamp(LocalDateTime lowerInclusive, LocalDateTime upperInclusive) {
-        return fetchRange(TablesPriv.TABLES_PRIV.TIMESTAMP, lowerInclusive, upperInclusive);
+    public List<TablesPriv> fetchRangeOfJTimestamp(LocalDateTime lowerInclusive, LocalDateTime upperInclusive) {
+        return fetchRange(JTablesPriv.TABLES_PRIV.TIMESTAMP, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Timestamp IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchByTimestamp(LocalDateTime... values) {
-        return fetch(TablesPriv.TABLES_PRIV.TIMESTAMP, values);
+    public List<TablesPriv> fetchByJTimestamp(LocalDateTime... values) {
+        return fetch(JTablesPriv.TABLES_PRIV.TIMESTAMP, values);
     }
 
     /**
      * Fetch records that have <code>Table_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchRangeOfTablePriv(String lowerInclusive, String upperInclusive) {
-        return fetchRange(TablesPriv.TABLES_PRIV.TABLE_PRIV, lowerInclusive, upperInclusive);
+    public List<TablesPriv> fetchRangeOfJTablePriv(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JTablesPriv.TABLES_PRIV.TABLE_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Table_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchByTablePriv(String... values) {
-        return fetch(TablesPriv.TABLES_PRIV.TABLE_PRIV, values);
+    public List<TablesPriv> fetchByJTablePriv(String... values) {
+        return fetch(JTablesPriv.TABLES_PRIV.TABLE_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Column_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchRangeOfColumnPriv(String lowerInclusive, String upperInclusive) {
-        return fetchRange(TablesPriv.TABLES_PRIV.COLUMN_PRIV, lowerInclusive, upperInclusive);
+    public List<TablesPriv> fetchRangeOfJColumnPriv(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JTablesPriv.TABLES_PRIV.COLUMN_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Column_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TablesPriv> fetchByColumnPriv(String... values) {
-        return fetch(TablesPriv.TABLES_PRIV.COLUMN_PRIV, values);
+    public List<TablesPriv> fetchByJColumnPriv(String... values) {
+        return fetch(JTablesPriv.TABLES_PRIV.COLUMN_PRIV, values);
     }
 }

@@ -27,7 +27,8 @@ import org.jooq.generated.enums.DbSelectPriv;
 import org.jooq.generated.enums.DbShowViewPriv;
 import org.jooq.generated.enums.DbTriggerPriv;
 import org.jooq.generated.enums.DbUpdatePriv;
-import org.jooq.generated.tables.Db;
+import org.jooq.generated.tables.JDb;
+import org.jooq.generated.tables.pojos.Db;
 import org.jooq.generated.tables.records.DbRecord;
 import org.jooq.impl.DAOImpl;
 
@@ -36,24 +37,24 @@ import org.jooq.impl.DAOImpl;
  * Database privileges
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class DbDao extends DAOImpl<DbRecord, org.jooq.generated.tables.pojos.Db, Record3<String, String, String>> {
+public class DbDao extends DAOImpl<DbRecord, Db, Record3<String, String, String>> {
 
     /**
      * Create a new DbDao without any configuration
      */
     public DbDao() {
-        super(Db.DB, org.jooq.generated.tables.pojos.Db.class);
+        super(JDb.DB, Db.class);
     }
 
     /**
      * Create a new DbDao with an attached configuration
      */
     public DbDao(Configuration configuration) {
-        super(Db.DB, org.jooq.generated.tables.pojos.Db.class, configuration);
+        super(JDb.DB, Db.class, configuration);
     }
 
     @Override
-    public Record3<String, String, String> getId(org.jooq.generated.tables.pojos.Db object) {
+    public Record3<String, String, String> getId(Db object) {
         return compositeKeyRecord(object.getHost(), object.getUser(), object.getDb());
     }
 
@@ -61,329 +62,329 @@ public class DbDao extends DAOImpl<DbRecord, org.jooq.generated.tables.pojos.Db,
      * Fetch records that have <code>Host BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Db.DB.HOST, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JDb.DB.HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Host IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByHost(String... values) {
-        return fetch(Db.DB.HOST, values);
+    public List<Db> fetchByJHost(String... values) {
+        return fetch(JDb.DB.HOST, values);
     }
 
     /**
      * Fetch records that have <code>Db BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfDb(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Db.DB.DB_, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJDb(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JDb.DB.DB_, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Db IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByDb(String... values) {
-        return fetch(Db.DB.DB_, values);
+    public List<Db> fetchByJDb(String... values) {
+        return fetch(JDb.DB.DB_, values);
     }
 
     /**
      * Fetch records that have <code>User BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfUser(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Db.DB.USER, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJUser(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JDb.DB.USER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>User IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByUser(String... values) {
-        return fetch(Db.DB.USER, values);
+    public List<Db> fetchByJUser(String... values) {
+        return fetch(JDb.DB.USER, values);
     }
 
     /**
      * Fetch records that have <code>Select_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfSelectPriv(DbSelectPriv lowerInclusive, DbSelectPriv upperInclusive) {
-        return fetchRange(Db.DB.SELECT_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJSelectPriv(DbSelectPriv lowerInclusive, DbSelectPriv upperInclusive) {
+        return fetchRange(JDb.DB.SELECT_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Select_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchBySelectPriv(DbSelectPriv... values) {
-        return fetch(Db.DB.SELECT_PRIV, values);
+    public List<Db> fetchByJSelectPriv(DbSelectPriv... values) {
+        return fetch(JDb.DB.SELECT_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Insert_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfInsertPriv(DbInsertPriv lowerInclusive, DbInsertPriv upperInclusive) {
-        return fetchRange(Db.DB.INSERT_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJInsertPriv(DbInsertPriv lowerInclusive, DbInsertPriv upperInclusive) {
+        return fetchRange(JDb.DB.INSERT_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Insert_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByInsertPriv(DbInsertPriv... values) {
-        return fetch(Db.DB.INSERT_PRIV, values);
+    public List<Db> fetchByJInsertPriv(DbInsertPriv... values) {
+        return fetch(JDb.DB.INSERT_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Update_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfUpdatePriv(DbUpdatePriv lowerInclusive, DbUpdatePriv upperInclusive) {
-        return fetchRange(Db.DB.UPDATE_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJUpdatePriv(DbUpdatePriv lowerInclusive, DbUpdatePriv upperInclusive) {
+        return fetchRange(JDb.DB.UPDATE_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Update_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByUpdatePriv(DbUpdatePriv... values) {
-        return fetch(Db.DB.UPDATE_PRIV, values);
+    public List<Db> fetchByJUpdatePriv(DbUpdatePriv... values) {
+        return fetch(JDb.DB.UPDATE_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Delete_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfDeletePriv(DbDeletePriv lowerInclusive, DbDeletePriv upperInclusive) {
-        return fetchRange(Db.DB.DELETE_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJDeletePriv(DbDeletePriv lowerInclusive, DbDeletePriv upperInclusive) {
+        return fetchRange(JDb.DB.DELETE_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Delete_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByDeletePriv(DbDeletePriv... values) {
-        return fetch(Db.DB.DELETE_PRIV, values);
+    public List<Db> fetchByJDeletePriv(DbDeletePriv... values) {
+        return fetch(JDb.DB.DELETE_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Create_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfCreatePriv(DbCreatePriv lowerInclusive, DbCreatePriv upperInclusive) {
-        return fetchRange(Db.DB.CREATE_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJCreatePriv(DbCreatePriv lowerInclusive, DbCreatePriv upperInclusive) {
+        return fetchRange(JDb.DB.CREATE_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Create_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByCreatePriv(DbCreatePriv... values) {
-        return fetch(Db.DB.CREATE_PRIV, values);
+    public List<Db> fetchByJCreatePriv(DbCreatePriv... values) {
+        return fetch(JDb.DB.CREATE_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Drop_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfDropPriv(DbDropPriv lowerInclusive, DbDropPriv upperInclusive) {
-        return fetchRange(Db.DB.DROP_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJDropPriv(DbDropPriv lowerInclusive, DbDropPriv upperInclusive) {
+        return fetchRange(JDb.DB.DROP_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Drop_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByDropPriv(DbDropPriv... values) {
-        return fetch(Db.DB.DROP_PRIV, values);
+    public List<Db> fetchByJDropPriv(DbDropPriv... values) {
+        return fetch(JDb.DB.DROP_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Grant_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfGrantPriv(DbGrantPriv lowerInclusive, DbGrantPriv upperInclusive) {
-        return fetchRange(Db.DB.GRANT_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJGrantPriv(DbGrantPriv lowerInclusive, DbGrantPriv upperInclusive) {
+        return fetchRange(JDb.DB.GRANT_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Grant_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByGrantPriv(DbGrantPriv... values) {
-        return fetch(Db.DB.GRANT_PRIV, values);
+    public List<Db> fetchByJGrantPriv(DbGrantPriv... values) {
+        return fetch(JDb.DB.GRANT_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>References_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfReferencesPriv(DbReferencesPriv lowerInclusive, DbReferencesPriv upperInclusive) {
-        return fetchRange(Db.DB.REFERENCES_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJReferencesPriv(DbReferencesPriv lowerInclusive, DbReferencesPriv upperInclusive) {
+        return fetchRange(JDb.DB.REFERENCES_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>References_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByReferencesPriv(DbReferencesPriv... values) {
-        return fetch(Db.DB.REFERENCES_PRIV, values);
+    public List<Db> fetchByJReferencesPriv(DbReferencesPriv... values) {
+        return fetch(JDb.DB.REFERENCES_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Index_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfIndexPriv(DbIndexPriv lowerInclusive, DbIndexPriv upperInclusive) {
-        return fetchRange(Db.DB.INDEX_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJIndexPriv(DbIndexPriv lowerInclusive, DbIndexPriv upperInclusive) {
+        return fetchRange(JDb.DB.INDEX_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Index_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByIndexPriv(DbIndexPriv... values) {
-        return fetch(Db.DB.INDEX_PRIV, values);
+    public List<Db> fetchByJIndexPriv(DbIndexPriv... values) {
+        return fetch(JDb.DB.INDEX_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Alter_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfAlterPriv(DbAlterPriv lowerInclusive, DbAlterPriv upperInclusive) {
-        return fetchRange(Db.DB.ALTER_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJAlterPriv(DbAlterPriv lowerInclusive, DbAlterPriv upperInclusive) {
+        return fetchRange(JDb.DB.ALTER_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Alter_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByAlterPriv(DbAlterPriv... values) {
-        return fetch(Db.DB.ALTER_PRIV, values);
+    public List<Db> fetchByJAlterPriv(DbAlterPriv... values) {
+        return fetch(JDb.DB.ALTER_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Create_tmp_table_priv BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfCreateTmpTablePriv(DbCreateTmpTablePriv lowerInclusive, DbCreateTmpTablePriv upperInclusive) {
-        return fetchRange(Db.DB.CREATE_TMP_TABLE_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJCreateTmpTablePriv(DbCreateTmpTablePriv lowerInclusive, DbCreateTmpTablePriv upperInclusive) {
+        return fetchRange(JDb.DB.CREATE_TMP_TABLE_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Create_tmp_table_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByCreateTmpTablePriv(DbCreateTmpTablePriv... values) {
-        return fetch(Db.DB.CREATE_TMP_TABLE_PRIV, values);
+    public List<Db> fetchByJCreateTmpTablePriv(DbCreateTmpTablePriv... values) {
+        return fetch(JDb.DB.CREATE_TMP_TABLE_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Lock_tables_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfLockTablesPriv(DbLockTablesPriv lowerInclusive, DbLockTablesPriv upperInclusive) {
-        return fetchRange(Db.DB.LOCK_TABLES_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJLockTablesPriv(DbLockTablesPriv lowerInclusive, DbLockTablesPriv upperInclusive) {
+        return fetchRange(JDb.DB.LOCK_TABLES_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Lock_tables_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByLockTablesPriv(DbLockTablesPriv... values) {
-        return fetch(Db.DB.LOCK_TABLES_PRIV, values);
+    public List<Db> fetchByJLockTablesPriv(DbLockTablesPriv... values) {
+        return fetch(JDb.DB.LOCK_TABLES_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Create_view_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfCreateViewPriv(DbCreateViewPriv lowerInclusive, DbCreateViewPriv upperInclusive) {
-        return fetchRange(Db.DB.CREATE_VIEW_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJCreateViewPriv(DbCreateViewPriv lowerInclusive, DbCreateViewPriv upperInclusive) {
+        return fetchRange(JDb.DB.CREATE_VIEW_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Create_view_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByCreateViewPriv(DbCreateViewPriv... values) {
-        return fetch(Db.DB.CREATE_VIEW_PRIV, values);
+    public List<Db> fetchByJCreateViewPriv(DbCreateViewPriv... values) {
+        return fetch(JDb.DB.CREATE_VIEW_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Show_view_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfShowViewPriv(DbShowViewPriv lowerInclusive, DbShowViewPriv upperInclusive) {
-        return fetchRange(Db.DB.SHOW_VIEW_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJShowViewPriv(DbShowViewPriv lowerInclusive, DbShowViewPriv upperInclusive) {
+        return fetchRange(JDb.DB.SHOW_VIEW_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Show_view_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByShowViewPriv(DbShowViewPriv... values) {
-        return fetch(Db.DB.SHOW_VIEW_PRIV, values);
+    public List<Db> fetchByJShowViewPriv(DbShowViewPriv... values) {
+        return fetch(JDb.DB.SHOW_VIEW_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Create_routine_priv BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfCreateRoutinePriv(DbCreateRoutinePriv lowerInclusive, DbCreateRoutinePriv upperInclusive) {
-        return fetchRange(Db.DB.CREATE_ROUTINE_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJCreateRoutinePriv(DbCreateRoutinePriv lowerInclusive, DbCreateRoutinePriv upperInclusive) {
+        return fetchRange(JDb.DB.CREATE_ROUTINE_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Create_routine_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByCreateRoutinePriv(DbCreateRoutinePriv... values) {
-        return fetch(Db.DB.CREATE_ROUTINE_PRIV, values);
+    public List<Db> fetchByJCreateRoutinePriv(DbCreateRoutinePriv... values) {
+        return fetch(JDb.DB.CREATE_ROUTINE_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Alter_routine_priv BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfAlterRoutinePriv(DbAlterRoutinePriv lowerInclusive, DbAlterRoutinePriv upperInclusive) {
-        return fetchRange(Db.DB.ALTER_ROUTINE_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJAlterRoutinePriv(DbAlterRoutinePriv lowerInclusive, DbAlterRoutinePriv upperInclusive) {
+        return fetchRange(JDb.DB.ALTER_ROUTINE_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Alter_routine_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByAlterRoutinePriv(DbAlterRoutinePriv... values) {
-        return fetch(Db.DB.ALTER_ROUTINE_PRIV, values);
+    public List<Db> fetchByJAlterRoutinePriv(DbAlterRoutinePriv... values) {
+        return fetch(JDb.DB.ALTER_ROUTINE_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Execute_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfExecutePriv(DbExecutePriv lowerInclusive, DbExecutePriv upperInclusive) {
-        return fetchRange(Db.DB.EXECUTE_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJExecutePriv(DbExecutePriv lowerInclusive, DbExecutePriv upperInclusive) {
+        return fetchRange(JDb.DB.EXECUTE_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Execute_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByExecutePriv(DbExecutePriv... values) {
-        return fetch(Db.DB.EXECUTE_PRIV, values);
+    public List<Db> fetchByJExecutePriv(DbExecutePriv... values) {
+        return fetch(JDb.DB.EXECUTE_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Event_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfEventPriv(DbEventPriv lowerInclusive, DbEventPriv upperInclusive) {
-        return fetchRange(Db.DB.EVENT_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJEventPriv(DbEventPriv lowerInclusive, DbEventPriv upperInclusive) {
+        return fetchRange(JDb.DB.EVENT_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Event_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByEventPriv(DbEventPriv... values) {
-        return fetch(Db.DB.EVENT_PRIV, values);
+    public List<Db> fetchByJEventPriv(DbEventPriv... values) {
+        return fetch(JDb.DB.EVENT_PRIV, values);
     }
 
     /**
      * Fetch records that have <code>Trigger_priv BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchRangeOfTriggerPriv(DbTriggerPriv lowerInclusive, DbTriggerPriv upperInclusive) {
-        return fetchRange(Db.DB.TRIGGER_PRIV, lowerInclusive, upperInclusive);
+    public List<Db> fetchRangeOfJTriggerPriv(DbTriggerPriv lowerInclusive, DbTriggerPriv upperInclusive) {
+        return fetchRange(JDb.DB.TRIGGER_PRIV, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Trigger_priv IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Db> fetchByTriggerPriv(DbTriggerPriv... values) {
-        return fetch(Db.DB.TRIGGER_PRIV, values);
+    public List<Db> fetchByJTriggerPriv(DbTriggerPriv... values) {
+        return fetch(JDb.DB.TRIGGER_PRIV, values);
     }
 }

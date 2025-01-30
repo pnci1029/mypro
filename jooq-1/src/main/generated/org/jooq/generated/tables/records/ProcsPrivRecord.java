@@ -8,7 +8,8 @@ import java.time.LocalDateTime;
 
 import org.jooq.Record5;
 import org.jooq.generated.enums.ProcsPrivRoutineType;
-import org.jooq.generated.tables.ProcsPriv;
+import org.jooq.generated.tables.JProcsPriv;
+import org.jooq.generated.tables.pojos.ProcsPriv;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -157,14 +158,14 @@ public class ProcsPrivRecord extends UpdatableRecordImpl<ProcsPrivRecord> {
      * Create a detached ProcsPrivRecord
      */
     public ProcsPrivRecord() {
-        super(ProcsPriv.PROCS_PRIV);
+        super(JProcsPriv.PROCS_PRIV);
     }
 
     /**
      * Create a detached, initialised ProcsPrivRecord
      */
     public ProcsPrivRecord(String host, String db, String user, String routineName, ProcsPrivRoutineType routineType, String grantor, String procPriv, LocalDateTime timestamp) {
-        super(ProcsPriv.PROCS_PRIV);
+        super(JProcsPriv.PROCS_PRIV);
 
         setHost(host);
         setDb(db);
@@ -180,8 +181,8 @@ public class ProcsPrivRecord extends UpdatableRecordImpl<ProcsPrivRecord> {
     /**
      * Create a detached, initialised ProcsPrivRecord
      */
-    public ProcsPrivRecord(org.jooq.generated.tables.pojos.ProcsPriv value) {
-        super(ProcsPriv.PROCS_PRIV);
+    public ProcsPrivRecord(ProcsPriv value) {
+        super(JProcsPriv.PROCS_PRIV);
 
         if (value != null) {
             setHost(value.getHost());

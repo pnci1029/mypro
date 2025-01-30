@@ -9,7 +9,8 @@ import java.util.Optional;
 
 import org.jooq.Configuration;
 import org.jooq.generated.enums.FuncType;
-import org.jooq.generated.tables.Func;
+import org.jooq.generated.tables.JFunc;
+import org.jooq.generated.tables.pojos.Func;
 import org.jooq.generated.tables.records.FuncRecord;
 import org.jooq.impl.DAOImpl;
 
@@ -18,24 +19,24 @@ import org.jooq.impl.DAOImpl;
  * User defined functions
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class FuncDao extends DAOImpl<FuncRecord, org.jooq.generated.tables.pojos.Func, String> {
+public class FuncDao extends DAOImpl<FuncRecord, Func, String> {
 
     /**
      * Create a new FuncDao without any configuration
      */
     public FuncDao() {
-        super(Func.FUNC, org.jooq.generated.tables.pojos.Func.class);
+        super(JFunc.FUNC, Func.class);
     }
 
     /**
      * Create a new FuncDao with an attached configuration
      */
     public FuncDao(Configuration configuration) {
-        super(Func.FUNC, org.jooq.generated.tables.pojos.Func.class, configuration);
+        super(JFunc.FUNC, Func.class, configuration);
     }
 
     @Override
-    public String getId(org.jooq.generated.tables.pojos.Func object) {
+    public String getId(Func object) {
         return object.getName();
     }
 
@@ -43,73 +44,73 @@ public class FuncDao extends DAOImpl<FuncRecord, org.jooq.generated.tables.pojos
      * Fetch records that have <code>name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Func> fetchRangeOfName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Func.FUNC.NAME, lowerInclusive, upperInclusive);
+    public List<Func> fetchRangeOfJName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JFunc.FUNC.NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Func> fetchByName(String... values) {
-        return fetch(Func.FUNC.NAME, values);
+    public List<Func> fetchByJName(String... values) {
+        return fetch(JFunc.FUNC.NAME, values);
     }
 
     /**
      * Fetch a unique record that has <code>name = value</code>
      */
-    public org.jooq.generated.tables.pojos.Func fetchOneByName(String value) {
-        return fetchOne(Func.FUNC.NAME, value);
+    public Func fetchOneByJName(String value) {
+        return fetchOne(JFunc.FUNC.NAME, value);
     }
 
     /**
      * Fetch a unique record that has <code>name = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.Func> fetchOptionalByName(String value) {
-        return fetchOptional(Func.FUNC.NAME, value);
+    public Optional<Func> fetchOptionalByJName(String value) {
+        return fetchOptional(JFunc.FUNC.NAME, value);
     }
 
     /**
      * Fetch records that have <code>ret BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Func> fetchRangeOfRet(Byte lowerInclusive, Byte upperInclusive) {
-        return fetchRange(Func.FUNC.RET, lowerInclusive, upperInclusive);
+    public List<Func> fetchRangeOfJRet(Byte lowerInclusive, Byte upperInclusive) {
+        return fetchRange(JFunc.FUNC.RET, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>ret IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Func> fetchByRet(Byte... values) {
-        return fetch(Func.FUNC.RET, values);
+    public List<Func> fetchByJRet(Byte... values) {
+        return fetch(JFunc.FUNC.RET, values);
     }
 
     /**
      * Fetch records that have <code>dl BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Func> fetchRangeOfDl(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Func.FUNC.DL, lowerInclusive, upperInclusive);
+    public List<Func> fetchRangeOfJDl(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JFunc.FUNC.DL, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>dl IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Func> fetchByDl(String... values) {
-        return fetch(Func.FUNC.DL, values);
+    public List<Func> fetchByJDl(String... values) {
+        return fetch(JFunc.FUNC.DL, values);
     }
 
     /**
      * Fetch records that have <code>type BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Func> fetchRangeOfType(FuncType lowerInclusive, FuncType upperInclusive) {
-        return fetchRange(Func.FUNC.TYPE, lowerInclusive, upperInclusive);
+    public List<Func> fetchRangeOfJType(FuncType lowerInclusive, FuncType upperInclusive) {
+        return fetchRange(JFunc.FUNC.TYPE, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>type IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Func> fetchByType(FuncType... values) {
-        return fetch(Func.FUNC.TYPE, values);
+    public List<Func> fetchByJType(FuncType... values) {
+        return fetch(JFunc.FUNC.TYPE, values);
     }
 }

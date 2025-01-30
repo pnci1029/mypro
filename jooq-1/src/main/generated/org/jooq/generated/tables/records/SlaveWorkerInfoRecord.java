@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record2;
-import org.jooq.generated.tables.SlaveWorkerInfo;
+import org.jooq.generated.tables.JSlaveWorkerInfo;
+import org.jooq.generated.tables.pojos.SlaveWorkerInfo;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 import org.jooq.types.ULong;
@@ -241,14 +242,14 @@ public class SlaveWorkerInfoRecord extends UpdatableRecordImpl<SlaveWorkerInfoRe
      * Create a detached SlaveWorkerInfoRecord
      */
     public SlaveWorkerInfoRecord() {
-        super(SlaveWorkerInfo.SLAVE_WORKER_INFO);
+        super(JSlaveWorkerInfo.SLAVE_WORKER_INFO);
     }
 
     /**
      * Create a detached, initialised SlaveWorkerInfoRecord
      */
     public SlaveWorkerInfoRecord(UInteger id, String relayLogName, ULong relayLogPos, String masterLogName, ULong masterLogPos, String checkpointRelayLogName, ULong checkpointRelayLogPos, String checkpointMasterLogName, ULong checkpointMasterLogPos, UInteger checkpointSeqno, UInteger checkpointGroupSize, byte[] checkpointGroupBitmap, String channelName) {
-        super(SlaveWorkerInfo.SLAVE_WORKER_INFO);
+        super(JSlaveWorkerInfo.SLAVE_WORKER_INFO);
 
         setId(id);
         setRelayLogName(relayLogName);
@@ -269,8 +270,8 @@ public class SlaveWorkerInfoRecord extends UpdatableRecordImpl<SlaveWorkerInfoRe
     /**
      * Create a detached, initialised SlaveWorkerInfoRecord
      */
-    public SlaveWorkerInfoRecord(org.jooq.generated.tables.pojos.SlaveWorkerInfo value) {
-        super(SlaveWorkerInfo.SLAVE_WORKER_INFO);
+    public SlaveWorkerInfoRecord(SlaveWorkerInfo value) {
+        super(JSlaveWorkerInfo.SLAVE_WORKER_INFO);
 
         if (value != null) {
             setId(value.getId());

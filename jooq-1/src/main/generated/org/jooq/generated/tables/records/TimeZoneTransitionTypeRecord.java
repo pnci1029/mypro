@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record2;
-import org.jooq.generated.tables.TimeZoneTransitionType;
+import org.jooq.generated.tables.JTimeZoneTransitionType;
+import org.jooq.generated.tables.pojos.TimeZoneTransitionType;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UByte;
 import org.jooq.types.UInteger;
@@ -113,14 +114,14 @@ public class TimeZoneTransitionTypeRecord extends UpdatableRecordImpl<TimeZoneTr
      * Create a detached TimeZoneTransitionTypeRecord
      */
     public TimeZoneTransitionTypeRecord() {
-        super(TimeZoneTransitionType.TIME_ZONE_TRANSITION_TYPE);
+        super(JTimeZoneTransitionType.TIME_ZONE_TRANSITION_TYPE);
     }
 
     /**
      * Create a detached, initialised TimeZoneTransitionTypeRecord
      */
     public TimeZoneTransitionTypeRecord(UInteger timeZoneId, UInteger transitionTypeId, Integer offset, UByte isDst, String abbreviation) {
-        super(TimeZoneTransitionType.TIME_ZONE_TRANSITION_TYPE);
+        super(JTimeZoneTransitionType.TIME_ZONE_TRANSITION_TYPE);
 
         setTimeZoneId(timeZoneId);
         setTransitionTypeId(transitionTypeId);
@@ -133,8 +134,8 @@ public class TimeZoneTransitionTypeRecord extends UpdatableRecordImpl<TimeZoneTr
     /**
      * Create a detached, initialised TimeZoneTransitionTypeRecord
      */
-    public TimeZoneTransitionTypeRecord(org.jooq.generated.tables.pojos.TimeZoneTransitionType value) {
-        super(TimeZoneTransitionType.TIME_ZONE_TRANSITION_TYPE);
+    public TimeZoneTransitionTypeRecord(TimeZoneTransitionType value) {
+        super(JTimeZoneTransitionType.TIME_ZONE_TRANSITION_TYPE);
 
         if (value != null) {
             setTimeZoneId(value.getTimeZoneId());

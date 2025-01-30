@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.Servers;
+import org.jooq.generated.tables.JServers;
+import org.jooq.generated.tables.pojos.Servers;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -169,14 +170,14 @@ public class ServersRecord extends UpdatableRecordImpl<ServersRecord> {
      * Create a detached ServersRecord
      */
     public ServersRecord() {
-        super(Servers.SERVERS);
+        super(JServers.SERVERS);
     }
 
     /**
      * Create a detached, initialised ServersRecord
      */
     public ServersRecord(String serverName, String host, String db, String username, String password, Integer port, String socket, String wrapper, String owner) {
-        super(Servers.SERVERS);
+        super(JServers.SERVERS);
 
         setServerName(serverName);
         setHost(host);
@@ -193,8 +194,8 @@ public class ServersRecord extends UpdatableRecordImpl<ServersRecord> {
     /**
      * Create a detached, initialised ServersRecord
      */
-    public ServersRecord(org.jooq.generated.tables.pojos.Servers value) {
-        super(Servers.SERVERS);
+    public ServersRecord(Servers value) {
+        super(JServers.SERVERS);
 
         if (value != null) {
             setServerName(value.getServerName());

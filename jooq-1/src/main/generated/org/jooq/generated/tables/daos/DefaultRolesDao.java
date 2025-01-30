@@ -8,7 +8,8 @@ import java.util.List;
 
 import org.jooq.Configuration;
 import org.jooq.Record4;
-import org.jooq.generated.tables.DefaultRoles;
+import org.jooq.generated.tables.JDefaultRoles;
+import org.jooq.generated.tables.pojos.DefaultRoles;
 import org.jooq.generated.tables.records.DefaultRolesRecord;
 import org.jooq.impl.DAOImpl;
 
@@ -17,24 +18,24 @@ import org.jooq.impl.DAOImpl;
  * Default roles
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class DefaultRolesDao extends DAOImpl<DefaultRolesRecord, org.jooq.generated.tables.pojos.DefaultRoles, Record4<String, String, String, String>> {
+public class DefaultRolesDao extends DAOImpl<DefaultRolesRecord, DefaultRoles, Record4<String, String, String, String>> {
 
     /**
      * Create a new DefaultRolesDao without any configuration
      */
     public DefaultRolesDao() {
-        super(DefaultRoles.DEFAULT_ROLES, org.jooq.generated.tables.pojos.DefaultRoles.class);
+        super(JDefaultRoles.DEFAULT_ROLES, DefaultRoles.class);
     }
 
     /**
      * Create a new DefaultRolesDao with an attached configuration
      */
     public DefaultRolesDao(Configuration configuration) {
-        super(DefaultRoles.DEFAULT_ROLES, org.jooq.generated.tables.pojos.DefaultRoles.class, configuration);
+        super(JDefaultRoles.DEFAULT_ROLES, DefaultRoles.class, configuration);
     }
 
     @Override
-    public Record4<String, String, String, String> getId(org.jooq.generated.tables.pojos.DefaultRoles object) {
+    public Record4<String, String, String, String> getId(DefaultRoles object) {
         return compositeKeyRecord(object.getHost(), object.getUser(), object.getDefaultRoleHost(), object.getDefaultRoleUser());
     }
 
@@ -42,59 +43,59 @@ public class DefaultRolesDao extends DAOImpl<DefaultRolesRecord, org.jooq.genera
      * Fetch records that have <code>HOST BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.DefaultRoles> fetchRangeOfHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(DefaultRoles.DEFAULT_ROLES.HOST, lowerInclusive, upperInclusive);
+    public List<DefaultRoles> fetchRangeOfJHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JDefaultRoles.DEFAULT_ROLES.HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>HOST IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.DefaultRoles> fetchByHost(String... values) {
-        return fetch(DefaultRoles.DEFAULT_ROLES.HOST, values);
+    public List<DefaultRoles> fetchByJHost(String... values) {
+        return fetch(JDefaultRoles.DEFAULT_ROLES.HOST, values);
     }
 
     /**
      * Fetch records that have <code>USER BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.DefaultRoles> fetchRangeOfUser(String lowerInclusive, String upperInclusive) {
-        return fetchRange(DefaultRoles.DEFAULT_ROLES.USER, lowerInclusive, upperInclusive);
+    public List<DefaultRoles> fetchRangeOfJUser(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JDefaultRoles.DEFAULT_ROLES.USER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>USER IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.DefaultRoles> fetchByUser(String... values) {
-        return fetch(DefaultRoles.DEFAULT_ROLES.USER, values);
+    public List<DefaultRoles> fetchByJUser(String... values) {
+        return fetch(JDefaultRoles.DEFAULT_ROLES.USER, values);
     }
 
     /**
      * Fetch records that have <code>DEFAULT_ROLE_HOST BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.DefaultRoles> fetchRangeOfDefaultRoleHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(DefaultRoles.DEFAULT_ROLES.DEFAULT_ROLE_HOST, lowerInclusive, upperInclusive);
+    public List<DefaultRoles> fetchRangeOfJDefaultRoleHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JDefaultRoles.DEFAULT_ROLES.DEFAULT_ROLE_HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>DEFAULT_ROLE_HOST IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.DefaultRoles> fetchByDefaultRoleHost(String... values) {
-        return fetch(DefaultRoles.DEFAULT_ROLES.DEFAULT_ROLE_HOST, values);
+    public List<DefaultRoles> fetchByJDefaultRoleHost(String... values) {
+        return fetch(JDefaultRoles.DEFAULT_ROLES.DEFAULT_ROLE_HOST, values);
     }
 
     /**
      * Fetch records that have <code>DEFAULT_ROLE_USER BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.DefaultRoles> fetchRangeOfDefaultRoleUser(String lowerInclusive, String upperInclusive) {
-        return fetchRange(DefaultRoles.DEFAULT_ROLES.DEFAULT_ROLE_USER, lowerInclusive, upperInclusive);
+    public List<DefaultRoles> fetchRangeOfJDefaultRoleUser(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JDefaultRoles.DEFAULT_ROLES.DEFAULT_ROLE_USER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>DEFAULT_ROLE_USER IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.DefaultRoles> fetchByDefaultRoleUser(String... values) {
-        return fetch(DefaultRoles.DEFAULT_ROLES.DEFAULT_ROLE_USER, values);
+    public List<DefaultRoles> fetchByJDefaultRoleUser(String... values) {
+        return fetch(JDefaultRoles.DEFAULT_ROLES.DEFAULT_ROLE_USER, values);
     }
 }

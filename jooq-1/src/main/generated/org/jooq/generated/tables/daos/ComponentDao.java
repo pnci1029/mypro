@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.jooq.Configuration;
-import org.jooq.generated.tables.Component;
+import org.jooq.generated.tables.JComponent;
+import org.jooq.generated.tables.pojos.Component;
 import org.jooq.generated.tables.records.ComponentRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UInteger;
@@ -18,24 +19,24 @@ import org.jooq.types.UInteger;
  * Components
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class ComponentDao extends DAOImpl<ComponentRecord, org.jooq.generated.tables.pojos.Component, UInteger> {
+public class ComponentDao extends DAOImpl<ComponentRecord, Component, UInteger> {
 
     /**
      * Create a new ComponentDao without any configuration
      */
     public ComponentDao() {
-        super(Component.COMPONENT, org.jooq.generated.tables.pojos.Component.class);
+        super(JComponent.COMPONENT, Component.class);
     }
 
     /**
      * Create a new ComponentDao with an attached configuration
      */
     public ComponentDao(Configuration configuration) {
-        super(Component.COMPONENT, org.jooq.generated.tables.pojos.Component.class, configuration);
+        super(JComponent.COMPONENT, Component.class, configuration);
     }
 
     @Override
-    public UInteger getId(org.jooq.generated.tables.pojos.Component object) {
+    public UInteger getId(Component object) {
         return object.getComponentId();
     }
 
@@ -43,58 +44,58 @@ public class ComponentDao extends DAOImpl<ComponentRecord, org.jooq.generated.ta
      * Fetch records that have <code>component_id BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Component> fetchRangeOfComponentId(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(Component.COMPONENT.COMPONENT_ID, lowerInclusive, upperInclusive);
+    public List<Component> fetchRangeOfJComponentId(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JComponent.COMPONENT.COMPONENT_ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>component_id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Component> fetchByComponentId(UInteger... values) {
-        return fetch(Component.COMPONENT.COMPONENT_ID, values);
+    public List<Component> fetchByJComponentId(UInteger... values) {
+        return fetch(JComponent.COMPONENT.COMPONENT_ID, values);
     }
 
     /**
      * Fetch a unique record that has <code>component_id = value</code>
      */
-    public org.jooq.generated.tables.pojos.Component fetchOneByComponentId(UInteger value) {
-        return fetchOne(Component.COMPONENT.COMPONENT_ID, value);
+    public Component fetchOneByJComponentId(UInteger value) {
+        return fetchOne(JComponent.COMPONENT.COMPONENT_ID, value);
     }
 
     /**
      * Fetch a unique record that has <code>component_id = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.Component> fetchOptionalByComponentId(UInteger value) {
-        return fetchOptional(Component.COMPONENT.COMPONENT_ID, value);
+    public Optional<Component> fetchOptionalByJComponentId(UInteger value) {
+        return fetchOptional(JComponent.COMPONENT.COMPONENT_ID, value);
     }
 
     /**
      * Fetch records that have <code>component_group_id BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Component> fetchRangeOfComponentGroupId(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(Component.COMPONENT.COMPONENT_GROUP_ID, lowerInclusive, upperInclusive);
+    public List<Component> fetchRangeOfJComponentGroupId(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JComponent.COMPONENT.COMPONENT_GROUP_ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>component_group_id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Component> fetchByComponentGroupId(UInteger... values) {
-        return fetch(Component.COMPONENT.COMPONENT_GROUP_ID, values);
+    public List<Component> fetchByJComponentGroupId(UInteger... values) {
+        return fetch(JComponent.COMPONENT.COMPONENT_GROUP_ID, values);
     }
 
     /**
      * Fetch records that have <code>component_urn BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Component> fetchRangeOfComponentUrn(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Component.COMPONENT.COMPONENT_URN, lowerInclusive, upperInclusive);
+    public List<Component> fetchRangeOfJComponentUrn(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JComponent.COMPONENT.COMPONENT_URN, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>component_urn IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Component> fetchByComponentUrn(String... values) {
-        return fetch(Component.COMPONENT.COMPONENT_URN, values);
+    public List<Component> fetchByJComponentUrn(String... values) {
+        return fetch(JComponent.COMPONENT.COMPONENT_URN, values);
     }
 }

@@ -6,7 +6,8 @@ package org.jooq.generated.tables.records;
 
 import org.jooq.Record4;
 import org.jooq.generated.enums.RoleEdgesWithAdminOption;
-import org.jooq.generated.tables.RoleEdges;
+import org.jooq.generated.tables.JRoleEdges;
+import org.jooq.generated.tables.pojos.RoleEdges;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -110,14 +111,14 @@ public class RoleEdgesRecord extends UpdatableRecordImpl<RoleEdgesRecord> {
      * Create a detached RoleEdgesRecord
      */
     public RoleEdgesRecord() {
-        super(RoleEdges.ROLE_EDGES);
+        super(JRoleEdges.ROLE_EDGES);
     }
 
     /**
      * Create a detached, initialised RoleEdgesRecord
      */
     public RoleEdgesRecord(String fromHost, String fromUser, String toHost, String toUser, RoleEdgesWithAdminOption withAdminOption) {
-        super(RoleEdges.ROLE_EDGES);
+        super(JRoleEdges.ROLE_EDGES);
 
         setFromHost(fromHost);
         setFromUser(fromUser);
@@ -130,8 +131,8 @@ public class RoleEdgesRecord extends UpdatableRecordImpl<RoleEdgesRecord> {
     /**
      * Create a detached, initialised RoleEdgesRecord
      */
-    public RoleEdgesRecord(org.jooq.generated.tables.pojos.RoleEdges value) {
-        super(RoleEdges.ROLE_EDGES);
+    public RoleEdgesRecord(RoleEdges value) {
+        super(JRoleEdges.ROLE_EDGES);
 
         if (value != null) {
             setFromHost(value.getFromHost());

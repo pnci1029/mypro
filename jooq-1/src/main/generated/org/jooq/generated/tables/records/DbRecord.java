@@ -24,7 +24,8 @@ import org.jooq.generated.enums.DbSelectPriv;
 import org.jooq.generated.enums.DbShowViewPriv;
 import org.jooq.generated.enums.DbTriggerPriv;
 import org.jooq.generated.enums.DbUpdatePriv;
-import org.jooq.generated.tables.Db;
+import org.jooq.generated.tables.JDb;
+import org.jooq.generated.tables.pojos.Db;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -383,14 +384,14 @@ public class DbRecord extends UpdatableRecordImpl<DbRecord> {
      * Create a detached DbRecord
      */
     public DbRecord() {
-        super(Db.DB);
+        super(JDb.DB);
     }
 
     /**
      * Create a detached, initialised DbRecord
      */
     public DbRecord(String host, String db, String user, DbSelectPriv selectPriv, DbInsertPriv insertPriv, DbUpdatePriv updatePriv, DbDeletePriv deletePriv, DbCreatePriv createPriv, DbDropPriv dropPriv, DbGrantPriv grantPriv, DbReferencesPriv referencesPriv, DbIndexPriv indexPriv, DbAlterPriv alterPriv, DbCreateTmpTablePriv createTmpTablePriv, DbLockTablesPriv lockTablesPriv, DbCreateViewPriv createViewPriv, DbShowViewPriv showViewPriv, DbCreateRoutinePriv createRoutinePriv, DbAlterRoutinePriv alterRoutinePriv, DbExecutePriv executePriv, DbEventPriv eventPriv, DbTriggerPriv triggerPriv) {
-        super(Db.DB);
+        super(JDb.DB);
 
         setHost(host);
         setDb(db);
@@ -420,8 +421,8 @@ public class DbRecord extends UpdatableRecordImpl<DbRecord> {
     /**
      * Create a detached, initialised DbRecord
      */
-    public DbRecord(org.jooq.generated.tables.pojos.Db value) {
-        super(Db.DB);
+    public DbRecord(Db value) {
+        super(JDb.DB);
 
         if (value != null) {
             setHost(value.getHost());

@@ -9,7 +9,8 @@ import java.util.List;
 
 import org.jooq.Configuration;
 import org.jooq.Record3;
-import org.jooq.generated.tables.PasswordHistory;
+import org.jooq.generated.tables.JPasswordHistory;
+import org.jooq.generated.tables.pojos.PasswordHistory;
 import org.jooq.generated.tables.records.PasswordHistoryRecord;
 import org.jooq.impl.DAOImpl;
 
@@ -18,24 +19,24 @@ import org.jooq.impl.DAOImpl;
  * Password history for user accounts
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class PasswordHistoryDao extends DAOImpl<PasswordHistoryRecord, org.jooq.generated.tables.pojos.PasswordHistory, Record3<String, String, LocalDateTime>> {
+public class PasswordHistoryDao extends DAOImpl<PasswordHistoryRecord, PasswordHistory, Record3<String, String, LocalDateTime>> {
 
     /**
      * Create a new PasswordHistoryDao without any configuration
      */
     public PasswordHistoryDao() {
-        super(PasswordHistory.PASSWORD_HISTORY, org.jooq.generated.tables.pojos.PasswordHistory.class);
+        super(JPasswordHistory.PASSWORD_HISTORY, PasswordHistory.class);
     }
 
     /**
      * Create a new PasswordHistoryDao with an attached configuration
      */
     public PasswordHistoryDao(Configuration configuration) {
-        super(PasswordHistory.PASSWORD_HISTORY, org.jooq.generated.tables.pojos.PasswordHistory.class, configuration);
+        super(JPasswordHistory.PASSWORD_HISTORY, PasswordHistory.class, configuration);
     }
 
     @Override
-    public Record3<String, String, LocalDateTime> getId(org.jooq.generated.tables.pojos.PasswordHistory object) {
+    public Record3<String, String, LocalDateTime> getId(PasswordHistory object) {
         return compositeKeyRecord(object.getHost(), object.getUser(), object.getPasswordTimestamp());
     }
 
@@ -43,59 +44,59 @@ public class PasswordHistoryDao extends DAOImpl<PasswordHistoryRecord, org.jooq.
      * Fetch records that have <code>Host BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.PasswordHistory> fetchRangeOfHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(PasswordHistory.PASSWORD_HISTORY.HOST, lowerInclusive, upperInclusive);
+    public List<PasswordHistory> fetchRangeOfJHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JPasswordHistory.PASSWORD_HISTORY.HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Host IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.PasswordHistory> fetchByHost(String... values) {
-        return fetch(PasswordHistory.PASSWORD_HISTORY.HOST, values);
+    public List<PasswordHistory> fetchByJHost(String... values) {
+        return fetch(JPasswordHistory.PASSWORD_HISTORY.HOST, values);
     }
 
     /**
      * Fetch records that have <code>User BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.PasswordHistory> fetchRangeOfUser(String lowerInclusive, String upperInclusive) {
-        return fetchRange(PasswordHistory.PASSWORD_HISTORY.USER, lowerInclusive, upperInclusive);
+    public List<PasswordHistory> fetchRangeOfJUser(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JPasswordHistory.PASSWORD_HISTORY.USER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>User IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.PasswordHistory> fetchByUser(String... values) {
-        return fetch(PasswordHistory.PASSWORD_HISTORY.USER, values);
+    public List<PasswordHistory> fetchByJUser(String... values) {
+        return fetch(JPasswordHistory.PASSWORD_HISTORY.USER, values);
     }
 
     /**
      * Fetch records that have <code>Password_timestamp BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.PasswordHistory> fetchRangeOfPasswordTimestamp(LocalDateTime lowerInclusive, LocalDateTime upperInclusive) {
-        return fetchRange(PasswordHistory.PASSWORD_HISTORY.PASSWORD_TIMESTAMP, lowerInclusive, upperInclusive);
+    public List<PasswordHistory> fetchRangeOfJPasswordTimestamp(LocalDateTime lowerInclusive, LocalDateTime upperInclusive) {
+        return fetchRange(JPasswordHistory.PASSWORD_HISTORY.PASSWORD_TIMESTAMP, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Password_timestamp IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.PasswordHistory> fetchByPasswordTimestamp(LocalDateTime... values) {
-        return fetch(PasswordHistory.PASSWORD_HISTORY.PASSWORD_TIMESTAMP, values);
+    public List<PasswordHistory> fetchByJPasswordTimestamp(LocalDateTime... values) {
+        return fetch(JPasswordHistory.PASSWORD_HISTORY.PASSWORD_TIMESTAMP, values);
     }
 
     /**
      * Fetch records that have <code>Password BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.PasswordHistory> fetchRangeOfPassword(String lowerInclusive, String upperInclusive) {
-        return fetchRange(PasswordHistory.PASSWORD_HISTORY.PASSWORD, lowerInclusive, upperInclusive);
+    public List<PasswordHistory> fetchRangeOfJPassword(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JPasswordHistory.PASSWORD_HISTORY.PASSWORD, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Password IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.PasswordHistory> fetchByPassword(String... values) {
-        return fetch(PasswordHistory.PASSWORD_HISTORY.PASSWORD, values);
+    public List<PasswordHistory> fetchByJPassword(String... values) {
+        return fetch(JPasswordHistory.PASSWORD_HISTORY.PASSWORD, values);
     }
 }

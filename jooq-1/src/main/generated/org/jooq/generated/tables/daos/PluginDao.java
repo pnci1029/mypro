@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.jooq.Configuration;
-import org.jooq.generated.tables.Plugin;
+import org.jooq.generated.tables.JPlugin;
+import org.jooq.generated.tables.pojos.Plugin;
 import org.jooq.generated.tables.records.PluginRecord;
 import org.jooq.impl.DAOImpl;
 
@@ -17,24 +18,24 @@ import org.jooq.impl.DAOImpl;
  * MySQL plugins
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class PluginDao extends DAOImpl<PluginRecord, org.jooq.generated.tables.pojos.Plugin, String> {
+public class PluginDao extends DAOImpl<PluginRecord, Plugin, String> {
 
     /**
      * Create a new PluginDao without any configuration
      */
     public PluginDao() {
-        super(Plugin.PLUGIN, org.jooq.generated.tables.pojos.Plugin.class);
+        super(JPlugin.PLUGIN, Plugin.class);
     }
 
     /**
      * Create a new PluginDao with an attached configuration
      */
     public PluginDao(Configuration configuration) {
-        super(Plugin.PLUGIN, org.jooq.generated.tables.pojos.Plugin.class, configuration);
+        super(JPlugin.PLUGIN, Plugin.class, configuration);
     }
 
     @Override
-    public String getId(org.jooq.generated.tables.pojos.Plugin object) {
+    public String getId(Plugin object) {
         return object.getName();
     }
 
@@ -42,43 +43,43 @@ public class PluginDao extends DAOImpl<PluginRecord, org.jooq.generated.tables.p
      * Fetch records that have <code>name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Plugin> fetchRangeOfName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Plugin.PLUGIN.NAME, lowerInclusive, upperInclusive);
+    public List<Plugin> fetchRangeOfJName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JPlugin.PLUGIN.NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Plugin> fetchByName(String... values) {
-        return fetch(Plugin.PLUGIN.NAME, values);
+    public List<Plugin> fetchByJName(String... values) {
+        return fetch(JPlugin.PLUGIN.NAME, values);
     }
 
     /**
      * Fetch a unique record that has <code>name = value</code>
      */
-    public org.jooq.generated.tables.pojos.Plugin fetchOneByName(String value) {
-        return fetchOne(Plugin.PLUGIN.NAME, value);
+    public Plugin fetchOneByJName(String value) {
+        return fetchOne(JPlugin.PLUGIN.NAME, value);
     }
 
     /**
      * Fetch a unique record that has <code>name = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.Plugin> fetchOptionalByName(String value) {
-        return fetchOptional(Plugin.PLUGIN.NAME, value);
+    public Optional<Plugin> fetchOptionalByJName(String value) {
+        return fetchOptional(JPlugin.PLUGIN.NAME, value);
     }
 
     /**
      * Fetch records that have <code>dl BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.Plugin> fetchRangeOfDl(String lowerInclusive, String upperInclusive) {
-        return fetchRange(Plugin.PLUGIN.DL, lowerInclusive, upperInclusive);
+    public List<Plugin> fetchRangeOfJDl(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JPlugin.PLUGIN.DL, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>dl IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.Plugin> fetchByDl(String... values) {
-        return fetch(Plugin.PLUGIN.DL, values);
+    public List<Plugin> fetchByJDl(String... values) {
+        return fetch(JPlugin.PLUGIN.DL, values);
     }
 }

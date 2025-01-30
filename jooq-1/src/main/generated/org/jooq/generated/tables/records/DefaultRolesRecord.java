@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record4;
-import org.jooq.generated.tables.DefaultRoles;
+import org.jooq.generated.tables.JDefaultRoles;
+import org.jooq.generated.tables.pojos.DefaultRoles;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -94,14 +95,14 @@ public class DefaultRolesRecord extends UpdatableRecordImpl<DefaultRolesRecord> 
      * Create a detached DefaultRolesRecord
      */
     public DefaultRolesRecord() {
-        super(DefaultRoles.DEFAULT_ROLES);
+        super(JDefaultRoles.DEFAULT_ROLES);
     }
 
     /**
      * Create a detached, initialised DefaultRolesRecord
      */
     public DefaultRolesRecord(String host, String user, String defaultRoleHost, String defaultRoleUser) {
-        super(DefaultRoles.DEFAULT_ROLES);
+        super(JDefaultRoles.DEFAULT_ROLES);
 
         setHost(host);
         setUser(user);
@@ -113,8 +114,8 @@ public class DefaultRolesRecord extends UpdatableRecordImpl<DefaultRolesRecord> 
     /**
      * Create a detached, initialised DefaultRolesRecord
      */
-    public DefaultRolesRecord(org.jooq.generated.tables.pojos.DefaultRoles value) {
-        super(DefaultRoles.DEFAULT_ROLES);
+    public DefaultRolesRecord(DefaultRoles value) {
+        super(JDefaultRoles.DEFAULT_ROLES);
 
         if (value != null) {
             setHost(value.getHost());

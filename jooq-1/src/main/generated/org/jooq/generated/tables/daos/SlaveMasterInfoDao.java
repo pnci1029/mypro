@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.jooq.Configuration;
-import org.jooq.generated.tables.SlaveMasterInfo;
+import org.jooq.generated.tables.JSlaveMasterInfo;
+import org.jooq.generated.tables.pojos.SlaveMasterInfo;
 import org.jooq.generated.tables.records.SlaveMasterInfoRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UInteger;
@@ -19,24 +20,24 @@ import org.jooq.types.ULong;
  * Master Information
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class SlaveMasterInfoDao extends DAOImpl<SlaveMasterInfoRecord, org.jooq.generated.tables.pojos.SlaveMasterInfo, String> {
+public class SlaveMasterInfoDao extends DAOImpl<SlaveMasterInfoRecord, SlaveMasterInfo, String> {
 
     /**
      * Create a new SlaveMasterInfoDao without any configuration
      */
     public SlaveMasterInfoDao() {
-        super(SlaveMasterInfo.SLAVE_MASTER_INFO, org.jooq.generated.tables.pojos.SlaveMasterInfo.class);
+        super(JSlaveMasterInfo.SLAVE_MASTER_INFO, SlaveMasterInfo.class);
     }
 
     /**
      * Create a new SlaveMasterInfoDao with an attached configuration
      */
     public SlaveMasterInfoDao(Configuration configuration) {
-        super(SlaveMasterInfo.SLAVE_MASTER_INFO, org.jooq.generated.tables.pojos.SlaveMasterInfo.class, configuration);
+        super(JSlaveMasterInfo.SLAVE_MASTER_INFO, SlaveMasterInfo.class, configuration);
     }
 
     @Override
-    public String getId(org.jooq.generated.tables.pojos.SlaveMasterInfo object) {
+    public String getId(SlaveMasterInfo object) {
         return object.getChannelName();
     }
 
@@ -44,511 +45,511 @@ public class SlaveMasterInfoDao extends DAOImpl<SlaveMasterInfoRecord, org.jooq.
      * Fetch records that have <code>Number_of_lines BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfNumberOfLines(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.NUMBER_OF_LINES, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJNumberOfLines(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.NUMBER_OF_LINES, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Number_of_lines IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByNumberOfLines(UInteger... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.NUMBER_OF_LINES, values);
+    public List<SlaveMasterInfo> fetchByJNumberOfLines(UInteger... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.NUMBER_OF_LINES, values);
     }
 
     /**
      * Fetch records that have <code>Master_log_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfMasterLogName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_LOG_NAME, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJMasterLogName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_LOG_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Master_log_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByMasterLogName(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_LOG_NAME, values);
+    public List<SlaveMasterInfo> fetchByJMasterLogName(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_LOG_NAME, values);
     }
 
     /**
      * Fetch records that have <code>Master_log_pos BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfMasterLogPos(ULong lowerInclusive, ULong upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_LOG_POS, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJMasterLogPos(ULong lowerInclusive, ULong upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_LOG_POS, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Master_log_pos IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByMasterLogPos(ULong... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_LOG_POS, values);
+    public List<SlaveMasterInfo> fetchByJMasterLogPos(ULong... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_LOG_POS, values);
     }
 
     /**
      * Fetch records that have <code>Host BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfHost(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.HOST, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJHost(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.HOST, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Host IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByHost(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.HOST, values);
+    public List<SlaveMasterInfo> fetchByJHost(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.HOST, values);
     }
 
     /**
      * Fetch records that have <code>User_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfUserName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.USER_NAME, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJUserName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.USER_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>User_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByUserName(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.USER_NAME, values);
+    public List<SlaveMasterInfo> fetchByJUserName(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.USER_NAME, values);
     }
 
     /**
      * Fetch records that have <code>User_password BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfUserPassword(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.USER_PASSWORD, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJUserPassword(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.USER_PASSWORD, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>User_password IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByUserPassword(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.USER_PASSWORD, values);
+    public List<SlaveMasterInfo> fetchByJUserPassword(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.USER_PASSWORD, values);
     }
 
     /**
      * Fetch records that have <code>Port BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfPort(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.PORT, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJPort(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.PORT, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Port IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByPort(UInteger... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.PORT, values);
+    public List<SlaveMasterInfo> fetchByJPort(UInteger... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.PORT, values);
     }
 
     /**
      * Fetch records that have <code>Connect_retry BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfConnectRetry(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.CONNECT_RETRY, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJConnectRetry(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.CONNECT_RETRY, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Connect_retry IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByConnectRetry(UInteger... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.CONNECT_RETRY, values);
+    public List<SlaveMasterInfo> fetchByJConnectRetry(UInteger... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.CONNECT_RETRY, values);
     }
 
     /**
      * Fetch records that have <code>Enabled_ssl BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfEnabledSsl(Byte lowerInclusive, Byte upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.ENABLED_SSL, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJEnabledSsl(Byte lowerInclusive, Byte upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.ENABLED_SSL, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Enabled_ssl IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByEnabledSsl(Byte... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.ENABLED_SSL, values);
+    public List<SlaveMasterInfo> fetchByJEnabledSsl(Byte... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.ENABLED_SSL, values);
     }
 
     /**
      * Fetch records that have <code>Ssl_ca BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfSslCa(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CA, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJSslCa(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CA, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Ssl_ca IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchBySslCa(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CA, values);
+    public List<SlaveMasterInfo> fetchByJSslCa(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CA, values);
     }
 
     /**
      * Fetch records that have <code>Ssl_capath BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfSslCapath(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CAPATH, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJSslCapath(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CAPATH, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Ssl_capath IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchBySslCapath(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CAPATH, values);
+    public List<SlaveMasterInfo> fetchByJSslCapath(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CAPATH, values);
     }
 
     /**
      * Fetch records that have <code>Ssl_cert BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfSslCert(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CERT, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJSslCert(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CERT, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Ssl_cert IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchBySslCert(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CERT, values);
+    public List<SlaveMasterInfo> fetchByJSslCert(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CERT, values);
     }
 
     /**
      * Fetch records that have <code>Ssl_cipher BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfSslCipher(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CIPHER, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJSslCipher(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CIPHER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Ssl_cipher IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchBySslCipher(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CIPHER, values);
+    public List<SlaveMasterInfo> fetchByJSslCipher(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CIPHER, values);
     }
 
     /**
      * Fetch records that have <code>Ssl_key BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfSslKey(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_KEY, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJSslKey(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_KEY, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Ssl_key IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchBySslKey(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_KEY, values);
+    public List<SlaveMasterInfo> fetchByJSslKey(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_KEY, values);
     }
 
     /**
      * Fetch records that have <code>Ssl_verify_server_cert BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfSslVerifyServerCert(Byte lowerInclusive, Byte upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_VERIFY_SERVER_CERT, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJSslVerifyServerCert(Byte lowerInclusive, Byte upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_VERIFY_SERVER_CERT, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Ssl_verify_server_cert IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchBySslVerifyServerCert(Byte... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_VERIFY_SERVER_CERT, values);
+    public List<SlaveMasterInfo> fetchByJSslVerifyServerCert(Byte... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_VERIFY_SERVER_CERT, values);
     }
 
     /**
      * Fetch records that have <code>Heartbeat BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfHeartbeat(Double lowerInclusive, Double upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.HEARTBEAT, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJHeartbeat(Double lowerInclusive, Double upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.HEARTBEAT, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Heartbeat IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByHeartbeat(Double... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.HEARTBEAT, values);
+    public List<SlaveMasterInfo> fetchByJHeartbeat(Double... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.HEARTBEAT, values);
     }
 
     /**
      * Fetch records that have <code>Bind BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfBind(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.BIND, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJBind(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.BIND, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Bind IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByBind(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.BIND, values);
+    public List<SlaveMasterInfo> fetchByJBind(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.BIND, values);
     }
 
     /**
      * Fetch records that have <code>Ignored_server_ids BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfIgnoredServerIds(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.IGNORED_SERVER_IDS, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJIgnoredServerIds(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.IGNORED_SERVER_IDS, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Ignored_server_ids IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByIgnoredServerIds(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.IGNORED_SERVER_IDS, values);
+    public List<SlaveMasterInfo> fetchByJIgnoredServerIds(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.IGNORED_SERVER_IDS, values);
     }
 
     /**
      * Fetch records that have <code>Uuid BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfUuid(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.UUID, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJUuid(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.UUID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Uuid IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByUuid(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.UUID, values);
+    public List<SlaveMasterInfo> fetchByJUuid(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.UUID, values);
     }
 
     /**
      * Fetch records that have <code>Retry_count BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfRetryCount(ULong lowerInclusive, ULong upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.RETRY_COUNT, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJRetryCount(ULong lowerInclusive, ULong upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.RETRY_COUNT, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Retry_count IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByRetryCount(ULong... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.RETRY_COUNT, values);
+    public List<SlaveMasterInfo> fetchByJRetryCount(ULong... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.RETRY_COUNT, values);
     }
 
     /**
      * Fetch records that have <code>Ssl_crl BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfSslCrl(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CRL, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJSslCrl(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CRL, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Ssl_crl IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchBySslCrl(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CRL, values);
+    public List<SlaveMasterInfo> fetchByJSslCrl(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CRL, values);
     }
 
     /**
      * Fetch records that have <code>Ssl_crlpath BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfSslCrlpath(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CRLPATH, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJSslCrlpath(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CRLPATH, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Ssl_crlpath IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchBySslCrlpath(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CRLPATH, values);
+    public List<SlaveMasterInfo> fetchByJSslCrlpath(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.SSL_CRLPATH, values);
     }
 
     /**
      * Fetch records that have <code>Enabled_auto_position BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfEnabledAutoPosition(Byte lowerInclusive, Byte upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.ENABLED_AUTO_POSITION, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJEnabledAutoPosition(Byte lowerInclusive, Byte upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.ENABLED_AUTO_POSITION, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Enabled_auto_position IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByEnabledAutoPosition(Byte... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.ENABLED_AUTO_POSITION, values);
+    public List<SlaveMasterInfo> fetchByJEnabledAutoPosition(Byte... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.ENABLED_AUTO_POSITION, values);
     }
 
     /**
      * Fetch records that have <code>Channel_name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfChannelName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.CHANNEL_NAME, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJChannelName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.CHANNEL_NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Channel_name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByChannelName(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.CHANNEL_NAME, values);
+    public List<SlaveMasterInfo> fetchByJChannelName(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.CHANNEL_NAME, values);
     }
 
     /**
      * Fetch a unique record that has <code>Channel_name = value</code>
      */
-    public org.jooq.generated.tables.pojos.SlaveMasterInfo fetchOneByChannelName(String value) {
-        return fetchOne(SlaveMasterInfo.SLAVE_MASTER_INFO.CHANNEL_NAME, value);
+    public SlaveMasterInfo fetchOneByJChannelName(String value) {
+        return fetchOne(JSlaveMasterInfo.SLAVE_MASTER_INFO.CHANNEL_NAME, value);
     }
 
     /**
      * Fetch a unique record that has <code>Channel_name = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchOptionalByChannelName(String value) {
-        return fetchOptional(SlaveMasterInfo.SLAVE_MASTER_INFO.CHANNEL_NAME, value);
+    public Optional<SlaveMasterInfo> fetchOptionalByJChannelName(String value) {
+        return fetchOptional(JSlaveMasterInfo.SLAVE_MASTER_INFO.CHANNEL_NAME, value);
     }
 
     /**
      * Fetch records that have <code>Tls_version BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfTlsVersion(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.TLS_VERSION, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJTlsVersion(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.TLS_VERSION, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Tls_version IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByTlsVersion(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.TLS_VERSION, values);
+    public List<SlaveMasterInfo> fetchByJTlsVersion(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.TLS_VERSION, values);
     }
 
     /**
      * Fetch records that have <code>Public_key_path BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfPublicKeyPath(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.PUBLIC_KEY_PATH, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJPublicKeyPath(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.PUBLIC_KEY_PATH, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Public_key_path IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByPublicKeyPath(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.PUBLIC_KEY_PATH, values);
+    public List<SlaveMasterInfo> fetchByJPublicKeyPath(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.PUBLIC_KEY_PATH, values);
     }
 
     /**
      * Fetch records that have <code>Get_public_key BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfGetPublicKey(Byte lowerInclusive, Byte upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.GET_PUBLIC_KEY, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJGetPublicKey(Byte lowerInclusive, Byte upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.GET_PUBLIC_KEY, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Get_public_key IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByGetPublicKey(Byte... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.GET_PUBLIC_KEY, values);
+    public List<SlaveMasterInfo> fetchByJGetPublicKey(Byte... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.GET_PUBLIC_KEY, values);
     }
 
     /**
      * Fetch records that have <code>Network_namespace BETWEEN lowerInclusive
      * AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfNetworkNamespace(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.NETWORK_NAMESPACE, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJNetworkNamespace(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.NETWORK_NAMESPACE, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Network_namespace IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByNetworkNamespace(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.NETWORK_NAMESPACE, values);
+    public List<SlaveMasterInfo> fetchByJNetworkNamespace(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.NETWORK_NAMESPACE, values);
     }
 
     /**
      * Fetch records that have <code>Master_compression_algorithm BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfMasterCompressionAlgorithm(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_COMPRESSION_ALGORITHM, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJMasterCompressionAlgorithm(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_COMPRESSION_ALGORITHM, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Master_compression_algorithm IN
      * (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByMasterCompressionAlgorithm(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_COMPRESSION_ALGORITHM, values);
+    public List<SlaveMasterInfo> fetchByJMasterCompressionAlgorithm(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_COMPRESSION_ALGORITHM, values);
     }
 
     /**
      * Fetch records that have <code>Master_zstd_compression_level BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfMasterZstdCompressionLevel(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_ZSTD_COMPRESSION_LEVEL, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJMasterZstdCompressionLevel(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_ZSTD_COMPRESSION_LEVEL, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Master_zstd_compression_level IN
      * (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByMasterZstdCompressionLevel(UInteger... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_ZSTD_COMPRESSION_LEVEL, values);
+    public List<SlaveMasterInfo> fetchByJMasterZstdCompressionLevel(UInteger... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.MASTER_ZSTD_COMPRESSION_LEVEL, values);
     }
 
     /**
      * Fetch records that have <code>Tls_ciphersuites BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfTlsCiphersuites(String lowerInclusive, String upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.TLS_CIPHERSUITES, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJTlsCiphersuites(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.TLS_CIPHERSUITES, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Tls_ciphersuites IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByTlsCiphersuites(String... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.TLS_CIPHERSUITES, values);
+    public List<SlaveMasterInfo> fetchByJTlsCiphersuites(String... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.TLS_CIPHERSUITES, values);
     }
 
     /**
      * Fetch records that have <code>Source_connection_auto_failover BETWEEN
      * lowerInclusive AND upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfSourceConnectionAutoFailover(Byte lowerInclusive, Byte upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.SOURCE_CONNECTION_AUTO_FAILOVER, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJSourceConnectionAutoFailover(Byte lowerInclusive, Byte upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.SOURCE_CONNECTION_AUTO_FAILOVER, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Source_connection_auto_failover IN
      * (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchBySourceConnectionAutoFailover(Byte... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.SOURCE_CONNECTION_AUTO_FAILOVER, values);
+    public List<SlaveMasterInfo> fetchByJSourceConnectionAutoFailover(Byte... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.SOURCE_CONNECTION_AUTO_FAILOVER, values);
     }
 
     /**
      * Fetch records that have <code>Gtid_only BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchRangeOfGtidOnly(Byte lowerInclusive, Byte upperInclusive) {
-        return fetchRange(SlaveMasterInfo.SLAVE_MASTER_INFO.GTID_ONLY, lowerInclusive, upperInclusive);
+    public List<SlaveMasterInfo> fetchRangeOfJGtidOnly(Byte lowerInclusive, Byte upperInclusive) {
+        return fetchRange(JSlaveMasterInfo.SLAVE_MASTER_INFO.GTID_ONLY, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Gtid_only IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.SlaveMasterInfo> fetchByGtidOnly(Byte... values) {
-        return fetch(SlaveMasterInfo.SLAVE_MASTER_INFO.GTID_ONLY, values);
+    public List<SlaveMasterInfo> fetchByJGtidOnly(Byte... values) {
+        return fetch(JSlaveMasterInfo.SLAVE_MASTER_INFO.GTID_ONLY, values);
     }
 }

@@ -7,7 +7,8 @@ package org.jooq.generated.tables.records;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-import org.jooq.generated.tables.SlowLog;
+import org.jooq.generated.tables.JSlowLog;
+import org.jooq.generated.tables.pojos.SlowLog;
 import org.jooq.impl.TableRecordImpl;
 import org.jooq.types.UInteger;
 import org.jooq.types.ULong;
@@ -209,14 +210,14 @@ public class SlowLogRecord extends TableRecordImpl<SlowLogRecord> {
      * Create a detached SlowLogRecord
      */
     public SlowLogRecord() {
-        super(SlowLog.SLOW_LOG);
+        super(JSlowLog.SLOW_LOG);
     }
 
     /**
      * Create a detached, initialised SlowLogRecord
      */
     public SlowLogRecord(LocalDateTime startTime, String userHost, LocalTime queryTime, LocalTime lockTime, Integer rowsSent, Integer rowsExamined, String db, Integer lastInsertId, Integer insertId, UInteger serverId, byte[] sqlText, ULong threadId) {
-        super(SlowLog.SLOW_LOG);
+        super(JSlowLog.SLOW_LOG);
 
         setStartTime(startTime);
         setUserHost(userHost);
@@ -236,8 +237,8 @@ public class SlowLogRecord extends TableRecordImpl<SlowLogRecord> {
     /**
      * Create a detached, initialised SlowLogRecord
      */
-    public SlowLogRecord(org.jooq.generated.tables.pojos.SlowLog value) {
-        super(SlowLog.SLOW_LOG);
+    public SlowLogRecord(SlowLog value) {
+        super(JSlowLog.SLOW_LOG);
 
         if (value != null) {
             setStartTime(value.getStartTime());

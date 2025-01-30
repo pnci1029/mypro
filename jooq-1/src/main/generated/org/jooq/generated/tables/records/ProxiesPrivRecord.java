@@ -7,7 +7,8 @@ package org.jooq.generated.tables.records;
 import java.time.LocalDateTime;
 
 import org.jooq.Record4;
-import org.jooq.generated.tables.ProxiesPriv;
+import org.jooq.generated.tables.JProxiesPriv;
+import org.jooq.generated.tables.pojos.ProxiesPriv;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -141,14 +142,14 @@ public class ProxiesPrivRecord extends UpdatableRecordImpl<ProxiesPrivRecord> {
      * Create a detached ProxiesPrivRecord
      */
     public ProxiesPrivRecord() {
-        super(ProxiesPriv.PROXIES_PRIV);
+        super(JProxiesPriv.PROXIES_PRIV);
     }
 
     /**
      * Create a detached, initialised ProxiesPrivRecord
      */
     public ProxiesPrivRecord(String host, String user, String proxiedHost, String proxiedUser, Byte withGrant, String grantor, LocalDateTime timestamp) {
-        super(ProxiesPriv.PROXIES_PRIV);
+        super(JProxiesPriv.PROXIES_PRIV);
 
         setHost(host);
         setUser(user);
@@ -163,8 +164,8 @@ public class ProxiesPrivRecord extends UpdatableRecordImpl<ProxiesPrivRecord> {
     /**
      * Create a detached, initialised ProxiesPrivRecord
      */
-    public ProxiesPrivRecord(org.jooq.generated.tables.pojos.ProxiesPriv value) {
-        super(ProxiesPriv.PROXIES_PRIV);
+    public ProxiesPrivRecord(ProxiesPriv value) {
+        super(JProxiesPriv.PROXIES_PRIV);
 
         if (value != null) {
             setHost(value.getHost());

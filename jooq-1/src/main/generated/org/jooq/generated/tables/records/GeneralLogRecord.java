@@ -6,7 +6,8 @@ package org.jooq.generated.tables.records;
 
 import java.time.LocalDateTime;
 
-import org.jooq.generated.tables.GeneralLog;
+import org.jooq.generated.tables.JGeneralLog;
+import org.jooq.generated.tables.pojos.GeneralLog;
 import org.jooq.impl.TableRecordImpl;
 import org.jooq.types.UInteger;
 import org.jooq.types.ULong;
@@ -118,14 +119,14 @@ public class GeneralLogRecord extends TableRecordImpl<GeneralLogRecord> {
      * Create a detached GeneralLogRecord
      */
     public GeneralLogRecord() {
-        super(GeneralLog.GENERAL_LOG);
+        super(JGeneralLog.GENERAL_LOG);
     }
 
     /**
      * Create a detached, initialised GeneralLogRecord
      */
     public GeneralLogRecord(LocalDateTime eventTime, String userHost, ULong threadId, UInteger serverId, String commandType, byte[] argument) {
-        super(GeneralLog.GENERAL_LOG);
+        super(JGeneralLog.GENERAL_LOG);
 
         setEventTime(eventTime);
         setUserHost(userHost);
@@ -139,8 +140,8 @@ public class GeneralLogRecord extends TableRecordImpl<GeneralLogRecord> {
     /**
      * Create a detached, initialised GeneralLogRecord
      */
-    public GeneralLogRecord(org.jooq.generated.tables.pojos.GeneralLog value) {
-        super(GeneralLog.GENERAL_LOG);
+    public GeneralLogRecord(GeneralLog value) {
+        super(JGeneralLog.GENERAL_LOG);
 
         if (value != null) {
             setEventTime(value.getEventTime());

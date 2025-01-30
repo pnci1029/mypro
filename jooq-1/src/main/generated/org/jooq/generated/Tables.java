@@ -4,44 +4,44 @@
 package org.jooq.generated;
 
 
-import org.jooq.generated.tables.ColumnsPriv;
-import org.jooq.generated.tables.Component;
-import org.jooq.generated.tables.Db;
-import org.jooq.generated.tables.DefaultRoles;
-import org.jooq.generated.tables.EngineCost;
-import org.jooq.generated.tables.Func;
-import org.jooq.generated.tables.GeneralLog;
-import org.jooq.generated.tables.GlobalGrants;
-import org.jooq.generated.tables.GtidExecuted;
-import org.jooq.generated.tables.HelpCategory;
-import org.jooq.generated.tables.HelpKeyword;
-import org.jooq.generated.tables.HelpRelation;
-import org.jooq.generated.tables.HelpTopic;
-import org.jooq.generated.tables.InnodbIndexStats;
-import org.jooq.generated.tables.InnodbTableStats;
-import org.jooq.generated.tables.NdbBinlogIndex;
-import org.jooq.generated.tables.PasswordHistory;
-import org.jooq.generated.tables.Plugin;
-import org.jooq.generated.tables.ProcsPriv;
-import org.jooq.generated.tables.ProxiesPriv;
-import org.jooq.generated.tables.ReplicationAsynchronousConnectionFailover;
-import org.jooq.generated.tables.ReplicationAsynchronousConnectionFailoverManaged;
-import org.jooq.generated.tables.ReplicationGroupConfigurationVersion;
-import org.jooq.generated.tables.ReplicationGroupMemberActions;
-import org.jooq.generated.tables.RoleEdges;
-import org.jooq.generated.tables.ServerCost;
-import org.jooq.generated.tables.Servers;
-import org.jooq.generated.tables.SlaveMasterInfo;
-import org.jooq.generated.tables.SlaveRelayLogInfo;
-import org.jooq.generated.tables.SlaveWorkerInfo;
-import org.jooq.generated.tables.SlowLog;
-import org.jooq.generated.tables.TablesPriv;
-import org.jooq.generated.tables.TimeZone;
-import org.jooq.generated.tables.TimeZoneLeapSecond;
-import org.jooq.generated.tables.TimeZoneName;
-import org.jooq.generated.tables.TimeZoneTransition;
-import org.jooq.generated.tables.TimeZoneTransitionType;
-import org.jooq.generated.tables.User;
+import org.jooq.generated.tables.JColumnsPriv;
+import org.jooq.generated.tables.JComponent;
+import org.jooq.generated.tables.JDb;
+import org.jooq.generated.tables.JDefaultRoles;
+import org.jooq.generated.tables.JEngineCost;
+import org.jooq.generated.tables.JFunc;
+import org.jooq.generated.tables.JGeneralLog;
+import org.jooq.generated.tables.JGlobalGrants;
+import org.jooq.generated.tables.JGtidExecuted;
+import org.jooq.generated.tables.JHelpCategory;
+import org.jooq.generated.tables.JHelpKeyword;
+import org.jooq.generated.tables.JHelpRelation;
+import org.jooq.generated.tables.JHelpTopic;
+import org.jooq.generated.tables.JInnodbIndexStats;
+import org.jooq.generated.tables.JInnodbTableStats;
+import org.jooq.generated.tables.JNdbBinlogIndex;
+import org.jooq.generated.tables.JPasswordHistory;
+import org.jooq.generated.tables.JPlugin;
+import org.jooq.generated.tables.JProcsPriv;
+import org.jooq.generated.tables.JProxiesPriv;
+import org.jooq.generated.tables.JReplicationAsynchronousConnectionFailover;
+import org.jooq.generated.tables.JReplicationAsynchronousConnectionFailoverManaged;
+import org.jooq.generated.tables.JReplicationGroupConfigurationVersion;
+import org.jooq.generated.tables.JReplicationGroupMemberActions;
+import org.jooq.generated.tables.JRoleEdges;
+import org.jooq.generated.tables.JServerCost;
+import org.jooq.generated.tables.JServers;
+import org.jooq.generated.tables.JSlaveMasterInfo;
+import org.jooq.generated.tables.JSlaveRelayLogInfo;
+import org.jooq.generated.tables.JSlaveWorkerInfo;
+import org.jooq.generated.tables.JSlowLog;
+import org.jooq.generated.tables.JTablesPriv;
+import org.jooq.generated.tables.JTimeZone;
+import org.jooq.generated.tables.JTimeZoneLeapSecond;
+import org.jooq.generated.tables.JTimeZoneName;
+import org.jooq.generated.tables.JTimeZoneTransition;
+import org.jooq.generated.tables.JTimeZoneTransitionType;
+import org.jooq.generated.tables.JUser;
 
 
 /**
@@ -53,190 +53,190 @@ public class Tables {
     /**
      * Column privileges
      */
-    public static final ColumnsPriv COLUMNS_PRIV = ColumnsPriv.COLUMNS_PRIV;
+    public static final JColumnsPriv COLUMNS_PRIV = JColumnsPriv.COLUMNS_PRIV;
 
     /**
      * Components
      */
-    public static final Component COMPONENT = Component.COMPONENT;
+    public static final JComponent COMPONENT = JComponent.COMPONENT;
 
     /**
      * Database privileges
      */
-    public static final Db DB = Db.DB;
+    public static final JDb DB = JDb.DB;
 
     /**
      * Default roles
      */
-    public static final DefaultRoles DEFAULT_ROLES = DefaultRoles.DEFAULT_ROLES;
+    public static final JDefaultRoles DEFAULT_ROLES = JDefaultRoles.DEFAULT_ROLES;
 
     /**
      * The table <code>mysql.engine_cost</code>.
      */
-    public static final EngineCost ENGINE_COST = EngineCost.ENGINE_COST;
+    public static final JEngineCost ENGINE_COST = JEngineCost.ENGINE_COST;
 
     /**
      * User defined functions
      */
-    public static final Func FUNC = Func.FUNC;
+    public static final JFunc FUNC = JFunc.FUNC;
 
     /**
      * General log
      */
-    public static final GeneralLog GENERAL_LOG = GeneralLog.GENERAL_LOG;
+    public static final JGeneralLog GENERAL_LOG = JGeneralLog.GENERAL_LOG;
 
     /**
      * Extended global grants
      */
-    public static final GlobalGrants GLOBAL_GRANTS = GlobalGrants.GLOBAL_GRANTS;
+    public static final JGlobalGrants GLOBAL_GRANTS = JGlobalGrants.GLOBAL_GRANTS;
 
     /**
      * The table <code>mysql.gtid_executed</code>.
      */
-    public static final GtidExecuted GTID_EXECUTED = GtidExecuted.GTID_EXECUTED;
+    public static final JGtidExecuted GTID_EXECUTED = JGtidExecuted.GTID_EXECUTED;
 
     /**
      * help categories
      */
-    public static final HelpCategory HELP_CATEGORY = HelpCategory.HELP_CATEGORY;
+    public static final JHelpCategory HELP_CATEGORY = JHelpCategory.HELP_CATEGORY;
 
     /**
      * help keywords
      */
-    public static final HelpKeyword HELP_KEYWORD = HelpKeyword.HELP_KEYWORD;
+    public static final JHelpKeyword HELP_KEYWORD = JHelpKeyword.HELP_KEYWORD;
 
     /**
      * keyword-topic relation
      */
-    public static final HelpRelation HELP_RELATION = HelpRelation.HELP_RELATION;
+    public static final JHelpRelation HELP_RELATION = JHelpRelation.HELP_RELATION;
 
     /**
      * help topics
      */
-    public static final HelpTopic HELP_TOPIC = HelpTopic.HELP_TOPIC;
+    public static final JHelpTopic HELP_TOPIC = JHelpTopic.HELP_TOPIC;
 
     /**
      * The table <code>mysql.innodb_index_stats</code>.
      */
-    public static final InnodbIndexStats INNODB_INDEX_STATS = InnodbIndexStats.INNODB_INDEX_STATS;
+    public static final JInnodbIndexStats INNODB_INDEX_STATS = JInnodbIndexStats.INNODB_INDEX_STATS;
 
     /**
      * The table <code>mysql.innodb_table_stats</code>.
      */
-    public static final InnodbTableStats INNODB_TABLE_STATS = InnodbTableStats.INNODB_TABLE_STATS;
+    public static final JInnodbTableStats INNODB_TABLE_STATS = JInnodbTableStats.INNODB_TABLE_STATS;
 
     /**
      * The table <code>mysql.ndb_binlog_index</code>.
      */
-    public static final NdbBinlogIndex NDB_BINLOG_INDEX = NdbBinlogIndex.NDB_BINLOG_INDEX;
+    public static final JNdbBinlogIndex NDB_BINLOG_INDEX = JNdbBinlogIndex.NDB_BINLOG_INDEX;
 
     /**
      * Password history for user accounts
      */
-    public static final PasswordHistory PASSWORD_HISTORY = PasswordHistory.PASSWORD_HISTORY;
+    public static final JPasswordHistory PASSWORD_HISTORY = JPasswordHistory.PASSWORD_HISTORY;
 
     /**
      * MySQL plugins
      */
-    public static final Plugin PLUGIN = Plugin.PLUGIN;
+    public static final JPlugin PLUGIN = JPlugin.PLUGIN;
 
     /**
      * Procedure privileges
      */
-    public static final ProcsPriv PROCS_PRIV = ProcsPriv.PROCS_PRIV;
+    public static final JProcsPriv PROCS_PRIV = JProcsPriv.PROCS_PRIV;
 
     /**
      * User proxy privileges
      */
-    public static final ProxiesPriv PROXIES_PRIV = ProxiesPriv.PROXIES_PRIV;
+    public static final JProxiesPriv PROXIES_PRIV = JProxiesPriv.PROXIES_PRIV;
 
     /**
      * The source configuration details
      */
-    public static final ReplicationAsynchronousConnectionFailover REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER = ReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER;
+    public static final JReplicationAsynchronousConnectionFailover REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER = JReplicationAsynchronousConnectionFailover.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER;
 
     /**
      * The managed source configuration details
      */
-    public static final ReplicationAsynchronousConnectionFailoverManaged REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_MANAGED = ReplicationAsynchronousConnectionFailoverManaged.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_MANAGED;
+    public static final JReplicationAsynchronousConnectionFailoverManaged REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_MANAGED = JReplicationAsynchronousConnectionFailoverManaged.REPLICATION_ASYNCHRONOUS_CONNECTION_FAILOVER_MANAGED;
 
     /**
      * The group configuration version.
      */
-    public static final ReplicationGroupConfigurationVersion REPLICATION_GROUP_CONFIGURATION_VERSION = ReplicationGroupConfigurationVersion.REPLICATION_GROUP_CONFIGURATION_VERSION;
+    public static final JReplicationGroupConfigurationVersion REPLICATION_GROUP_CONFIGURATION_VERSION = JReplicationGroupConfigurationVersion.REPLICATION_GROUP_CONFIGURATION_VERSION;
 
     /**
      * The member actions configuration.
      */
-    public static final ReplicationGroupMemberActions REPLICATION_GROUP_MEMBER_ACTIONS = ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS;
+    public static final JReplicationGroupMemberActions REPLICATION_GROUP_MEMBER_ACTIONS = JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS;
 
     /**
      * Role hierarchy and role grants
      */
-    public static final RoleEdges ROLE_EDGES = RoleEdges.ROLE_EDGES;
+    public static final JRoleEdges ROLE_EDGES = JRoleEdges.ROLE_EDGES;
 
     /**
      * The table <code>mysql.server_cost</code>.
      */
-    public static final ServerCost SERVER_COST = ServerCost.SERVER_COST;
+    public static final JServerCost SERVER_COST = JServerCost.SERVER_COST;
 
     /**
      * MySQL Foreign Servers table
      */
-    public static final Servers SERVERS = Servers.SERVERS;
+    public static final JServers SERVERS = JServers.SERVERS;
 
     /**
      * Master Information
      */
-    public static final SlaveMasterInfo SLAVE_MASTER_INFO = SlaveMasterInfo.SLAVE_MASTER_INFO;
+    public static final JSlaveMasterInfo SLAVE_MASTER_INFO = JSlaveMasterInfo.SLAVE_MASTER_INFO;
 
     /**
      * Relay Log Information
      */
-    public static final SlaveRelayLogInfo SLAVE_RELAY_LOG_INFO = SlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO;
+    public static final JSlaveRelayLogInfo SLAVE_RELAY_LOG_INFO = JSlaveRelayLogInfo.SLAVE_RELAY_LOG_INFO;
 
     /**
      * Worker Information
      */
-    public static final SlaveWorkerInfo SLAVE_WORKER_INFO = SlaveWorkerInfo.SLAVE_WORKER_INFO;
+    public static final JSlaveWorkerInfo SLAVE_WORKER_INFO = JSlaveWorkerInfo.SLAVE_WORKER_INFO;
 
     /**
      * Slow log
      */
-    public static final SlowLog SLOW_LOG = SlowLog.SLOW_LOG;
+    public static final JSlowLog SLOW_LOG = JSlowLog.SLOW_LOG;
 
     /**
      * Table privileges
      */
-    public static final TablesPriv TABLES_PRIV = TablesPriv.TABLES_PRIV;
+    public static final JTablesPriv TABLES_PRIV = JTablesPriv.TABLES_PRIV;
 
     /**
      * Time zones
      */
-    public static final TimeZone TIME_ZONE = TimeZone.TIME_ZONE;
+    public static final JTimeZone TIME_ZONE = JTimeZone.TIME_ZONE;
 
     /**
      * Leap seconds information for time zones
      */
-    public static final TimeZoneLeapSecond TIME_ZONE_LEAP_SECOND = TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND;
+    public static final JTimeZoneLeapSecond TIME_ZONE_LEAP_SECOND = JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND;
 
     /**
      * Time zone names
      */
-    public static final TimeZoneName TIME_ZONE_NAME = TimeZoneName.TIME_ZONE_NAME;
+    public static final JTimeZoneName TIME_ZONE_NAME = JTimeZoneName.TIME_ZONE_NAME;
 
     /**
      * Time zone transitions
      */
-    public static final TimeZoneTransition TIME_ZONE_TRANSITION = TimeZoneTransition.TIME_ZONE_TRANSITION;
+    public static final JTimeZoneTransition TIME_ZONE_TRANSITION = JTimeZoneTransition.TIME_ZONE_TRANSITION;
 
     /**
      * Time zone transition types
      */
-    public static final TimeZoneTransitionType TIME_ZONE_TRANSITION_TYPE = TimeZoneTransitionType.TIME_ZONE_TRANSITION_TYPE;
+    public static final JTimeZoneTransitionType TIME_ZONE_TRANSITION_TYPE = JTimeZoneTransitionType.TIME_ZONE_TRANSITION_TYPE;
 
     /**
      * Users and global privileges
      */
-    public static final User USER = User.USER;
+    public static final JUser USER = JUser.USER;
 }

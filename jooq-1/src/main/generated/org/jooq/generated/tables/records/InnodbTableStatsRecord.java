@@ -7,7 +7,8 @@ package org.jooq.generated.tables.records;
 import java.time.LocalDateTime;
 
 import org.jooq.Record2;
-import org.jooq.generated.tables.InnodbTableStats;
+import org.jooq.generated.tables.JInnodbTableStats;
+import org.jooq.generated.tables.pojos.InnodbTableStats;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.ULong;
 
@@ -129,14 +130,14 @@ public class InnodbTableStatsRecord extends UpdatableRecordImpl<InnodbTableStats
      * Create a detached InnodbTableStatsRecord
      */
     public InnodbTableStatsRecord() {
-        super(InnodbTableStats.INNODB_TABLE_STATS);
+        super(JInnodbTableStats.INNODB_TABLE_STATS);
     }
 
     /**
      * Create a detached, initialised InnodbTableStatsRecord
      */
     public InnodbTableStatsRecord(String databaseName, String tableName, LocalDateTime lastUpdate, ULong nRows, ULong clusteredIndexSize, ULong sumOfOtherIndexSizes) {
-        super(InnodbTableStats.INNODB_TABLE_STATS);
+        super(JInnodbTableStats.INNODB_TABLE_STATS);
 
         setDatabaseName(databaseName);
         setTableName(tableName);
@@ -150,8 +151,8 @@ public class InnodbTableStatsRecord extends UpdatableRecordImpl<InnodbTableStats
     /**
      * Create a detached, initialised InnodbTableStatsRecord
      */
-    public InnodbTableStatsRecord(org.jooq.generated.tables.pojos.InnodbTableStats value) {
-        super(InnodbTableStats.INNODB_TABLE_STATS);
+    public InnodbTableStatsRecord(InnodbTableStats value) {
+        super(JInnodbTableStats.INNODB_TABLE_STATS);
 
         if (value != null) {
             setDatabaseName(value.getDatabaseName());

@@ -6,7 +6,8 @@ package org.jooq.generated.tables.records;
 
 import org.jooq.Record1;
 import org.jooq.generated.enums.TimeZoneUseLeapSeconds;
-import org.jooq.generated.tables.TimeZone;
+import org.jooq.generated.tables.JTimeZone;
+import org.jooq.generated.tables.pojos.TimeZone;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 
@@ -66,14 +67,14 @@ public class TimeZoneRecord extends UpdatableRecordImpl<TimeZoneRecord> {
      * Create a detached TimeZoneRecord
      */
     public TimeZoneRecord() {
-        super(TimeZone.TIME_ZONE);
+        super(JTimeZone.TIME_ZONE);
     }
 
     /**
      * Create a detached, initialised TimeZoneRecord
      */
     public TimeZoneRecord(UInteger timeZoneId, TimeZoneUseLeapSeconds useLeapSeconds) {
-        super(TimeZone.TIME_ZONE);
+        super(JTimeZone.TIME_ZONE);
 
         setTimeZoneId(timeZoneId);
         setUseLeapSeconds(useLeapSeconds);
@@ -83,8 +84,8 @@ public class TimeZoneRecord extends UpdatableRecordImpl<TimeZoneRecord> {
     /**
      * Create a detached, initialised TimeZoneRecord
      */
-    public TimeZoneRecord(org.jooq.generated.tables.pojos.TimeZone value) {
-        super(TimeZone.TIME_ZONE);
+    public TimeZoneRecord(TimeZone value) {
+        super(JTimeZone.TIME_ZONE);
 
         if (value != null) {
             setTimeZoneId(value.getTimeZoneId());

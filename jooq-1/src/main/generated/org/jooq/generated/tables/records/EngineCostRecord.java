@@ -7,7 +7,8 @@ package org.jooq.generated.tables.records;
 import java.time.LocalDateTime;
 
 import org.jooq.Record3;
-import org.jooq.generated.tables.EngineCost;
+import org.jooq.generated.tables.JEngineCost;
+import org.jooq.generated.tables.pojos.EngineCost;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -141,14 +142,14 @@ public class EngineCostRecord extends UpdatableRecordImpl<EngineCostRecord> {
      * Create a detached EngineCostRecord
      */
     public EngineCostRecord() {
-        super(EngineCost.ENGINE_COST);
+        super(JEngineCost.ENGINE_COST);
     }
 
     /**
      * Create a detached, initialised EngineCostRecord
      */
     public EngineCostRecord(String engineName, Integer deviceType, String costName, Double costValue, LocalDateTime lastUpdate, String comment, Double defaultValue) {
-        super(EngineCost.ENGINE_COST);
+        super(JEngineCost.ENGINE_COST);
 
         setEngineName(engineName);
         setDeviceType(deviceType);
@@ -163,8 +164,8 @@ public class EngineCostRecord extends UpdatableRecordImpl<EngineCostRecord> {
     /**
      * Create a detached, initialised EngineCostRecord
      */
-    public EngineCostRecord(org.jooq.generated.tables.pojos.EngineCost value) {
-        super(EngineCost.ENGINE_COST);
+    public EngineCostRecord(EngineCost value) {
+        super(JEngineCost.ENGINE_COST);
 
         if (value != null) {
             setEngineName(value.getEngineName());

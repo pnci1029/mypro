@@ -6,7 +6,8 @@ package org.jooq.generated.tables.records;
 
 import org.jooq.Record1;
 import org.jooq.generated.enums.FuncType;
-import org.jooq.generated.tables.Func;
+import org.jooq.generated.tables.JFunc;
+import org.jooq.generated.tables.pojos.Func;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -95,14 +96,14 @@ public class FuncRecord extends UpdatableRecordImpl<FuncRecord> {
      * Create a detached FuncRecord
      */
     public FuncRecord() {
-        super(Func.FUNC);
+        super(JFunc.FUNC);
     }
 
     /**
      * Create a detached, initialised FuncRecord
      */
     public FuncRecord(String name, Byte ret, String dl, FuncType type) {
-        super(Func.FUNC);
+        super(JFunc.FUNC);
 
         setName(name);
         setRet(ret);
@@ -114,8 +115,8 @@ public class FuncRecord extends UpdatableRecordImpl<FuncRecord> {
     /**
      * Create a detached, initialised FuncRecord
      */
-    public FuncRecord(org.jooq.generated.tables.pojos.Func value) {
-        super(Func.FUNC);
+    public FuncRecord(Func value) {
+        super(JFunc.FUNC);
 
         if (value != null) {
             setName(value.getName());

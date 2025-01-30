@@ -8,7 +8,8 @@ import java.util.List;
 
 import org.jooq.Configuration;
 import org.jooq.Record2;
-import org.jooq.generated.tables.ReplicationGroupMemberActions;
+import org.jooq.generated.tables.JReplicationGroupMemberActions;
+import org.jooq.generated.tables.pojos.ReplicationGroupMemberActions;
 import org.jooq.generated.tables.records.ReplicationGroupMemberActionsRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UByte;
@@ -18,13 +19,13 @@ import org.jooq.types.UByte;
  * The member actions configuration.
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class ReplicationGroupMemberActionsDao extends DAOImpl<ReplicationGroupMemberActionsRecord, org.jooq.generated.tables.pojos.ReplicationGroupMemberActions, Record2<String, String>> {
+public class ReplicationGroupMemberActionsDao extends DAOImpl<ReplicationGroupMemberActionsRecord, ReplicationGroupMemberActions, Record2<String, String>> {
 
     /**
      * Create a new ReplicationGroupMemberActionsDao without any configuration
      */
     public ReplicationGroupMemberActionsDao() {
-        super(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS, org.jooq.generated.tables.pojos.ReplicationGroupMemberActions.class);
+        super(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS, ReplicationGroupMemberActions.class);
     }
 
     /**
@@ -32,11 +33,11 @@ public class ReplicationGroupMemberActionsDao extends DAOImpl<ReplicationGroupMe
      * configuration
      */
     public ReplicationGroupMemberActionsDao(Configuration configuration) {
-        super(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS, org.jooq.generated.tables.pojos.ReplicationGroupMemberActions.class, configuration);
+        super(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS, ReplicationGroupMemberActions.class, configuration);
     }
 
     @Override
-    public Record2<String, String> getId(org.jooq.generated.tables.pojos.ReplicationGroupMemberActions object) {
+    public Record2<String, String> getId(ReplicationGroupMemberActions object) {
         return compositeKeyRecord(object.getName(), object.getEvent());
     }
 
@@ -44,89 +45,89 @@ public class ReplicationGroupMemberActionsDao extends DAOImpl<ReplicationGroupMe
      * Fetch records that have <code>name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchRangeOfName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.NAME, lowerInclusive, upperInclusive);
+    public List<ReplicationGroupMemberActions> fetchRangeOfJName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchByName(String... values) {
-        return fetch(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.NAME, values);
+    public List<ReplicationGroupMemberActions> fetchByJName(String... values) {
+        return fetch(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.NAME, values);
     }
 
     /**
      * Fetch records that have <code>event BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchRangeOfEvent(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.EVENT, lowerInclusive, upperInclusive);
+    public List<ReplicationGroupMemberActions> fetchRangeOfJEvent(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.EVENT, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>event IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchByEvent(String... values) {
-        return fetch(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.EVENT, values);
+    public List<ReplicationGroupMemberActions> fetchByJEvent(String... values) {
+        return fetch(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.EVENT, values);
     }
 
     /**
      * Fetch records that have <code>enabled BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchRangeOfEnabled(Byte lowerInclusive, Byte upperInclusive) {
-        return fetchRange(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.ENABLED, lowerInclusive, upperInclusive);
+    public List<ReplicationGroupMemberActions> fetchRangeOfJEnabled(Byte lowerInclusive, Byte upperInclusive) {
+        return fetchRange(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.ENABLED, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>enabled IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchByEnabled(Byte... values) {
-        return fetch(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.ENABLED, values);
+    public List<ReplicationGroupMemberActions> fetchByJEnabled(Byte... values) {
+        return fetch(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.ENABLED, values);
     }
 
     /**
      * Fetch records that have <code>type BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchRangeOfType(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.TYPE, lowerInclusive, upperInclusive);
+    public List<ReplicationGroupMemberActions> fetchRangeOfJType(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.TYPE, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>type IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchByType(String... values) {
-        return fetch(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.TYPE, values);
+    public List<ReplicationGroupMemberActions> fetchByJType(String... values) {
+        return fetch(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.TYPE, values);
     }
 
     /**
      * Fetch records that have <code>priority BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchRangeOfPriority(UByte lowerInclusive, UByte upperInclusive) {
-        return fetchRange(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.PRIORITY, lowerInclusive, upperInclusive);
+    public List<ReplicationGroupMemberActions> fetchRangeOfJPriority(UByte lowerInclusive, UByte upperInclusive) {
+        return fetchRange(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.PRIORITY, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>priority IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchByPriority(UByte... values) {
-        return fetch(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.PRIORITY, values);
+    public List<ReplicationGroupMemberActions> fetchByJPriority(UByte... values) {
+        return fetch(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.PRIORITY, values);
     }
 
     /**
      * Fetch records that have <code>error_handling BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchRangeOfErrorHandling(String lowerInclusive, String upperInclusive) {
-        return fetchRange(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.ERROR_HANDLING, lowerInclusive, upperInclusive);
+    public List<ReplicationGroupMemberActions> fetchRangeOfJErrorHandling(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.ERROR_HANDLING, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>error_handling IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.ReplicationGroupMemberActions> fetchByErrorHandling(String... values) {
-        return fetch(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.ERROR_HANDLING, values);
+    public List<ReplicationGroupMemberActions> fetchByJErrorHandling(String... values) {
+        return fetch(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS.ERROR_HANDLING, values);
     }
 }

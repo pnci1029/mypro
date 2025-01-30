@@ -43,7 +43,8 @@ import org.jooq.generated.enums.UserSslType;
 import org.jooq.generated.enums.UserSuperPriv;
 import org.jooq.generated.enums.UserTriggerPriv;
 import org.jooq.generated.enums.UserUpdatePriv;
-import org.jooq.generated.tables.User;
+import org.jooq.generated.tables.JUser;
+import org.jooq.generated.tables.pojos.User;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 import org.jooq.types.UShort;
@@ -839,14 +840,14 @@ public class UserRecord extends UpdatableRecordImpl<UserRecord> {
      * Create a detached UserRecord
      */
     public UserRecord() {
-        super(User.USER);
+        super(JUser.USER);
     }
 
     /**
      * Create a detached, initialised UserRecord
      */
     public UserRecord(String host, String user, UserSelectPriv selectPriv, UserInsertPriv insertPriv, UserUpdatePriv updatePriv, UserDeletePriv deletePriv, UserCreatePriv createPriv, UserDropPriv dropPriv, UserReloadPriv reloadPriv, UserShutdownPriv shutdownPriv, UserProcessPriv processPriv, UserFilePriv filePriv, UserGrantPriv grantPriv, UserReferencesPriv referencesPriv, UserIndexPriv indexPriv, UserAlterPriv alterPriv, UserShowDbPriv showDbPriv, UserSuperPriv superPriv, UserCreateTmpTablePriv createTmpTablePriv, UserLockTablesPriv lockTablesPriv, UserExecutePriv executePriv, UserReplSlavePriv replSlavePriv, UserReplClientPriv replClientPriv, UserCreateViewPriv createViewPriv, UserShowViewPriv showViewPriv, UserCreateRoutinePriv createRoutinePriv, UserAlterRoutinePriv alterRoutinePriv, UserCreateUserPriv createUserPriv, UserEventPriv eventPriv, UserTriggerPriv triggerPriv, UserCreateTablespacePriv createTablespacePriv, UserSslType sslType, byte[] sslCipher, byte[] x509Issuer, byte[] x509Subject, UInteger maxQuestions, UInteger maxUpdates, UInteger maxConnections, UInteger maxUserConnections, String plugin, String authenticationString, UserPasswordExpired passwordExpired, LocalDateTime passwordLastChanged, UShort passwordLifetime, UserAccountLocked accountLocked, UserCreateRolePriv createRolePriv, UserDropRolePriv dropRolePriv, UShort passwordReuseHistory, UShort passwordReuseTime, UserPasswordRequireCurrent passwordRequireCurrent, JSON userAttributes) {
-        super(User.USER);
+        super(JUser.USER);
 
         setHost(host);
         setUser(user);
@@ -905,8 +906,8 @@ public class UserRecord extends UpdatableRecordImpl<UserRecord> {
     /**
      * Create a detached, initialised UserRecord
      */
-    public UserRecord(org.jooq.generated.tables.pojos.User value) {
-        super(User.USER);
+    public UserRecord(User value) {
+        super(JUser.USER);
 
         if (value != null) {
             setHost(value.getHost());

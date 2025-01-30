@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.HelpKeyword;
+import org.jooq.generated.tables.JHelpKeyword;
+import org.jooq.generated.tables.pojos.HelpKeyword;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 
@@ -65,14 +66,14 @@ public class HelpKeywordRecord extends UpdatableRecordImpl<HelpKeywordRecord> {
      * Create a detached HelpKeywordRecord
      */
     public HelpKeywordRecord() {
-        super(HelpKeyword.HELP_KEYWORD);
+        super(JHelpKeyword.HELP_KEYWORD);
     }
 
     /**
      * Create a detached, initialised HelpKeywordRecord
      */
     public HelpKeywordRecord(UInteger helpKeywordId, String name) {
-        super(HelpKeyword.HELP_KEYWORD);
+        super(JHelpKeyword.HELP_KEYWORD);
 
         setHelpKeywordId(helpKeywordId);
         setName(name);
@@ -82,8 +83,8 @@ public class HelpKeywordRecord extends UpdatableRecordImpl<HelpKeywordRecord> {
     /**
      * Create a detached, initialised HelpKeywordRecord
      */
-    public HelpKeywordRecord(org.jooq.generated.tables.pojos.HelpKeyword value) {
-        super(HelpKeyword.HELP_KEYWORD);
+    public HelpKeywordRecord(HelpKeyword value) {
+        super(JHelpKeyword.HELP_KEYWORD);
 
         if (value != null) {
             setHelpKeywordId(value.getHelpKeywordId());

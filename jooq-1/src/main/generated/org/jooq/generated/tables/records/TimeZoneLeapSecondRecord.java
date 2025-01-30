@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.TimeZoneLeapSecond;
+import org.jooq.generated.tables.JTimeZoneLeapSecond;
+import org.jooq.generated.tables.pojos.TimeZoneLeapSecond;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -64,14 +65,14 @@ public class TimeZoneLeapSecondRecord extends UpdatableRecordImpl<TimeZoneLeapSe
      * Create a detached TimeZoneLeapSecondRecord
      */
     public TimeZoneLeapSecondRecord() {
-        super(TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND);
+        super(JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND);
     }
 
     /**
      * Create a detached, initialised TimeZoneLeapSecondRecord
      */
     public TimeZoneLeapSecondRecord(Long transitionTime, Integer correction) {
-        super(TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND);
+        super(JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND);
 
         setTransitionTime(transitionTime);
         setCorrection(correction);
@@ -81,8 +82,8 @@ public class TimeZoneLeapSecondRecord extends UpdatableRecordImpl<TimeZoneLeapSe
     /**
      * Create a detached, initialised TimeZoneLeapSecondRecord
      */
-    public TimeZoneLeapSecondRecord(org.jooq.generated.tables.pojos.TimeZoneLeapSecond value) {
-        super(TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND);
+    public TimeZoneLeapSecondRecord(TimeZoneLeapSecond value) {
+        super(JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND);
 
         if (value != null) {
             setTransitionTime(value.getTransitionTime());

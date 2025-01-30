@@ -9,7 +9,8 @@ import java.util.Optional;
 
 import org.jooq.Configuration;
 import org.jooq.generated.enums.TimeZoneUseLeapSeconds;
-import org.jooq.generated.tables.TimeZone;
+import org.jooq.generated.tables.JTimeZone;
+import org.jooq.generated.tables.pojos.TimeZone;
 import org.jooq.generated.tables.records.TimeZoneRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UInteger;
@@ -19,24 +20,24 @@ import org.jooq.types.UInteger;
  * Time zones
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class TimeZoneDao extends DAOImpl<TimeZoneRecord, org.jooq.generated.tables.pojos.TimeZone, UInteger> {
+public class TimeZoneDao extends DAOImpl<TimeZoneRecord, TimeZone, UInteger> {
 
     /**
      * Create a new TimeZoneDao without any configuration
      */
     public TimeZoneDao() {
-        super(TimeZone.TIME_ZONE, org.jooq.generated.tables.pojos.TimeZone.class);
+        super(JTimeZone.TIME_ZONE, TimeZone.class);
     }
 
     /**
      * Create a new TimeZoneDao with an attached configuration
      */
     public TimeZoneDao(Configuration configuration) {
-        super(TimeZone.TIME_ZONE, org.jooq.generated.tables.pojos.TimeZone.class, configuration);
+        super(JTimeZone.TIME_ZONE, TimeZone.class, configuration);
     }
 
     @Override
-    public UInteger getId(org.jooq.generated.tables.pojos.TimeZone object) {
+    public UInteger getId(TimeZone object) {
         return object.getTimeZoneId();
     }
 
@@ -44,43 +45,43 @@ public class TimeZoneDao extends DAOImpl<TimeZoneRecord, org.jooq.generated.tabl
      * Fetch records that have <code>Time_zone_id BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZone> fetchRangeOfTimeZoneId(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(TimeZone.TIME_ZONE.TIME_ZONE_ID, lowerInclusive, upperInclusive);
+    public List<TimeZone> fetchRangeOfJTimeZoneId(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JTimeZone.TIME_ZONE.TIME_ZONE_ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Time_zone_id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZone> fetchByTimeZoneId(UInteger... values) {
-        return fetch(TimeZone.TIME_ZONE.TIME_ZONE_ID, values);
+    public List<TimeZone> fetchByJTimeZoneId(UInteger... values) {
+        return fetch(JTimeZone.TIME_ZONE.TIME_ZONE_ID, values);
     }
 
     /**
      * Fetch a unique record that has <code>Time_zone_id = value</code>
      */
-    public org.jooq.generated.tables.pojos.TimeZone fetchOneByTimeZoneId(UInteger value) {
-        return fetchOne(TimeZone.TIME_ZONE.TIME_ZONE_ID, value);
+    public TimeZone fetchOneByJTimeZoneId(UInteger value) {
+        return fetchOne(JTimeZone.TIME_ZONE.TIME_ZONE_ID, value);
     }
 
     /**
      * Fetch a unique record that has <code>Time_zone_id = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.TimeZone> fetchOptionalByTimeZoneId(UInteger value) {
-        return fetchOptional(TimeZone.TIME_ZONE.TIME_ZONE_ID, value);
+    public Optional<TimeZone> fetchOptionalByJTimeZoneId(UInteger value) {
+        return fetchOptional(JTimeZone.TIME_ZONE.TIME_ZONE_ID, value);
     }
 
     /**
      * Fetch records that have <code>Use_leap_seconds BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZone> fetchRangeOfUseLeapSeconds(TimeZoneUseLeapSeconds lowerInclusive, TimeZoneUseLeapSeconds upperInclusive) {
-        return fetchRange(TimeZone.TIME_ZONE.USE_LEAP_SECONDS, lowerInclusive, upperInclusive);
+    public List<TimeZone> fetchRangeOfJUseLeapSeconds(TimeZoneUseLeapSeconds lowerInclusive, TimeZoneUseLeapSeconds upperInclusive) {
+        return fetchRange(JTimeZone.TIME_ZONE.USE_LEAP_SECONDS, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Use_leap_seconds IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZone> fetchByUseLeapSeconds(TimeZoneUseLeapSeconds... values) {
-        return fetch(TimeZone.TIME_ZONE.USE_LEAP_SECONDS, values);
+    public List<TimeZone> fetchByJUseLeapSeconds(TimeZoneUseLeapSeconds... values) {
+        return fetch(JTimeZone.TIME_ZONE.USE_LEAP_SECONDS, values);
     }
 }

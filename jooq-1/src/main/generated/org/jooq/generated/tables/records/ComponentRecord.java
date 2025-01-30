@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.Component;
+import org.jooq.generated.tables.JComponent;
+import org.jooq.generated.tables.pojos.Component;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 
@@ -80,14 +81,14 @@ public class ComponentRecord extends UpdatableRecordImpl<ComponentRecord> {
      * Create a detached ComponentRecord
      */
     public ComponentRecord() {
-        super(Component.COMPONENT);
+        super(JComponent.COMPONENT);
     }
 
     /**
      * Create a detached, initialised ComponentRecord
      */
     public ComponentRecord(UInteger componentId, UInteger componentGroupId, String componentUrn) {
-        super(Component.COMPONENT);
+        super(JComponent.COMPONENT);
 
         setComponentId(componentId);
         setComponentGroupId(componentGroupId);
@@ -98,8 +99,8 @@ public class ComponentRecord extends UpdatableRecordImpl<ComponentRecord> {
     /**
      * Create a detached, initialised ComponentRecord
      */
-    public ComponentRecord(org.jooq.generated.tables.pojos.Component value) {
-        super(Component.COMPONENT);
+    public ComponentRecord(Component value) {
+        super(JComponent.COMPONENT);
 
         if (value != null) {
             setComponentId(value.getComponentId());

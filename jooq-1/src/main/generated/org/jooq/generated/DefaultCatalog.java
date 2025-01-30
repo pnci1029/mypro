@@ -28,7 +28,7 @@ public class DefaultCatalog extends CatalogImpl {
     /**
      * The schema <code>mysql</code>.
      */
-    public final Mysql MYSQL = Mysql.MYSQL;
+    public final JMysql MYSQL = JMysql.MYSQL;
 
     /**
      * No further instances allowed
@@ -40,7 +40,7 @@ public class DefaultCatalog extends CatalogImpl {
     @Override
     public final List<Schema> getSchemas() {
         return Arrays.asList(
-            Mysql.MYSQL
+            JMysql.MYSQL
         );
     }
 

@@ -7,7 +7,8 @@ package org.jooq.generated.tables.records;
 import java.time.LocalDateTime;
 
 import org.jooq.Record3;
-import org.jooq.generated.tables.PasswordHistory;
+import org.jooq.generated.tables.JPasswordHistory;
+import org.jooq.generated.tables.pojos.PasswordHistory;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -96,14 +97,14 @@ public class PasswordHistoryRecord extends UpdatableRecordImpl<PasswordHistoryRe
      * Create a detached PasswordHistoryRecord
      */
     public PasswordHistoryRecord() {
-        super(PasswordHistory.PASSWORD_HISTORY);
+        super(JPasswordHistory.PASSWORD_HISTORY);
     }
 
     /**
      * Create a detached, initialised PasswordHistoryRecord
      */
     public PasswordHistoryRecord(String host, String user, LocalDateTime passwordTimestamp, String password) {
-        super(PasswordHistory.PASSWORD_HISTORY);
+        super(JPasswordHistory.PASSWORD_HISTORY);
 
         setHost(host);
         setUser(user);
@@ -115,8 +116,8 @@ public class PasswordHistoryRecord extends UpdatableRecordImpl<PasswordHistoryRe
     /**
      * Create a detached, initialised PasswordHistoryRecord
      */
-    public PasswordHistoryRecord(org.jooq.generated.tables.pojos.PasswordHistory value) {
-        super(PasswordHistory.PASSWORD_HISTORY);
+    public PasswordHistoryRecord(PasswordHistory value) {
+        super(JPasswordHistory.PASSWORD_HISTORY);
 
         if (value != null) {
             setHost(value.getHost());

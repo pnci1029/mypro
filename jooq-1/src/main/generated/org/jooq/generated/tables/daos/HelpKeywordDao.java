@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.jooq.Configuration;
-import org.jooq.generated.tables.HelpKeyword;
+import org.jooq.generated.tables.JHelpKeyword;
+import org.jooq.generated.tables.pojos.HelpKeyword;
 import org.jooq.generated.tables.records.HelpKeywordRecord;
 import org.jooq.impl.DAOImpl;
 import org.jooq.types.UInteger;
@@ -18,24 +19,24 @@ import org.jooq.types.UInteger;
  * help keywords
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class HelpKeywordDao extends DAOImpl<HelpKeywordRecord, org.jooq.generated.tables.pojos.HelpKeyword, UInteger> {
+public class HelpKeywordDao extends DAOImpl<HelpKeywordRecord, HelpKeyword, UInteger> {
 
     /**
      * Create a new HelpKeywordDao without any configuration
      */
     public HelpKeywordDao() {
-        super(HelpKeyword.HELP_KEYWORD, org.jooq.generated.tables.pojos.HelpKeyword.class);
+        super(JHelpKeyword.HELP_KEYWORD, HelpKeyword.class);
     }
 
     /**
      * Create a new HelpKeywordDao with an attached configuration
      */
     public HelpKeywordDao(Configuration configuration) {
-        super(HelpKeyword.HELP_KEYWORD, org.jooq.generated.tables.pojos.HelpKeyword.class, configuration);
+        super(JHelpKeyword.HELP_KEYWORD, HelpKeyword.class, configuration);
     }
 
     @Override
-    public UInteger getId(org.jooq.generated.tables.pojos.HelpKeyword object) {
+    public UInteger getId(HelpKeyword object) {
         return object.getHelpKeywordId();
     }
 
@@ -43,57 +44,57 @@ public class HelpKeywordDao extends DAOImpl<HelpKeywordRecord, org.jooq.generate
      * Fetch records that have <code>help_keyword_id BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpKeyword> fetchRangeOfHelpKeywordId(UInteger lowerInclusive, UInteger upperInclusive) {
-        return fetchRange(HelpKeyword.HELP_KEYWORD.HELP_KEYWORD_ID, lowerInclusive, upperInclusive);
+    public List<HelpKeyword> fetchRangeOfJHelpKeywordId(UInteger lowerInclusive, UInteger upperInclusive) {
+        return fetchRange(JHelpKeyword.HELP_KEYWORD.HELP_KEYWORD_ID, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>help_keyword_id IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpKeyword> fetchByHelpKeywordId(UInteger... values) {
-        return fetch(HelpKeyword.HELP_KEYWORD.HELP_KEYWORD_ID, values);
+    public List<HelpKeyword> fetchByJHelpKeywordId(UInteger... values) {
+        return fetch(JHelpKeyword.HELP_KEYWORD.HELP_KEYWORD_ID, values);
     }
 
     /**
      * Fetch a unique record that has <code>help_keyword_id = value</code>
      */
-    public org.jooq.generated.tables.pojos.HelpKeyword fetchOneByHelpKeywordId(UInteger value) {
-        return fetchOne(HelpKeyword.HELP_KEYWORD.HELP_KEYWORD_ID, value);
+    public HelpKeyword fetchOneByJHelpKeywordId(UInteger value) {
+        return fetchOne(JHelpKeyword.HELP_KEYWORD.HELP_KEYWORD_ID, value);
     }
 
     /**
      * Fetch a unique record that has <code>help_keyword_id = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.HelpKeyword> fetchOptionalByHelpKeywordId(UInteger value) {
-        return fetchOptional(HelpKeyword.HELP_KEYWORD.HELP_KEYWORD_ID, value);
+    public Optional<HelpKeyword> fetchOptionalByJHelpKeywordId(UInteger value) {
+        return fetchOptional(JHelpKeyword.HELP_KEYWORD.HELP_KEYWORD_ID, value);
     }
 
     /**
      * Fetch records that have <code>name BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpKeyword> fetchRangeOfName(String lowerInclusive, String upperInclusive) {
-        return fetchRange(HelpKeyword.HELP_KEYWORD.NAME, lowerInclusive, upperInclusive);
+    public List<HelpKeyword> fetchRangeOfJName(String lowerInclusive, String upperInclusive) {
+        return fetchRange(JHelpKeyword.HELP_KEYWORD.NAME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>name IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.HelpKeyword> fetchByName(String... values) {
-        return fetch(HelpKeyword.HELP_KEYWORD.NAME, values);
+    public List<HelpKeyword> fetchByJName(String... values) {
+        return fetch(JHelpKeyword.HELP_KEYWORD.NAME, values);
     }
 
     /**
      * Fetch a unique record that has <code>name = value</code>
      */
-    public org.jooq.generated.tables.pojos.HelpKeyword fetchOneByName(String value) {
-        return fetchOne(HelpKeyword.HELP_KEYWORD.NAME, value);
+    public HelpKeyword fetchOneByJName(String value) {
+        return fetchOne(JHelpKeyword.HELP_KEYWORD.NAME, value);
     }
 
     /**
      * Fetch a unique record that has <code>name = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.HelpKeyword> fetchOptionalByName(String value) {
-        return fetchOptional(HelpKeyword.HELP_KEYWORD.NAME, value);
+    public Optional<HelpKeyword> fetchOptionalByJName(String value) {
+        return fetchOptional(JHelpKeyword.HELP_KEYWORD.NAME, value);
     }
 }

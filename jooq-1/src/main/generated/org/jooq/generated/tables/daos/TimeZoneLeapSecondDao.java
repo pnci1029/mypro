@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.jooq.Configuration;
-import org.jooq.generated.tables.TimeZoneLeapSecond;
+import org.jooq.generated.tables.JTimeZoneLeapSecond;
+import org.jooq.generated.tables.pojos.TimeZoneLeapSecond;
 import org.jooq.generated.tables.records.TimeZoneLeapSecondRecord;
 import org.jooq.impl.DAOImpl;
 
@@ -17,24 +18,24 @@ import org.jooq.impl.DAOImpl;
  * Leap seconds information for time zones
  */
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
-public class TimeZoneLeapSecondDao extends DAOImpl<TimeZoneLeapSecondRecord, org.jooq.generated.tables.pojos.TimeZoneLeapSecond, Long> {
+public class TimeZoneLeapSecondDao extends DAOImpl<TimeZoneLeapSecondRecord, TimeZoneLeapSecond, Long> {
 
     /**
      * Create a new TimeZoneLeapSecondDao without any configuration
      */
     public TimeZoneLeapSecondDao() {
-        super(TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND, org.jooq.generated.tables.pojos.TimeZoneLeapSecond.class);
+        super(JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND, TimeZoneLeapSecond.class);
     }
 
     /**
      * Create a new TimeZoneLeapSecondDao with an attached configuration
      */
     public TimeZoneLeapSecondDao(Configuration configuration) {
-        super(TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND, org.jooq.generated.tables.pojos.TimeZoneLeapSecond.class, configuration);
+        super(JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND, TimeZoneLeapSecond.class, configuration);
     }
 
     @Override
-    public Long getId(org.jooq.generated.tables.pojos.TimeZoneLeapSecond object) {
+    public Long getId(TimeZoneLeapSecond object) {
         return object.getTransitionTime();
     }
 
@@ -42,43 +43,43 @@ public class TimeZoneLeapSecondDao extends DAOImpl<TimeZoneLeapSecondRecord, org
      * Fetch records that have <code>Transition_time BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneLeapSecond> fetchRangeOfTransitionTime(Long lowerInclusive, Long upperInclusive) {
-        return fetchRange(TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.TRANSITION_TIME, lowerInclusive, upperInclusive);
+    public List<TimeZoneLeapSecond> fetchRangeOfJTransitionTime(Long lowerInclusive, Long upperInclusive) {
+        return fetchRange(JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.TRANSITION_TIME, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Transition_time IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneLeapSecond> fetchByTransitionTime(Long... values) {
-        return fetch(TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.TRANSITION_TIME, values);
+    public List<TimeZoneLeapSecond> fetchByJTransitionTime(Long... values) {
+        return fetch(JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.TRANSITION_TIME, values);
     }
 
     /**
      * Fetch a unique record that has <code>Transition_time = value</code>
      */
-    public org.jooq.generated.tables.pojos.TimeZoneLeapSecond fetchOneByTransitionTime(Long value) {
-        return fetchOne(TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.TRANSITION_TIME, value);
+    public TimeZoneLeapSecond fetchOneByJTransitionTime(Long value) {
+        return fetchOne(JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.TRANSITION_TIME, value);
     }
 
     /**
      * Fetch a unique record that has <code>Transition_time = value</code>
      */
-    public Optional<org.jooq.generated.tables.pojos.TimeZoneLeapSecond> fetchOptionalByTransitionTime(Long value) {
-        return fetchOptional(TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.TRANSITION_TIME, value);
+    public Optional<TimeZoneLeapSecond> fetchOptionalByJTransitionTime(Long value) {
+        return fetchOptional(JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.TRANSITION_TIME, value);
     }
 
     /**
      * Fetch records that have <code>Correction BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneLeapSecond> fetchRangeOfCorrection(Integer lowerInclusive, Integer upperInclusive) {
-        return fetchRange(TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.CORRECTION, lowerInclusive, upperInclusive);
+    public List<TimeZoneLeapSecond> fetchRangeOfJCorrection(Integer lowerInclusive, Integer upperInclusive) {
+        return fetchRange(JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.CORRECTION, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>Correction IN (values)</code>
      */
-    public List<org.jooq.generated.tables.pojos.TimeZoneLeapSecond> fetchByCorrection(Integer... values) {
-        return fetch(TimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.CORRECTION, values);
+    public List<TimeZoneLeapSecond> fetchByJCorrection(Integer... values) {
+        return fetch(JTimeZoneLeapSecond.TIME_ZONE_LEAP_SECOND.CORRECTION, values);
     }
 }

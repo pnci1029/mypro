@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record2;
-import org.jooq.generated.tables.GtidExecuted;
+import org.jooq.generated.tables.JGtidExecuted;
+import org.jooq.generated.tables.pojos.GtidExecuted;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -85,14 +86,14 @@ public class GtidExecutedRecord extends UpdatableRecordImpl<GtidExecutedRecord> 
      * Create a detached GtidExecutedRecord
      */
     public GtidExecutedRecord() {
-        super(GtidExecuted.GTID_EXECUTED);
+        super(JGtidExecuted.GTID_EXECUTED);
     }
 
     /**
      * Create a detached, initialised GtidExecutedRecord
      */
     public GtidExecutedRecord(String sourceUuid, Long intervalStart, Long intervalEnd) {
-        super(GtidExecuted.GTID_EXECUTED);
+        super(JGtidExecuted.GTID_EXECUTED);
 
         setSourceUuid(sourceUuid);
         setIntervalStart(intervalStart);
@@ -103,8 +104,8 @@ public class GtidExecutedRecord extends UpdatableRecordImpl<GtidExecutedRecord> 
     /**
      * Create a detached, initialised GtidExecutedRecord
      */
-    public GtidExecutedRecord(org.jooq.generated.tables.pojos.GtidExecuted value) {
-        super(GtidExecuted.GTID_EXECUTED);
+    public GtidExecutedRecord(GtidExecuted value) {
+        super(JGtidExecuted.GTID_EXECUTED);
 
         if (value != null) {
             setSourceUuid(value.getSourceUuid());

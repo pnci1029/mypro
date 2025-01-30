@@ -6,7 +6,8 @@ package org.jooq.generated.tables.records;
 
 import org.jooq.Record3;
 import org.jooq.generated.enums.GlobalGrantsWithGrantOption;
-import org.jooq.generated.tables.GlobalGrants;
+import org.jooq.generated.tables.JGlobalGrants;
+import org.jooq.generated.tables.pojos.GlobalGrants;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -95,14 +96,14 @@ public class GlobalGrantsRecord extends UpdatableRecordImpl<GlobalGrantsRecord> 
      * Create a detached GlobalGrantsRecord
      */
     public GlobalGrantsRecord() {
-        super(GlobalGrants.GLOBAL_GRANTS);
+        super(JGlobalGrants.GLOBAL_GRANTS);
     }
 
     /**
      * Create a detached, initialised GlobalGrantsRecord
      */
     public GlobalGrantsRecord(String user, String host, String priv, GlobalGrantsWithGrantOption withGrantOption) {
-        super(GlobalGrants.GLOBAL_GRANTS);
+        super(JGlobalGrants.GLOBAL_GRANTS);
 
         setUser(user);
         setHost(host);
@@ -114,8 +115,8 @@ public class GlobalGrantsRecord extends UpdatableRecordImpl<GlobalGrantsRecord> 
     /**
      * Create a detached, initialised GlobalGrantsRecord
      */
-    public GlobalGrantsRecord(org.jooq.generated.tables.pojos.GlobalGrants value) {
-        super(GlobalGrants.GLOBAL_GRANTS);
+    public GlobalGrantsRecord(GlobalGrants value) {
+        super(JGlobalGrants.GLOBAL_GRANTS);
 
         if (value != null) {
             setUser(value.getUser());

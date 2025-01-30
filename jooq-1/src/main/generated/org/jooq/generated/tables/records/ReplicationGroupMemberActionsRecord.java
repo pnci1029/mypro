@@ -5,7 +5,8 @@ package org.jooq.generated.tables.records;
 
 
 import org.jooq.Record2;
-import org.jooq.generated.tables.ReplicationGroupMemberActions;
+import org.jooq.generated.tables.JReplicationGroupMemberActions;
+import org.jooq.generated.tables.pojos.ReplicationGroupMemberActions;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UByte;
 
@@ -141,14 +142,14 @@ public class ReplicationGroupMemberActionsRecord extends UpdatableRecordImpl<Rep
      * Create a detached ReplicationGroupMemberActionsRecord
      */
     public ReplicationGroupMemberActionsRecord() {
-        super(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS);
+        super(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS);
     }
 
     /**
      * Create a detached, initialised ReplicationGroupMemberActionsRecord
      */
     public ReplicationGroupMemberActionsRecord(String name, String event, Byte enabled, String type, UByte priority, String errorHandling) {
-        super(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS);
+        super(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS);
 
         setName(name);
         setEvent(event);
@@ -162,8 +163,8 @@ public class ReplicationGroupMemberActionsRecord extends UpdatableRecordImpl<Rep
     /**
      * Create a detached, initialised ReplicationGroupMemberActionsRecord
      */
-    public ReplicationGroupMemberActionsRecord(org.jooq.generated.tables.pojos.ReplicationGroupMemberActions value) {
-        super(ReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS);
+    public ReplicationGroupMemberActionsRecord(ReplicationGroupMemberActions value) {
+        super(JReplicationGroupMemberActions.REPLICATION_GROUP_MEMBER_ACTIONS);
 
         if (value != null) {
             setName(value.getName());
