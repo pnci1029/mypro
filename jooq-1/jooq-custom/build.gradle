@@ -10,10 +10,6 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-}
-
-test {
-    useJUnitPlatform()
+    implementation "org.jooq:jooq-codegen:${jooqVersion}"
+    runtimeOnly 'com.mysql:mysql-connector-j:8.2.0'
 }
