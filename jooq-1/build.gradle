@@ -61,7 +61,7 @@ jooq {
             generationTool {
                 jdbc {
                     driver = 'com.mysql.cj.jdbc.Driver'
-                    url = 'jdbc:mysql://localhost:3306/sakila'
+                    url = 'jdbc:mysql://localhost:3306'
                     user = "${dbUser}"
                     password = "${dbPasswd}"
                 }
@@ -74,7 +74,7 @@ jooq {
 
                         schemata {
                             schema {
-                                inputSchema = 'mysql' // 주의
+                                inputSchema = 'sakila' // 주의
                             }
                         }
                     }
@@ -88,7 +88,7 @@ jooq {
                     }
 
                     target {
-                        directory = 'src/main/generated'
+                        directory = 'src/main'
                     }
 
                     strategy.name = 'jooq.custom.generator.JPrefixGeneratorStrategy' // 서브 모듈 분리 -> 왜 분리함?
