@@ -4,125 +4,228 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25.1.30 부모 프로젝트 의존성 추가">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25.1.30 서브모듈 임포트로 파일명 수정">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jooq-1/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/DefaultCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/DefaultCatalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/Indexes.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/Indexes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/Keys.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/Keys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/Mysql.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/Tables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/ColumnsPriv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/Component.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/Db.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/DefaultRoles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/EngineCost.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/Func.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/GeneralLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/GlobalGrants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/GtidExecuted.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/HelpCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/HelpKeyword.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/HelpRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/HelpTopic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/InnodbIndexStats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/InnodbTableStats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/NdbBinlogIndex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/PasswordHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/Plugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/ProcsPriv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/ProxiesPriv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/ReplicationAsynchronousConnectionFailover.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/ReplicationAsynchronousConnectionFailoverManaged.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/ReplicationGroupConfigurationVersion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/ReplicationGroupMemberActions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/RoleEdges.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/ServerCost.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/Servers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/SlaveMasterInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/SlaveRelayLogInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/SlaveWorkerInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/SlowLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/TablesPriv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/TimeZone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/TimeZoneLeapSecond.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/TimeZoneName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/TimeZoneTransition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/TimeZoneTransitionType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ColumnsPrivDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ColumnsPrivDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ComponentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ComponentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/DbDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/DbDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/DefaultRolesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/DefaultRolesDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/EngineCostDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/EngineCostDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/FuncDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/FuncDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/GlobalGrantsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/GlobalGrantsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/GtidExecutedDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/GtidExecutedDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpCategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpKeywordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpKeywordDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpRelationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpRelationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpTopicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpTopicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/InnodbIndexStatsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/InnodbIndexStatsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/InnodbTableStatsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/InnodbTableStatsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/NdbBinlogIndexDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/NdbBinlogIndexDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/PasswordHistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/PasswordHistoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/PluginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/PluginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ProcsPrivDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ProcsPrivDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ProxiesPrivDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ProxiesPrivDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationAsynchronousConnectionFailoverDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationAsynchronousConnectionFailoverDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationAsynchronousConnectionFailoverManagedDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationAsynchronousConnectionFailoverManagedDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationGroupConfigurationVersionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationGroupConfigurationVersionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationGroupMemberActionsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationGroupMemberActionsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/RoleEdgesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/RoleEdgesDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ServerCostDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ServerCostDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ServersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ServersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/SlaveMasterInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/SlaveMasterInfoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/SlaveRelayLogInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/SlaveRelayLogInfoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/SlaveWorkerInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/SlaveWorkerInfoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TablesPrivDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TablesPrivDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneLeapSecondDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneLeapSecondDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneNameDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneNameDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneTransitionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneTransitionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneTransitionTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneTransitionTypeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ColumnsPrivRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ColumnsPrivRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ComponentRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ComponentRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/DbRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/DbRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/DefaultRolesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/DefaultRolesRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/EngineCostRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/EngineCostRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/FuncRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/FuncRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/GeneralLogRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/GeneralLogRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/GlobalGrantsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/GlobalGrantsRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/GtidExecutedRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/GtidExecutedRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpCategoryRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpCategoryRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpKeywordRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpKeywordRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpRelationRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpRelationRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpTopicRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpTopicRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/InnodbIndexStatsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/InnodbIndexStatsRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/InnodbTableStatsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/InnodbTableStatsRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/NdbBinlogIndexRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/NdbBinlogIndexRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/PasswordHistoryRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/PasswordHistoryRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/PluginRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/PluginRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ProcsPrivRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ProcsPrivRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ProxiesPrivRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ProxiesPrivRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationAsynchronousConnectionFailoverManagedRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationAsynchronousConnectionFailoverManagedRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationAsynchronousConnectionFailoverRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationAsynchronousConnectionFailoverRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationGroupConfigurationVersionRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationGroupConfigurationVersionRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationGroupMemberActionsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationGroupMemberActionsRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/RoleEdgesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/RoleEdgesRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ServerCostRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ServerCostRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ServersRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ServersRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlaveMasterInfoRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlaveMasterInfoRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlaveRelayLogInfoRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlaveRelayLogInfoRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlaveWorkerInfoRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlaveWorkerInfoRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlowLogRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlowLogRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TablesPrivRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TablesPrivRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneLeapSecondRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneLeapSecondRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneNameRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneNameRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneTransitionRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneTransitionRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneTransitionTypeRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneTransitionTypeRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/UserRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/UserRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/DefaultCatalog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/Indexes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/JMysql.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/Keys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/Tables.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbAlterPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbAlterRoutinePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbCreatePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbCreateRoutinePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbCreateTmpTablePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbCreateViewPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbDeletePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbDropPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbEventPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbExecutePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbGrantPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbIndexPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbInsertPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbLockTablesPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbReferencesPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbSelectPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbShowViewPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbTriggerPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/DbUpdatePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/FuncType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/GlobalGrantsWithGrantOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/ProcsPrivRoutineType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/RoleEdgesWithAdminOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/SlaveRelayLogInfoAssignGtidsToAnonymousTransactionsType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/SlaveRelayLogInfoRequireTablePrimaryKeyCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/TimeZoneUseLeapSeconds.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserAccountLocked.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserAlterPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserAlterRoutinePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserCreatePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserCreateRolePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserCreateRoutinePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserCreateTablespacePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserCreateTmpTablePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserCreateUserPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserCreateViewPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserDeletePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserDropPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserDropRolePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserEventPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserExecutePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserFilePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserGrantPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserIndexPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserInsertPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserLockTablesPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserPasswordExpired.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserPasswordRequireCurrent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserProcessPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserReferencesPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserReloadPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserReplClientPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserReplSlavePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserSelectPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserShowDbPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserShowViewPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserShutdownPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserSslType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserSuperPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserTriggerPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/enums/UserUpdatePriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JColumnsPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JDb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JDefaultRoles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JEngineCost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JGeneralLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JGlobalGrants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JGtidExecuted.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JHelpCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JHelpKeyword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JHelpRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JHelpTopic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JInnodbIndexStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JInnodbTableStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JNdbBinlogIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JPasswordHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JProcsPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JProxiesPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JReplicationAsynchronousConnectionFailover.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JReplicationAsynchronousConnectionFailoverManaged.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JReplicationGroupConfigurationVersion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JReplicationGroupMemberActions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JRoleEdges.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JServerCost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JServers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JSlaveMasterInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JSlaveRelayLogInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JSlaveWorkerInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JSlowLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JTablesPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JTimeZone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JTimeZoneLeapSecond.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JTimeZoneName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JTimeZoneTransition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JTimeZoneTransitionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/JUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ColumnsPrivDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ComponentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/DbDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/DefaultRolesDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/EngineCostDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/FuncDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/GlobalGrantsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/GtidExecutedDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpCategoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpKeywordDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpRelationDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/HelpTopicDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/InnodbIndexStatsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/InnodbTableStatsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/NdbBinlogIndexDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/PasswordHistoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/PluginDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ProcsPrivDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ProxiesPrivDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationAsynchronousConnectionFailoverDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationAsynchronousConnectionFailoverManagedDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationGroupConfigurationVersionDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ReplicationGroupMemberActionsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/RoleEdgesDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ServerCostDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/ServersDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/SlaveMasterInfoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/SlaveRelayLogInfoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/SlaveWorkerInfoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TablesPrivDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneLeapSecondDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneNameDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneTransitionDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/TimeZoneTransitionTypeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/daos/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/ColumnsPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/Component.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/Db.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/DefaultRoles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/EngineCost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/Func.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/GeneralLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/GlobalGrants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/GtidExecuted.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/HelpCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/HelpKeyword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/HelpRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/HelpTopic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/InnodbIndexStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/InnodbTableStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/NdbBinlogIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/PasswordHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/Plugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/ProcsPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/ProxiesPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/ReplicationAsynchronousConnectionFailover.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/ReplicationAsynchronousConnectionFailoverManaged.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/ReplicationGroupConfigurationVersion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/ReplicationGroupMemberActions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/RoleEdges.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/ServerCost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/Servers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/SlaveMasterInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/SlaveRelayLogInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/SlaveWorkerInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/SlowLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/TablesPriv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/TimeZone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/TimeZoneLeapSecond.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/TimeZoneName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/TimeZoneTransition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/TimeZoneTransitionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/pojos/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ColumnsPrivRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ComponentRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/DbRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/DefaultRolesRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/EngineCostRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/FuncRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/GeneralLogRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/GlobalGrantsRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/GtidExecutedRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpCategoryRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpKeywordRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpRelationRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/HelpTopicRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/InnodbIndexStatsRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/InnodbTableStatsRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/NdbBinlogIndexRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/PasswordHistoryRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/PluginRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ProcsPrivRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ProxiesPrivRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationAsynchronousConnectionFailoverManagedRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationAsynchronousConnectionFailoverRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationGroupConfigurationVersionRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ReplicationGroupMemberActionsRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/RoleEdgesRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ServerCostRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/ServersRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlaveMasterInfoRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlaveRelayLogInfoRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlaveWorkerInfoRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/SlowLogRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TablesPrivRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneLeapSecondRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneNameRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneTransitionRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/TimeZoneTransitionTypeRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/generated/org/jooq/generated/tables/records/UserRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/java/com/example/jooq1/Jooq1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jooq-1/src/test/java/com/example/jooq1/Jooq1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/jooq-1/src/test/java/com/example/jooq1/Jooq1ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -755,7 +858,7 @@
       <workItem from="1735822895537" duration="1557000" />
       <workItem from="1737877960435" duration="1140000" />
       <workItem from="1737959792766" duration="1215000" />
-      <workItem from="1738223823773" duration="1132000" />
+      <workItem from="1738223823773" duration="2481000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -1100,7 +1203,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="331" />
+    <option name="localTasksCounter" value="334" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1132,7 +1235,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24.12.27 객체 설계하기 (점진적 리팩토링4)" />
     <MESSAGE value="24.12.31 객체 설계하기2" />
     <MESSAGE value="24.12.31 객체 설계하기2 변수추가" />
     <MESSAGE value="24.12.31 객체 설계하기2 함수 수정" />
@@ -1157,7 +1259,8 @@
     <MESSAGE value="25.1.30 기본 생성자 제거 &amp; 테스트 삭제" />
     <MESSAGE value="25.1.30 프리픽스 생성자 추가 (queryDSL의 QClass)" />
     <MESSAGE value="25.1.30 부모 프로젝트 의존성 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="25.1.30 부모 프로젝트 의존성 추가" />
+    <MESSAGE value="25.1.30 서브모듈 임포트로 파일명 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="25.1.30 서브모듈 임포트로 파일명 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
