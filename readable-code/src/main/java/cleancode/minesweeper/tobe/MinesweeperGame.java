@@ -12,10 +12,4 @@ public class MinesweeperGame {
         mineSweeper.run();
     }
 
-
-    public static void main(String[] args) {
-
-    }
-
-
 }
