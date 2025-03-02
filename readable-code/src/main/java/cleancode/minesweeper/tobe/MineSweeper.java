@@ -23,7 +23,7 @@ public class MineSweeper {
 
     public void run() {
         // 시작 알림 텍스트
-        showGameStartComments();
+        consoleOutputHandler.showGameStartComments();
         // 게임 초기화
         initializeGame();
 
@@ -31,7 +31,7 @@ public class MineSweeper {
             try {
 
                 // 보드를 그리는 부분
-                showBoard();
+                consoleOutputHandler.showBoard(BOARD);
 
                 if (doesUserWinTheGmae()) {
                     System.out.println("지뢰를 모두 찾았습니다. GAME CLEAR!");
@@ -177,18 +177,6 @@ public class MineSweeper {
         }
     }
 
-    private void showBoard() {
-        System.out.println("   a b c d e f g h i j");
-        for (int row = 0; row < BOARD_ROW_SIZE; row++) {
-            System.out.printf("%d  ", row + 1);
-            for (int column = 0; column < BOARD_COLUMN_SIZE; column++) {
-                System.out.print(BOARD[row][column].getSign() + " ");
-            }
-            System.out.println();
-        }
-        System.out.println();
-    }
-
     private void initializeGame() {
         for (int row = 0; row < BOARD_ROW_SIZE; row++) {
             for (int column = 0; column < BOARD_COLUMN_SIZE; column++) {
@@ -240,12 +228,6 @@ public class MineSweeper {
             count++;
         }
         return count;
-    }
-
-    private void showGameStartComments() {
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-        System.out.println("지뢰찾기 게임 시작!");
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
     }
 
     private void open(int row, int col) {
