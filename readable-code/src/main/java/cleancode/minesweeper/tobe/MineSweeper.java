@@ -1,5 +1,8 @@
 package cleancode.minesweeper.tobe;
 
+import cleancode.minesweeper.tobe.io.ConsoleInputHandler;
+import cleancode.minesweeper.tobe.io.ConsoleOutputHandler;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -10,6 +13,10 @@ public class MineSweeper {
     public static final Scanner SCANNER = new Scanner(System.in);
     private static final Cell[][] BOARD = new Cell[BOARD_ROW_SIZE][BOARD_COLUMN_SIZE];
     public static final int MINE_COUNT = 10;
+
+    private final ConsoleInputHandler consoleInputHandler = new ConsoleInputHandler();
+    private final ConsoleOutputHandler consoleOutputHandler = new ConsoleOutputHandler();
+
 
     private int gameStatus = 0;
 
@@ -41,7 +48,7 @@ public class MineSweeper {
                 actOnCell(cellInput, userActionInput);
             } catch (AppException e) {
                 System.out.println(e.getMessage());
-            } catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("프로그램에 문제가 생겼습니다.");
             }
 
@@ -53,7 +60,8 @@ public class MineSweeper {
         int selectedRowIndex = getSelectedRowIndex(cellInput);
 
         if (doesUserChooseToPlantFlag(userActionInput)) {
-            BOARD[selectedRowIndex][selectedColumnIndex].flag();;
+            BOARD[selectedRowIndex][selectedColumnIndex].flag();
+            ;
             checkIfGameIsOver();
             return;
         }
@@ -136,7 +144,7 @@ public class MineSweeper {
 
     private int convertRowFrom(char cellInputRow) {
         int rowIndex = Character.getNumericValue(cellInputRow) - 1;
-        if(rowIndex >= BOARD_ROW_SIZE) {
+        if (rowIndex >= BOARD_ROW_SIZE) {
             throw new AppException("잘못된 입력입니다.");
         }
         return rowIndex;
