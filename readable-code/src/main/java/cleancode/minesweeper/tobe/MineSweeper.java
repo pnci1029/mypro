@@ -115,7 +115,7 @@ public class MineSweeper {
 
     private String getCellInputFromUser() {
         System.out.println("선택할 좌표를 입력하세요. (예: a1)");
-        return SCANNER.nextLine();
+        return consoleInputHandler.getUserInput();
     }
 
     private boolean doesUserLoseTheGame() {
