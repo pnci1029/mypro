@@ -34,11 +34,11 @@ public class MineSweeper {
                 consoleOutputHandler.showBoard(BOARD);
 
                 if (doesUserWinTheGmae()) {
-                    System.out.println("지뢰를 모두 찾았습니다. GAME CLEAR!");
+                    consoleOutputHandler.printGameWinningComment();
                     break;
                 }
                 if (doesUserLoseTheGame()) {
-                    System.out.println("지뢰를 밟았습니다. GAME OVER!");
+                    consoleOutputHandler.printGameLosingComment();
                     break;
                 }
 
@@ -108,13 +108,14 @@ public class MineSweeper {
     }
 
     private String getUserInputFromUser(Scanner scanner) {
-        System.out.println("선택한 셀에 대한 행위를 선택하세요. (1: 오픈, 2: 깃발 꽂기)");
+        consoleOutputHandler.printCommentForSelectingCell();
+
         return SCANNER.nextLine();
     }
 
     private String getCellInputFromUser() {
         System.out.println("선택할 좌표를 입력하세요. (예: a1)");
-        return GameApplication.SCANNER.nextLine();
+        return SCANNER.nextLine();
     }
 
     private boolean doesUserLoseTheGame() {
