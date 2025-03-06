@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25. 3 .01 인아웃풋 핸드러 추가">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25. 3 .02 output 함수 리팩토링">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MineSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MineSweeper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -643,6 +642,7 @@
       <workItem from="1738477390016" duration="448000" />
       <workItem from="1739968706965" duration="805000" />
       <workItem from="1740834601130" duration="340000" />
+      <workItem from="1740913656789" duration="323000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -987,7 +987,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="348" />
+    <option name="localTasksCounter" value="350" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1019,8 +1019,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="25.1.26 readme 세팅" />
-    <MESSAGE value="25.1.26 실습용 sakila 스키마 추가" />
     <MESSAGE value="25.1.26 sakila docker setup 추가" />
     <MESSAGE value="25.1.26 jooq 버전 exclude" />
     <MESSAGE value="25.1.26 gradle 셋업" />
@@ -1044,7 +1042,9 @@
     <MESSAGE value="25. 3 .01 변수명 리팩토링" />
     <MESSAGE value="25. 3 .01 static 함수 조정" />
     <MESSAGE value="25. 3 .01 인아웃풋 핸드러 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="25. 3 .01 인아웃풋 핸드러 추가" />
+    <MESSAGE value="25. 3 .02 static 변수" />
+    <MESSAGE value="25. 3 .02 output 함수 리팩토링" />
+    <option name="LAST_COMMIT_MESSAGE" value="25. 3 .02 output 함수 리팩토링" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

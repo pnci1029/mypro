@@ -20,4 +20,16 @@ public class ConsoleOutputHandler {
         }
         System.out.println();
     }
+
+    public void printGameWinningComment() {
+        System.out.println("지뢰를 모두 찾았습니다. GAME CLEAR!");
+    }
+
+    public void printGameLosingComment() {
+        System.out.println("지뢰를 밟았습니다. GAME OVER!");
+    }
+
+    public void printCommentForSelectingCell() {
+        System.out.println("선택한 셀에 대한 행위를 선택하세요. (1: 오픈, 2: 깃발 꽂기)");
+    }
 }
