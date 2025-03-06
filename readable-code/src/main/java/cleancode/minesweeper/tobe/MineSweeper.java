@@ -14,6 +14,7 @@ public class MineSweeper {
     private static final Cell[][] BOARD = new Cell[BOARD_ROW_SIZE][BOARD_COLUMN_SIZE];
     public static final int MINE_COUNT = 10;
 
+    private final GameBoard board = new GameBoard(BOARD_ROW_SIZE, BOARD_COLUMN_SIZE);
     private final ConsoleInputHandler consoleInputHandler = new ConsoleInputHandler();
     private final ConsoleOutputHandler consoleOutputHandler = new ConsoleOutputHandler();
 
