@@ -1,5 +1,6 @@
 package cleancode.minesweeper.tobe.io;
 
+import cleancode.minesweeper.tobe.AppException;
 import cleancode.minesweeper.tobe.Cell;
 
 public class ConsoleOutputHandler {
@@ -31,5 +32,13 @@ public class ConsoleOutputHandler {
 
     public void printCommentForSelectingCell() {
         System.out.println("선택한 셀에 대한 행위를 선택하세요. (1: 오픈, 2: 깃발 꽂기)");
+    }
+
+    public void printCommentForUserAction() {
+        System.out.println("선택할 좌표를 입력하세요. (예: a1)");
+    }
+
+    public void printExceptionMessage(AppException e) {
+        System.out.println(e.getMessage());
     }
 }

@@ -47,7 +47,7 @@ public class MineSweeper {
 
                 actOnCell(cellInput, userActionInput);
             } catch (AppException e) {
-                System.out.println(e.getMessage());
+                consoleOutputHandler.printExceptionMessage(e);
             } catch (Exception e) {
                 System.out.println("프로그램에 문제가 생겼습니다.");
             }
@@ -109,12 +109,11 @@ public class MineSweeper {
 
     private String getUserInputFromUser(Scanner scanner) {
         consoleOutputHandler.printCommentForSelectingCell();
-
         return SCANNER.nextLine();
     }
 
     private String getCellInputFromUser() {
-        System.out.println("선택할 좌표를 입력하세요. (예: a1)");
+        consoleOutputHandler.printCommentForUserAction();
         return consoleInputHandler.getUserInput();
     }
 
