@@ -1,6 +1,6 @@
 package cleancode.minesweeper.tobe.io;
 
-import cleancode.minesweeper.tobe.AppException;
+import cleancode.minesweeper.tobe.GameException;
 import cleancode.minesweeper.tobe.Cell;
 
 public class ConsoleOutputHandler {
@@ -38,7 +38,11 @@ public class ConsoleOutputHandler {
         System.out.println("선택할 좌표를 입력하세요. (예: a1)");
     }
 
-    public void printExceptionMessage(AppException e) {
+    public void printExceptionMessage(GameException e) {
         System.out.println(e.getMessage());
+    }
+
+    public void printSimpleMessage(String message) {
+        System.out.println(message);
     }
 }
