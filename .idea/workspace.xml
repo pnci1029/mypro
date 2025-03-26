@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25. 3 .02 output 함수 리팩토링">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25. 3 .06 셀 -&gt; 보드">
+      <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MineSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MineSweeper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -643,6 +644,7 @@
       <workItem from="1739968706965" duration="805000" />
       <workItem from="1740834601130" duration="340000" />
       <workItem from="1740913656789" duration="323000" />
+      <workItem from="1741263112503" duration="1563000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -987,7 +989,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="350" />
+    <option name="localTasksCounter" value="357" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1019,11 +1021,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="25.1.26 sakila docker setup 추가" />
-    <MESSAGE value="25.1.26 jooq 버전 exclude" />
-    <MESSAGE value="25.1.26 gradle 셋업" />
-    <MESSAGE value="25.1.26 불필요한 db 스키마 삭제" />
-    <MESSAGE value="25.1.26 jooq class 생성" />
     <MESSAGE value="25.1.26 gradle 수정" />
     <MESSAGE value="25.1.30 커스텀 모튤 생성" />
     <MESSAGE value="25.1.30 기본 생성자 제거 &amp; 테스트 삭제" />
@@ -1044,7 +1041,12 @@
     <MESSAGE value="25. 3 .01 인아웃풋 핸드러 추가" />
     <MESSAGE value="25. 3 .02 static 변수" />
     <MESSAGE value="25. 3 .02 output 함수 리팩토링" />
-    <option name="LAST_COMMIT_MESSAGE" value="25. 3 .02 output 함수 리팩토링" />
+    <MESSAGE value="25. 3 .06 output 함수 리팩토링" />
+    <MESSAGE value="25. 3 .06 input 함수 추가" />
+    <MESSAGE value="25. 3 .06 에러 메세지 아웃풋" />
+    <MESSAGE value="25. 3 .06 커스텀 핸들러" />
+    <MESSAGE value="25. 3 .06 셀 -&gt; 보드" />
+    <option name="LAST_COMMIT_MESSAGE" value="25. 3 .06 셀 -&gt; 보드" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
