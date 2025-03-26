@@ -37,6 +37,19 @@ public class GameBoard {
         }
     }
 
+    public String getSign(int row, int column) {
+        Cell cell = board[row][column];
+        return cell.getSign();
+    }
+
+    public int getRowSize() {
+        return board.length;
+    }
+
+    public int getColumnSize() {
+        return board[0].length;
+    }
+
     public int countNearbyLandMines(int row, int column) {
         int rowSize = board.length;
         int columnSize = board[0].length;
@@ -72,5 +85,4 @@ public class GameBoard {
     private boolean isLandMinedCell(int selectedRowIndex, int selectedColumnIndex) {
         return board[selectedRowIndex][selectedColumnIndex].isLandMine();
     }
-
 }

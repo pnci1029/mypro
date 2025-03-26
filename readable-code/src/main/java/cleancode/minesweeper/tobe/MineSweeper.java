@@ -4,7 +4,6 @@ import cleancode.minesweeper.tobe.io.ConsoleInputHandler;
 import cleancode.minesweeper.tobe.io.ConsoleOutputHandler;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 public class MineSweeper {
@@ -29,9 +28,8 @@ public class MineSweeper {
 
         while (true) {
             try {
-
-                // 보드를 그리는 부분
-                consoleOutputHandler.showBoard(BOARD);
+                 // 보드를 그리는 부분
+                consoleOutputHandler.showBoard(gameBoard);
 
                 if (doesUserWinTheGmae()) {
                     consoleOutputHandler.printGameWinningComment();
