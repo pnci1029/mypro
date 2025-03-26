@@ -16,7 +16,7 @@ public class ConsoleOutputHandler {
         for (int row = 0; row < board.getRowSize(); row++) {
             System.out.printf("%d  ", row + 1);
             for (int column = 0; column < board.getColumnSize(); column++) {
-                System.out.print(board.getSign(row, column).getSign() + " ");
+                System.out.print(board.getSign(row, column) + " ");
             }
             System.out.println();
         }
