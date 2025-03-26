@@ -58,14 +58,13 @@ public class MineSweeper {
         int selectedRowIndex = getSelectedRowIndex(cellInput);
 
         if (doesUserChooseToPlantFlag(userActionInput)) {
-            BOARD[selectedRowIndex][selectedColumnIndex].flag();
-            ;
+            gameBoard.flag(selectedRowIndex, selectedColumnIndex);
             checkIfGameIsOver();
             return;
         }
 
         if (doesUserPlantToOpenCell(userActionInput)) {
-            if (isLandMinedCell(selectedRowIndex, selectedColumnIndex)) {
+            if (gameBoard.isLandMinedCell(selectedRowIndex, selectedColumnIndex)) {
                 BOARD[selectedRowIndex][selectedColumnIndex].open();
                 changeGameStatusToLose();
                 return;
