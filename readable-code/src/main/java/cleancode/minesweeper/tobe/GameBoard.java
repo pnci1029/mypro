@@ -10,6 +10,16 @@ public class GameBoard {
         board = new Cell[rowSize][columnSize];
     }
 
+    public void flag(int rowIdx, int colIdx) {
+        Cell cell = findCell(rowIdx, colIdx);
+        cell.flag();
+    }
+
+    public boolean isLandMinedCell(int selectedRowIndex, int selectedColumnIndex) {
+        Cell cell = findCell(selectedRowIndex, selectedColumnIndex);
+        return cell.isLandMine();
+    }
+
     public void initializeGame() {
         int rowSize = board.length;
         int columnSize = board[0].length;
@@ -58,8 +68,8 @@ public class GameBoard {
     }
 
     public int countNearbyLandMines(int row, int column) {
-        int rowSize = board.length;
-        int columnSize = board[0].length;
+        int rowSize = getRowSize();
+        int columnSize = getColumnSize();
 
         int count = 0;
         if (row - 1 >= 0 && column - 1 >= 0 && isLandMinedCell(row - 1, column - 1)) {
@@ -87,10 +97,5 @@ public class GameBoard {
             count++;
         }
         return count;
-    }
-
-    private boolean isLandMinedCell(int selectedRowIndex, int selectedColumnIndex) {
-        Cell cell = findCell(selectedRowIndex, selectedColumnIndex);
-        return cell.isLandMine();
     }
 }
