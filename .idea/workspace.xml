@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25. 3 .06 셀 -&gt; 보드">
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25. 4 .3 로그관리 프로젝트 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MineSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MineSweeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shorten-url-for-logging-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shorten-url-for-logging-main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shorten-url-for-logging-main/src/main/java/kr/co/shortenurlservice/presentation/ShortenUrlRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shorten-url-for-logging-main/src/main/java/kr/co/shortenurlservice/presentation/ShortenUrlRestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -645,6 +649,9 @@
       <workItem from="1740834601130" duration="340000" />
       <workItem from="1740913656789" duration="323000" />
       <workItem from="1741263112503" duration="1563000" />
+      <workItem from="1742987771047" duration="1281000" />
+      <workItem from="1743039150479" duration="538000" />
+      <workItem from="1743682662862" duration="799000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -989,7 +996,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="357" />
+    <option name="localTasksCounter" value="369" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1021,12 +1028,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="25.1.26 gradle 수정" />
-    <MESSAGE value="25.1.30 커스텀 모튤 생성" />
-    <MESSAGE value="25.1.30 기본 생성자 제거 &amp; 테스트 삭제" />
-    <MESSAGE value="25.1.30 프리픽스 생성자 추가 (queryDSL의 QClass)" />
-    <MESSAGE value="25.1.30 부모 프로젝트 의존성 추가" />
-    <MESSAGE value="25.1.30 서브모듈 임포트로 파일명 수정" />
     <MESSAGE value="25. 2. 2 gradle 재수정" />
     <MESSAGE value="25. 2. 2 property 수정" />
     <MESSAGE value="25. 2. 2 db 데이터 테스트" />
@@ -1046,7 +1047,13 @@
     <MESSAGE value="25. 3 .06 에러 메세지 아웃풋" />
     <MESSAGE value="25. 3 .06 커스텀 핸들러" />
     <MESSAGE value="25. 3 .06 셀 -&gt; 보드" />
-    <option name="LAST_COMMIT_MESSAGE" value="25. 3 .06 셀 -&gt; 보드" />
+    <MESSAGE value="25. 3 .26 게임보드로 리팩토링중" />
+    <MESSAGE value="25. 3 .26 마인스위서 정리" />
+    <MESSAGE value="25. 3 .26 변수 리팩토링" />
+    <MESSAGE value="25. 3 .26 명시적으로 변경" />
+    <MESSAGE value="25. 3 .26 책임 분리" />
+    <MESSAGE value="25. 4 .3 로그관리 프로젝트 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="25. 4 .3 로그관리 프로젝트 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
