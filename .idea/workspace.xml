@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25. 4 .3 로그관리 프로젝트 추가">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="500b9c84-dc09-4ee8-bfd9-02dacbcb16ca" name="Changes" comment="25. 5 .4 로그관리 1">
       <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MineSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/readable-code/src/main/java/cleancode/minesweeper/tobe/MineSweeper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shorten-url-for-logging-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shorten-url-for-logging-main/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shorten-url-for-logging-main/src/main/java/kr/co/shortenurlservice/presentation/ShortenUrlRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shorten-url-for-logging-main/src/main/java/kr/co/shortenurlservice/presentation/ShortenUrlRestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -652,6 +649,7 @@
       <workItem from="1742987771047" duration="1281000" />
       <workItem from="1743039150479" duration="538000" />
       <workItem from="1743682662862" duration="799000" />
+      <workItem from="1746344030030" duration="693000" />
     </task>
     <task id="LOCAL-00073" summary="11.22 security basic">
       <created>1700655133056</created>
@@ -996,7 +994,7 @@
       <option name="project" value="LOCAL" />
       <updated>1709698211899</updated>
     </task>
-    <option name="localTasksCounter" value="369" />
+    <option name="localTasksCounter" value="371" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1028,7 +1026,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="25. 2. 2 gradle 재수정" />
     <MESSAGE value="25. 2. 2 property 수정" />
     <MESSAGE value="25. 2. 2 db 데이터 테스트" />
     <MESSAGE value="25. 2. 2 테스트 데이터 삭제" />
@@ -1053,7 +1050,8 @@
     <MESSAGE value="25. 3 .26 명시적으로 변경" />
     <MESSAGE value="25. 3 .26 책임 분리" />
     <MESSAGE value="25. 4 .3 로그관리 프로젝트 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="25. 4 .3 로그관리 프로젝트 추가" />
+    <MESSAGE value="25. 5 .4 로그관리 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="25. 5 .4 로그관리 1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
